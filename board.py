@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+from random import choice
 
 from gomill import sgf, sgf_moves
 
@@ -10,7 +11,11 @@ class Goban(object):
 
     def __init__(self, sgf_string):
         """Initialise the goban from the given SGF string."""
-        self.sgf = sgf_string
+        self.load(sgf_string)
+
+    def load(self, sgf_string):
+        """load the given SGF string."""
+        self.sgf = sgf_string or ''
         self.game = sgf.Sgf_game.from_string(sgf_string)
         self.board, _ = sgf_moves.get_setup_and_moves(self.game)
         self.node = self.root
@@ -65,6 +70,10 @@ class Goban(object):
             self.board.board[x][y] = None
             self.node = self.node.parent
 
+    def random_move(self):
+        if self.on_path and len(self.node) > 0:
+            self.move(*choice(self.node).get_move()[1])
+
     def __str__(self):
         return '\n'.join("|".join(i if i else ' ' for i in x) for x in reversed(self.board.board))
 
@@ -78,7 +87,18 @@ class Goban(object):
 
     @property
     def next_player(self):
-        return 'b' if self.current_player == 'w' else 'w'
+        """Get the next player.
+
+        If the current player is known, then return the other one. If it's
+        not known, but the next step is known, return that step's player.
+        Otherwise just assume that it's a new game and return black.
+        """
+        if self.current_player:
+            return 'b' if self.current_player == 'w' else 'w'
+        elif len(self.node) > 0:
+            return self.node[0].get_move()[0]
+        else:
+            return 'b'
 
     @property
     def current_comment(self):
