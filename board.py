@@ -130,6 +130,11 @@ class Goban(object):
         """Whether the current node is a correct end one."""
         return 'RIGHT' in self.current_comment
 
+    @property
+    def labels(self):
+        """Get all labels on the board."""
+        return self.root.get('LB') if self.root.has_property('LB') else []
+
 
 bla = """(;AB[sc]AB[sb]AB[rb]AB[qc]AB[pc]AB[oc]AB[ob]AB[oa]AW[na]AW[nb]AW[nc]AW[od]AW[nd]AW[pd]AW[qd]AW[rd]AW[rc]AW[sd]AB[qb]AW[pb]AW[qa]AW[ra]C[How many ko threats can White make?FORCE]LB[lb:1]LB[la:0]LB[lc:2]LB[ld:3]AP[goproblems]
 (;W[la]C[Nope, there's at least one.])

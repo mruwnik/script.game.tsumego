@@ -158,40 +158,50 @@ class Grid(Goban):
         self.y = y
         self.width = width
         self.height = height
+        self.stone_width = self.width / self.columns
+        self.stone_height = self.height / self.rows
         self.grid = []
         self.current = None
         self.right = None
         self.add_controls()
 
     def add_controls(self):
-        width = self.width / self.columns
-        height = self.height / self.rows
         self.control = xbmcgui.ControlButton(
             x=self.x,
             y=self.y,
-            width=width,
-            height=height,
+            width=self.stone_width,
+            height=self.stone_height,
             label=''
         )
         self.position_marker = xbmcgui.ControlImage(
             x=self.x,
             y=self.y,
-            width=width,
-            height=height,
+            width=self.stone_width,
+            height=self.stone_height,
             filename=get_image('shadow_%s.png' % self.next_player_name),
         )
 
-    def new_stone(self, x, y, width, height):
+    def new_stone(self, x, y):
         """Add a new stone.
 
         :param int x: the column in which this stone is
         :param int y: the row that the stone is in
-        :param int width: the stone's width
-        :param int height: the stone's height
         """
-        stone = Stone(x, y, self, width, height)
+        stone = Stone(x, y, self, self.stone_width, self.stone_height)
         stone.place_stone(self.board.board[x][y])
         return stone
+
+    def add_label(self, x, y, label):
+        return xbmcgui.ControlLabel(
+            x=self.y + self.stone_height * y,
+            y=self.x + self.stone_width * (self.rows - x),
+            width=self.stone_width,
+            height=self.stone_height,
+            label='[B]%s[/B]' % label,
+            font='font30',
+#            textColor='0xFFFF3300',
+            alignment=2
+        )
 
     def setup_stones(self, window, right_control):
         """Setup all stones in this grid.
@@ -199,20 +209,21 @@ class Grid(Goban):
         :param xbmcgui.Window: the window that the controls should be attached to
         :param xbmcgui.Control: the control that is to the right of the grid
         """
-        width = self.width / self.columns
-        height = self.height / self.rows
+        # add any labels
+        self.label_controls = [self.add_label(x, y, label) for (x, y), label in self.labels]
+
         self.grid = [
-            [self.new_stone(x, y, width, height) for y in xrange(self.columns)]
+            [self.new_stone(x, y) for y in xrange(self.columns)]
             for x in xrange(self.rows)
         ]
         self.current = self.grid[self.columns - 1][self.rows - 1]
 
         # this is done this way as opposed to doing it during stone
         # creation, because it was sloooowwwww
-        controls = [stone.image for row in self.grid for stone in row]
-        controls += [self.position_marker, self.control]
+        stones = [stone.image for row in self.grid for stone in row]
+        controls = [self.position_marker, self.control]
 
-        window.addControls(controls)
+        window.addControls(stones + controls + self.label_controls)
 
         # connect the control to the right with this grid
         right_control.controlLeft(self.control)
@@ -223,10 +234,9 @@ class Grid(Goban):
 
         :param xbmcgui.Window: the window that the controls were attached to
         """
-        stones = self.stones.values()
-        window.removeControls([t.button_control for t in stones])
-        window.removeControls([t.image_control for t in stones])
-        self.stones = {}
+        stones = [stone.image for row in self.grid for stone in row]
+        controls = [self.position_marker, self.control]
+        window.removeControls(stones + controls + self.label_controls)
         self.grid = []
 
     def refresh_board(self, previous_state=None):
@@ -301,6 +311,7 @@ class Game(xbmcgui.WindowXML):
     CONTROL_ID_GAME_ID = 3007
 
     def onInit(self):
+        log('initialising')
         # init vars
         self._game_id = ''
         # get controls
@@ -309,10 +320,9 @@ class Game(xbmcgui.WindowXML):
         self.moves_control = self.getControl(self.CONTROL_ID_MOVES_COUNT)
         self.time_control = self.getControl(self.CONTROL_ID_TIME)
         self.game_id_control = self.getControl(self.CONTROL_ID_GAME_ID)
-        self.new_game_control = self.getControl(self.CONTROL_ID_RESTART)
+        self.reset_control = self.getControl(self.CONTROL_ID_RESTART)
         # init the grid
         self.grid = self.get_grid()
-        self.grid.setup_stones(self, self.new_game_control)
         # start the timer thread
         #thread.start_new_thread(self.timer_thread, ())
         # start the game
@@ -336,11 +346,7 @@ class Game(xbmcgui.WindowXML):
         super(Game, self).onAction(action)
 
     def onFocus(self, control_id):
-        return
-        if self.grid:
-            self.grid.remove_stones(self)
-            self.grid.setup_stones(self)
-            self.grid.refresh_board()
+        pass
 
     def onClick(self, control_id):
         if control_id == self.CONTROL_ID_RESTART:
@@ -349,11 +355,18 @@ class Game(xbmcgui.WindowXML):
             self.exit()
 
     def get_grid(self):
-        # get xml defined position and dimension for the grid
-        x, y = self.grid_control.getPosition()
-        width = self.grid_control.getWidth()
-        height = self.grid_control.getHeight()
-        return Grid(ROWS, COLUMNS, x, y, width, height, bla)
+        try:
+            grid = self.grid
+        except AttributeError:
+            # get xml defined position and dimension for the grid
+            x, y = self.grid_control.getPosition()
+            width = self.grid_control.getWidth()
+            height = self.grid_control.getHeight()
+            grid = Grid(ROWS, COLUMNS, x, y, width, height, bla)
+        else:
+            grid.remove_stones(self)
+        grid.setup_stones(self, self.reset_control)
+        return grid
 
     def start_game(self, game_id=None):
         self._start_time = time.time()

@@ -2,10 +2,6 @@
 
 
 # TODO
-* remember the board's state between redisplays of it
-
-* display markers on the board
-
 * show comments
 * show when off path
 * show when finished
