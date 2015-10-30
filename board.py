@@ -101,6 +101,10 @@ class Goban(object):
             return 'b'
 
     @property
+    def next_player_name(self):
+        return 'white' if self.next_player == 'w' else 'black'
+
+    @property
     def current_comment(self):
         try:
             return self.node.get('C')

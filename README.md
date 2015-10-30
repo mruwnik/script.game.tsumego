@@ -2,12 +2,9 @@
 
 
 # TODO
-* don't refresh the whole grid, only those spots that changed
 * remember the board's state between redisplays of it
 
-* add a shadow stone instead of selected.png
 * display markers on the board
-* all rightmost places link to the normal buttons, an the normal buttons link to the leftmost spots
 
 * show comments
 * show when off path
