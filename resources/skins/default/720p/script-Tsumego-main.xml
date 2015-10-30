@@ -18,6 +18,17 @@
             <height>680</height>
             <texture>goban.png</texture>
         </control>
+        <control type="textbox" id="3008">
+            <description>Comments</description>
+            <posx>800</posx>
+            <posy>180</posy>
+            <width>480</width>
+            <height>150</height>
+            <visible>true</visible>
+            <font>font30_title</font>
+            <textcolor>FF222222</textcolor>
+            <label>$ADDON[script.game.tsumego 32018]</label>
+        </control>
         <control type="textbox">
             <description>Game Controls Help</description>
             <posx>780</posx>
@@ -25,7 +36,7 @@
             <width>480</width>
             <height>150</height>
             <visible>true</visible>
-            <font>font12</font>
+            <font>font30_title</font>
             <textcolor>FF222222</textcolor>
             <label>$ADDON[script.game.tsumego 32010]</label>
         </control>
@@ -51,7 +62,7 @@
             <label></label>
         </control>
         <control type="button" id="3002">
-            <description>New Game</description>
+            <description>Reset</description>
             <posx>820</posx>
             <posy>40</posy>
             <width>200</width>
@@ -120,16 +131,24 @@
             <label>$ADDON[script.game.tsumego 32002]</label>
         </control>
         <control type="label" id="3003">
-            <description>Moves count label</description>
-            <posx>1030</posx>
-            <posy>170</posy>
+            <description>Error messages</description>
+            <posx>800</posx>
+            <posy>150</posy>
             <width>80</width>
             <height>36</height>
-            <align>left</align>
-            <font>font12</font>
-            <textcolor>white</textcolor>
-            <visible>true</visible>
+            <font>font30</font>
+            <textcolor>red</textcolor>
             <label>$ADDON[script.game.tsumego 32005]</label>
+        </control>
+        <control type="label" id="3004">
+            <description>Success messages</description>
+            <posx>800</posx>
+            <posy>150</posy>
+            <width>80</width>
+            <height>36</height>
+            <font>font30</font>
+            <textcolor>green</textcolor>
+            <label>Solved</label>
         </control>
         <control type="label">
             <description>Target moves label</description>
@@ -142,18 +161,6 @@
             <textcolor>white</textcolor>
             <visible>true</visible>
             <label>$ADDON[script.game.tsumego 32003]</label>
-        </control>
-        <control type="label" id="3004">
-            <description>Target moves count label</description>
-            <posx>1030</posx>
-            <posy>210</posy>
-            <width>80</width>
-            <height>36</height>
-            <align>left</align>
-            <font>font12</font>
-            <textcolor>white</textcolor>
-            <visible>true</visible>
-            <label>$ADDON[script.game.tsumego 32005]</label>
         </control>
         <control type="label">
             <description>Time label</description>

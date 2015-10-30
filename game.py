@@ -163,6 +163,7 @@ class Grid(Goban):
         self.grid = []
         self.current = None
         self.right = None
+        self.comments_box = None
         self.add_controls()
 
     def add_controls(self):
@@ -203,7 +204,7 @@ class Grid(Goban):
             alignment=2
         )
 
-    def setup_stones(self, window, right_control):
+    def setup_stones(self, window, right_control, comments):
         """Setup all stones in this grid.
 
         :param xbmcgui.Window: the window that the controls should be attached to
@@ -228,6 +229,9 @@ class Grid(Goban):
         # connect the control to the right with this grid
         right_control.controlLeft(self.control)
         self.right = right_control
+
+        self.comments_box = comments
+        self.update_comment()
 
     def remove_stones(self, window):
         """Remove all stones from this grid.
@@ -263,6 +267,11 @@ class Grid(Goban):
     def at(self, row, column):
         return self.grid[row % self.rows][column % self.columns]
 
+    def update_comment(self, comment=None):
+        if comment is None:
+            comment = self.current_comment.replace('FORCE', '').replace('RIGHT', '')
+        self.comments_box.setText(comment)
+
     def handle(self, action, focused):
         """Handle the guven action.
 
@@ -285,6 +294,7 @@ class Grid(Goban):
                 self.move(*self.current.pos)
                 self.random_move()
                 self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
+                self.update_comment()
             elif action_id in BACK:
                 self.back()
                 self.back()
@@ -304,11 +314,12 @@ class Grid(Goban):
 class Game(xbmcgui.WindowXML):
     CONTROL_ID_GRID = 3001
     CONTROL_ID_RESTART = 3002
-    CONTROL_ID_MOVES_COUNT = 3003
-    CONTROL_ID_TARGET_COUNT = 3004
+    CONTROL_ID_ERROR = 3003
+    CONTROL_ID_SUCCESS = 3004
     CONTROL_ID_TIME = 3005
     CONTROL_ID_EXIT = 3006
     CONTROL_ID_GAME_ID = 3007
+    CONTROL_ID_COMMENTS = 3008
 
     def onInit(self):
         log('initialising')
@@ -316,17 +327,23 @@ class Game(xbmcgui.WindowXML):
         self._game_id = ''
         # get controls
         self.grid_control = self.getControl(self.CONTROL_ID_GRID)
-        self.target_control = self.getControl(self.CONTROL_ID_TARGET_COUNT)
-        self.moves_control = self.getControl(self.CONTROL_ID_MOVES_COUNT)
+        self.error_control = self.getControl(self.CONTROL_ID_ERROR)
+        self.success_control = self.getControl(self.CONTROL_ID_SUCCESS)
         self.time_control = self.getControl(self.CONTROL_ID_TIME)
         self.game_id_control = self.getControl(self.CONTROL_ID_GAME_ID)
+
+        self.success_control.setLabel('Solved')
+        self.error_control.setLabel('Off path')
+        self.success_control.setVisible(False)
+        self.error_control.setVisible(False)
+
         self.reset_control = self.getControl(self.CONTROL_ID_RESTART)
+        self.comments_box = self.getControl(self.CONTROL_ID_COMMENTS)
         # init the grid
         self.grid = self.get_grid()
         # start the timer thread
         #thread.start_new_thread(self.timer_thread, ())
         # start the game
-        self.start_game()
 
     def onAction(self, action):
         """Handle the given action.
@@ -337,9 +354,12 @@ class Game(xbmcgui.WindowXML):
             action_id = action.getId()
             if action_id == xbmcgui.ACTION_QUEUE_ITEM:
                 return self.exit()
-            if self.grid.handle(action, self.getFocusId()):
+            elif self.grid.handle(action, self.getFocusId()):
+                if action_id in SELECT:
+                    self.error_control.setVisible(not self.grid.good_path)
+                    self.success_control.setVisible(self.grid.correct)
                 return
-            if action_id in INFO:
+            elif action_id in INFO:
                 pass
         except Exception as e:
             log(str(e))
@@ -350,7 +370,7 @@ class Game(xbmcgui.WindowXML):
 
     def onClick(self, control_id):
         if control_id == self.CONTROL_ID_RESTART:
-            self.start_game()
+            self.restart_game()
         elif control_id == self.CONTROL_ID_EXIT:
             self.exit()
 
@@ -358,6 +378,9 @@ class Game(xbmcgui.WindowXML):
         try:
             grid = self.grid
         except AttributeError:
+            grid = None
+
+        if not grid:
             # get xml defined position and dimension for the grid
             x, y = self.grid_control.getPosition()
             width = self.grid_control.getWidth()
@@ -365,16 +388,13 @@ class Game(xbmcgui.WindowXML):
             grid = Grid(ROWS, COLUMNS, x, y, width, height, bla)
         else:
             grid.remove_stones(self)
-        grid.setup_stones(self, self.reset_control)
+        grid.setup_stones(self, self.reset_control, self.comments_box)
         return grid
 
-    def start_game(self, game_id=None):
-        self._start_time = time.time()
-        self._moves = 0
-        self._target_moves = 'bla'
-        self.moves_control.setLabel(str(self._moves))
-        self.target_control.setLabel(str(self._target_moves))
-        self.game_id_control.setLabel(str(self._game_id))
+    def restart_game(self):
+        self.grid.remove_stones(self)
+        self.grid = None
+        self.get_grid()
 
     def game_over(self):
         dialog = xbmcgui.Dialog()
@@ -386,10 +406,6 @@ class Game(xbmcgui.WindowXML):
         if confirmed:
             self.grid.remove_controls(window)
             self.close()
-
-    def movement_done(self):
-        self._moves += 1
-        self.moves_control.setLabel(str(self._moves))
 
 
 if __name__ == '__main__':
