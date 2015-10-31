@@ -2,7 +2,6 @@
 
 
 # TODO
-* show variations on the board
 * show a tree of all variations
 
 * scale the board when the tsumego is small

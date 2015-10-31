@@ -59,8 +59,10 @@ MEDIA_PATH = os.path.join(
 )
 
 STRINGS = {
-    'you_won_head': 32007,
-    'you_won_text': 32008,
+    'show_solution': 32002,
+    'hide_solution': 32003,
+    'off_path': 32015,
+    'solved': 32016,
     'exit_head': 32009,
     'exit_text': 32012
 }
@@ -72,12 +74,12 @@ ROWS = 19
 class ControlIds(object):
     GRID = 3001
     RESTART = 3002
-    ERROR = 3003
-    SUCCESS = 3004
-    TIME = 3005
-    EXIT = 3006
-    GAME_ID = 3007
-    COMMENTS = 3008
+    SOLUTION = 3003
+    EXIT = 3004
+
+    ERROR = 3015
+    SUCCESS = 3016
+    COMMENTS = 3017
 
 
 def get_image(filename):
@@ -124,6 +126,8 @@ class Stone(object):
             stone = 'white.png'
         elif player == 'b':
             stone = 'black.png'
+        elif player == 'good' or player == 'bad':
+            stone = '%s_spot.png' % player
         else:
             stone = 'empty.png'
         self.image.setImage(get_image(stone))
@@ -173,6 +177,7 @@ class Grid(Goban):
         self.current = None
         self.right = None
         self.comments_box = None
+        self.hints = False
         super(Grid, self).__init__(sgf)
         self.add_controls()
 
@@ -193,11 +198,15 @@ class Grid(Goban):
         )
 
     def setup_labels(self, window):
+        """Set up all status messages and the comments box.
+
+        :param xbmcgui.Window window: the window in which the controls are
+        """
         self.comments_box = window.getControl(ControlIds.COMMENTS)
         self.error_control = window.getControl(ControlIds.ERROR)
         self.success_control = window.getControl(ControlIds.SUCCESS)
-        self.success_control.setLabel('Solved')
-        self.error_control.setLabel('Off path')
+        self.success_control.setLabel(_('solved'))
+        self.error_control.setLabel(_('off_path'))
 
         self.update_comment()
         self.update_messages()
@@ -284,24 +293,41 @@ class Grid(Goban):
             for y in xrange(self.rows):
                 if not previous_state or self.board.board[x][y] != previous_state[x][y]:
                     self.grid[x][y].place_stone(self.board.board[x][y])
+        self.mark_hints()
 
     def load(self, sgf=None):
+        """Load the given SGF, or reload the current one if none provided.
+
+        :param (str or None) sgf: the SGF to be loaded
+        """
         super(Grid, self).load(sgf if sgf is not None else self.sgf)
         self.refresh_board()
-        self.update_comment()
 
     @property
     def size(self):
         return self.rows, self.columns
 
-    @property
-    def all_correct(self):
-        return False
-
     def at(self, row, column):
         return self.grid[row % self.rows][column % self.columns]
 
+    def toggle_hints(self, state=None):
+        """Toggle the display of hints on the board.
+
+        :param boolean state: this can be used to force the state
+        :returns: whether or not hints are shown
+        """
+        self.hints = state if state is not None else not self.hints
+        self.mark_hints()
+        return self.hints
+
     def update_comment(self, comment=None):
+        """Set the comment to the given comment, or the current SGF comment.
+
+        If no comment is provided, the comment of the current SGF node will
+        be displayed.
+
+        :param str or None comment: the comment to be displayed
+        """
         if not self.comments_box:
             log('No comments box found during comment refresh', LOGDEBUG)
             return
@@ -311,8 +337,30 @@ class Grid(Goban):
         self.comments_box.setText(comment)
 
     def update_messages(self):
-        self.error_control.setVisible(not self.good_path)
+        """Update the status messages' visibility."""
+        self.error_control.setVisible(not self.on_path)
         self.success_control.setVisible(self.correct)
+
+    def mark_hints(self):
+        """Mark all hints on the board."""
+        if not self.hints:
+            return
+
+        def mark_node(node, mark=None):
+            """Mark a single hint on the board.
+
+            :param str mark: what the marker should be
+            """
+            _, (x, y) = node.get_move()
+            self.grid[x][y].place_stone(mark)
+
+        # get rid of any previous markers - the grandparent must be used,
+        # because the parent is automatically placed and has no hints
+        if self.node.parent and self.node.parent.parent:
+            map(mark_node, filter(lambda v: v != self.node, self.node.parent.parent))
+
+        for child in self.node:
+            mark_node(child, 'good' if self.correct_path(child) else 'bad')
 
     def handle(self, action, focused):
         """Handle the given action.
@@ -357,14 +405,11 @@ class Grid(Goban):
 class Game(xbmcgui.WindowXML):
     def onInit(self):
         log('initialising')
-        # init vars
-        self._game_id = ''
         # get controls
         self.grid_control = self.getControl(ControlIds.GRID)
-        self.time_control = self.getControl(ControlIds.TIME)
-        self.game_id_control = self.getControl(ControlIds.GAME_ID)
-
         self.reset_control = self.getControl(ControlIds.RESTART)
+        self.solution_control = self.getControl(ControlIds.SOLUTION)
+
         # init the grid
         self.grid = self.get_grid()
         # start the timer thread
@@ -394,6 +439,10 @@ class Game(xbmcgui.WindowXML):
     def onClick(self, control_id):
         if control_id == ControlIds.RESTART:
             self.restart_game()
+        elif control_id == ControlIds.SOLUTION:
+            self.solution_control.setLabel(
+                _('hide_solution' if self.grid.toggle_hints() else 'show_solution')
+            )
         elif control_id == ControlIds.EXIT:
             self.exit()
 
@@ -415,8 +464,8 @@ class Game(xbmcgui.WindowXML):
         return grid
 
     def restart_game(self):
-        self.grid.load(bla)
-        self.grid.refresh_board()
+        self.grid.load()
+        self.grid.update_messages()
 
     def game_over(self):
         dialog = xbmcgui.Dialog()
