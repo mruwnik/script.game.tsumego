@@ -30,6 +30,7 @@ import xbmcgui
 
 from board import Goban, ble, bla
 
+from xbmc import LOGDEBUG, LOGNOTICE, LOGERROR, LOGSEVERE, LOGFATAL
 from xbmcgui import (
     ACTION_MOVE_DOWN, ACTION_MOVE_LEFT, ACTION_MOVE_RIGHT, ACTION_MOVE_UP,
     ACTION_PAUSE, ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK,
@@ -68,6 +69,16 @@ STRINGS = {
 COLUMNS = 19
 ROWS = 19
 
+class ControlIds(object):
+    GRID = 3001
+    RESTART = 3002
+    ERROR = 3003
+    SUCCESS = 3004
+    TIME = 3005
+    EXIT = 3006
+    GAME_ID = 3007
+    COMMENTS = 3008
+
 
 def get_image(filename):
     return os.path.join(MEDIA_PATH, filename)
@@ -76,13 +87,12 @@ def _(string_id):
     if string_id in STRINGS:
         return addon.getLocalizedString(STRINGS[string_id])
     else:
-        xbmc.log('String is missing: %s' % string_id, level=xbmc.LOGDEBUG)
+        log('String is missing: %s' % string_id, LOGDEBUG)
         return string_id
 
 
-def log(msg):
-    xbmc.log('[ADDON][%s] %s' % (ADDON_NAME, msg.encode('utf-8')),
-             level=xbmc.LOGNOTICE)
+def log(msg, level=LOGNOTICE):
+    xbmc.log('[ADDON][%s] %s' % (ADDON_NAME, msg.encode('utf-8')), level=level)
 
 
 class Stone(object):
@@ -151,7 +161,6 @@ class Stone(object):
 class Grid(Goban):
 
     def __init__(self, rows, columns, x, y, width, height, sgf):
-        super(Grid, self).__init__(sgf)
         self.rows = rows
         self.columns = columns
         self.x = x
@@ -164,6 +173,7 @@ class Grid(Goban):
         self.current = None
         self.right = None
         self.comments_box = None
+        super(Grid, self).__init__(sgf)
         self.add_controls()
 
     def add_controls(self):
@@ -181,6 +191,16 @@ class Grid(Goban):
             height=self.stone_height,
             filename=get_image('shadow_%s.png' % self.next_player_name),
         )
+
+    def setup_labels(self, window):
+        self.comments_box = window.getControl(ControlIds.COMMENTS)
+        self.error_control = window.getControl(ControlIds.ERROR)
+        self.success_control = window.getControl(ControlIds.SUCCESS)
+        self.success_control.setLabel('Solved')
+        self.error_control.setLabel('Off path')
+
+        self.update_comment()
+        self.update_messages()
 
     def new_stone(self, x, y):
         """Add a new stone.
@@ -204,7 +224,7 @@ class Grid(Goban):
             alignment=2
         )
 
-    def setup_stones(self, window, right_control, comments):
+    def setup_stones(self, window, right_control):
         """Setup all stones in this grid.
 
         :param xbmcgui.Window: the window that the controls should be attached to
@@ -217,7 +237,12 @@ class Grid(Goban):
             [self.new_stone(x, y) for y in xrange(self.columns)]
             for x in xrange(self.rows)
         ]
-        self.current = self.grid[self.columns - 1][self.rows - 1]
+
+        # postition the marker on the upper right corner
+        self.current = self.grid[self.columns - 1][0]
+        self.position_marker.setPosition(
+            *self.grid[self.columns - 1][self.rows - 1].display_pos
+        )
 
         # this is done this way as opposed to doing it during stone
         # creation, because it was sloooowwwww
@@ -230,8 +255,7 @@ class Grid(Goban):
         right_control.controlLeft(self.control)
         self.right = right_control
 
-        self.comments_box = comments
-        self.update_comment()
+        self.setup_labels(window)
 
     def remove_stones(self, window):
         """Remove all stones from this grid.
@@ -251,10 +275,20 @@ class Grid(Goban):
 
         :param list previous_state: a list of lists with the previous state
         """
+        if not self.grid:
+            log('No grid found during board refresh', LOGDEBUG)
+            return
+
+        self.update_comment()
         for x in xrange(self.columns):
             for y in xrange(self.rows):
                 if not previous_state or self.board.board[x][y] != previous_state[x][y]:
                     self.grid[x][y].place_stone(self.board.board[x][y])
+
+    def load(self, sgf=None):
+        super(Grid, self).load(sgf if sgf is not None else self.sgf)
+        self.refresh_board()
+        self.update_comment()
 
     @property
     def size(self):
@@ -268,12 +302,20 @@ class Grid(Goban):
         return self.grid[row % self.rows][column % self.columns]
 
     def update_comment(self, comment=None):
+        if not self.comments_box:
+            log('No comments box found during comment refresh', LOGDEBUG)
+            return
+
         if comment is None:
             comment = self.current_comment.replace('FORCE', '').replace('RIGHT', '')
         self.comments_box.setText(comment)
 
+    def update_messages(self):
+        self.error_control.setVisible(not self.good_path)
+        self.success_control.setVisible(self.correct)
+
     def handle(self, action, focused):
-        """Handle the guven action.
+        """Handle the given action.
 
         :param xbmcgui,Action action: the action
         :param int focused: the id of the focused button
@@ -294,10 +336,11 @@ class Grid(Goban):
                 self.move(*self.current.pos)
                 self.random_move()
                 self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
-                self.update_comment()
+                self.update_messages()
             elif action_id in BACK:
                 self.back()
                 self.back()
+                self.update_messages()
             elif action_id in DIRECTIONS:
                 self.current = self.current.next(action_id)
                 self.position_marker.setPosition(*self.current.display_pos)
@@ -312,33 +355,16 @@ class Grid(Goban):
             pass
 
 class Game(xbmcgui.WindowXML):
-    CONTROL_ID_GRID = 3001
-    CONTROL_ID_RESTART = 3002
-    CONTROL_ID_ERROR = 3003
-    CONTROL_ID_SUCCESS = 3004
-    CONTROL_ID_TIME = 3005
-    CONTROL_ID_EXIT = 3006
-    CONTROL_ID_GAME_ID = 3007
-    CONTROL_ID_COMMENTS = 3008
-
     def onInit(self):
         log('initialising')
         # init vars
         self._game_id = ''
         # get controls
-        self.grid_control = self.getControl(self.CONTROL_ID_GRID)
-        self.error_control = self.getControl(self.CONTROL_ID_ERROR)
-        self.success_control = self.getControl(self.CONTROL_ID_SUCCESS)
-        self.time_control = self.getControl(self.CONTROL_ID_TIME)
-        self.game_id_control = self.getControl(self.CONTROL_ID_GAME_ID)
+        self.grid_control = self.getControl(ControlIds.GRID)
+        self.time_control = self.getControl(ControlIds.TIME)
+        self.game_id_control = self.getControl(ControlIds.GAME_ID)
 
-        self.success_control.setLabel('Solved')
-        self.error_control.setLabel('Off path')
-        self.success_control.setVisible(False)
-        self.error_control.setVisible(False)
-
-        self.reset_control = self.getControl(self.CONTROL_ID_RESTART)
-        self.comments_box = self.getControl(self.CONTROL_ID_COMMENTS)
+        self.reset_control = self.getControl(ControlIds.RESTART)
         # init the grid
         self.grid = self.get_grid()
         # start the timer thread
@@ -355,9 +381,6 @@ class Game(xbmcgui.WindowXML):
             if action_id == xbmcgui.ACTION_QUEUE_ITEM:
                 return self.exit()
             elif self.grid.handle(action, self.getFocusId()):
-                if action_id in SELECT:
-                    self.error_control.setVisible(not self.grid.good_path)
-                    self.success_control.setVisible(self.grid.correct)
                 return
             elif action_id in INFO:
                 pass
@@ -369,9 +392,9 @@ class Game(xbmcgui.WindowXML):
         pass
 
     def onClick(self, control_id):
-        if control_id == self.CONTROL_ID_RESTART:
+        if control_id == ControlIds.RESTART:
             self.restart_game()
-        elif control_id == self.CONTROL_ID_EXIT:
+        elif control_id == ControlIds.EXIT:
             self.exit()
 
     def get_grid(self):
@@ -388,13 +411,12 @@ class Game(xbmcgui.WindowXML):
             grid = Grid(ROWS, COLUMNS, x, y, width, height, bla)
         else:
             grid.remove_stones(self)
-        grid.setup_stones(self, self.reset_control, self.comments_box)
+        grid.setup_stones(self, self.reset_control)
         return grid
 
     def restart_game(self):
-        self.grid.remove_stones(self)
-        self.grid = None
-        self.get_grid()
+        self.grid.load(bla)
+        self.grid.refresh_board()
 
     def game_over(self):
         dialog = xbmcgui.Dialog()

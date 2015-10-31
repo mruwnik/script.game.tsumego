@@ -2,8 +2,6 @@
 
 
 # TODO
-* fix new game
-
 * show variations on the board
 * show a tree of all variations
 

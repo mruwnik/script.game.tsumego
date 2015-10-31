@@ -48,13 +48,23 @@ class Goban(object):
         :param 'b' or 'w': the player that is to play
         :param tuple: the position where the stone is to be placed
         """
+        current_state = self.board.copy().board
         self.board.play(pos[0], pos[1], player)
         for n in node:
             player, move = n.get_move()
             if move == pos:
-                return n
-        n = node.new_child()
-        n.set_move(player, pos)
+                break
+        else:
+            n = node.new_child()
+            n.set_move(player, pos)
+
+        # work out how to recreate the previous state
+        size = self.game.get_size()
+        n.diff = [
+            (x, y, current_state[x][y])
+            for x in xrange(size) for y in xrange(size)
+            if current_state[x][y] != self.board.board[x][y]
+        ]
         return n
 
     def move(self, x, y):
@@ -66,8 +76,8 @@ class Goban(object):
     def back(self):
         """Go back one move, updated the board."""
         if self.node.parent:
-            x, y = self.node.get_move()[1]
-            self.board.board[x][y] = None
+            for x, y, player in self.node.diff:
+                self.board.board[x][y] = player
             self.node = self.node.parent
 
     def random_move(self):
