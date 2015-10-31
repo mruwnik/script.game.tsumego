@@ -9,9 +9,10 @@ from gomill import sgf, sgf_moves
 class Goban(object):
     """A representation of a goban."""
 
-    def __init__(self, sgf_string):
+    def __init__(self, *args, **kwargs):
         """Initialise the goban from the given SGF string."""
-        self.load(sgf_string)
+        self.load(kwargs.pop('sgf_string'))
+        super(Goban, self).__init__(*args, **kwargs)
 
     def load(self, sgf_string):
         """load the given SGF string."""

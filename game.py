@@ -97,7 +97,7 @@ def log(msg, level=LOGNOTICE):
     xbmc.log('[ADDON][%s] %s' % (ADDON_NAME, msg.encode('utf-8')), level=level)
 
 
-class Stone(object):
+class Tile(object):
 
     def __init__(self, x, y, grid, width, height):
         self.x = x
@@ -107,36 +107,20 @@ class Stone(object):
         self.x_position = self.grid.y + height * y
         self.width = width
         self.height = height
-        self.image = xbmcgui.ControlImage(
-            x=self.x_position,
-            y=self.y_position,
-            width=self.width,
-            height=self.height,
-            filename=get_image('empty.png'),
-        )
+        self.add_controls()
 
-    def place_stone(self, player):
-        """Place a stone for the given player on this spot.
+    def add_controls(self):
+        pass
 
-        To remove a stone, pass None
-
-        :param str or None player: the code of the player to be placed
-        """
-        if player == 'w':
-            stone = 'white.png'
-        elif player == 'b':
-            stone = 'black.png'
-        elif player == 'good' or player == 'bad':
-            stone = '%s_spot.png' % player
-        else:
-            stone = 'empty.png'
-        self.image.setImage(get_image(stone))
+    @property
+    def controls(self):
+        return []
 
     def next(self, direction):
         """Get the next spot in the given direction, wrapping arount the edges.
 
         :param int direction: a keyboard arrow code
-        :rtype: Stone
+        :rtype: Tile
         :return: the next spot in the given direction
         """
         if direction == ACTION_MOVE_DOWN:
@@ -162,40 +146,196 @@ class Stone(object):
         return '(%d, %d)' % (self.x, self.y)
 
 
-class Grid(Goban):
+class Grid(object):
 
-    def __init__(self, rows, columns, x, y, width, height, sgf):
+    def __init__(self, rows, columns, x, y, width, height, *args, **kwargs):
         self.rows = rows
         self.columns = columns
         self.x = x
         self.y = y
         self.width = width
         self.height = height
-        self.stone_width = self.width / self.columns
-        self.stone_height = self.height / self.rows
+        self.tile_width = self.width / self.columns
+        self.tile_height = self.height / self.rows
         self.grid = []
         self.current = None
         self.right = None
-        self.comments_box = None
-        self.hints = False
-        super(Grid, self).__init__(sgf)
         self.add_controls()
+        super(Grid, self).__init__(*args, **kwargs)
 
     def add_controls(self):
         self.control = xbmcgui.ControlButton(
             x=self.x,
             y=self.y,
-            width=self.stone_width,
-            height=self.stone_height,
+            width=self.tile_width,
+            height=self.tile_height,
             label=''
         )
         self.position_marker = xbmcgui.ControlImage(
             x=self.x,
             y=self.y,
-            width=self.stone_width,
-            height=self.stone_height,
-            filename=get_image('shadow_%s.png' % self.next_player_name),
+            width=self.tile_width,
+            height=self.tile_height,
+            filename=get_image('selected.png'),
         )
+
+    def setup_labels(self, window):
+        """Set up all labels.
+
+        :param xbmcgui.Window window: the window in which the controls are
+        """
+        pass
+
+    @property
+    def labels(self):
+        return []
+
+    def new_tile(self, x, y):
+        """Add a new tile.
+
+        :param int x: the column in which this tile is
+        :param int y: the row that the tile is in
+        """
+        return Tile(x, y, self, self.tile_width, self.tile_height)
+
+    def add_label(self, x, y, label):
+        return xbmcgui.ControlLabel(
+            x=self.y + self.tile_height * y,
+            y=self.x + self.tile_width * (self.rows - x),
+            width=self.tile_width,
+            height=self.tile_height,
+            label='[B]%s[/B]' % label,
+            font='font30',
+#            textColor='0xFFFF3300',
+            alignment=2
+        )
+
+    def setup_tiles(self, window, right_control):
+        """Setup all tiles in this grid.
+
+        :param xbmcgui.Window: the window that the controls should be attached to
+        :param xbmcgui.Control: the control that is to the right of the grid
+        """
+        # add any labels
+        self.label_controls = [self.add_label(x, y, label) for (x, y), label in self.labels]
+
+        self.grid = [
+            [self.new_tile(x, y) for y in xrange(self.columns)]
+            for x in xrange(self.rows)
+        ]
+
+        # postition the marker on the upper right corner
+        self.current = self.grid[self.columns - 1][0]
+        self.position_marker.setPosition(
+            *self.grid[self.columns - 1][self.rows - 1].display_pos
+        )
+
+        # this is done this way as opposed to doing it during tile
+        # creation, because it was sloooowwwww
+        tile_controls = [c for row in self.grid for tile in row for c in tile.controls]
+        controls = [self.position_marker, self.control]
+
+        window.addControls(tile_controls + controls + self.label_controls)
+
+        # connect the control to the right with this grid
+        right_control.controlLeft(self.control)
+        self.right = right_control
+
+        self.setup_labels(window)
+
+    def remove_tiles(self, window):
+        """Remove all tiles from this grid.
+
+        :param xbmcgui.Window: the window that the controls were attached to
+        """
+        tile_controls = [c for row in self.grid for tile in row for c in tile.controls]
+        controls = [self.position_marker, self.control]
+        window.removeControls(tile_controls + controls + self.label_controls)
+        self.grid = []
+
+    @property
+    def size(self):
+        return self.rows, self.columns
+
+    def at(self, row, column):
+        return self.grid[row % self.rows][column % self.columns]
+
+    def handle(self, action, focused):
+        """Handle the given action.
+
+        :param xbmcgui,Action action: the action
+        :param int focused: the id of the focused button
+        :returns: whether the action was handled, or None if nothing was done
+        """
+        # if a different control is focused, move the current tile
+        # to the left most one, so that it will get rolled over when
+        # control returns to the grid
+        if focused != self.control.getId():
+            self.current = self.grid[self.current.x][0]
+            return False
+        self.control.controlRight(self.control)
+
+        try:
+            action_id = action.getId()
+            if action_id in DIRECTIONS:
+                self.current = self.current.next(action_id)
+                self.position_marker.setPosition(*self.current.display_pos)
+                if self.current.y == self.size[1] - 1:
+                    self.control.controlRight(self.right)
+                return True
+            else:
+                return self.handle_key(action_id)
+        except KeyError as e:
+            log(str(e))
+
+    def handle_key(self, key):
+        """Handle the given key code.
+
+        :returns: whether the key was handled
+        """
+        pass
+
+
+class Stone(Tile):
+
+    def add_controls(self):
+        self.image = xbmcgui.ControlImage(
+            x=self.x_position,
+            y=self.y_position,
+            width=self.width,
+            height=self.height,
+            filename=get_image('empty.png'),
+        )
+
+    @property
+    def controls(self):
+        return [self.image]
+
+    def place_stone(self, player):
+        """Place a stone for the given player on this spot.
+
+        To remove a stone, pass None
+
+        :param str or None player: the code of the player to be placed
+        """
+        if player == 'w':
+            stone = 'white.png'
+        elif player == 'b':
+            stone = 'black.png'
+        elif player == 'good' or player == 'bad':
+            stone = '%s_spot.png' % player
+        else:
+            stone = 'empty.png'
+        self.image.setImage(get_image(stone))
+
+
+class GobanGrid(Grid, Goban):
+
+    def __init__(self, *args, **kwargs):
+        self.comments_box = None
+        self.hints = False
+        super(GobanGrid, self).__init__(*args, **kwargs)
+        self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
 
     def setup_labels(self, window):
         """Set up all status messages and the comments box.
@@ -211,70 +351,15 @@ class Grid(Goban):
         self.update_comment()
         self.update_messages()
 
-    def new_stone(self, x, y):
+    def new_tile(self, x, y):
         """Add a new stone.
 
         :param int x: the column in which this stone is
         :param int y: the row that the stone is in
         """
-        stone = Stone(x, y, self, self.stone_width, self.stone_height)
+        stone = Stone(x, y, self, self.tile_width, self.tile_height)
         stone.place_stone(self.board.board[x][y])
         return stone
-
-    def add_label(self, x, y, label):
-        return xbmcgui.ControlLabel(
-            x=self.y + self.stone_height * y,
-            y=self.x + self.stone_width * (self.rows - x),
-            width=self.stone_width,
-            height=self.stone_height,
-            label='[B]%s[/B]' % label,
-            font='font30',
-#            textColor='0xFFFF3300',
-            alignment=2
-        )
-
-    def setup_stones(self, window, right_control):
-        """Setup all stones in this grid.
-
-        :param xbmcgui.Window: the window that the controls should be attached to
-        :param xbmcgui.Control: the control that is to the right of the grid
-        """
-        # add any labels
-        self.label_controls = [self.add_label(x, y, label) for (x, y), label in self.labels]
-
-        self.grid = [
-            [self.new_stone(x, y) for y in xrange(self.columns)]
-            for x in xrange(self.rows)
-        ]
-
-        # postition the marker on the upper right corner
-        self.current = self.grid[self.columns - 1][0]
-        self.position_marker.setPosition(
-            *self.grid[self.columns - 1][self.rows - 1].display_pos
-        )
-
-        # this is done this way as opposed to doing it during stone
-        # creation, because it was sloooowwwww
-        stones = [stone.image for row in self.grid for stone in row]
-        controls = [self.position_marker, self.control]
-
-        window.addControls(stones + controls + self.label_controls)
-
-        # connect the control to the right with this grid
-        right_control.controlLeft(self.control)
-        self.right = right_control
-
-        self.setup_labels(window)
-
-    def remove_stones(self, window):
-        """Remove all stones from this grid.
-
-        :param xbmcgui.Window: the window that the controls were attached to
-        """
-        stones = [stone.image for row in self.grid for stone in row]
-        controls = [self.position_marker, self.control]
-        window.removeControls(stones + controls + self.label_controls)
-        self.grid = []
 
     def refresh_board(self, previous_state=None):
         """Refresh the contents of the grid.
@@ -302,13 +387,6 @@ class Grid(Goban):
         """
         super(Grid, self).load(sgf if sgf is not None else self.sgf)
         self.refresh_board()
-
-    @property
-    def size(self):
-        return self.rows, self.columns
-
-    def at(self, row, column):
-        return self.grid[row % self.rows][column % self.columns]
 
     def toggle_hints(self, state=None):
         """Toggle the display of hints on the board.
@@ -362,45 +440,27 @@ class Grid(Goban):
         for child in self.node:
             mark_node(child, 'good' if self.correct_path(child) else 'bad')
 
-    def handle(self, action, focused):
-        """Handle the given action.
+    def handle_key(self, key):
+        """Handle the given key.
 
-        :param xbmcgui,Action action: the action
-        :param int focused: the id of the focused button
+        :param int key: the key code
         :returns: whether the action was handled
         """
-        # if a different control is focused, move the current spot
-        # to the left most one, so that it will get rolled over when
-        # control returns to the grid
-        if focused != self.control.getId():
-            self.current = self.grid[self.current.x][0]
+        prev_state = self.board.copy().board
+        if key in SELECT:
+            self.move(*self.current.pos)
+            self.random_move()
+            self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
+            self.update_messages()
+        elif key in BACK:
+            self.back()
+            self.back()
+            self.update_messages()
+        else:
             return False
-        self.control.controlRight(self.control)
+        self.refresh_board(prev_state)
+        return True
 
-        action_id = action.getId()
-        try:
-            prev_state = self.board.copy().board
-            if action_id in SELECT:
-                self.move(*self.current.pos)
-                self.random_move()
-                self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
-                self.update_messages()
-            elif action_id in BACK:
-                self.back()
-                self.back()
-                self.update_messages()
-            elif action_id in DIRECTIONS:
-                self.current = self.current.next(action_id)
-                self.position_marker.setPosition(*self.current.display_pos)
-                if self.current.y == self.size[1] - 1:
-                    self.control.controlRight(self.right)
-            else:
-                return False
-            self.refresh_board(prev_state)
-            return True
-        except KeyError as e:
-            log(str(e))
-            pass
 
 class Game(xbmcgui.WindowXML):
     def onInit(self):
@@ -455,12 +515,15 @@ class Game(xbmcgui.WindowXML):
         if not grid:
             # get xml defined position and dimension for the grid
             x, y = self.grid_control.getPosition()
-            width = self.grid_control.getWidth()
-            height = self.grid_control.getHeight()
-            grid = Grid(ROWS, COLUMNS, x, y, width, height, bla)
+            grid = GobanGrid(
+                ROWS, COLUMNS, x=x, y=y,
+                width=self.grid_control.getWidth(),
+                height=self.grid_control.getHeight(),
+                sgf_string=bla
+            )
         else:
-            grid.remove_stones(self)
-        grid.setup_stones(self, self.reset_control)
+            grid.remove_tiles(self)
+        grid.setup_tiles(self, self.reset_control)
         return grid
 
     def restart_game(self):
