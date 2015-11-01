@@ -1,0 +1,117 @@
+(;
+;AB[qa][rb][rc][rd][od][pe][qe][oe][na][ne][me][le][kd][jc][kb][la]
+AW[qb][qc][pd][nd][md][mb][ma][nb][lc][ob]
+C[Kill white]
+(;B[ld]
+(;W[oc]
+;B[mc]
+(;W[nc]
+;B[lb]
+;W[pc]
+;B[pa]C[RIGHT
+Best solution!])
+(;W[qd]
+(;B[pa]
+;W[pb]
+(;B[nc]
+;W[oa]C[W Alive :(])
+(;B[oa]
+;W[ra]))
+(;B[pb]
+(;W[oa]
+;B[pc])
+(;W[pc]
+(;B[nc]
+;W[pa])
+(;B[pa]
+;W[nc]
+(;B[oa]
+;W[ra]C[You completely lost])
+(;B[ra]
+(;W[oa]
+;B[lb]C[RIGHT
+W Dead. But B can do it faster.])
+(;W[lb]
+;B[oa]C[RIGHT
+Not best solution!])))))))
+(;W[pa]
+;B[oc]
+;W[pc]
+;B[qd]
+;W[nc]
+;B[pb]
+(;W[lb]
+;B[oa]C[RIGHT
+Not Best solution])
+(;W[oa]
+;B[lb]C[W dead]))
+(;W[pb]
+;B[nc]
+;W[oc]
+(;B[qd]
+;W[mc]C[W alive])
+(;B[mc]
+;W[qd]C[W alive])))
+(;B[pc]
+;W[nc]
+;B[pb]
+;W[oa]
+;B[ld]
+;W[lb]C[W alive])
+(;B[oc]
+;W[nc]
+(;B[oa]
+;W[pa]
+;B[pb]
+;W[pc]
+;B[qd]
+;W[pb])
+(;B[qd]
+(;W[pc])
+(;W[oa]
+(;B[ld]
+;W[lb]
+;B[pb]
+;W[pa]
+;B[pc])
+(;B[lb]
+;W[ld]
+;B[pc]
+;W[pb]))))
+(;B[pa]
+;W[oa]
+;B[oc]
+;W[pb]
+;B[ra]
+;W[nc]
+;B[lb]
+;W[ld]C[W alive])
+(;B[qd]
+(;W[pc]
+;B[oc]
+;W[nc]
+;B[pb]
+;W[oa]C[W alive])
+(;W[nc]
+;B[oc]
+;W[pb]
+;B[lb]
+;W[ld]C[W Alive]))
+(;B[pb]
+;W[pc]
+;B[oc]
+;W[pa]
+;B[qd]
+(;W[pb]
+;B[nc]
+;W[mc]C[RIGHT
+not best solution])
+(;W[nc]
+;B[pb]
+;W[oa]
+;B[lb]
+;W[ld]C[W alive]))
+(;B[lb]
+;W[oc]
+;B[mc]
+;W[ld]C[W alive :(]))

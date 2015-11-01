@@ -1,0 +1,24 @@
+(;AB[jj]AB[ji]AW[ki]AW[kj]AB[kk]AB[hi]AW[jh]AW[ih]AB[kh]AB[kg]AB[lg]AW[jf]AW[je]AB[jd]AB[jc]AW[lh]AW[lf]AB[md]AB[nd]AB[od]AW[jk]LB[lj:b]TR[jk]AW[pe]C[White just played the triangle stone. You have 2 choices : defend in ( a ) or go for an hypothetic ladder in ( b ). Does it really worth the risk ?]AW[hj]LB[ii:a]AW[qe]AP[goproblems]
+(;B[lj]
+(;W[li]C[CHOICE]
+(;B[mi];W[mh]
+(;B[nh];W[mg]
+(;B[mf];W[ng]
+(;B[og];W[nf]
+(;B[of];W[me];B[ne];W[mf]
+(;B[kf];W[le]
+(;B[ke];W[ld]
+(;B[lc];W[kd];B[kc]C[Yeah ! Now they call you ladder master.RIGHT])
+(;B[kd];W[lc]C[I can't believe you let him escape !]))
+(;B[ld];W[ke]C[Oooh, seriously ?]))
+(;B[le];W[kf]C[Oooh, seriously ?]))
+(;B[me];W[kf]C[Look at all these cutting points...])
+(;B[ne];W[of]C[White has connected to a friend. Look at all these cutting points...]))
+(;B[nf];W[og]C[White has escaped. Look at all these cutting points.]))
+(;B[ng];W[mf]C[Look at all these cutting points...]))
+(;B[mg];W[nh]C[White has escaped, black is going to have a hard time now...]))
+(;B[mh];W[mi]
+(;B[ni];W[mj]C[White has escaped, black is going to have a hard time now...])
+(;B[mj];W[ni]C[White has escaped, black is going to have a hard time now...])))
+(;W[ii];B[li];W[kf]C[Will probably end up like this if white read the ladder. Yet it is still a better result than just defend at J11.]))
+(;B[ii]C[Do you really like this result ? It's time to take some reading and go for the ladder.]))

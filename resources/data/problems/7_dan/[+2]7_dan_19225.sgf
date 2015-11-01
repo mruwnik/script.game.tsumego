@@ -1,0 +1,17 @@
+(;AB[qd]AB[sd]AB[rc]AB[qe]AB[qf]AB[rf]AB[rg]AB[rh]AW[ri]AW[qi]AW[qh]AW[qg]AW[pf]AW[pe]AW[pd]AW[qc]AW[qb]AW[rb]C[Yes or No ?FORCE]LB[ob:Yes]LB[oc:No]AP[goproblems]
+(;W[oc];B[ob]AW[rg]AW[rh]AB[ri]AB[qi]AB[qh]AB[qg]AW[rf]AW[qf]AB[pf]AB[pe]AB[pd]AW[qe]AW[qd]AB[qc]AB[qb]AB[rb]AW[rc]AW[sd]AB[se]TR[se]C[then live]
+(;W[sf];B[sh];W[re]C[Right !RIGHT])
+(;W[sh];B[sf];W[re];B[sb];W[sg];B[sc]C[dead])
+(;W[re];B[sb]
+(;W[sf];B[sc]
+(;W[sh];B[rd]C[ko])
+(;W[rd];B[sh]))
+(;W[sh];B[sf];W[sg];B[sc]C[dead]))
+(;W[sb];B[re];W[sh];B[sf]C[dead shape, white is dead]))
+(;W[ob];B[oc]C[then kill black]
+(;W[se];B[sf]
+(;W[re];B[sh]C[black alive])
+(;W[sh];B[re]C[black alive]))
+(;W[sb];B[se]C[black alive])
+(;W[rd];B[re]C[black alive])
+(;W[sh];B[re]C[black alive])))

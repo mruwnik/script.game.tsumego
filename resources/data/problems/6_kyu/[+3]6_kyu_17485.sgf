@@ -1,0 +1,40 @@
+(;AW[cr]AW[br]AW[dq]AW[eq]AW[dp]AW[cp]AW[hs]AW[jr]AW[jq]AW[ip]AW[io]AW[go]AW[fn]AW[in]AW[jn]AB[dr]AB[er]AB[fs]AB[gr]AB[fq]AB[fp]AB[gp]AB[hp]AB[hq]AB[iq]AW[ko]AW[lo]AW[lp]AW[lq]AW[cn]AW[dn]AW[gn]AW[ds]TR[ds]C[White just played the marked stone. Can Black afford to tenuki (10 points gote)? Play S (D8) if you think the marked stone is sente or play T (F8) if you think black can tenuki.FORCE]LB[fl:T]LB[dl:S]AP[goproblems]
+(;B[fl]C[];W[cs]C[Great, 10 extra points! But how do you defend against White C1 now?]
+(;B[es];W[gs]
+(;B[fr];W[ir]C[No... this won't work... you only have one eye now... are you sure you were able to tenuki?])
+(;B[is];W[fr]C[Ouch...])
+(;B[hr];W[fr]C[Ouch...]))
+(;B[gs];W[es]
+(;B[is];W[ir]C[Only one real eye... are you sure you were able to tenuki?])
+(;B[hr];W[is]C[Only one real eye... are you sure you were able to tenuki?])
+(;B[ir];W[is]C[Only one real eye... are you sure you were able to tenuki?]))
+(;B[hr];W[is]
+(;B[gs];W[es]C[Only one real eye... are you sure you were able to tenuki?])
+(;B[es];W[gs]C[Only one real eye... are you sure you were able to tenuki?]))
+(;B[ir];W[is]
+(;B[es];W[gs]C[Only one real eye... are you sure you were able to tenuki?])
+(;B[gs];W[es]C[Only one real eye... are you sure you were able to tenuki?]))
+(;B[is];W[ir]
+(;B[es]
+(;W[gs];B[hr]C[Correct! Tenuki was the right choice.RIGHT])
+(;W[hr]C[CHOICE];B[gs]C[Correct! Tenuki was the right choice.RIGHT]))
+(;B[gs];W[es]C[Only one real eye... F2 and H1 are false... are you sure you were able to tenuki?])
+(;B[hr];W[es]C[Only one real eye... F2 and H1 are false... are you sure you were able to tenuki?])))
+(;B[dl]C[FORCE];W[dk]AB[cn]AB[dn]AB[cp]AB[dp]AB[dq]AB[eq]AW[cq]AW[dr]AW[er]AB[br]AB[cr]AB[ds]AW[fq]AW[fp]AW[gp]AW[hp]AW[hq]AW[iq]AW[gr]AW[fs]AB[hs]AB[jr]AB[jq]AB[lq]AB[lp]AB[lo]AB[ko]AB[jn]AB[fn]AB[gn]AB[go]AB[in]AB[io]AB[ip]C[Really? Show me why you had to defend.]
+(;B[cs];W[is]
+(;B[es];W[ir]
+(;B[fr];W[er]C[Nope, nothing here... maybe you could have affored the tenuki after all...])
+(;B[gs];W[fr]C[Nope, nothing here... maybe you could have affored the tenuki after all...])
+(;B[hr];W[fr]C[Nope, nothing here... maybe you could have affored the tenuki after all...]))
+(;B[ir];W[es]
+(;B[hr];W[gs]C[Nope, nothing here... maybe you could have affored the tenuki after all...])
+(;B[gs];W[hr]C[Ouch...]))
+(;B[hr];W[ir]C[Now white easily has two eyes... maybe you could have affored the tenuki after all...])
+(;B[gs];W[hr]C[Nope, nothing here, G1 will definitly be a second eye... maybe you could have affored the tenuki after all...])
+(;B[js];W[ir]C[Now white easily has two eyes... maybe you could have affored the tenuki after all...]))
+(;B[is];W[gs]C[Nothing can stop white to get E3 and make a second eye now... maybe you could have affored the tenuki after all...])
+(;B[ir];W[gs]C[Nothing can stop white to get E3 and make a second eye now... maybe you could have affored the tenuki after all...])
+(;B[js];W[gs]C[Nothing can stop white to get E3 and make a second eye now... maybe you could have affored the tenuki after all...])
+(;B[hr]C[];W[gs]C[Nothing can stop white to get E3 and make a second eye now... maybe you could have affored the tenuki after all...])
+(;B[gs];W[is]C[With your G1 stones captured, White easily has a second eye now... maybe you could have affored the tenuki after all...])
+(;B[es];W[cs]C[Ouch, White can easily get two eyes now... maybe you could have affored the tenuki after all...])))

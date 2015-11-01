@@ -1,0 +1,44 @@
+(;SZ[9]AW[ae]AW[be]AW[ce]AW[cf]AW[df]AW[ef]AW[ff]AW[fg]AW[gg]AW[gh]AW[gi]AB[af]AB[bf]AB[cg]AB[dg]AB[eg]AB[bh]AB[fh]AB[ei]AB[fi]LB[ec:A]C[Is black's territory safe? If you think so then play at 'A' otherwise strengthen black's region as necessary.]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]PW[White]PB[Black]PL[B]
+(;B[ec];W[di]
+(;B[eh];W[ah]
+(;B[bg];W[bi]
+(;B[ch];W[ci]C[Seki.])
+(;B[ag]
+(;W[ci];B[ai];W[fc];B[ch];W[ah]C[Ko for life.])
+(;W[ch];B[ai]C[Ko for life.]))
+(;B[dh];W[ci]C[Seki])
+(;B[ci];W[ch]C[Seki]))
+(;B[ci];W[bg];B[dh]C[Black lives but has lost territory.])
+(;B[bi];W[bg];B[ci];W[dh]C[Black dies.])
+(;B[ch];W[bg]C[Black dies.]
+(;B[ci];W[ag])
+(;B[bi];W[ag])))
+(;B[ci]
+(;W[eh]
+(;B[dh]C[Black lives but has lost territory.])
+(;B[ch];W[ah];B[bg];W[ai]C[Black dies]))
+(;W[ah];B[bg];W[eh]
+(;B[dh]C[Black lives but has lost territory.])
+(;B[ch];W[ai]C[Black dies.])))
+(;B[ch];W[ah]
+(;B[bg];W[eh]
+(;B[ci];W[ai]C[Black dies.])
+(;B[ai];W[ci]))
+(;B[eh];W[bg]
+(;B[ci];W[ag])
+(;B[bi];W[ag])))
+(;B[dh]
+(;W[ci];B[bi];W[eh];B[ag]C[Black lives but has lost territory.])
+(;W[ah];B[ci];W[bg]C[Black lives but has lost territory.])))
+(;B[bg]C[Black lives.RIGHT])
+(;B[ag];W[di];B[eh];W[bi]
+(;B[ah];W[ch]C[Seki])
+(;B[ch];W[ah];B[ai]C[Ko for life.]))
+(;B[ah]C[Black lives.RIGHT])
+(;B[ai]C[Black lives.RIGHT])
+(;B[bi]C[Black lives.RIGHT])
+(;B[ci]C[Black lives.RIGHT])
+(;B[ch]C[Black lives.RIGHT])
+(;B[di]C[Black lives.RIGHT])
+(;B[eh]C[Black lives.RIGHT])
+(;B[dh]C[Black lives.RIGHT]))

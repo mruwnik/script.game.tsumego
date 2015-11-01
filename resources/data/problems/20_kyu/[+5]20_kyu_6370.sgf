@@ -1,0 +1,36 @@
+(;AB[sd]AW[sc]AW[rc]AW[rd]AW[qd]AW[pd]AW[pc]AW[pb]AW[pa]AB[qa]AB[qb]AB[ob]AB[nb]AB[nd]AB[oe]AB[qe]AB[pe]AB[re]AP[goproblems]
+(;B[rb]
+(;W[ra]
+(;B[sa]
+(;W[qc]
+(;B[ra]C[Black creates a bulky 5 dead shape. If White captures Black will play at S19 again.RIGHT])
+(;B[sb];W[ra])
+(;B[od];W[sb])
+(;B[oc];W[sb])
+(;B[oa];W[sb])
+(;B[se];W[sb]))
+(;W[sb];B[ra]C[Black creates a bulky 5 dead shape. If White captures Black will play at S19 again.RIGHT]))
+(;B[sb];W[qc])
+(;B[od];W[qc]
+(;B[sb];W[sa])
+(;B[oc];W[sb])
+(;B[oa];W[sb])
+(;B[sa];W[sb]))
+(;B[oc];W[qc]
+(;B[od];W[sb])
+(;B[oa];W[sb])
+(;B[sb];W[sa])
+(;B[sa];W[sb]))
+(;B[oa];W[qc]
+(;B[od];W[sb])
+(;B[oc];W[sb])
+(;B[sb];W[sa])
+(;B[sa];W[sb])))
+(;W[sb];B[ra]C[No seki; Black can make a bulky 5 single eye at either point.RIGHT]MA[qc]MA[sa]))
+(;B[ra];W[rb]C[White lives.])
+(;B[sb];W[rb];B[ra];W[qc])
+(;B[qc];W[ra])
+(;B[od];W[rb];B[ra];W[sa];B[sb];W[qc])
+(;B[oc];W[rb];B[ra];W[sa];B[sb];W[qc])
+(;B[oa];W[rb];B[ra];W[sa];B[sb];W[qc])
+(;B[sa];W[rb]C[White lives. If Black connects White captures 4 in a row.]))

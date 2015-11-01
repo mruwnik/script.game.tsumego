@@ -1,0 +1,14 @@
+(;
+;AW[ea][fa][ia][ja][ka][na][oa][pa][qa][sa][db][eb][jb][kb][lb][ob][pb][rb][sb][dc][lc][pc][qc][sc][dd][jd][ld][ee][ie][me][re][cf][df][ef][ff][hf][if][jf][mf][nf][qf][rf][sf][cg][hg][jg][ng][rg][ch][eh][nh][oh][qh][rh][bi][ci][ei][hi][oi][qi][si][bj][ej][nj][oj][pj][rj][ak][bk][mk][nk][ok][pk][qk][sk][al][dl][ll][ml][nl][rl][km][lm][om][pm][qm][rm][kn][pn][qn][do][po][lp][fq][gq][hq][iq][kq][lq][pq][qq][gr][jr][lr][mr][ks]
+AB[ga][ha][ma][fb][ib][mb][nb][ec][gc][ic][jc][nc][oc][rc][ed][md][nd][od][pd][qd][rd][sd][fe][ge][le][ne][oe][pe][qe][se][gf][lf][of][pf][dg][eg][fg][gg][ig][kg][mg][og][qg][dh][fh][hh][jh][mh][ph][sh][di][fi][ii][ki][mi][ni][pi][cj][dj][hj][jj][lj][mj][ck][fk][gk][lk][bl][el][gl][hl][jl][kl][sl][am][bm][dm][em][jm][mm][nm][sm][dn][hn][jn][ln][mn][nn][on][rn][sn][eo][fo][go][io][ko][lo][mo][oo][qo][ro][dp][fp][hp][ip][jp][kp][mp][pp][qp][dq][eq][jq][nq][oq][rq][er][fr][nr]
+C[The next move will decide the game. No pressure!]
+(;B[kd];W[ke];B[kc];W[pg]
+C[RIGHT Good. Your big ugly blob is alive in seki.]
+)
+(;B[pg];W[kd]
+C[White connects out, and now has more than enough liberties to win the capturing race.])
+(;B[la];W[kd]
+C[White connects out, and now has more than enough liberties to win the capturing race.])
+(;B[mc];W[kd]
+C[White connects out, and now has more than enough liberties to win the capturing race.])
+)

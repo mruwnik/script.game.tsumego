@@ -1,0 +1,10 @@
+(;AW[bb]AW[cc]AW[dd]AW[ed]AW[ec]AB[db]AB[eb]AB[fb]AB[fc]AB[fd]AB[fe]AB[ee]AB[de]AB[bd]AB[gb]AB[hb]AW[gc]AW[hc]AW[ic]AW[ib]AW[ge]AW[gf]AW[fg]AW[df]AW[cf]AW[ce]AP[goproblems]
+(;B[cd];W[dc];B[bc];W[cb];B[ab];W[be]
+(;B[ca]C[RIGHT])
+(;B[ba]C[RIGHT]))
+(;B[cb];W[bc];B[cd];W[dc];B[ba];W[be]C[CHOICE])
+(;B[bc];W[cd];B[cb];W[ab]
+(;B[ba];W[be];B[ca]C[Not the best solution, there is another one that captures white's stonesRIGHT]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb];W[ad]C[Not the best solution, there is another one that captures white's stones]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb];B[ha]C[Not the best solution, there is another one that captures white's stonesRIGHT]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb])
+(;B[ca];W[be]
+(;B[ha]C[Not the best solution, there is another one that captures white's stonesRIGHT]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb];W[ad]C[Not the best solution, there is another one that captures white's stones]AW[ec]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb];B[ba]C[Not the best solution, there is another one that captures white's stonesRIGHT]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb])
+(;B[ea]C[Not the best solution, there is another one that captures white's stonesRIGHT]TR[ec]TR[ed]TR[dd]TR[cc]TR[bb]))))

@@ -1,0 +1,13 @@
+(;AB[pd]AB[jd]AW[nc]TR[nc]C[White invades your corner at the marked stone. What is the proper move?]AP[goproblems]
+(;B[oc]C[];W[nd]C[This is the correct start.];B[pf]C[Yes! This is the correct joseki. White may still invade at either marked points.RIGHT]TR[qc]TR[qe])
+(;B[pc]C[Though this is a solid move the enclose the corner, there is a move that better utilises the pincer at K16])
+(;B[od]C[This allows white to slide into your corner and create a base.])
+(;B[qd]C[You're just giving white eyespace!])
+(;B[qc]C[This is a bad move as you do not have an extension, creating little territory while failing to provide a strong defense to White's invasion.])
+(;B[nd]C[This allows white to slide into the corner and create a base.])
+(;B[ne]C[The 'capping move' is a good idea, but white can slide into the corner at Q18 and then extend towards your left stone.])
+(;B[md]C[The shoulder hit is a good idea but gives White potential access to your corner and side.])
+(;B[qf]C[If not for the stone at K16, this would be a standard move, but because you have the pincer already, there are better moves.])
+(;B[pf]C[If not for the stone at K16, this would be a standard move, but since you already have a pincer there, there are better moves.])
+(;B[oe]C[Trying to enclose White with this move isn't a bad idea, but White can make a base on the side.])
+(;B[pb];W[ne]C[White can jump out, seperating the stone on the left.]))

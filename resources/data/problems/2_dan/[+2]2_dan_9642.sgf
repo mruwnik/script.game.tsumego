@@ -1,0 +1,10 @@
+(;AW[ra]AW[sb]AB[qa]AB[qb]AB[qc]AB[pc]AB[rc]AB[sc]AB[qd]AW[pb]AW[oc]AW[pd]AW[qe]AB[re]AB[se]AW[rf]AW[sf]AW[ob]AW[nc]AW[pf]C[White to get the optimal result. Play at T (O14) if you want to Tenuki.]LB[nf:T]AP[goproblems]
+(;W[rd];B[sd];W[pa]C[Seki, but one point worse than the right answer. You did not need to sacrifice that stone.])
+(;W[pa];B[nf]C[Black tenukies! If you think White does wise to play a move here just play it. Otherwise play at N for No (O16).FORCE]LB[nd:N]
+(;W[nd]C[];B[rb]C[If  Black does not play here until the game ends then it would be counted as seki. But Black decides to play here anyway.]
+(;W[rd];B[sa];W[sd]C[Both sides have 4 points, cancelling each other out. So the result is the same as it would have been if it had remained a seki.RIGHT])
+(;W[sd];B[sa];W[rd]C[Both sides have 4 points, cancelling each other out. So the result is the same as it would have been if it had remained a seki.RIGHT]))
+(;W[rd];B[sd]C[Seki, but one point worse than the right answer. You did not need to sacrifice that stone.])
+(;W[sd];B[rd]C[Seki, but one point worse than the right answer. You did not need to sacrifice that stone.]))
+(;W[nf];B[rb])
+(;W[sd];B[rd];W[pa]C[Seki, but one point worse than the right answer. You did not need to sacrifice that stone.]))

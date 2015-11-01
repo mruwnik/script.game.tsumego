@@ -1,0 +1,121 @@
+(;AB[qc]AW[pd]AW[qd]AW[re]AW[qf]AB[rd]AB[rc]AB[pc]AW[oc]AB[ob]AB[nb]AW[nc]AW[mc]AW[mb]AW[na]AB[pb]AW[qa]LB[qa:A]AW[kb]C[White just played A.Black to play the best move.]AP[goproblems]
+(;B[sd];W[sb]
+(;B[rb]
+(;W[oa]
+(;B[pa];W[ra]
+(;B[ma];W[na]
+(;B[sc];W[se];B[sa]C[Ko - not good enough])
+(;B[qb];W[se];B[sa];W[ra]C[Bent four in the corner is dead, sorry]))
+(;B[qb];W[ma];B[sa];W[ra]C[];B[sc];W[se];B[sa]C[Ko - not good enough])
+(;B[sc];W[ma]
+(;B[sa]C[Ko - not good enough])
+(;B[qb];W[se]C[Oops :-)])))
+(;B[ra];W[pa]C[Dead]))
+(;W[ra]C[CHOICE]
+(;B[pa];W[se]
+(;B[sc];W[ma];B[sa]C[Ko - not good enough])
+(;B[qb]C[Dead in gote (bent four in the corner is dead)]))
+(;B[oa];W[ma]C[Neither seki nor 100-year ko is good enough])
+(;B[sc];W[oa];B[pa])))
+(;B[ra];W[rb]
+(;B[oa];W[ma]C[]
+(;B[qb];W[sa]C[Seki - not good enough])
+(;B[pa];W[sa]C[Dead]))
+(;B[qb];W[sa];B[oa]C[Seki - not good enough];W[ma]C[Seki - not good enough])
+(;B[pa];W[sa]C[Dead])))
+(;B[sb]
+(;W[ra]
+(;B[sd];W[rb]
+(;B[pa]C[Life! Good job!RIGHT])
+(;B[oa];W[ma]C[Seki is not good enough]
+(;B[qb]C[];W[se]C[Seki - not good enough])
+(;B[pa];W[se]C[Seki - not good enough]))
+(;B[qb];W[se];B[pa]C[Life! Good job!RIGHT]))
+(;B[rb];W[sd]C[Dead]))
+(;W[rb]C[CHOICE]
+(;B[sd]
+(;W[sa]C[Please remember that ko is unacceptable]
+(;B[qb];W[sc];B[pa]C[RIGHT];W[se]
+(;B[ra]C[Double ko life is not ideal, but I'll let it slide this time ;-)RIGHT])
+(;B[sb]C[Double ko life is not ideal, but I'll let it slide this time ;-)RIGHT]))
+(;B[pa];W[sc];B[qb]C[RIGHT];W[se]
+(;B[ra]C[Double ko life is not ideal, but I'll let it slide this time ;-)RIGHT])
+(;B[sb]C[Double ko life is not ideal, but I'll let it slide this time ;-)RIGHT]))
+(;B[ra]C[Did you hear what I just said? Ko is not good enough]))
+(;W[se]
+(;B[qb];W[ra];B[pa]C[Life! Good job!RIGHT])
+(;B[ra];W[sa]
+(;B[qb];W[sc]C[Ko - not good enough])
+(;B[pa];W[sc]C[Ko - not good enough]))))
+(;B[qb];W[ra];B[sd]
+(;W[oa]C[CHOICE];B[pa]C[Life! Good job!RIGHT])
+(;W[se]C[CHOICE]
+(;B[pa]C[Life! Good job!RIGHT])
+(;B[oa];W[ma]C[Seki - not good enough])))
+(;B[ra];W[sa]C[Please keep in mind that ko is not good enough]
+(;B[qb];W[sc]
+(;B[pa];W[sd];B[ra]C[Ko - not good enough])
+(;B[sd];W[oa]
+(;B[pa];W[se]C[Opps :-)])
+(;B[sb]C[Ko - not good enough])))
+(;B[sd];W[se]
+(;B[qb];W[sc]C[Ko - not good enough])
+(;B[oa];W[ma]
+(;B[ra]C[A difficult many-step ko, but still not good enough])
+(;B[qb];W[sc]C[Ko - not good enough]))))
+(;B[sa])))
+(;B[ra];W[rb]
+(;B[sb];W[sa]C[Please keep in mind that ko is not good enough]
+(;B[qb];W[sc]
+(;B[pa];W[sd];B[ra]C[Ko - not good enough])
+(;B[sd];W[oa]
+(;B[pa];W[se]C[Opps :-)])
+(;B[sb]C[Ko - not good enough])))
+(;B[sd];W[se]
+(;B[qb];W[sc]C[Ko - not good enough])
+(;B[oa];W[ma]
+(;B[ra]C[A difficult many-step ko, but still not good enough])
+(;B[qb];W[sc]C[Ko - not good enough]))))
+(;B[qb];W[sa]
+(;B[sb];W[sc]
+(;B[pa];W[sd];B[ra]C[Ko - not good enough])
+(;B[sd];W[oa]
+(;B[pa];W[se]C[Opps :-)])
+(;B[sb]C[Ko - not good enough])))
+(;B[sd];W[sb];B[oa];W[ma]C[Seki - not good enough])
+(;B[pa];W[sd]
+(;B[ra]C[Ko - not good enough])
+(;B[sb];W[sc];B[ra]C[Ko - not good enough])
+(;B[sc];W[ra];B[sb];W[ra]C[Dead])))
+(;B[sd];W[sb]
+(;B[oa];W[ma]C[]
+(;B[qb];W[sa]C[Seki - not good enough])
+(;B[pa];W[sa]C[Dead]))
+(;B[qb];W[sa];B[oa]C[Seki - not good enough])
+(;B[pa];W[sa]C[Dead]))
+(;B[oa];W[sd]
+(;B[sb];W[sa]C[Ko - not good enough])
+(;B[sc];W[sa]C[Dead])))
+(;B[rb];W[ra]
+(;B[sd];W[sb]
+(;B[pa];W[se]
+(;B[sc];W[ma];B[sa]C[Ko - not good enough])
+(;B[qb]C[Dead in gote (bent four in the corner is dead)]))
+(;B[oa];W[ma]C[Neither seki nor 100-year ko is good enough])
+(;B[sc];W[oa];B[pa];W[ma]
+(;B[sa]C[Ko - not good enough])
+(;B[qb];W[se]C[Oops :-)])))
+(;B[pa];W[sd];B[sc];W[sa]C[Bent four in the corner is dead, sorry])
+(;B[sa];W[sb]
+(;B[sc];W[se]
+(;B[pa];W[sd]
+(;B[sa]C[Ko - not good enough])
+(;B[qb];W[oa]C[Oops :-)]))
+(;B[qb];W[oa]
+(;B[pa];W[sd]C[Oops :-)])
+(;B[sa]C[Ko - not good enough])))
+(;B[oa];W[ma]
+(;B[sd]C[Neither seki not 100-year ko is good enough])
+(;B[sc];W[sa];B[qb];W[se];B[pa];W[ra];B[sa];W[sb]C[Ko - not good enough])))
+(;B[sc];W[oa];B[pa];W[sa]C[Bent four in the corner is dead, sorry])
+(;B[oa];W[sd];B[sc];W[sa]C[Bent four in the corner is dead, sorry])))

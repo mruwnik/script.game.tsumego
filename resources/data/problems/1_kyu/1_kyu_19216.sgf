@@ -1,0 +1,17 @@
+(;AB[br]AB[bq]AB[bp]AB[cp]AB[dp]AB[ep]AB[fp]AB[gp]AB[hp]AB[hq]AB[hr]AB[hs]AW[bs]AW[cr]AW[cq]AW[dq]AW[eq]AW[fq]AW[gq]AW[gr]AW[gs]C[7. White dies]AP[goproblems]
+(;B[cs]
+(;W[es]C[CHOICE];B[fr]LB[cs:1]LB[es:2]LB[fr:3]LB[ds:a]LB[er:b]C[The throw-in at 1 solves the problem. If White 'a', then Black 'b', naturally. If White 2, Black 3 is instant death. RIGHT]
+(;W[ds]LB[cs:1]LB[es:2]LB[fr:3]LB[ds:a]LB[er:b]C[The throw-in at 1 solves the problem. If White 'a', then Black 'b', naturally. If White 2, Black 3 is instant death.];B[er]C[RIGHT])
+(;W[er];B[ds];W[dr];B[cs]C[RIGHT]))
+(;W[fr];B[es];W[ds];B[er]C[RIGHT]))
+(;B[er];W[es];B[ds];W[fr]LB[er:1]LB[es:2]LB[ds:3]LB[fr:4]C[Black 1 in the center is precipitous. White 2 and 4 mean a ko.];B[fs]C[];W[es]C[ko])
+(;B[ds];W[es]
+(;B[er]
+(;W[fr];B[fs]C[];W[es]C[ko])
+(;W[dr];B[fr];W[cs]))
+(;B[fr]
+(;W[dr];B[er];W[cs]C[])
+(;W[er];B[cs]))
+(;B[cs];W[dr])
+(;B[dr];W[cs];B[er];W[fr])
+(;B[fs];W[er])))

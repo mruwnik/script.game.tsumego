@@ -1,0 +1,7 @@
+(;AB[as]AB[ar]AB[aq]AB[ap]AW[br]AW[bq]AW[bp]AW[bo]AW[ao]AB[cs]AB[ds]AW[cr]AW[dr]AB[er]AB[eq]AB[dq]AB[cq]AB[cp]AB[co]AB[do]AB[eo]AB[ep]AB[cn]AB[cm]AB[dm]AB[em]AB[en]AW[fs]AW[fr]AW[fq]AW[gs]AW[hs]AW[hr]AW[hq]AW[gq]AW[fp]AW[fo]AW[go]AW[ho]AW[hp]LB[an:A]LB[bn:B]LB[es:C]LB[bs:D]C[CHOICEFORCE]AP[goproblems]
+(;B[es]LB[bs:A]C[CHOICEFORCE];W[bs]TR[ds]TR[cs]C[black lost 4 stones but he protected the marked stones. this is better result than losing 7(or 5 or 6) stones.CHOICERIGHT])
+(;B[bs]LB[es:A]C[CHOICEFORCE];W[es]C[CHOICE])
+(;B[bn]LB[es:A]C[CHOICEFORCE];W[es]LB[an:A]C[CHOICEFORCE];B[an]LB[bs:A]C[CHOICEFORCE];W[bs]C[CHOICE])
+(;B[an]LB[bn:A]C[CHOICEFORCE]LB[es:B]
+(;W[bn]LB[bm:A]C[CHOICEFORCE];B[bm]LB[am:A]C[CHOICEFORCE];W[am]LB[es:A]C[CHOICEFORCE];B[es]LB[bs:A]C[CHOICEFORCE];W[bs]C[black lost 5 stones. he can do better.CHOICE])
+(;W[es]LB[bn:A]C[CHOICEFORCE];B[bn]C[CHOICEFORCE];W[bs]C[black lost 6 stones. he can do better.CHOICE])))

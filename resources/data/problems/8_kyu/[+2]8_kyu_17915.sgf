@@ -1,0 +1,30 @@
+(;AW[is]AW[ir]AW[iq]AW[hr]AW[jr]AW[kr]AW[mr]AW[lq]AW[lp]AW[lo]AW[kp]AW[mo]AW[no]AW[oo]AW[on]AB[ln]AB[ko]AB[jn]AB[km]AB[kq]AB[jq]AB[jp]AB[ip]AB[hq]AB[gr]AB[fq]AB[eq]AB[dq]AB[dr]AW[ep]AW[dp]AW[cq]AW[cr]AW[en]AW[cn]AB[nm]AB[om]AB[mm]AB[pn]AB[po]AB[pp]AB[qq]AB[qm]AB[ql]AW[pl]AW[pm]AB[rl]AW[ol]AB[go]AB[gm]AB[hl]AB[nq]AB[nr]AW[qk]AW[pk]AW[rk]AB[nk]AB[jk]AW[gk]AW[cl]AW[el]C[Can the marked white stones live?  M9 for tenuki.]TR[lp]TR[ir]TR[mr]LB[lk:Tenuki]AP[goproblems]
+(;W[mq]
+(;B[ls]
+(;W[ks]
+(;B[ms];W[np]C[Alive ;-)RIGHT])
+(;B[np]
+(;W[ms]C[Alive ;-)RIGHT])
+(;W[ns];B[ms];W[lr];B[ms])))
+(;W[ms]
+(;B[ks];W[np]C[Alive ;-)RIGHT])
+(;B[np];W[ks]C[Alive ;-)RIGHT]))
+(;W[np];B[ms];W[ks]C[Alive ;-)RIGHT]))
+(;B[np]
+(;W[ms]C[RIGHT])
+(;W[ls]C[RIGHT])
+(;W[ns]
+(;B[ls]
+(;W[ks];B[ms];W[lr];B[ms])
+(;W[ms];B[ks])
+(;W[or]
+(;B[pr]
+(;W[ks];B[ms];W[op];B[oq])
+(;W[op];B[oq];W[os];B[ps];W[ms];B[ks]))
+(;B[ks];W[pr];B[pq];W[rr];B[qr])))
+(;B[ks];W[ls];B[os]
+(;W[ms]C[RIGHT])
+(;W[or];B[ms]C[ko])))
+(;W[ks];B[ms];W[ls];B[ns])))
+(;W[ls];B[mq]C[False eye M2.])
+(;W[lk]C[];B[mq]C[False eye M2.]))

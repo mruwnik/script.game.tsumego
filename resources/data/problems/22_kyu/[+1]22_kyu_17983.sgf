@@ -1,0 +1,20 @@
+(;AB[pd]AB[qc]AB[qf]AB[jd]AB[kd]AB[ld]AB[me]AB[jc]AB[ic]AB[hd]AB[ie]AB[ge]AB[hb]AB[gb]AB[fc]AB[eb]AB[fa]AB[dc]AB[ce]AW[hc]AW[gc]AW[gd]AW[fd]AW[fe]AW[ff]AW[ib]AW[jb]AW[kc]AW[lc]AW[md]AW[nc]AW[ne]AW[nf]AW[pb]AB[gf]AW[df]AB[fg]AW[gg]AB[eg]AW[hg]AB[ef]LB[fg:1]LB[gg:2]LB[eg:3]LB[hg:4]LB[ef:5]C[Black is careless and plays 5 after 4. Punish him]AP[goproblems]
+(;W[ee];B[de]C[That's exact what Black wants.])
+(;W[de];B[ee]
+(;W[ed];B[dd]C[Dead.])
+(;W[dd];B[ed]C[Dead.]))
+(;W[he];B[hf];W[if];B[he]C[Black is still greedy.];W[je];B[id]
+(;W[le]C[This sequence was actually played. After this move, Black resigned.RIGHT])
+(;W[ke];B[le]
+(;W[lf]C[This works too.RIGHT])
+(;W[mf];B[lf];W[lg];B[kf];W[jf];B[kg];W[kh];B[jg];W[ig];B[jh];W[ji];B[ih]
+(;W[ii];B[hh];W[gh];B[hi];W[hj];B[gi];W[fh];B[ee]C[I liked this variation but White is still dead.])
+(;W[hh];B[ii];W[ij];B[hi]
+(;W[hj];B[gh]C[Looks fine but you've lost.])
+(;W[gi];B[gh]C[Amazing but useless.])))))
+(;W[if];B[he]
+(;W[je];B[ee]C[Black is still strong enough.])
+(;W[hf];B[ee]C[Black is strong enough to kill ya.]))
+(;W[hf];B[he]
+(;W[if];B[ee])
+(;W[je];B[ee]C[Wrong.])))

@@ -1,0 +1,194 @@
+(;SZ[19]AW[oj]AW[rj]AW[qk]AW[ol]AW[ql]AW[nm]AW[mo]AW[no]AW[oo]AW[lp]AW[op]AW[pq]AW[qq]AW[nr]AB[rl]AB[pm]AB[qm]AB[qn]AB[np]AB[lq]AB[nq]AB[oq]AB[pr]AB[qr]LB[lk:YES]LB[nk:NO]TR[rl]TR[pm]TR[qm]TR[qn]C[Move order is important.FORCE]GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]RU[Japanese]KM[0.00]
+(;B[nk];W[lk]TR[pp]C[You are right, then kill them. White played the marked move]AW[pp]AB[pq]AB[qq]AW[pr]AW[qr]AB[nr]AW[oq]AW[nq]AW[np]AB[op]AB[oo]AB[no]AB[mo]AB[lp]AW[lq]AB[nm]AB[ol]AB[oj]AW[pm]AW[qm]AW[qn]AW[rl]AB[qk]AB[ql]AB[rj]
+(;B[qp];W[po]
+(;B[rr];W[or]
+(;B[qo];W[pn];B[rn];W[rm]
+(;B[sn];W[sr]
+(;B[rs];W[sp];B[rp];W[sm]
+(;B[ro];W[rq];B[sq]C[RIGHT])
+(;B[sq];W[rq]C[Black has no ko threat]))
+(;B[sq];W[rs]
+(;B[ss];W[rp]
+(;B[qs];W[ro];B[rq];W[sm])
+(;B[ro];W[sr]
+(;B[rq];W[sp])
+(;B[sp];W[rq];B[rr];W[rq])))
+(;B[rp];W[rq]))
+(;B[rp];W[rs];B[sq];W[rq]))
+(;B[so];W[rs]
+(;B[rq];W[sr];B[rp];W[sq]C[Black dies first]
+(;B[om];W[qs];B[rk];W[ss];B[sp];W[sm];B[pl])
+(;B[sp];W[qs];B[ss];W[sr];B[pl];W[sm];B[om];W[sn];B[on];W[ro]))
+(;B[rp];W[sr]
+(;B[rq];W[sq]C[Black dies first]
+(;B[om];W[qs];B[rk];W[ss];B[sp];W[sm];B[pl])
+(;B[sp];W[qs];B[ss];W[sr];B[pl];W[sm];B[om];W[sn];B[on];W[ro]))
+(;B[sq];W[rq]C[no ko threat]))
+(;B[sr];W[rp]
+(;B[rq];W[sp]C[Black dies first])
+(;B[sp];W[rq]C[Black dies first])))
+(;B[ro];W[rs]
+(;B[sr];W[sn])
+(;B[rq];W[sp]))
+(;B[rp];W[sn]
+(;B[ro];W[sq])
+(;B[so];W[ro];B[sp];W[rn]
+(;B[sq];W[rs])
+(;B[rs];W[sr]))))
+(;B[ro];W[rs];B[rn];W[rm]C[multi-step ko is the best black can obtain here]
+(;B[sq]C[];W[sn];B[qo];W[pn];B[rp];W[so];B[sm];W[sl];B[om];W[sm];B[sp];W[sr];B[ss];W[qs];B[pl];W[sr])
+(;B[sp];W[rq];B[sr];W[qo];B[rp];W[sn];B[sm];W[sl];B[om];W[qs];B[rk];W[ss];B[sq];W[sm];B[pl];W[so])
+(;B[rq];W[sp])
+(;B[sr];W[sp];B[rp];W[sq];B[om];W[sn];B[so];W[sm];B[rk];W[qo];B[rq];W[qs];B[pl];W[ss];B[sk];W[sq]))
+(;B[rn];W[ro];B[qo];W[rq];B[pn];W[rp])
+(;B[sq];W[rn];B[rs];W[so])
+(;B[rp];W[rn]))
+(;B[or];W[rr]
+(;B[mq];W[rp]
+(;B[rq];W[sq];B[mp];W[qo];B[oq])
+(;B[qo];W[ro]))
+(;B[qo];W[ro]
+(;B[pn];W[rp])
+(;B[rp];W[sp];B[pn];W[rq]))
+(;B[ro];W[mq];B[rn];W[rm]
+(;B[rq];W[sp]
+(;B[sq];W[sr])
+(;B[sr];W[qo];B[sq];W[rs]))
+(;B[qo];W[pn];B[rq];W[sp];B[sq];W[sr])
+(;B[rp];W[rq])))
+(;B[qo];W[pn]
+(;B[rn]
+(;W[rm]C[CHOICE];B[rr];W[ro];B[rp];W[sn])
+(;W[rq];B[rp];W[sp];B[ro];W[rm];B[rr];W[sr];B[sq]C[ko]))
+(;B[rr];W[rs]
+(;B[rn];W[rm];B[rq];W[ro])
+(;B[or];W[rq]
+(;B[ro];W[mq])
+(;B[rp];W[sr]
+(;B[rn];W[sp];B[ro];W[rm];B[mq];W[sn])
+(;B[mq];W[sp]
+(;B[mp];W[ro])
+(;B[ro];W[rn];B[mp];W[so])))))
+(;B[or];W[rq]
+(;B[ro];W[mq])
+(;B[mq];W[ro])))
+(;B[ro];W[rq])
+(;B[rn];W[rr];B[ro];W[rm];B[rq];W[sp]))
+(;B[po];W[rp]
+(;B[qp];W[rq])
+(;B[rq];W[qp]))
+(;B[qo];W[po];B[qp];W[pn]
+(;B[rn]
+(;W[rm]C[CHOICE];B[rr];W[ro];B[rp];W[sn])
+(;W[rq];B[rp];W[sp];B[ro];W[rm];B[rr];W[sr];B[sq]C[ko]))
+(;B[rr];W[rs]
+(;B[rn];W[rm];B[rq];W[ro])
+(;B[or];W[rq]
+(;B[ro];W[mq])
+(;B[rp];W[sr]
+(;B[rn];W[sp];B[ro];W[rm];B[mq];W[sn])
+(;B[mq];W[sp]
+(;B[mp];W[ro])
+(;B[ro];W[rn];B[mp];W[so])))))
+(;B[or];W[rq]
+(;B[ro];W[mq])
+(;B[mq];W[ro])))
+(;B[rq];W[qp]
+(;B[or];W[rr]
+(;B[rp];W[ro]
+(;B[mq];W[sp];B[mp];W[sq];B[oq])
+(;B[po];W[qo];B[mq];W[sq];B[mp];W[sp]))
+(;B[mq];W[sq];B[rp];W[ro];B[mp];W[sp];B[oq]))
+(;B[rr];W[or])
+(;B[rp];W[ro]
+(;B[po];W[qo];B[or];W[rr];B[mq];W[sq];B[mp];W[sp])
+(;B[or];W[rr]
+(;B[mq];W[sp];B[mp];W[sq];B[oq])
+(;B[po];W[qo];B[mq];W[sq];B[mp];W[sp]))))
+(;B[rp];W[qp];B[rq];W[ro]
+(;B[po];W[qo];B[or];W[rr])
+(;B[or];W[rr])))
+(;B[lk];W[nk]C[That's wrong... see solution. But i give you a second chance : try to live with an extra ko threat]
+(;B[pp];W[qp]
+(;B[po]
+(;W[rr]C[CHOICE]
+(;B[or];W[qo];B[pn];W[rn];B[rm];W[sn]
+(;B[rq];W[rp];B[sr];W[sq];B[rs];W[ss]LB[lj:K]C[Please play extra ko threat at 'K'FORCE];B[lj];W[mj];B[sr]C[RIGHT])
+(;B[sr];W[rs]
+(;B[rq];W[rp];B[sp];W[sq]LB[lj:K]C[Please play extra ko threat at 'K'FORCE];B[lj];W[mj];B[rq];W[ro]
+(;B[sq]C[RIGHT])
+(;B[qs];W[sq]C[no more threat])
+(;B[sm];W[sq]C[no more threat]))
+(;B[sp];W[rp]
+(;B[rq];W[sq]LB[lj:K]C[Please play extra ko threat at 'K'FORCE];B[lj];W[mj];B[rq];W[ro]
+(;B[sq]C[RIGHT])
+(;B[qs];W[sq]C[no more threat])
+(;B[sm];W[sq]C[no more threat]))
+(;B[sm];W[ro];B[rq];W[sq]C[Please play extra ko threat at 'K'FORCE]LB[lj:K];B[lj];W[mj];B[rq]C[RIGHT])))
+(;B[rs];W[sr]
+(;B[rp];W[sp])
+(;B[sp];W[rp]))
+(;B[sp];W[rp]
+(;B[sq];W[sr]
+(;B[sm];W[rq];B[so];W[ro]TR[sp]TR[rs])
+(;B[rs];W[so]))
+(;B[sr];W[so]
+(;B[sq];W[rq])
+(;B[rs];W[rq]))))
+(;B[qo];W[or];B[rp];W[rq];B[sp];W[sn];B[rn];W[sm];B[sl];W[so];B[mq]
+(;W[qs];B[sr])
+(;W[sq];B[ro]))
+(;B[ro];W[or];B[rp];W[rq]))
+(;W[or];B[rr];W[qo];B[ro];W[rp];B[sp];W[pn];B[rq]))
+(;B[rp];W[rq]
+(;B[ro];W[po])
+(;B[po];W[qo];B[pn];W[or]
+(;B[rr];W[ro];B[mq];W[rn];B[rm];W[sp];B[sn];W[sr]C[Black can't win this];B[mr];W[sm];B[sl];W[om];B[sm];W[on];B[so];W[pl];B[rs];W[rk])
+(;B[mq];W[rr])))
+(;B[rq];W[rp];B[po]
+(;W[rr];B[sq];W[or])
+(;W[or];B[mq];W[rr];B[sr];W[rs])))
+(;B[rq];W[rp]
+(;B[qp];W[pp]
+(;B[ro];W[sp])
+(;B[sp];W[ro];B[qo];W[rr];B[sr];W[sq]C[double step ko]))
+(;B[pp];W[qp];B[po]
+(;W[rr];B[sq];W[or])
+(;W[or];B[mq];W[rr];B[sr];W[rs]))
+(;B[ro];W[sp]
+(;B[pp];W[qp];B[po];W[or])
+(;B[qp];W[pp])))
+(;B[rp];W[rq]
+(;B[qp];W[pp]
+(;B[rn];W[sm];B[sl];W[qo];B[ro];W[po]
+(;B[sp];W[sn])
+(;B[sn];W[sp]))
+(;B[sn];W[rk];B[sl];W[rm];B[sp];W[ro];B[qo];W[rn])
+(;B[sm];W[rn];B[po];W[ro];B[qo];W[rk])
+(;B[po];W[ro];B[so];W[sn];B[sp];W[sq];B[qo];W[rn]))
+(;B[pp];W[qp]
+(;B[ro];W[po])
+(;B[po];W[qo];B[pn];W[or]
+(;B[rr];W[ro];B[mq];W[rn];B[rm];W[sp];B[sn];W[sr]C[Black can't win this];B[mr];W[sm];B[sl];W[om];B[sm];W[on];B[so];W[pl];B[rs];W[rk])
+(;B[mq];W[rr])))
+(;B[qo];W[qp];B[sp];W[sn];B[rn];W[sm];B[sl];W[sq];B[rm];W[so];B[ro];W[sn])
+(;B[rn];W[sm];B[qp];W[pp];B[sl];W[qo];B[ro];W[po]
+(;B[sp];W[sn])
+(;B[sn];W[sp]))
+(;B[ro];W[or]C[Black can't make 2 eyes]
+(;B[sn];W[sp])
+(;B[sm];W[sp])
+(;B[sp];W[sn];B[sm];W[rn])
+(;B[sl];W[sn];B[rn];W[sm])))
+(;B[ro];W[rq];B[pp];W[qp];B[po];W[or]TR[np]TR[nq]TR[oq])
+(;B[qp];W[pp]
+(;B[rp];W[rq]
+(;B[rn];W[sm];B[sl];W[qo];B[ro];W[po]
+(;B[sp];W[sn])
+(;B[sn];W[sp]))
+(;B[sn];W[rk];B[sl];W[rm];B[sp];W[ro];B[qo];W[rn])
+(;B[sm];W[rn];B[po];W[ro];B[qo];W[rk])
+(;B[po];W[ro];B[so];W[sn];B[sp];W[sq];B[qo];W[rn]))
+(;B[rq];W[rp]
+(;B[ro];W[sp])
+(;B[sp];W[ro];B[qo];W[rr];B[sr];W[sq]C[double step ko])))))

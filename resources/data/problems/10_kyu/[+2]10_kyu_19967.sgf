@@ -1,0 +1,16 @@
+(;AW[ba]AW[ab]AW[bc]AW[cc]AB[ac]AB[ad]AB[bd]AB[cd]AB[dd]AB[ed]AB[fc]AB[fb]AB[ce]AB[df]AB[ef]AW[cf]AW[bf]AW[be]AW[dg]AW[cg]AW[ag]AW[bh]AW[ai]AW[ci]AW[bj]AW[dh]AW[dj]AW[ck]AW[ak]AW[bl]AW[dl]AW[cm]AW[am]AW[bn]AW[ao]AW[co]AW[dn]AW[dp]AW[bp]AW[aq]AW[cq]AW[br]AW[as]AW[cs]AW[dr]AW[eq]AW[er]AW[es]AW[ep]AW[eo]AW[en]AW[em]AW[el]AW[ek]AW[ej]AW[ei]AW[eh]AW[eg]AB[ff]AB[fg]AB[fh]AB[fi]AB[fj]AB[fk]AB[fl]AB[fm]AB[fn]AB[fo]AB[fp]AB[fq]AB[fr]AB[fs]AW[ae]AB[fe]AB[gd]AB[ge]AB[gc]AB[gb]AB[ga]LB[ca:a]LB[da:b]LB[ea:c]LB[bb:d]LB[cb:e]LB[db:f]LB[dc:g]AB[gf]AB[gg]AB[gi]AB[gh]AB[gj]AB[gk]AB[gl]AB[gm]AB[gn]AB[go]AB[gp]AB[gq]AB[gr]AB[gs]C[FORCE]AP[goproblems]
+(;B[ca]LB[db:a]C[FORCE];W[db]LB[da:a]C[FORCE];B[da]LB[ea:a]C[FORCE];W[ea]LB[eb:a]C[FORCE];B[eb]LB[cb:a]C[FORCE];W[cb])
+(;B[da]LB[db:a]C[FORCE];W[db]LB[ea:a]C[FORCE];B[ea]LB[ca:a]C[FORCE];W[ca])
+(;B[ea]LB[db:a]C[FORCE];W[db]LB[da:a]C[FORCE];B[da]LB[ca:a]C[FORCE];W[ca])
+(;B[bb]LB[cb:a]C[FORCE];W[cb])
+(;B[cb]LB[db:a]C[FORCE];W[db]LB[bb:a]LB[ca:b]LB[dc:c]C[FORCE]
+(;B[bb]LB[ca:a]C[FORCE];W[ca])
+(;B[ca]LB[da:a]C[FORCE];W[da]LB[dc:a]C[FORCE];B[dc]LB[bb:a]C[FORCE];W[bb])
+(;B[dc]LB[bb:a]C[FORCE];W[bb]LB[ca:a]LB[da:b]LB[eb:c]C[FORCE]
+(;B[ca]LB[da:a]C[FORCE];W[da])
+(;B[da]LB[ca:a]C[FORCE];W[ca]LB[ea:a]LB[eb:b]C[FORCE]
+(;B[ea]C[RIGHT])
+(;B[eb]LB[ea:a]C[FORCE];W[ea]))
+(;B[eb]LB[da:a]C[FORCE];W[da]LB[ea:a]C[FORCE];B[ea]LB[ca:a]C[FORCE];W[ca])))
+(;B[db]LB[cb:a]C[FORCE];W[cb]LB[da:a]C[FORCE];B[da]LB[ca:a]C[FORCE];W[ca])
+(;B[dc]LB[cb:a]C[FORCE];W[cb]))

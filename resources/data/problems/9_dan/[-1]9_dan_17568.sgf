@@ -1,0 +1,142 @@
+(;AB[pd]AW[fd]AB[pq]AW[dn]C[Black to play. Choose from any marked spot.FORCE]LB[dd:A]LB[dc:B]LB[cd:C]LB[cc:D]LB[de:E]LB[ce:F]LB[ed:G]AP[goproblems]
+(;B[ed];W[ee]C[FORCE]
+(;B[dd];W[de]C[FORCE]
+(;B[ce];W[fe]C[FORCE]
+(;B[cd];W[cf]C[FORCE];B[bf];W[cg]C[FORCE];B[bg];W[ch]C[Exactly what Lee Sedol played in the game! Well done!RIGHT])
+(;B[cf]C[Also fine!RIGHT]))
+(;B[fc];W[cd];B[cc];W[gc];B[ec];W[gd];B[ce];W[bd];B[bc];W[cf];B[be];W[bf];B[ad];W[dg]C[Not as good.]))
+(;B[de];W[dd];B[ec];W[cd]
+(;B[gd];W[fe];B[fc];W[df])
+(;B[fe];W[ef];B[gd];W[ff]
+(;B[fc];W[hf];B[jd];W[qf])
+(;B[ge];W[df]C[Fine if not for the fact that white can play at A next.]LB[eb:A])))
+(;B[fc];W[dd];B[ec];W[dc];B[gd];W[fe];B[hc];W[cf]MA[ed]MA[ee]C[Fine if not for the stones marked with squares; with these, this result is very good for white.]))
+(;B[dd];W[df]C[FORCE]
+(;B[cd];W[ff];B[bf];W[nc]C[White is moving quickly and too many black stones are in the corner.])
+(;B[dc];W[ff];B[fb];W[dq]C[White is moving quickly and too many black stones are in the corner.])
+(;B[ee];W[cc]
+(;B[cd];W[dc];B[ef];W[ed];B[dg];W[ic]LB[ck:A]LB[dq:B]C[No matter whether black plays around A or B, white will still be able to take care of the stone there easily; as for the top left corner, the result is very good for white.])
+(;B[dc];W[cd];B[fe];W[de];B[gd];W[ci]C[White will either get the lower left corner or the upper right corner.]))
+(;B[cc];W[ff]))
+(;B[dc];W[dd]C[FORCE];B[cd];W[cc]C[FORCE];B[db];W[cb]C[FORCE];B[bb];W[bc]C[FORCE];B[bd];W[ab]C[FORCE]
+(;B[ba];W[ca]C[FORCE];B[fb];W[de]C[FORCE]
+(;B[ad];W[ce]C[FORCE];B[ac]C[Black has less points than one might think, and white is pleased with this result.])
+(;B[cf];W[gb]C[FORCE];B[eb];W[fc]C[FORCE];B[ad];W[ce]C[FORCE];B[be];W[bf];B[bg];W[fa];B[af];W[ec];B[ac];W[aa];B[bb];W[ea])
+(;B[bf];W[cf]C[FORCE];B[be];W[gb]C[FORCE];B[ad];W[fc]C[FORCE];B[eb]LB[ch:A]LB[hc:B]C[White can now choose from A or B; either one is a good result for white.]))
+(;B[ed];W[de]C[FORCE];B[ee];W[ef]C[FORCE]
+(;B[fe];W[ce]C[FORCE]
+(;B[df];W[cf];B[dg];W[ec];B[fc];W[eb];B[fb];W[da]C[FORCE]
+(;B[gd]C[White's corner is too big in comparison with black's structure.])
+(;B[ff];W[gd]C[FORCE]
+(;B[hc];W[hd]C[FORCE]
+(;B[ic];W[fg];B[eg];W[gf];B[fh];W[gg];B[ei];W[je]C[Black is left with practically nothing.])
+(;B[gc];W[id]C[FORCE]
+(;B[jb];W[jc];B[kc];W[ib];B[ic];W[jd])
+(;B[ic];W[jc];B[jb];W[kb];B[jd];W[kc]
+(;B[ie];W[je];B[kd];W[he];B[if];W[hf]
+(;B[hg];W[ld];B[ke];W[jf];B[ig];W[kf])
+(;B[ld];W[ig]
+(;B[ja];W[mc];B[md];W[nc]
+(;B[hb];W[nd])
+(;B[nd];W[hb]
+(;B[ib];W[ha];B[fa];W[pb])
+(;B[ha];W[ib]
+(;B[gb];W[fa])
+(;B[fa];W[ka]))))
+(;B[ia];W[hb])
+(;B[hb];W[ja];B[ia];W[ib])
+(;B[ib];W[mc];B[md];W[nc];B[nd];W[pb])
+(;B[lb];W[ib]
+(;B[hb];W[ja]
+(;B[lc];W[ga])
+(;B[ga];W[lc];B[mc];W[md]))
+(;B[ka];W[ja];B[la];W[hb];B[lc];W[jb]))))
+(;B[je];W[gf]
+(;B[fg];W[if])
+(;B[gg];W[hf]
+(;B[jg];W[hg];B[gh];W[ih])
+(;B[hg];W[if])
+(;B[ig];W[hg]))))))
+(;B[hb];W[hc];B[gb];W[jc];B[ic];W[id];B[ib];W[jd];B[jb];W[lc])))
+(;B[fc];W[dg]C[White has more points and a better (more efficient) shape.]))
+(;B[ba];W[ec];B[eb];W[fe];B[ca];W[be];B[gc];W[ce];B[ac];W[dq]C[While the corner may be the place most prefer to have their stones be, this is a bit too much...])))
+(;B[cd];W[cc]C[FORCE]
+(;B[dc];W[dd];B[db];W[cb]C[FORCE];B[bb];W[bc]C[FORCE];B[bd];W[ab]C[FORCE]
+(;B[ba];W[ca]C[FORCE];B[fb];W[de]C[FORCE]
+(;B[ad];W[ce]C[FORCE];B[ac]C[Black has less points than one might think, and white is pleased with this result.])
+(;B[cf];W[gb]C[FORCE];B[eb];W[fc]C[FORCE];B[ad];W[ce]C[FORCE];B[be];W[bf];B[bg];W[fa];B[af];W[ec];B[ac];W[aa];B[bb];W[ea])
+(;B[bf];W[cf]C[FORCE];B[be];W[gb]C[FORCE];B[ad];W[fc]C[FORCE];B[eb]LB[ch:A]LB[hc:B]C[White can now choose from A or B; either one is a good result for white.]))
+(;B[ed];W[de]C[FORCE];B[ee];W[ef]C[FORCE]
+(;B[fe];W[ce]C[FORCE]
+(;B[df];W[cf];B[dg];W[ec];B[fc];W[eb];B[fb];W[da]C[FORCE]
+(;B[gd]C[White's corner is too big in comparison with black's structure.])
+(;B[ff];W[gd]C[FORCE]
+(;B[hc];W[hd]C[FORCE]
+(;B[ic];W[fg];B[eg];W[gf];B[fh];W[gg];B[ei];W[je]C[Black is left with practically nothing.])
+(;B[gc];W[id]C[FORCE]
+(;B[jb];W[jc];B[kc];W[ib];B[ic];W[jd])
+(;B[ic];W[jc];B[jb];W[kb];B[jd];W[kc]
+(;B[ie];W[je];B[kd];W[he];B[if];W[hf]
+(;B[hg];W[ld];B[ke];W[jf];B[ig];W[kf])
+(;B[ld];W[ig]
+(;B[ja];W[mc];B[md];W[nc]
+(;B[hb];W[nd])
+(;B[nd];W[hb]
+(;B[ib];W[ha];B[fa];W[pb])
+(;B[ha];W[ib]
+(;B[gb];W[fa])
+(;B[fa];W[ka]))))
+(;B[ia];W[hb])
+(;B[hb];W[ja];B[ia];W[ib])
+(;B[ib];W[mc];B[md];W[nc];B[nd];W[pb])
+(;B[lb];W[ib]
+(;B[hb];W[ja]
+(;B[lc];W[ga])
+(;B[ga];W[lc];B[mc];W[md]))
+(;B[ka];W[ja];B[la];W[hb];B[lc];W[jb]))))
+(;B[je];W[gf]
+(;B[fg];W[if])
+(;B[gg];W[hf]
+(;B[jg];W[hg];B[gh];W[ih])
+(;B[hg];W[if])
+(;B[ig];W[hg]))))))
+(;B[hb];W[hc];B[gb];W[jc];B[ic];W[id];B[ib];W[jd];B[jb];W[lc])))
+(;B[fc];W[dg]C[White has more points and a better (more efficient) shape.]))
+(;B[ba];W[ec];B[eb];W[fe];B[ca];W[be];B[gc];W[ce];B[ac];W[dq]C[While the corner may be the place most prefer to have their stones be, this is a bit too much...])))
+(;B[bc];W[dc];B[be];W[jc]C[White has a better result than the standard joseki.]))
+(;B[cc];W[dd]C[FORCE];B[cd];W[ce]C[FORCE];B[be];W[cf]C[FORCE]
+(;B[dc];W[ec];B[de];W[ed];B[bf];W[cg];B[bg];W[ch]C[Black is too cluttered on the side.])
+(;B[eb];W[fb];B[ec];W[fc];B[bf];W[ch]C[Too cluttered on the side.])
+(;B[fb];W[eb];B[ec];W[dc];B[db];W[cb];B[ea];W[bb];B[ed];W[de];B[ee];W[ef]
+(;B[ff];W[fe];B[eg];W[df]C[FORCE]
+(;B[fc];W[hd]C[White may seem ugly at first glance, but black is having a hard time here.])
+(;B[gf];W[fc];B[eb];W[hd]C[Hard for black])
+(;B[ge];W[fc];B[eb];W[gf];B[fg];W[hd]
+(;B[he];W[ie];B[hf];W[ic])
+(;B[hf];W[he];B[gg];W[hc])))
+(;B[fe];W[nc]C[Acceptable. However, white has sente, so not the best.])))
+(;B[de];W[dd]C[FORCE];B[cd];W[cc]C[FORCE];B[bc];W[ce];B[bd];W[cf];B[dc];W[ed];B[db];W[eg]C[Interesting result, but again, not the best.])
+(;B[ce];W[dd]C[FORCE];B[cd];W[cc]C[FORCE];B[bc];W[bb];B[cb];W[dc];B[ba];W[cf]C[FORCE]
+(;B[be];W[de]C[FORCE]
+(;B[bf];W[db]C[FORCE]
+(;B[ab];W[cg]C[Black is cluttered on the side, with little points.])
+(;B[cg];W[ab]))
+(;B[db];W[bf];B[ab];W[ae];B[bd];W[eg]))
+(;B[de];W[ab]C[FORCE]
+(;B[be];W[ac]C[FORCE]
+(;B[ad];W[bd]C[Black cannot win this ko.])
+(;B[bd];W[db];B[ch];W[dq];B[cl];W[cn]LB[cj:A]LB[nc:B]LB[qo:C]C[After this, white can choose from the likes of A, B and C.]))
+(;B[bd];W[db];B[ch];W[dq];B[cl];W[cn]LB[cj:A]LB[nc:B]LB[qo:C]C[After this, white can choose from the likes of A, B and C.])
+(;B[ac];W[bd];B[aa];W[be]
+(;B[ee];W[db];B[dg];W[cg]
+(;B[dh];W[bi])
+(;B[ch];W[bh]
+(;B[ci];W[df];B[ef];W[eg];B[dh];W[fg])
+(;B[dh];W[bi])))
+(;B[df];W[cg];B[db];W[eb]
+(;B[fb];W[eg];B[fe];W[ed];B[ff];W[gd];B[dg];W[dh];B[eh];W[di];B[ea];W[fh])
+(;B[ec];W[ed];B[fc];W[gd]
+(;B[dg];W[dh]
+(;B[ff];W[eh];B[fg];W[ci];B[fb];W[hf])
+(;B[fg];W[eh];B[ff];W[ci];B[fb];W[hf]))
+(;B[fb];W[eg])))))))

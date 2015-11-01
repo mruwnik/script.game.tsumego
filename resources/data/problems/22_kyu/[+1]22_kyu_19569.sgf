@@ -1,0 +1,18 @@
+(;AB[cr]AB[dr]AB[er]AB[gr]AB[hr]AB[ir]AW[br]AW[bq]AW[cq]AW[eq]AW[dq]AW[eo]AW[gq]AW[hq]AW[iq]AW[jq]AW[jr]AP[goproblems]
+(;B[fs];W[fq];B[fr]C[RIGHT])
+(;B[fr];W[cs];B[ds];W[is];B[hs];W[fs])
+(;B[fq]
+(;W[cs]C[CHOICE]
+(;B[ds];W[is];B[fp];W[go])
+(;B[fp];W[go]
+(;B[fs];W[is];B[hs];W[ds])
+(;B[is];W[fs];B[ds];W[es];B[fr];W[gs])
+(;B[ds];W[fs];B[is];W[es];B[fr];W[gs])
+(;B[fr];W[is]
+(;B[hs];W[ds])
+(;B[ds];W[hs]))))
+(;W[fp]C[This is wrong for White.];B[fs]))
+(;B[cs];W[fr]
+(;B[fs];W[fq];B[is];W[gs])
+(;B[is];W[fs]))
+(;B[is];W[fr];B[fs];W[fq];B[cs];W[es]))

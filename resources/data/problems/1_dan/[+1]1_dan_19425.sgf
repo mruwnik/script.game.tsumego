@@ -1,0 +1,10 @@
+(;AB[bq]AB[cq]AB[bo]AB[dp]AB[ep]AB[fq]AB[gq]AB[iq]AW[br]AW[cr]AW[dq]AW[eq]AP[goproblems]
+(;W[er]
+(;B[ar];W[ds]
+(;B[fr];W[bs]LB[gr:A]LB[fs:B]C[CHOICERIGHT])
+(;B[bs];W[fr];B[gr];W[fs]C[RIGHT]))
+(;B[ds];W[ar];B[fr];W[es]C[RIGHT]))
+(;W[fr];B[gr];W[er];B[ds];W[ar];B[fs]LB[es:A]C[White cannot play at A]
+(;W[es];B[dr])
+(;W[dr];B[es])
+(;W[cs];B[es])))

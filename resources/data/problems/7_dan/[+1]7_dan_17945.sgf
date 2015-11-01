@@ -1,0 +1,142 @@
+(;SZ[9]AB[gh]AB[hg]AB[hf]AB[he]AB[hd]AB[gc]AB[gb]AW[ha]AW[ga]AW[fc]AW[gd]AW[ge]AW[gg]AW[fh]AW[eg]AW[gf]AB[fb]AW[fa]AW[eb]AW[ed]AB[dc]AW[ec]AB[dd]AW[db]AB[cg]AW[ch]AB[dg]AW[dh]AW[ee]AB[de]AB[ef]AW[ff]AB[df]AB[cb]AB[bg]AW[bh]AB[ah]AW[bi]AB[bc]C[Komi 6.5 Japanese rule]AB[ag]AW[eh]AB[cd]AP[goproblems]
+(;B[ib]
+(;W[hb]
+(;B[hh];W[hc];B[ic]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[Black win 0.5RIGHT])
+(;W[gi]C[CHOICE];B[hi];W[fi];B[da]C[Black win 0.5RIGHT]))
+(;B[hi];W[hc];B[ic]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[Black win 0.5RIGHT])
+(;W[fi]C[CHOICE]
+(;B[da];W[gi];B[hh]C[Black win 0.5RIGHT])
+(;B[gi];W[ca];B[ba];W[da]C[White win 0.5])))
+(;B[da];W[hh])
+(;B[hc];W[hh])
+(;B[gi];W[hc];B[ic];W[fi]
+(;B[hh];W[ca];B[ba];W[da]C[White win 0.5])
+(;B[ih];W[ca];B[ba];W[da]C[White win 0.5])
+(;B[hi];W[ca];B[ba];W[da]C[White win 0.5])))
+(;W[hh];B[ih];W[hi];B[hb];W[ig];B[if];W[ca];B[ba];W[da]C[Black win 1.5RIGHT]))
+(;B[da];W[hh])
+(;B[hb];W[ib]
+(;B[da];W[hh])
+(;B[hc];W[hh])
+(;B[hh];W[hc]
+(;B[da];W[gi];B[hi];W[fi];B[id]C[White win 2.5])
+(;B[fi];W[ei];B[gi];W[ca];B[ba];W[da];B[id]C[White win 2.5])
+(;B[id]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[White win 2.5])
+(;W[gi]C[CHOICE];B[hi];W[fi];B[da]C[White win 2.5])))
+(;B[gi];W[hc]
+(;B[da];W[fi]
+(;B[hh];W[id];B[ie];W[ic]C[White win 2.5])
+(;B[ih];W[id];B[ie];W[ic]C[White win 2.5])
+(;B[hi];W[id];B[ie];W[ic]C[White win 2.5]))
+(;B[id];W[fi]
+(;B[hh];W[ca];B[ba];W[da]C[White win 3.5])
+(;B[ih];W[ca];B[ba];W[da]C[White win 3.5])
+(;B[hi];W[ca];B[ba];W[da]C[White win 3.5]))
+(;B[fi];W[ei]
+(;B[hh];W[ca];B[ba];W[da];B[id]C[White win 2.5])
+(;B[ih];W[ca];B[ba];W[da];B[id]C[White win 2.5])
+(;B[hi];W[ca];B[ba];W[da];B[id]C[White win 2.5])))
+(;B[hi];W[hc]
+(;B[da];W[fi]
+(;B[id];W[gi];B[hh]C[White win 2.5])
+(;B[gi];W[id];B[ie];W[ic]C[White win 2.5]))
+(;B[id]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[White win 2.5])
+(;W[fi]C[CHOICE]
+(;B[da];W[gi];B[hh]C[White win 2.5])
+(;B[gi];W[ca];B[ba];W[da]C[White win 3.5])))
+(;B[fi];W[ei];B[gi];W[ca];B[ba];W[da];B[id]C[White win 2.5])))
+(;B[hc];W[hh])
+(;B[ic];W[ib]
+(;B[da];W[hh])
+(;B[hc];W[hh])
+(;B[hh];W[hc]
+(;B[da];W[gi];B[hi];W[id];B[ie];W[fi];B[ic];W[ea];B[ca];W[id]C[White win 3.5])
+(;B[id]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[White win 1.5])
+(;W[gi]C[CHOICE];B[hi];W[fi];B[da]C[White win 1.5]))
+(;B[fi];W[id];B[ie];W[ei]
+(;B[da];W[gi];B[hi]
+(;W[ic]C[CHOICE];B[fi];W[ea];B[ca];W[gi]C[White win 3.5])
+(;W[fi]C[CHOICE];B[ic];W[ea];B[ca];W[id]C[White win 3.5]))
+(;B[gi];W[ca];B[ba];W[da];B[ic];W[bb];B[ab];W[id]C[White win 3.5])))
+(;B[gi];W[hc]
+(;B[da];W[id];B[ie];W[fi]
+(;B[hh];W[ic]C[White win 2.5])
+(;B[ih];W[ic]C[White win 2.5])
+(;B[hi];W[ic]C[White win 2.5]))
+(;B[id];W[fi]
+(;B[hh];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[ih];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[hi];W[ca];B[ba];W[da]C[White win 2.5]))
+(;B[fi];W[id]))
+(;B[hi];W[hc]
+(;B[da];W[id];B[ie];W[fi];B[gi];W[ic]C[White win 2.5])
+(;B[id]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[White win 1.5])
+(;W[fi]C[CHOICE]
+(;B[da];W[gi];B[hh]C[White win 1.5])
+(;B[gi];W[ca];B[ba];W[da]C[White win 2.5])))
+(;B[fi];W[ei];B[gi];W[id];B[ie];W[ca];B[ba];W[da];B[ic];W[bb];B[ab];W[id]C[White win 3.5])))
+(;B[hh];W[hc]
+(;B[da];W[gi];B[hi];W[fi];B[ic];W[ib];B[id]C[White win 1.5])
+(;B[ib];W[ic]
+(;B[da];W[gi];B[hi];W[fi];B[id];W[hb]C[White win 2.5])
+(;B[id];W[hb]
+(;B[da];W[gi];B[hi];W[fi]C[White win 2.5])
+(;B[fi];W[ei];B[gi];W[ca];B[ba];W[da]C[White win 2.5]))
+(;B[fi];W[ei]
+(;B[id];W[hb];B[gi];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[gi];W[ca];B[ba];W[da];B[id];W[hb]C[White win 2.5])))
+(;B[ic];W[ib]
+(;B[da];W[gi];B[hi];W[id];B[ie];W[fi];B[ic];W[ea];B[ca];W[id]C[White win  3.5])
+(;B[id]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[White win 1.5])
+(;W[gi]C[CHOICE];B[hi];W[fi];B[da]C[White win 1.5]))
+(;B[fi];W[id];B[ie];W[ei]
+(;B[da];W[gi];B[hi]
+(;W[ic]C[CHOICE];B[fi];W[ea];B[ca];W[gi]C[White win 3.5])
+(;W[fi]C[CHOICE];B[ic];W[ea];B[ca];W[id]C[White win 3.5]))
+(;B[gi];W[ca];B[ba];W[da];B[ic];W[bb];B[ab];W[id]C[White win 3.5])))
+(;B[fi];W[ei];B[gi];W[ca];B[ba];W[da];B[ic];W[ib];B[id]C[White win 1.5])
+(;B[id];W[ic]
+(;B[da];W[gi];B[hi];W[fi]C[White win 2.5])
+(;B[fi];W[ei];B[gi];W[ca];B[ba];W[da]C[White win 2.5])))
+(;B[gi];W[hc]
+(;B[da];W[fi]
+(;B[hh];W[id];B[ie];W[ic]C[White win 2.5])
+(;B[ih];W[id];B[ie];W[ic]C[White win 2.5])
+(;B[hi];W[id];B[ie];W[ic]C[White win 2.5]))
+(;B[ib];W[ic]
+(;B[da];W[id];B[ie];W[hb];B[ih];W[fi]C[White win 2.5])
+(;B[id];W[hb];B[da];W[fi]
+(;B[hh]C[White win 1.5])
+(;B[ih]C[White win 1.5])
+(;B[hi]C[White win 1.5])))
+(;B[ic];W[ib];B[id];W[fi]
+(;B[hh];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[ih];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[hi];W[ca];B[ba];W[da]C[White win 2.5]))
+(;B[id];W[ic]
+(;B[da];W[fi];B[hh]C[White win 1.5])
+(;B[fi];W[ei]
+(;B[hh];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[ih];W[ca];B[ba];W[da]C[White win 2.5])
+(;B[hi];W[ca];B[ba];W[da]C[White win 2.5]))))
+(;B[hi];W[hc]
+(;B[da];W[id];B[ie];W[ic];B[fi];W[ei];B[gi]C[White win 1.5])
+(;B[ib];W[ic];B[da];W[id];B[ie];W[hb];B[fi];W[ei];B[gi]C[White win 1.5])
+(;B[ic];W[ib];B[id]
+(;W[ca]C[CHOICE];B[ba];W[da];B[fi];W[ei];B[gi]C[White win 1.5])
+(;W[fi]C[CHOICE]
+(;B[da];W[gi];B[hh]C[White win 1.5])
+(;B[gi];W[ca];B[ba];W[da]C[White win 2.5])))
+(;B[fi];W[ei];B[gi]C[CHOICE]
+(;W[ca];B[ba];W[da];B[ic];W[ib];B[id]C[White win 1.5])
+(;W[id];B[ie];W[ic];B[da]C[White win 1.5]))
+(;B[id];W[ic]
+(;B[da];W[fi];B[gi]C[White win 1.5])
+(;B[fi];W[ei];B[gi];W[ca];B[ba];W[da]C[White win 2.5]))))

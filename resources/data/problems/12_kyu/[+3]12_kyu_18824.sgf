@@ -1,0 +1,14 @@
+(;AB[ac]AB[bc]AB[cd]AB[dc]AB[db]AB[eb]AB[ea]AW[ba]AW[fa]AW[fb]AW[ec]AW[fd]AW[dd]AW[de]AW[bd]AW[be]AW[cc]AP[goproblems]
+(;B[ca];W[ce]
+(;B[bb];W[cd];B[cb]C[Correct!-> Black has formed two eyes and is alive.RIGHT])
+(;B[cb];W[bb]C[Incorrect!-> Your solution to this puzzle involves a Ko over the C16 intersection. However, there is a solution without Ko.Adv. ko]))
+(;B[cb];W[ca];B[bb];W[aa]C[Incorrect!-> Black has formed only one big eye and is dead. White can later play A18 to form a bent four in the corner and kill Black.])
+(;B[bb];W[ca]
+(;B[cb];W[aa]C[Incorrect!-> Black has formed only one big eye and is dead. White can later play A18 to form a bent four in the corner and kill Black.])
+(;B[aa]
+(;W[ab];B[cb]C[Incorrect!-> Your solution to this puzzle involves a Ko over the A19 intersection. However, there is a solution without Ko.]
+(;W[aa]C[CHOICE];B[da];W[ba];B[aa];W[ab];B[ca];W[ad];B[aa]C[Incorrect!-> Your solution to this puzzle involves a Ko over the A19 intersection. However, there is a solution without Ko.])
+(;W[ad]
+(;B[da];W[cc]C[Incorrect!-> Your solution to this puzzle involves a Ko over the A19 intersection. However, there is a solution without Ko.])
+(;B[aa];W[ce];B[da]C[Incorrect!-> Your solution to this puzzle involves a Ko over the A19 intersection. However, there is a solution without Ko.])))
+(;W[ce];B[cb]C[Incorrect!-> Your solution to this puzzle involves a Ko over the A19 intersection. However, there is a solution without Ko.];W[ab]C[Incorrect!-> Your solution to this puzzle involves a Ko over the A13 intersection. However, there is a solution without Ko.]))))

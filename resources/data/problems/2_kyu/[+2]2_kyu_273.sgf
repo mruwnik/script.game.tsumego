@@ -1,0 +1,17 @@
+(;C[Black to play and kill white.]AB[ao]AB[aq]AB[ar]AB[bo]AB[bq]AB[co]AB[cr]AB[do]AB[dr]AB[eo]AB[fr]AB[fs]AB[go]AB[gr]AB[hr]AB[hs]AB[io]AB[ir]AB[jr]AB[js]AB[ko]AB[kr]AB[lr]AB[mo]AB[no]AB[oo]AB[op]AB[os]AB[pp]AB[pr]AB[qp]AB[qr]AB[rp]AB[rr]AB[sp]AB[sq]AW[ap]AW[bp]AW[cp]AW[cq]AW[dq]AW[ds]AW[eq]AW[er]AW[es]AW[fq]AW[gq]AW[hq]AW[iq]AW[jq]AW[kq]AW[lq]AW[mp]AW[mq]AW[mr]AW[np]AW[oq]AW[or]AW[pq]AW[qq]AW[rq]AW[ss]SZ[19]GM[1]FF[4]AP[Hibiscus:2.1]ST[3]
+(;B[bs]MN[1];W[cs]
+(;B[nr];W[br];B[cr];W[dr]
+(;B[br];W[as];B[br];W[nq]
+(;B[ns];W[ps]
+(;B[ms];W[ls];B[ns]C[RIGHT]MA[ms]MA[os])
+(;B[qs];W[ms]
+(;B[ps];W[sr];B[rs];W[sr])
+(;B[sr];W[ps]))
+(;B[sr];W[ms]))
+(;B[ms];W[ns]C[Ko.]MA[ms]MA[os]))
+(;B[nq];W[br]C[ko])
+(;B[ns];W[br]C[ko]))
+(;B[br];W[as])
+(;B[ms];W[nr]))
+(;B[nr];W[bs])
+(;B[cs];W[bs]))

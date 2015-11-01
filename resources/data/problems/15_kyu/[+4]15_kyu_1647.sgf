@@ -1,0 +1,79 @@
+(;SZ[19]AW[ea]AW[ka]AW[db]AW[eb]AW[kb]AW[dc]AW[kc]AW[dd]AW[id]AW[jd]AW[kd]AW[ee]AW[fe]AW[ge]AW[he]AB[fa]AB[ja]AB[fb]AB[jb]AB[ec]AB[ic]AB[jc]AB[ed]AB[fd]AB[gd]AB[hd]C[White to kill.  Yes, it actually can be done.]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]TM[]PL[W]
+(;W[hb];B[hc]
+(;W[gb];B[fc]LB[ie:T]C[T for tenuki?]
+(;W[ib];B[ha]LB[ie:T]C[T for tenuki?]
+(;W[ia]
+(;B[ga]C[CHOICE];W[gc]C[Just because it feels so good... RIGHT])
+(;B[ie]C[ Assuming the life of the group is in question...CHOICE];W[ga]C[Eye in the stomach. RIGHT]))
+(;W[ga]
+(;B[ia]C[CHOICE];W[gc]C[Just because it feels so good... RIGHT])
+(;B[ie]C[ Assuming the life of the group is in question...CHOICE];W[ia]C[Eye in the stomach. RIGHT]))
+(;W[gc]C[Seki.  But why?])
+(;W[ie];B[gc]C[Seki.]))
+(;W[ie];B[ha]C[Now what?]
+(;W[ga]
+(;B[ia]C[CHOICE]
+(;W[gc]C[A nakade, good for you. RIGHT])
+(;W[ib];B[gc]C[Wrong way.  Bent four is alive.]))
+(;B[ib]C[CHOICE];W[ia]C[Ko.  It's in white's favor so hey, you win I guess. RIGHT]))
+(;W[ib]
+(;B[ia]C[Seki. CHOICE])
+(;B[ga]C[Seki. CHOICE]))
+(;W[gc];B[ga]C[Alive.])
+(;W[ia];B[ib]C[Alive.]))
+(;W[gc];B[ha]
+(;W[ib]C[Seki.])
+(;W[ga];B[ib]C[Oops...])
+(;W[ia];B[ib]C[Nope.]))
+(;W[ga];B[ib]
+(;W[ia];B[ha]C[Ko, in black's favor.])
+(;W[gc];B[ha]C[Almost, but not quite.])
+(;W[ha]C[Good. RIGHT]))
+(;W[ha];B[ib]LB[ie:T]C[T for tenuki?]
+(;W[ia]C[Not seki. RIGHT])
+(;W[gc]C[Not seki. RIGHT])
+(;W[ga]C[Not seki. RIGHT])
+(;W[ie];B[ga]C[Seki.]))
+(;W[ia];B[ib]
+(;W[ha]C[Not seki. RIGHT])
+(;W[ga];B[ha]C[Ko in black's favor.])
+(;W[gc];B[ha]C[No.])))
+(;W[gc];B[gb]C[Two eyes.])
+(;W[ga];B[gb]C[Two eyes.])
+(;W[ha];B[gb]C[Two eyes.])
+(;W[ia];B[gb]C[Two eyes.])
+(;W[ib];B[gb]C[Two eyes.])
+(;W[fc];B[gb]C[Two eyes.]))
+(;W[gb];B[hb]
+(;W[ga]
+(;B[fc]C[CHOICE]
+(;W[hc];B[gc];W[hc]C[Nice. RIGHT])
+(;W[ha];B[ia]C[Alive.])
+(;W[ia];B[ha]C[Alive])
+(;W[ib];B[ha]C[Alive.])
+(;W[gc];B[hc]C[Alive.]))
+(;B[gc]C[CHOICE];W[fc];B[fb]TR[fc]TR[hc]C[False eyes. RIGHT]))
+(;W[gc];B[ga]C[Alive.]
+(;W[fc];B[hc]C[Alive.])
+(;W[hc];B[fc]C[Alive.]))
+(;W[ha];B[gc]C[Alive.])
+(;W[hc];B[gc]C[Not yet.])
+(;W[fc];B[gc]C[No...])
+(;W[ia];B[ha]C[Alive.])
+(;W[ib];B[ha]C[Alive.]))
+(;W[hc];B[hb];W[gc];B[fc];W[gb];B[ga]C[Alive.])
+(;W[gc];B[hb]
+(;W[fc];B[hc];W[gb];B[ga]C[Alive.])
+(;W[gb];B[ga]
+(;W[fc];B[hc]C[Alive.])
+(;W[hc];B[fc]C[Alive.]))
+(;W[hc];B[fc];W[gb];B[ga]C[Alive.]))
+(;W[ib];B[hb]C[Alive.])
+(;W[ia];B[hb]C[Alive.])
+(;W[ga]
+(;B[gb]C[ Alive.CHOICE])
+(;B[hb];W[gb];B[fc];W[hc];B[gc];W[hc]C[Now, if only black would do that...]))
+(;W[ha];B[hb]
+(;W[gb];B[gc]C[Alive.])
+(;W[gc];B[gb]C[Alive.]))
+(;W[fc];B[gc]C[Huh?]))

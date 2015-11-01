@@ -1,0 +1,106 @@
+(;AB[bp]AB[co]AB[dp]AB[cq]AB[dq]AB[dm]AB[dn]AB[cn]AB[cl]AB[bl]AB[aj]AB[bj]AB[bk]AW[bq]AW[aq]AW[cr]AW[dr]AW[br]AW[do]AW[eo]AW[eq]AW[fq]AW[dl]AW[el]AW[em]AW[en]AW[ai]AW[bi]AW[ci]AW[cj]AW[ap]AW[ck]C[This is a counting problem. Black to defend against white's marked move in the (locally) most advantageous manner. Assume black will lose a ko.]TR[ap]AP[goproblems]
+(;B[ao];W[an]
+(;B[bo];W[ep]C[]
+(;B[cp];W[bm]
+(;B[al];W[cm]C[Black cannot approach.])
+(;B[cm];W[al]C[Nakade.])
+(;B[am];W[al]C[Nakade.]))
+(;B[bm];W[cp]C[Black nets 7 - 6 = 1 point.])
+(;B[am];W[cp]C[Black nets 7 - 6 = 1 point.])
+(;B[bn];W[cp]C[Black nets 7 - 6 = 1 point])
+(;B[al];W[cp]C[Black needs one more move inside to avoid seki, so black nets 6 - 6 = 0 points.])
+(;B[cm];W[al]
+(;B[am];W[bm]C[Nakade.])
+(;B[bm];W[am]C[Assuming black fills C4, the seki nets 0 points.])
+(;B[bn];W[am]C[Nakade.])))
+(;B[bn];W[bo]
+(;B[am];W[cp]C[Since black has no ko threats, black gets A6 but loses D3. Black nets 4 territory   1 capture (A6) - 2 captured stones - 6 (D3) = -3 points.])
+(;B[bm];W[cp]C[Since black has no threats, black must block at A7 and loses D4. Black nets 3 territory - 2 captured stones - 6 (d6) = -5.])
+(;B[al];W[cp]C[Since black has no threats, black must block at A7 and loses D4. Black nets 3 territory - 2 captured stones - 6 (d6) = -5.]))
+(;B[am];W[bo]
+(;B[cp];W[bn]C[C7 is a false eye.])
+(;B[bn];W[cp]C[Since black has no ko threats, black gets A6 but loses D3. Black nets 4 territory   1 capture (A6) - 2 captured stones - 6 (D3) = -3 points.])
+(;B[bm];W[cp];B[bn];W[ep]C[Black has no threats, so loses this ko. Black nets 3 - 9 = -6.]))
+(;B[bm];W[bo]
+(;B[am];W[cp];B[bn];W[ep]C[Black has no threats, so loses this ko. Black nets 3 - 9 = -6.])
+(;B[bn];W[cp]C[Since black has no threats, black must block at A7 and loses D4. Black nets 3 territory - 2 captured stones - 6 (d6) = -5.])
+(;B[cp];W[bn]C[C7 is a false eye.]))
+(;B[cp];W[bm]
+(;B[bo];W[cm]C[Black cannot push.])
+(;B[cm];W[bo]
+(;B[bn];W[am]C[Black has no ko threats.])
+(;B[al];W[ao]))
+(;B[bn];W[bo]C[Since black cannot win the ko, white can fill A7.]))
+(;B[al];W[bo]
+(;B[bn];W[cp]C[Since black has no threats, black must block at A7 and loses D4. Black nets 3 territory - 2 captured stones - 6 (d6) = -5.])
+(;B[bm];W[bn]C[C7 is a false eye.])
+(;B[cp];W[bm]C[Black is dead.])
+(;B[am];W[bn]C[C7 is a false eye.])))
+(;B[an];W[bo]
+(;B[bn];W[cp]C[Black cannot win the ko, so black nets 5 - 7 = -2.])
+(;B[ao];W[cp]C[Black cannot win the ko, so black nets 5 - 7 = -2.])
+(;B[cp];W[bn];B[bm];W[ao]C[C7 is a false eye.]))
+(;B[bo]
+(;W[ep]C[CHOICE]
+(;B[cp]
+(;W[an]C[CHOICE]
+(;B[am];W[bm]
+(;B[bn];W[al]C[Black is dead.])
+(;B[ao];W[al]C[Nakade.]))
+(;B[bn];W[bm]
+(;B[al];W[ao]C[Black is dead.])
+(;B[ao];W[cm])
+(;B[am];W[al]C[Black is dead.])
+(;B[cm];W[am];B[ao];W[al]C[Nakade.]))
+(;B[bm];W[bn];B[am];W[ao]C[C7 is a false eye.])
+(;B[ao];W[bm]
+(;B[al];W[cm]C[Black cannot approach.])
+(;B[cm];W[al]C[Nakade.])
+(;B[am];W[al]C[Nakade.]))
+(;B[al];W[bm]
+(;B[ao];W[cm]C[Black cannot approach.])
+(;B[bn];W[ao]C[Black is dead.])
+(;B[cm];W[ao]C[Black is dead.])
+(;B[am];W[bn]C[Black is dead.])))
+(;W[ao]
+(;B[an];W[am]
+(;B[bn];W[bm];B[cm];W[al]C[Nakade.])
+(;B[bm];W[bn]C[Black loses this ko, so C7 is false.])
+(;B[al];W[bn]C[Black is dead.]))
+(;B[bn];W[am];B[bm];W[an];B[al])))
+(;B[ao];W[cp]C[Black nets 7 - 6 = 1.]))
+(;W[ao];B[bm];W[an];B[bn];W[am];B[al];W[ep];B[cp]C[Black nets 2.]))
+(;B[bn];W[ep]
+(;B[cp]
+(;W[am]
+(;B[ao];W[an]C[Black must block at A7 or B8 but cannot win the ko. Black nets 2 - 1 = 1.])
+(;B[an]C[Black nets 6.]))
+(;W[an]C[CHOICE]
+(;B[am];W[ao]C[Black nets 4.RIGHT])
+(;B[ao];W[am])))
+(;B[ao];W[cp]C[Black fills at B5 and nets 6 - 6 = 0.])
+(;B[bo];W[cp];B[ao]C[Black nets 6 - 6 = 0.])
+(;B[an];W[cp]C[Black fills A5 and nets 6 - 6 = 0.]))
+(;B[bm];W[ep]
+(;B[cp];W[an]
+(;B[bn];W[am]
+(;B[al];W[ao]C[Black nets 2.])
+(;B[ao];W[bo]C[Black cannot win this ko, so must block at A8. Black nets 2 - 1 = 1.]))
+(;B[am];W[bo]C[Black nets 3.])
+(;B[bo];W[bn];B[am];W[ao]C[C7 is a false eye.]))
+(;B[ao];W[an]
+(;B[bo];W[cp]C[Black nets 7 - 6 = 1 point.])
+(;B[cp];W[bo];B[bn];W[am]C[Black cannot win the ko, so must block at A8. Black nets 2.])))
+(;B[am];W[bo]
+(;B[cp];W[bn]C[C7 is a false eye.])
+(;B[bn];W[cp]C[Black cannot win the ko, so black nets 4 - 7 = -3 points.]))
+(;B[cp];W[bn]
+(;B[an];W[bo];B[bm];W[ao]C[C7 is a false eye.])
+(;B[bo];W[ao]C[Black is dead.])
+(;B[ao];W[bo]C[Black is dead.])
+(;B[cm];W[ao]C[Black is dead.])
+(;B[bm];W[ao]C[C7 is a false eye.]))
+(;B[al];W[bn]
+(;B[bo];W[ao]C[C7 is a false eye.])
+(;B[an];W[bo]C[C7 is a false eye.])
+(;B[ao];W[bo]C[Black cannot win the ko, so black is dead.])))

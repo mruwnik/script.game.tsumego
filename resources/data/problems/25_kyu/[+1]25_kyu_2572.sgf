@@ -1,0 +1,5 @@
+(;AW[bp]AW[bq]AW[br]AW[bs]AW[cn]AW[co]AW[cs]AW[dr]AB[cp]AB[cq]AB[cr]AB[dp]AB[ds]AB[ep]AB[eq]AB[er]AB[es]AB[gp]AB[hq]C[How many points does Black win by playing at A? Play at B8 for 2, D8 for 3, F8 for 4 or H8 for 5.FORCE]LB[ds:A]LB[bl:2]LB[dl:3]LB[fl:4]LB[hl:5]
+(;B[dl]C[Correct! Black wins 3 points! 1 point for D3 and 2 (prisoner) at D2.RIGHT]LB[ds:A])
+(;B[bl]C[Sorry, Black wins 3 points.]LB[ds:A])
+(;B[fl]C[Sorry, Black wins 3 points.]LB[ds:A])
+(;B[hl]C[Sorry, Black wins 3 points.]LB[ds:A]))

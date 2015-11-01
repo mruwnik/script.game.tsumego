@@ -1,0 +1,9 @@
+(;AB[qc]AB[pc]AB[oc]AB[nd]AB[ne]AB[oe]AW[nc]AW[mc]AW[ld]AW[od]AW[pd]AW[qe]AW[qh]LB[pe:A]C[It would be a fatal mistake for Black to start by giving atari at a.  Common sense might tell you that; Black can give atari either at a or from the other side, so he should hold both ataris in reserve and wait until one of them becomes effective.]AP[goproblems];B[qf]
+(;W[rf];B[re]
+(;W[pf]
+(;B[pe];W[qg]
+(;B[qd]LB[rd:A]C[The tesuji is the contact play at 1. White's best response is 2, and Black cross-cuts with 3.  If White gives atari at 4, Black gives a counter-atari at 5 and White cannot connect at 7 because of shortage of liberties.  All he can do is to capture at 6, letting Black have two stones with 7 or A.RIGHT]LB[qf:1]LB[rf:2]LB[re:3]LB[pf:4]LB[pe:5]LB[qg:6]LB[qd:7])
+(;B[rd]C[RIGHT]))
+(;B[qd];W[pe]C[CHOICE]))
+(;W[rd];B[qd];W[se];B[pe]LB[qf:1]LB[rf:2]LB[re:3]LB[rd:4]LB[qd:5]LB[se:6]LB[pe:7]C[If White gives atari from the other direction with 4, Black alters 5 accordingly.RIGHT]))
+(;W[rd]LB[qf:1]LB[rd:2]LB[rc:A]LB[rf:B]C[There is one move to watch out for in this shape. Occasionally when Black plays 1 White can resist with 2, threatening a and b.];B[rf];W[rc];B[qd];W[pe];B[re];W[pf];B[pg];W[of];B[ng]LB[rf:3]LB[rc:4]LB[qd:5]LB[pe:6]LB[re:7]LB[pf:8]LB[pg:9]LB[of:10]LB[ng:11]C[But in the present position Black can foil White and make a big capture with 3 etc.RIGHT]))

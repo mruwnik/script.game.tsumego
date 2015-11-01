@@ -1,0 +1,20 @@
+(;SZ[13]AB[ab]AB[ac]AB[bc]AB[ad]AB[be]AB[bf]AB[cf]AB[dg]AB[cg]AB[eh]AB[dh]AB[ch]AB[bi]AB[ai]AB[ah]AB[ak]AB[bl]AB[bm]AB[cm]AB[dm]AB[fm]AB[fl]AB[gl]AB[gk]AB[gj]AB[hj]AB[hi]AB[hh]AB[hk]AB[fh]AB[gh]AB[fe]AB[ha]AB[hb]AB[hc]AB[hd]AB[id]AB[jd]AB[kc]AB[je]AB[if]AB[ig]AB[jg]AB[kg]AB[lg]AB[mg]AB[ml]AB[ll]AB[lk]AB[kk]AB[jl]AB[jm]AB[km]AW[bb]AW[cb]AW[ca]AW[cc]AW[cd]AW[bd]AW[ce]AW[df]AW[ee]AW[eg]AW[fg]AW[gg]AW[hg]AW[hf]AW[he]AW[ie]AW[gd]AW[gc]AW[gb]AW[ga]AW[af]AW[ag]AW[aj]AW[bj]AW[cj]AW[dj]AW[di]AB[ci]AW[fi]AW[gi]AW[ei]AW[fj]AW[fk]AW[el]AW[dl]AW[cl]AW[ck]AW[gm]AW[hm]AW[hl]AW[il]AW[im]AW[ik]AW[jk]AW[ij]AW[ii]AW[ih]AW[jh]AW[kh]AW[lh]AW[mh]AW[mj]AW[lj]AW[kj]AW[ki]C[Black's winning move(s)? (6.5 komi, no prisoners yet)]AP[goproblems]
+(;B[em]
+(;W[ek]C[Hello neighbour. That's it ;-)RIGHT]
+(;B[bk]C[RIGHT])
+(;B[bg]C[Why do you play into own territory?]))
+(;W[bk]
+(;B[ek]C[Best for black. (W B3 was bad.)RIGHT])
+(;B[al];W[ek]C[RIGHT])))
+(;B[ek];W[em]C[You join my eyes. I cut your group...]
+(;B[bg];W[mk]C[Tenuki.];B[bk];W[al]C[You alive, me alive. I win.])
+(;B[dk];W[al]
+(;B[bg];W[bk]C[You alive, me alive. I win.])
+(;B[am];W[bg]C[Whole black's left side is dead. (No seki.)]))
+(;B[ej];W[al]
+(;B[am];W[bg]C[Whole black's left side is dead. (No seki.)])
+(;B[bg];W[bk]C[You alive, me alive. I win.]))
+(;B[bk];W[al];B[bg]C[You alive, me alive. I win.]))
+(;B[bg];W[em]C[Very cautious but what now?]
+(;B[ek];W[mk]C[Tenuki.];B[dk];W[al]C[You alive, me alive. I win.])
+(;B[bk];W[mk]C[Tenuki.];B[ek];W[al]C[You alive, me alive. I win.])))

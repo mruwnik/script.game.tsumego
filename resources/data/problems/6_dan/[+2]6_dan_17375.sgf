@@ -1,0 +1,90 @@
+(;AB[db]AB[dd]AB[cf]AW[fc]AB[ec]AB[fd]AW[eb]AW[fb]AW[gd]LB[eb:1]LB[ec:2]LB[fb:3]LB[fd:4]LB[gd:5]C[What can black do in the corner?]AB[ge]AW[fe]AB[ed]AB[ff]AW[hd]AW[cc]AB[dc]AW[he]AB[gf]AW[cb]AB[da]AW[be]AB[bf]AW[ce]AB[de]AW[cd]LB[ge:6]LB[cc:7]LB[dc:8]LB[fe:9]LB[ed:10]LB[hd:11]LB[ff:12]LB[he:13]LB[gf:14]LB[cb:15]LB[da:16]LB[be:17]LB[bf:18]LB[ce:19]LB[de:20]LB[cd:21]AP[goproblems]
+(;B[ad];W[ae];B[ca];W[ba]
+(;B[bb];W[ab];B[bc]C[Yes, white is dead!RIGHT])
+(;B[ab];W[bc]
+(;B[ac];W[bb]C[Seki, you can do better])
+(;B[bb];W[ac]C[White lives]))
+(;B[bc];W[bd]
+(;B[bb]C[Yep, not the main line, but it seems to work tooRIGHT])
+(;B[ab];W[ac]C[Ko, you can actually do better])
+(;B[ac];W[ab]C[White lives])))
+(;B[ca];W[ba]
+(;B[bb];W[ab]C[Ko, you can actually do better])
+(;B[ab];W[af]C[If you want to block the escape, please do it at B12]
+(;B[bh];W[bc]
+(;B[ad];W[ae]
+(;B[ac];W[bb]C[Seki, you can do better])
+(;B[bb];W[ac]C[White lives]))
+(;B[bb];W[ac]C[White lives]))
+(;B[bb];W[bg]C[White escapes])
+(;B[ad];W[ae]
+(;B[bh];W[bc]
+(;B[bb];W[ac]C[White lives])
+(;B[ac];W[bb]C[Seki, you can do better]))
+(;B[bc];W[bg]C[White escapes])
+(;B[bb];W[bg]C[White escapes])))
+(;B[ad];W[ab]
+(;B[ae];W[ac];B[bc];W[bb]C[White lives])
+(;B[bc];W[ac]
+(;B[ae];W[bb]C[White lives])
+(;B[bd];W[bb]C[White lives])))
+(;B[ae];W[ad];B[bb];W[af]C[If you want to block the escape, please do it at B12]
+(;B[bh];W[ab]C[Ko, you can actually do better])
+(;B[ab];W[bg]C[White escapes])))
+(;B[bb];W[ba]
+(;B[ca];W[ab]C[Ko, you can actually do better])
+(;B[ad];W[ab]C[White lives])
+(;B[ac];W[bc]
+(;B[ca];W[ab]C[White lives])
+(;B[aa];W[ab]C[White lives])
+(;B[ab];W[ad]C[White lives])
+(;B[ad];W[ab]C[White lives])
+(;B[ae];W[ab]C[White lives]))
+(;B[ab];W[af]C[If you want to block the escape, please do it at B12]
+(;B[bh];W[bc]
+(;B[ad];W[ae]
+(;B[ac];W[ca]C[Seki, you can do better])
+(;B[ca];W[ac]C[White lives]))
+(;B[ca];W[ac]C[White lives]))
+(;B[ca];W[bg]C[White escapes])
+(;B[ad];W[ae]
+(;B[bh];W[bc]
+(;B[ac];W[ca]C[Seki, you can do better])
+(;B[ca];W[ac]C[White lives]))
+(;B[ca];W[bg]C[White escapes])
+(;B[bc];W[bg]C[White escapes])))
+(;B[bc];W[ab]
+(;B[ca];W[ac]C[Ko, you can actually do better])
+(;B[ac];W[ad]C[Ko, you can actually do better])
+(;B[ad];W[bd]C[White lives])))
+(;B[ba];W[ca]
+(;B[ad];W[ae];B[bc];W[bb];B[ab];W[aa]C[Ko, you can actually do better])
+(;B[ae];W[ad]
+(;B[af];W[bc];B[ab];W[ac]C[Seki, you can do better])
+(;B[ac];W[af];B[bc];W[bb];B[ab];W[aa]C[Ko, you can actually do better])
+(;B[bb];W[bc];B[ab];W[af]C[White lives])))
+(;B[ab];W[ca];B[ad];W[ae]
+(;B[bc];W[bb]
+(;B[ba];W[aa]C[Ko, you can actually do better])
+(;B[af]C[Ko or seki, you can do better]))
+(;B[ba];W[bb]
+(;B[ac];W[aa]C[Ko, you can actually do better])
+(;B[bc];W[aa]C[Ko, you can actually do better])))
+(;B[ac];W[ca]
+(;B[ae];W[ad];B[bd];W[bc]
+(;B[ad];W[ab]C[White lives])
+(;B[ab];W[ad]C[Ko, you can actually do better])
+(;B[ba];W[ad]C[Ko, you can actually do better]))
+(;B[bb];W[bc]
+(;B[ae];W[ad]C[Ko, you can actually do better])
+(;B[ad];W[ab];B[aa];W[ba]C[White lives])))
+(;B[ae];W[ad]
+(;B[ca];W[ba];B[bb];W[af]C[If you want to block the escape, please do it at B12]
+(;B[bh];W[ab]C[Ko, you can actually do better])
+(;B[ab];W[bg]C[White escapes]))
+(;B[bc];W[bb];B[ca];W[ba];B[ab];W[af];B[ac]C[Local seki, and white can escape too])
+(;B[ac];W[bc]
+(;B[bd];W[ab]C[White lives])
+(;B[ab];W[af]C[White lives])
+(;B[ba];W[ab]C[White lives])))
+(;B[bc];W[bb];B[ca];W[ba];B[ab];W[ad];B[ac]C[Seki, you can do better]))

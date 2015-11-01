@@ -1,0 +1,48 @@
+(;SZ[19]AB[sa]AB[sb]AB[qa]AB[pb]AB[ob]AB[nb]AB[na]AB[qc]AB[rc]AW[sc]AW[sd]AW[rd]AW[qd]AW[pd]AW[oc]AW[nc]AW[mc]AW[mb]C[How many points does black have in the corner?FORCE]LB[nf:4.0]LB[pf:4.5]LB[rf:5.0]AW[ma]FF[1]GM[1]AP[Jago:Version 4.53]GN[goproblem2577]
+(;W[rf]C[]AB[ma]AB[mb]AB[mc]AB[nc]AB[oc]AB[pd]AB[qd]AB[rd]AB[sd]AB[sc]AW[na]AW[nb]AW[ob]AW[pb]AW[qa]AW[qc]AW[rc]AW[sb]AW[sa];B[pc]C[So we swap color and Black takes the outside liberty. 
+Do you need to defend or can you tenuki at T (Q14?)FORCE]LB[rf:5]LB[pf:T]
+(;W[pf];B[rb]
+(;W[qb];B[ra];W[sb]C[Correct! Snapback and 5 points in the corner.RIGHT])
+(;W[ra];B[qb]))
+(;W[rb]C[Just 4 points now.])
+(;W[qb]C[Just 4.])
+(;W[ra]C[That's 4 points.])
+(;W[pa];B[rb]C[Whoops.])
+(;W[oa];B[rb]C[Yay!]))
+(;W[pf];B[qf]C[So... reduce Black to less than 5 points.]LB[pf:4.5]
+(;W[pc];B[rf]C[Black tenukies...]
+(;W[rb];B[qb]
+(;W[ra];B[sb]
+(;W[sa];B[sb]C[5 points to black both sides captured 3 stones.])
+(;W[pa];B[sa]C[5 points to black both sides captured 3 stones.])
+(;W[oa];B[sa]C[5 points to Black, both sides captured 3 stones.]))
+(;W[pa];B[ra]C[5 points to Black.])
+(;W[oa];B[ra]C[5 points for Black.]))
+(;W[pa];B[rb]C[Black gets 5 points.])
+(;W[oa];B[rb]C[5 points after all.])
+(;W[qb];B[rb]C[Oho. 5 points.])
+(;W[ra];B[rb]C[Gee. 5 points.]))
+(;W[rb];B[qb]C[]
+(;W[pc];B[rf]C[Black tenukies!]
+(;W[ra];B[sb]
+(;W[sa];B[sb]C[5 points to black both sides captured 3 stones.])
+(;W[pa];B[sa]C[5 points to black both sides captured 3 stones.])
+(;W[oa];B[sa]C[5 points to Black, both sides captured 3 stones.]))
+(;W[pa];B[ra]C[5 points to Black.])
+(;W[oa];B[ra]C[5 points for Black.]))
+(;W[ra];B[sb]C[Snapback. Black gets 5 points of territory, both sides captured 2 stones.])
+(;W[pa];B[rf]C[Black tenukies...]
+(;W[ra];B[sb]
+(;W[sa];B[sb]C[5 points.])
+(;W[pc];B[sa]C[5 points to black both sides captured 3 stones.]))
+(;W[pc];B[ra]C[5 points to Black.]))
+(;W[oa];B[rf]C[Black tenukies...]
+(;W[ra];B[sb]
+(;W[sa];B[sb]C[5 points.])
+(;W[pc];B[sa]C[5 points to Black, both sides captured 3 stones.]))
+(;W[pc];B[ra]C[5 points for Black.])))
+(;W[pa];B[rb])
+(;W[oa];B[pc]C[6 points!])
+(;W[qb];B[pc]C[Whoops.])
+(;W[ra];B[rb]C[5 points.]))
+(;W[nf]C[No, Black has more than 4 points. Try again.]))

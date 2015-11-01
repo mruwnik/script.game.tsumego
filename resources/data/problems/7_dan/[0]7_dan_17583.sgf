@@ -1,0 +1,29 @@
+(;AB[pd]AB[od]AB[nd]AB[qe]AB[re]AB[sf]AB[rg]AB[me]AB[mc]AB[mb]AW[ne]AW[oe]AW[pe]AW[pf]AW[qf]AW[rf]AW[pg]AW[qh]AW[qi]AW[ri]AW[qd]AW[rd]AB[se]AB[qc]AW[rc]TR[qe]TR[re]TR[se]TR[sf]TR[rg]C[Can Black save the marked stones ?]AP[goproblems]
+(;B[rb];W[qb]
+(;B[pc];W[sb];B[ra]
+(;W[qa]C[CHOICE]
+(;B[sc];W[sa];B[rb];W[ra]
+(;B[sd];W[sg])
+(;B[sg];W[sd]))
+(;B[sd];W[sa];B[rb];W[ra]
+(;B[pb];W[sh];B[sg];W[rh];B[pa];W[qg])
+(;B[sg]C[Yes, that's it !RIGHT]))
+(;B[sg];W[sa];B[sd];W[rb]))
+(;W[sc]C[CHOICE];B[sg];W[qa];B[sd];W[sa];B[rb];W[ra];B[pb]C[RIGHT]))
+(;B[sc];W[pc];B[sd];W[qc]
+(;B[oc];W[ra];B[sb];W[ob]
+(;B[pa];W[oa])
+(;B[nb];W[sh]))
+(;B[ra];W[sb];B[sa];W[qa];B[sb];W[sh])
+(;B[sa];W[qa];B[oc];W[sh];B[sg];W[rh])
+(;B[qa];W[pa]
+(;B[oc];W[ra];B[sb];W[ob];B[nb];W[sh])
+(;B[ob];W[sh];B[pb];W[ra];B[sb];W[sg])
+(;B[sa];W[ra]C[This ko could be avoided.]))))
+(;B[qb];W[sh]
+(;B[rb];W[sg])
+(;B[sg];W[rh];B[rb];W[qg])
+(;B[rh];W[qg];B[rb];W[sg]))
+(;B[sd];W[sc];B[sg];W[qb]
+(;B[pc];W[rb]C[4 liberties to 3, white wins.])
+(;B[rb];W[pc];B[sb];W[qc];B[oc];W[ra]C[After capturing the two stones, white wins the semeai.])))

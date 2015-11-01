@@ -1,0 +1,22 @@
+(;SZ[9]AB[cf]AB[df]AB[de]AB[cd]AB[cc]AB[bc]AB[dc]AB[cb]AB[ca]AB[da]AB[eb]AB[ff]AB[gf]AB[gg]AB[eh]AB[fh]AW[ah]AW[bi]AW[bg]AW[cg]AW[dg]AW[eg]AW[fg]AW[dh]AW[ei]AW[ef]AW[ee]AW[fe]AW[ed]AW[dd]AW[ec]AW[ge]AB[ea]AB[af]AB[bf]AB[ag]AW[hd]AW[id]AB[he]AB[ie]AB[hf]AB[fi]AB[ig]LB[ei:1]LB[fi:2]C[Black responded 2 to 1. Punish him!Black captured 1 stones, komi 5.5.]AW[gc]AW[bh]AB[fb]AB[gb]AB[hb]AB[ha]AW[fc]AW[hc]AW[ib]AB[be]AP[goproblems]
+(;W[gh]
+(;B[di]C[Black captures! Will that lost stone haunt you later on?]
+(;W[hh]C[Black stones are dead!RIGHT])
+(;W[gi];B[hh]C[];W[ei];B[hi]C[Please play at J7 if you think you're safe.]
+(;W[fh]C[White: territory 8, 4 prisoners, 5.5 komi: 17.5 points. Black: territory 16, 2 prisoners. White lost by 0.5. You could do better!CHOICE])
+(;W[ic];B[fh]C[Black wins .])
+(;W[fi]C[White: territory 8, 4 prisoners, 5.5 komi: 17.5 points. Black: territory 16, 2 prisoners. White lost by 0.5. You could do better!])
+(;W[ci]C[White: territory 8, 4 prisoners, 5.5 komi: 17.5 points. Black: territory 16, 2 prisoners. White lost by 0.5. You could do better!])
+(;W[eh]C[White: territory 8, 4 prisoners, 5.5 komi: 17.5 points. Black: territory 16, 2 prisoners. White lost by 0.5. You could do better!])))
+(;B[hh]C[]
+(;W[gi];B[hi]C[White: territory 9,  3 prisoners,   5.5 komi. Black: territory 16, 1 prisoners. White won by 0.5.
+While this result looks similar like the variation where Black captures E1 and White responds at G2, White has played one move less and lost one stone less.RIGHT])
+(;W[hi];B[di])))
+(;W[di];B[gh]C[You've lost the game!White: 5 terrain, 0 prisoners, 5.5 komiBlack: 20 terrain, 1 prisonersBlack won by 11.5])
+(;W[hh];B[gh]
+(;W[hi];B[ih]
+(;W[di];B[hg])
+(;W[hg];B[di];W[ci];B[gi]))
+(;W[ih];B[hi])
+(;W[di];B[hi]))
+(;W[hi];B[hh];W[gh];B[di]))

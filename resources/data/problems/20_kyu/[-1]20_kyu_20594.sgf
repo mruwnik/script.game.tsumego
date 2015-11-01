@@ -1,0 +1,42 @@
+(;AB[bs]AB[cs]AB[cr]AB[dr]AB[bq]AB[bp]AB[co]AB[cn]AB[bn]AB[an]AB[am]AW[al]AW[bm]AW[bl]AW[cm]AW[dm]AW[dn]AW[do]AW[cp]AW[cq]AW[dp]AW[dq]AW[er]AW[ds]AW[eq]AW[es]AW[ar]C[black to protect against invasion]AP[goproblems]
+(;B[aq];W[ao]
+(;B[bo];W[br]
+(;B[as]C[RIGHT])
+(;B[ap];W[ao]C[oops, your groups were seperated and white filled your eye.]))
+(;B[ap];W[bo]C[White took the stones on top, now you won't be able to make two eyes!])
+(;B[as]
+(;W[bo]C[White took your stones on top, now you won't be able to make two eyes!])
+(;W[br]C[White took bottom and now you can only make one eye.]))
+(;B[br];W[bo]C[White took your stones on top, now you won't be able to make two eyes!]))
+(;B[ao];W[br];B[aq];W[as]C[You survived with two eyes, but white took your stones on the bottom. Don't let it happen!];B[cr]C[You will survive, however this is not the optimal solutionRIGHT])
+(;B[ap];W[br]
+(;B[aq]
+(;W[ao]C[Both black groups are dead.]
+(;B[bo])
+(;B[as];W[bo]C[down to one eye.]))
+(;W[as];B[cr];W[ao];B[bs];W[bo];B[ar];W[cs]C[you're dead. B2 is still a false eye]))
+(;B[ao])
+(;B[bo];W[as]C[White took your stones on bottom, now you won't be able to make two eyes!]))
+(;B[br]
+(;W[ao]C[CHOICE]
+(;B[bo];W[aq];B[ap]C[RIGHT])
+(;B[ap];W[bo]C[White took the top and you're left with only one eye.])
+(;B[aq];W[bo]C[White took your stones on top, now you won't be able to make two eyes!])
+(;B[as];W[bo]C[White took the top and you can only make one eye]))
+(;W[ap]C[CHOICE]
+(;B[aq]
+(;W[ao];B[bo]C[RIGHT];W[ao];B[ap])
+(;W[bo];B[ao]C[RIGHT]))
+(;B[bo];W[aq]C[This is seki, you can do better than that ;)])
+(;B[ao];W[bo]C[White took your stones on top, now you won't be able to make two eyes!]))
+(;W[bo];B[ao]C[RIGHT]))
+(;B[as]
+(;W[br]C[Black now only has one eye.])
+(;W[ao]
+(;B[bo];W[br]C[No eyes, you will die])
+(;B[br];W[bo]C[White took the top and you can only make one eye])
+(;B[ap];W[br]C[no eyes, you will die])
+(;B[aq]
+(;W[bo]C[White took your stones on top, now you won't be able to make two eyes!])
+(;W[br]C[White took bottom and now you can only make one eye.]))))
+(;B[bo];W[br];B[aq];W[as]C[White took the group on bottom. You only have one eye. White will soon fill it in.];B[cr]C[You're alive, yay! Although this has less points than the optimal solutionRIGHT]))

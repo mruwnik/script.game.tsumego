@@ -1,0 +1,11 @@
+(;AB[ba]AB[bd]AW[bc]AW[cc]AW[cb]AW[ca]AW[cd]AW[be]AW[ae]AW[db]AB[dc]AB[dd]AB[de]AB[ce]AB[bf]AB[cg]AB[eb]AB[da]AB[ea]AB[bh]AB[ah]AB[ai]AB[aj]AB[bj]AB[cj]AB[dj]AB[ej]AB[gj]AB[fj]AB[ij]AB[hj]AB[jj]AB[ji]AB[jh]AB[jg]AB[jf]AB[je]AB[jd]AB[jc]AB[jb]AB[ja]AB[ci]AB[ei]AB[dh]AB[df]AB[eg]AB[fh]AB[gi]AB[hh]AB[ii]AB[ig]AB[gg]AB[ff]AB[ee]AB[ge]AB[fd]AB[ec]AB[gc]AB[hd]AB[hf]AB[ie]AB[fb]AB[hb]AB[ic]AB[ga]AB[ia]AB[ag]LB[ab:a]LB[bb:b]LB[ac:c]LB[ad:d]LB[af:e]C[FORCE]AP[goproblems]
+(;B[ab]LB[ac:a]C[FORCE];W[ac]LB[af:a]C[FORCE];B[af]LB[ad:a]C[FORCE];W[ad]C[White is alive in a seki.])
+(;B[bb]LB[ad:a]C[FORCE];W[ad])
+(;B[ac]LB[ad:a]C[FORCE];W[ad]LB[ab:a]LB[bb:b]LB[af:c]C[FORCE]
+(;B[ab]LB[bb:a]LB[bd:b]C[FORCE]
+(;W[bb]LB[bd:a]C[FORCE];B[bd]C[RIGHT])
+(;W[bd]LB[af:a]C[FORCE];B[af]C[RIGHT]))
+(;B[bb]LB[ab:a]C[FORCE];W[ab])
+(;B[af]LB[ab:a]C[FORCE];W[ab]))
+(;B[ad]LB[ac:a]C[FORCE];W[ac])
+(;B[af]LB[ad:a]C[FORCE];W[ad]LB[ab:a]C[FORCE];B[ab]LB[bb:a]C[FORCE];W[bb]))

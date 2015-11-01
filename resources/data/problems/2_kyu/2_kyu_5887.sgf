@@ -1,0 +1,24 @@
+(;SZ[4]AW[dc]AW[cd]AB[aa]AB[bb]AB[ad]AB[bd]C[No komi, no prisoners - what is the best White can do?!]
+(;W[bc];B[cb]
+(;W[cc];B[ac]
+(;W[ab];B[ac];W[db];B[ca]C[Seki, White wins by 2 points (3 prisoners against 1) RIGHT])
+(;W[db];B[ca];W[ab];B[ac]C[Seki, White wins by 2 points (3 prisoners against 1) RIGHT]))
+(;W[ac];B[cc]
+(;W[db];B[bd]C[Black wins])
+(;W[ab];B[bd]C[Black wins];W[ba];B[dd]C[Black wins])
+(;W[bd];B[db]C[Black wins]))
+(;W[db];B[cc];W[ac];B[bd]C[Black wins])
+(;W[ab];B[cc]
+(;W[ba];B[dd]C[Black wins])
+(;W[ac];B[bd];W[ba];B[dd]C[Black wins])))
+(;W[cb];B[bc]
+(;W[cc];B[ca]LB[ab:A]LB[ac:B]C[White must play A or B next, so Black wins by one point.])
+(;W[ca];B[cc]
+(;W[db];B[ba]C[Black wins])
+(;W[ba];B[dd]C[Black wins]))
+(;W[ab];B[cc]
+(;W[ba];B[dd];W[db];B[ca];W[cd];B[aa]C[Black wins])
+(;W[db];B[ca];W[ba];B[dd]C[Black wins])
+(;W[ca];B[db]
+(;W[ba];B[dd]C[Seki, Black wins by one point (2prisoners against 1)])
+(;W[da];B[dd];W[ba];B[db]C[Black wins])))))

@@ -1,0 +1,24 @@
+(;AB[pd]AB[qd]AB[rd]AB[sd]AB[pe]AB[pf]AB[pg]AB[ph]AB[qg]AB[qi]AB[ri]AB[rj]AB[rk]AB[pj]AB[oj]AB[ok]AB[ol]AB[om]AB[on]AB[pn]AB[po]AB[pp]AB[qo]AB[qq]AB[rq]AB[rr]AB[sr]AB[pr]AW[pi]AW[qe]AW[re]AW[se]AW[sf]AW[qf]AW[rg]AW[rh]AW[qh]AW[oi]AW[ni]AW[mi]AW[mg]AW[ng]AW[qj]AW[qk]AW[pk]AW[pl]AW[pm]AW[qn]AW[rm]AW[ro]AW[qp]AW[rp]AW[sp]AW[sq]C[White to defend the side]AP[goproblems]
+(;W[rl];B[sh]LB[me:T]C[Play N15 if you'd like to tenuki]
+(;W[me];B[si];W[sk]C[CorrectRIGHT])
+(;W[si]C[That's not necessary])
+(;W[sk]C[That's not necessary])
+(;W[sj];B[sk]C[Seki]))
+(;W[sh];B[qm]C[Oops])
+(;W[sn];B[qm];W[ql];B[rl];W[qm];B[sl];W[sm];B[sh]
+(;W[si];B[sj]C[Seki])
+(;W[sj];B[si]C[Seki]))
+(;W[sm];B[qm];W[ql];B[rl];W[qm];B[sn]C[Oops])
+(;W[si];B[qm]C[Oops])
+(;W[sl];B[qm];W[ql];B[rl];W[qm];B[sn]C[Oops])
+(;W[ql];B[rl])
+(;W[rn];B[qm];W[ql];B[rl])
+(;W[sk];B[qm]C[Oops])
+(;W[sj];B[qm]C[Oops])
+(;W[qm]C[];B[sn]C[]
+(;W[sm];B[rn];W[so];B[sn];W[rn];B[rl]
+(;W[sl];B[sk]
+(;W[si];B[sh]C[Seki])
+(;W[sj];B[sh]C[Seki]))
+(;W[si];B[sl];W[sj];B[sh]C[Seki]))
+(;W[rn];B[rl]C[Oops])))

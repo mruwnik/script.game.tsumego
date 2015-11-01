@@ -1,0 +1,17 @@
+(;SZ[13]AW[ek]AW[fk]AW[gk]AW[hk]AW[dl]AW[il]AW[im]AW[dk]AB[el]AB[cl]AB[ck]AB[cj]AB[ci]AB[ik]AB[jk]AB[jl]AB[hl]AB[ij]AB[ii]AB[hi]AB[gi]AB[fi]AB[ei]AB[di]AW[gm]AB[bl]AP[goproblems]
+(;B[jm]
+(;W[hm]
+(;B[dm];W[em]
+(;B[fm];W[fl];B[gl]C[RIGHT])
+(;B[fl];W[gl]))
+(;B[gl];W[fl])
+(;B[fm];W[gl];B[dm];W[fl])
+(;B[fl];W[gl];B[dm];W[em]))
+(;W[fl];B[hm];W[em];B[gl]C[RIGHT])
+(;W[em];B[hm];W[fl];B[gl]))
+(;B[fm];W[fl];B[jm];W[em];B[hm];W[gl])
+(;B[fl];W[gl];B[dm];W[em])
+(;B[hm];W[gl];B[dm];W[em];B[fm];W[fl])
+(;B[em];W[dm])
+(;B[dm];W[em];B[fm];W[fl];B[jm];W[em];B[hm];W[gl])
+(;B[gl];W[fl]))

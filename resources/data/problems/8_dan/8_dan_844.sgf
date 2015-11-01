@@ -1,0 +1,7 @@
+(;SZ[19]AB[dd]AB[jd]AB[jf]AB[pd]AB[pf]AW[hc]AW[jc]AW[md]GM[1]FF[4]AP[Hibiscus:2.1]ST[3]PL[B];B[kc];W[kd]TR[ld]TR[ic]C[FORCE]
+(;B[ic];W[jb]TR[ld]TR[je]C[FORCE]
+(;B[ld];W[ke];B[je]C[RIGHT])
+(;B[je];W[ib];B[ld];W[lc];B[ke];W[kb]C[White is connected.]))
+(;B[ld];W[ke]TR[je]TR[ic]C[FORCE]
+(;B[je];W[lc];B[ic];W[kb];B[ib]C[White has been cut yet Black could have done this in a more fiendish way.])
+(;B[ic];W[jb];B[je]C[RIGHT])))

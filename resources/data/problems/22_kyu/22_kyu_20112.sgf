@@ -1,0 +1,9 @@
+(;SZ[10]AB[ah]AB[bh]AB[bi]AB[bj]AB[aj]AB[dj]AB[dh]AW[ej]AW[ei]AW[eh]AW[eg]AW[dg]AW[cg]AW[bg]AW[ag]AB[fj]AB[fi]AB[fh]AB[fg]AB[gg]AB[hg]AB[ig]AB[jg]TR[aj]TR[bj]TR[bi]TR[bh]TR[ah]TR[dj]TR[dh]AW[ef]AW[ee]AW[de]AW[ce]AW[be]AW[ae]AB[ff]AB[fe]AB[ge]AB[he]AB[ie]AB[je]AB[ed]AB[dd]AB[bd]AB[cd]AB[ad]AB[ec]AB[eb]AB[ea]AW[fd]AW[fc]AW[fb]AW[fa]AW[gd]AW[hd]AW[jd]AW[id]AB[db]AB[cb]AB[bb]AB[ab]AW[gb]AW[hb]AW[ib]AW[jb]AW[da]AW[ca]AW[ba]AB[ga]AB[ha]AB[ia]LB[ch:a]LB[ci:b]LB[cj:c]LB[di:d]C[FORCE]AP[goproblems]
+(;B[ch]LB[di:a]C[FORCE];W[di])
+(;B[ci]LB[di:a]C[FORCE];W[di])
+(;B[cj]AB[cj]C[FORCE];W[cj]AB[cj]LB[ch:a]LB[di:b]C[FORCE]
+(;B[ch]LB[di:a]C[FORCE];W[di])
+(;B[di]LB[ch:a]C[FORCE];W[ch]))
+(;B[di]LB[ch:a]C[FORCE];W[ch]LB[ci:a]LB[cj:b]C[FORCE]
+(;B[ci]C[RIGHT])
+(;B[cj])))

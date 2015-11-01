@@ -1,0 +1,17 @@
+(;SZ[7]AW[ba]AW[bb]AW[bf]AW[bg]AW[dg]AW[eg]AB[da]AB[ea]AB[cb]AB[fb]AB[gc]AB[ae]AB[cf]AB[cg]LB[cd:C]LB[ce:A]LB[de:B]TR[cf]TR[cg]C[White to capture the marked stones - should he chase them out with WA or shut them in with WB, BA, WC?]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.50]PL[W]
+(;W[ce];B[df]
+(;W[ef];B[de];W[dd];B[ee];W[fe];B[ed];W[ec];B[fd];W[fc];B[gd]
+(;W[gb];B[ga];W[ge];B[gb];W[eb];B[fa];W[ca];B[db];W[dc];B[cc];W[cd];B[bc]
+(;W[ac];B[bd];W[be]C[RIGHT])
+(;W[bd];B[ac]C[Uh-Oh... WA6 and WA4 are both impossible, so White failed. WB4 was a mistake!]))
+(;W[ge];B[gb]C[Black hasthree liberties now, so he is save]))
+(;W[ee];B[ef]
+(;W[de];B[ff];W[fe];B[ge])
+(;W[ff];B[fg];W[fe];B[de];W[dd];B[be];W[cd];B[eg]))
+(;W[de];B[ef];W[ee];B[ff];W[fe];B[ge]))
+(;W[de];B[ce];W[cd];B[be]
+(;W[df];B[bd];W[bc];B[cc];W[dd];B[ab];W[ac];B[ca]LB[ec:A]LB[fd:B]C[The black stones at the left are alive in a seki, so White would have to kill the black group at the top. A or B are the only moves he can try, but most probably it is White who will die...])
+(;W[dd];B[bd]C[An important move, as you will see later]
+(;W[bc];B[df];W[ef];B[ee];W[fe];B[ed]C[Isn't this the same ladder as in the solution?];W[ec];B[fd];W[fc];B[gd];W[gb];B[ga];W[ge];B[gb];W[eb];B[fa];W[ca];B[db]C[No - in this variation, Black is safe!])
+(;W[cc];B[bc];W[ac];B[ab]))
+(;W[bd];B[df];W[ee];B[ef];W[ff];B[fg];W[eg];B[fe];W[gg];B[fd])))

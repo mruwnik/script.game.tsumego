@@ -1,0 +1,56 @@
+(;AW[rp]AW[qq]AW[pq]AW[oq]AW[qo]AW[pn]AW[om]AW[nm]AW[nl]AW[lm]AW[ll]AB[ol]AB[pl]AB[ql]AB[pm]AB[qm]AB[rm]AB[qn]AB[rn]AB[ro]AB[no]AB[oo]AB[np]AW[op]AB[nq]AB[kq]AW[ok]AW[pk]AW[qk]AW[rl]AW[rj]AB[nk]AB[nj]AB[oi]AB[pi]AB[qi]AB[ri]AB[sk]AW[sm]AB[mr]AB[jp]C[Black to do well. There are probably more right moves than wrong. Feel free to tell me if I'm missing anything.]AP[goproblems]
+(;B[po];W[so]
+(;B[qp]
+(;W[sn]
+(;B[on]
+(;W[sl];B[rq]
+(;W[sp];B[rr];W[qr];B[or];W[ps];B[nr];W[rs];B[sr];W[sj];B[pp]
+(;W[qs];B[os])
+(;W[rk];B[pr]))
+(;W[sq];B[rr]
+(;W[sp];B[qr];W[pr];B[pp]C[For reference.])
+(;W[qr];B[sr])
+(;W[sr]C[This path looks like ko, but black can avoid it, as shown.];B[rs]
+(;W[os];B[ss])
+(;W[qr];B[ps]
+(;W[qs];B[sj])
+(;W[or];B[os];W[nr];B[ns];W[qs];B[sj])
+(;W[sj];B[qs];W[or];B[os])))))
+(;W[sp];B[sl];W[sj];B[rq];W[rk];B[sl];W[sk];B[rr];W[qr];B[or];W[ps];B[nr];W[rs];B[sr];W[pr];B[pp]C[For reference.])
+(;W[rq];B[sl]C[CHOICERIGHT]))
+(;B[qo];W[rq]
+(;B[sl]C[RIGHT])
+(;B[rk];W[sj])))
+(;W[rq]
+(;B[sl]C[CHOICERIGHT])
+(;B[qo];W[sn]
+(;B[sl]C[CHOICERIGHT])
+(;B[rk];W[sj]))))
+(;B[on];W[sn]
+(;B[qp];W[rq]
+(;B[sl]C[CHOICERIGHT])
+(;B[rk];W[sj]))
+(;B[pn];W[sl])))
+(;B[sl]
+(;W[rk]
+(;B[sn];W[sj];B[po];W[sm]
+(;B[sl]C[Correct, but r4 is better.CHOICERIGHT])
+(;B[qp]C[CHOICERIGHT])
+(;B[on]C[Correct, but r4 is better.CHOICERIGHT]))
+(;B[so];W[sp]))
+(;W[so];B[rk]C[CHOICERIGHT]))
+(;B[on]
+(;W[so];B[po];W[sn];B[qp]
+(;W[rq]
+(;B[sl]C[CHOICERIGHT])
+(;B[rk];W[sj]))
+(;W[sl];B[rq];W[sq];B[rr];W[sr];B[rs];W[qr];B[ps]
+(;W[qs];B[sj])
+(;W[or];B[os];W[nr];B[ns];W[qs];B[sj])
+(;W[sj];B[qs];W[or];B[os])))
+(;W[po];B[sl]C[CHOICERIGHT]))
+(;B[so];W[sp])
+(;B[rk];W[sj]
+(;B[po];W[so];B[qp];W[rq];B[on];W[sn]C[White's connected.])
+(;B[on];W[po]C[Oh no, now black's group is dead!])
+(;B[so];W[sp])))

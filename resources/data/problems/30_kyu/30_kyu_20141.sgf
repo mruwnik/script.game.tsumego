@@ -1,0 +1,13 @@
+(;SZ[18]AB[ar]AB[br]AB[cr]AB[er]AB[dr]AB[fr]AB[gr]AB[hr]AB[jr]AB[ir]AB[kr]AB[lr]AB[mr]AB[nr]AB[or]AB[pr]AB[qr]AB[qo]AB[po]AB[oo]AB[no]AB[mo]AB[lo]AB[ko]AB[jo]AB[io]AB[ho]AB[go]AB[fo]AB[eo]AB[do]AB[co]AB[bo]AB[ao]AW[rr]AW[rq]AW[rp]AW[ro]AW[rn]AW[qn]AW[pn]AW[on]AW[nn]AW[mn]AW[ln]AW[kn]AW[jn]AW[in]AW[hn]AW[gn]AW[fn]AW[en]AW[dn]AW[bn]AW[cn]AW[an]AW[qa]AW[pa]AW[na]AW[oa]AW[ma]AW[la]AW[ka]AW[ja]AW[ia]AW[ha]AW[ga]AW[fa]AW[ea]AW[ca]AW[da]AW[ba]AW[aa]AW[ad]AW[bd]AW[cd]AW[ed]AW[dd]AW[fd]AW[gd]AW[hd]AW[jd]AW[id]AW[kd]AW[ld]AW[md]AW[nd]AW[od]AW[pd]AW[qd]AB[ra]AB[rb]AB[rc]AB[rd]AB[re]AB[qe]AB[pe]AB[ne]AB[oe]AB[me]AB[le]AB[je]AB[ke]AB[ie]AB[ge]AB[he]AB[fe]AB[ee]AB[de]AB[ce]AB[be]AB[ae]AB[ag]AB[bg]AB[cg]AB[dg]AB[eg]AB[fg]AB[gg]AB[ig]AB[hg]AB[jg]AB[kg]AB[lg]AB[mg]AB[ng]AB[og]AB[pg]AB[qg]AB[rg]AW[rl]AW[ql]AW[pl]AW[ol]AW[nl]AW[ml]AW[ll]AW[kl]AW[il]AW[jl]AW[gl]AW[hl]AW[fl]AW[el]AW[dl]AW[cl]AW[bl]AW[al]AB[ai]AB[bi]AB[ci]AB[di]AB[ei]AB[gi]AB[fi]AB[hi]AB[ii]AB[ji]AB[ki]AB[li]AB[mi]AB[ni]AB[pi]AB[oi]AB[qi]AB[ri]AW[rj]AW[qj]AW[pj]AW[oj]AW[nj]AW[mj]AW[lj]AW[kj]AW[jj]AW[ij]AW[hj]AW[gj]AW[fj]AW[ej]AW[cj]AW[dj]AW[bj]AW[aj]AW[qb]AB[qc]AW[pc]AW[oc]AW[ob]AB[oq]AB[op]LB[pp:a]LB[qp:b]LB[pq:c]LB[qq:d]C[Do the best of black to make this game tie.FORCE]AP[goproblems]
+(;B[pp]LB[qq:a]C[FORCE];W[qq]LB[pq:a]LB[qp:b]C[FORCE]
+(;B[pq]LB[qp:a]C[FORCE];W[qp])
+(;B[qp]LB[pq:a]C[FORCE];W[pq]))
+(;B[qp]LB[qq:a]C[FORCE];W[qq]LB[pp:a]LB[pq:b]C[FORCE]
+(;B[pp]LB[pq:a]C[FORCE];W[pq])
+(;B[pq]C[RIGHT]))
+(;B[pq]LB[qp:a]C[FORCE];W[qp]LB[pp:a]LB[qq:b]C[FORCE]
+(;B[pp]LB[qq:a]C[FORCE];W[qq])
+(;B[qq]LB[pp:a]C[FORCE];W[pp]))
+(;B[qq]LB[qp:a]C[FORCE];W[qp]LB[pp:a]LB[pq:b]C[FORCE]
+(;B[pp]C[RIGHT])
+(;B[pq]LB[pp:a]C[FORCE];W[pp])))

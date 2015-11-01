@@ -1,0 +1,33 @@
+(;AW[cr]AW[br]AW[dr]AW[cq]AW[dq]AW[dp]AW[ep]AB[eq]AB[er]AB[ds]AW[fq]AW[gr]AB[hr]AW[gq]AB[hq]AB[hp]AB[fp]AB[fo]AB[eo]AB[do]AB[bo]AB[co]AB[cp]AB[bq]AB[ap]AP[goproblems]
+(;B[fs]
+(;W[fr]C[White tries to get better than ko. Wisely, or not? It is up to you to find out...]
+(;B[gs]
+(;W[es];B[er]C[Connected!RIGHT])
+(;W[cs];B[gp]C[RIGHT]))
+(;B[ar];W[gs])
+(;B[gp];W[es];B[er];W[gs]
+(;B[ar];W[es]C[Ko. As White made a mistake in the first move you should have killed White outright.])
+(;B[hs];W[eq]
+(;B[es];W[ar])
+(;B[ar];W[es]))
+(;B[es];W[ar]))
+(;B[es];W[gs]))
+(;W[cs]C[White's best defense is this - ko. Black can hardly do anything wrong to get the ko. The problem wants to test Black harder and avoids the ko.]
+(;B[gs];W[es]C[KoRIGHT])
+(;B[ar];W[es]C[KoRIGHT])
+(;B[bs];W[as];B[gs];W[es]C[KoRIGHT])
+(;B[gp];W[es]C[KoRIGHT])))
+(;B[gs];W[fs]
+(;B[es];W[hs])
+(;B[hs];W[fr])
+(;B[gp];W[hs]
+(;B[is];W[es])
+(;B[es];W[cs])))
+(;B[fr];W[fs];B[gp];W[es])
+(;B[ar];W[fr]
+(;B[fs];W[gs])
+(;B[bs];W[es])
+(;B[gs];W[es]))
+(;B[es];W[fs]
+(;B[ar];W[fr])
+(;B[gp];W[cs])))

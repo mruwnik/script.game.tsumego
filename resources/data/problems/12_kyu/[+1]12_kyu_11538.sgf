@@ -1,0 +1,22 @@
+(;AW[rb]AB[rc]AB[rd]AB[qc]AB[pb]AB[oa]AW[ob]AW[mb]AW[oc]AW[pd]AW[qd]AW[re]AW[qf]C[Best result is...?]AP[goproblems]
+(;B[sb];W[ra]
+(;B[sd];W[qb]
+(;B[pc]
+(;W[pa]
+(;B[qa]C[Ko, Black takes first. Black can use O19 as an internal ko threat.RIGHT])
+(;B[na];W[se];B[qa]C[Ko, Black takes first. You just wasted an internal ko threat though.RIGHT]TR[na]TR[se]))
+(;W[na];B[pa];W[se]C[If White can't fight the ko Black gets a sente seki.RIGHT]))
+(;B[qa];W[pa]C[Ko, White takes first.])
+(;B[pa];W[pc]))
+(;B[qa];W[sd])
+(;B[pa];W[sd])
+(;B[pc];W[sd]))
+(;B[qa]C[];W[sb])
+(;B[ra];W[sb]
+(;B[pa];W[qb])
+(;B[qb];W[pa]))
+(;B[sd];W[sb]MA[pa]MA[ra]C[Either point kills Black.])
+(;B[pc];W[sb]
+(;B[pa];W[ra])
+(;B[ra];W[pa]))
+(;B[pa];W[ra]MA[sb]MA[sd]C[Miai.]))

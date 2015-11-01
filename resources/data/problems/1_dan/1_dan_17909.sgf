@@ -1,0 +1,16 @@
+(;SZ[9]AW[fa]AW[fb]AW[gc]AW[gb]AW[gd]AW[ge]AW[he]AW[id]AB[ea]AB[eb]AB[ec]AB[fc]AB[fd]AB[fe]AB[gf]AB[hf]AB[if]AB[ie]AW[da]AW[db]AW[dc]AB[ee]AB[de]AW[cd]AW[ce]AW[cf]AB[df]AW[bh]AB[fg]AW[bf]AW[bg]AB[cg]AB[ch]AW[bi]AB[ci]AB[dg]C[Comi: 0.5 Japanese rule.]AP[goproblems]
+(;B[ib];W[hb]
+(;B[ic];W[hd];B[ha];W[dd]C[Black win 0.5RIGHT])
+(;B[hd];W[hc])
+(;B[ha];W[ic]))
+(;B[ic];W[ib]
+(;B[hd];W[hc]
+(;B[id];W[ha];B[dd]C[Whitw win 0.5])
+(;B[ha];W[id]))
+(;B[hb];W[hc])
+(;B[ha];W[hc])
+(;B[hc];W[hb]))
+(;B[dd];W[ib]C[White win 5.5])
+(;B[hb];W[hc])
+(;B[ha];W[ib])
+(;B[hc];W[hb]))

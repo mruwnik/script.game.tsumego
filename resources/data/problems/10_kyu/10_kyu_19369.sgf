@@ -1,0 +1,11 @@
+(;AB[br]AB[bq]AB[cp]AB[dp]AB[ep]AB[gp]AB[fp]AB[hp]AB[hq]AB[hr]AW[cs]AW[cr]AW[cq]AW[gr]AW[gq]AW[fq]AW[eq]AW[dq]AP[goproblems]
+(;B[gs];W[fs];B[er]C[Solution 1. The hane kills  -  The single white hane at 1 does the job.  That the position resulting from White'sblock at 2 is a dead shape is simply part ofthe body of common knowledge of life and death.RIGHT]LB[gs:1]LB[fs:2]LB[er:3])
+(;B[er];W[es]
+(;B[fs];W[dr]C[Failure. Ko  -  Black 1 is undoubtedly at the vital point,but it ignores the fundamentals. White attaches at 2 and answers Black 3 at 4 to get a ko. If Black plays 3 at 4, White plays A. You can confirm for yourself that even if Black extends inside to B, it becomes a seki, not a big eye.]LB[er:1]LB[es:2]LB[fs:3]LB[dr:4]LB[gs:A]LB[fr:B])
+(;B[dr];W[gs];B[fr]C[seki]))
+(;B[es];W[er]
+(;B[gs];W[fs];B[fr];W[ds])
+(;B[fs];W[gs];B[ds]C[sekiCHOICE]))
+(;B[fs]
+(;W[gs]C[CHOICE];B[er]LB[fs:1]LB[gs:2]LB[er:3]LB[es:A]LB[fr:B]LB[dr:B]C[Solution 2.  .   A separate technique  -  In the beginning Black can also make the placement at 1 and, when White blocks at 2, play 3 to kill the white group. If White attaches with 2 at A, Black plays at 2 and answers White B at C.  Rather than using such a complicated method, however, killing with the hane keeps things much simplerRIGHT])
+(;W[es];B[gs];W[fr];B[dr];W[hs];B[gs]C[RIGHT])))

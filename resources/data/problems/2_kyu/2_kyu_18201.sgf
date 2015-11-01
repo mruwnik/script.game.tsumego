@@ -1,0 +1,32 @@
+(;AB[os]AB[ps]AB[qs]AB[rs]AB[rr]AB[rq]AB[qp]AB[pp]AB[pq]AB[oq]AB[oo]AB[on]AB[om]AB[pn]AB[nn]AB[qm]AW[ns]AW[nr]AW[or]AW[pr]AW[qr]AW[qq]AW[nq]AW[np]AW[op]AW[no]AW[mn]AW[mm]AW[nm]AW[ol]AW[pl]AW[pm]AW[ql]AW[rl]AW[ro]AB[rn]AB[rm]AB[nl]AW[mo]AB[nk]AW[ok]AW[oj]AW[oi]AW[oh]AW[og]AB[pk]AB[pj]AB[pi]AB[qi]AB[ri]AB[rj]AW[qj]AW[qk]AB[pg]AB[qg]AW[mg]AW[ng]AW[mh]AW[mi]AB[mk]AB[mj]AB[lk]AB[kk]AB[pf]AB[of]AB[nf]AB[mf]AB[lf]AB[kf]AB[kg]AB[kh]AB[ki]AB[kj]AW[lm]AW[km]AW[kn]AW[ko]AW[kp]AW[kq]AW[ks]AW[kr]TR[ro]AW[sm]C[Survive in the corner and prevent the one eyed white group to find a life.]AW[rh]AP[goproblems]
+(;B[rp];W[sn]
+(;B[qn];W[qo];B[po];W[so];B[sp];W[sl]
+(;B[sr]C[Way to go, finding life on the spot.RIGHT]MA[mi]MA[mh]MA[mg]MA[ng]MA[og]MA[oh]MA[oi]MA[oj]MA[ok]MA[pl]MA[pm]MA[ol]MA[rh]MA[qj]MA[qk]MA[ql]MA[rl]MA[sl]MA[sm]MA[sn]MA[so]MA[ro]MA[qo])
+(;B[ni];W[sr]C[White plays here first]MA[os]MA[ps]MA[qs]MA[rs]MA[rr]MA[rq]MA[rp]MA[sp]MA[qp]MA[pp]MA[pq]MA[oq]MA[po]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[qm]MA[rm]MA[rn])
+(;B[nj];W[sr]C[White plays here first]MA[os]MA[ps]MA[qs]MA[rs]MA[rr]MA[rq]MA[sp]MA[rp]MA[qp]MA[pp]MA[pq]MA[oq]MA[po]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[rn]MA[rm]MA[qm]))
+(;B[qo];W[qn]))
+(;B[qn];W[rp]
+(;B[qo];W[sn]C[atari.]MA[oq]MA[pq]MA[pp]MA[qp]MA[qo]MA[rm]MA[qm]MA[qn]MA[rn]MA[pn]MA[oo]MA[on]MA[nn]MA[om])
+(;B[sn];W[qo]C[lack of liberties to connect.]MA[qp]MA[pp]MA[pq]MA[oq]MA[sn]MA[rn]MA[rm]MA[qm]MA[qn]MA[pn]MA[oo]MA[om]MA[on]MA[nn])
+(;B[sp];W[qo]C[lack of liberties to connect.]MA[rn]MA[rm]MA[qm]MA[qn]MA[pn]MA[om]MA[on]MA[nn]MA[oo]MA[qp]MA[pp]MA[pq]MA[oq])
+(;B[so];W[qo]C[lack of liberties to connect.]MA[rm]MA[rn]MA[qn]MA[qm]MA[pn]MA[om]MA[on]MA[nn]MA[oo]MA[qp]MA[pp]MA[pq]MA[oq]))
+(;B[qo];W[sn];B[qn];W[rp]MA[rm]MA[rn]MA[qm]MA[qn]MA[qo]MA[qp]MA[pp]MA[pq]MA[oq]MA[oo]MA[nn]MA[on]MA[pn]MA[om]C[atari.])
+(;B[sn];W[so]
+(;B[qn];W[qo]C[lack of liberties to connect.]MA[sn]MA[rn]MA[rm]MA[qm]MA[qn]MA[on]MA[pn]MA[om]MA[nn]MA[oo]MA[qp]MA[pp]MA[pq]MA[oq])
+(;B[sl];W[qo]
+(;B[qn];W[po]C[double atari.]MA[qp]MA[pp]MA[pq]MA[oq]MA[nn]MA[om]MA[on]MA[oo]MA[pn]MA[qn]MA[qm]MA[rm]MA[rn]MA[sn])
+(;B[rp];W[qn]C[double atari.]MA[sn]MA[rn]MA[rm]MA[qm]MA[pn]MA[om]MA[on]MA[oo]MA[nn])
+(;B[po];W[qn]C[double atari.]MA[qp]MA[po]MA[on]MA[om]MA[nn]MA[pn]MA[oo]MA[pp]MA[pq]MA[oq]MA[qm]MA[rm]MA[rn]MA[sn])))
+(;B[so];W[sp]
+(;B[rp];W[sn]
+(;B[qn];W[qo];B[po];W[so];B[sq];W[sl]MA[os]MA[ps]MA[qs]MA[rs]MA[rr]MA[sq]MA[rq]MA[rp]MA[qp]MA[pp]MA[pq]MA[oq]MA[po]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[rn]MA[rm]MA[qm]LB[sp:a]C[Because you forced white to play a, your group has only 1 eye.])
+(;B[sq];W[qn]))
+(;B[qo];W[sn]
+(;B[qn];W[rp]MA[oq]MA[pq]MA[pp]MA[qp]MA[qo]MA[rn]MA[rm]MA[qm]MA[qn]MA[pn]MA[on]MA[om]MA[nn]MA[oo]C[atari.])
+(;B[sq];W[qn]))
+(;B[sq];W[sn];B[qn];W[qo]MA[oq]MA[pq]MA[pp]MA[qp]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[rn]MA[qn]MA[qm]MA[rm]C[lack of liberties to connect.])
+(;B[qn];W[qo]
+(;B[rp];W[sn];B[po];W[so];B[sq];W[sl]C[Because you forced white to play a, your group has only 1 eye.]LB[sp:a]MA[sq]MA[rq]MA[rr]MA[rs]MA[qs]MA[ps]MA[os]MA[rp]MA[qp]MA[pp]MA[pq]MA[oq]MA[po]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[rn]MA[rm]MA[qm])
+(;B[po];W[sn];B[rp];W[so];B[sq];W[sl]C[Because you forced white to play a, your group has only 1 eye.]LB[sp:a]MA[os]MA[ps]MA[qs]MA[rs]MA[rr]MA[sq]MA[rq]MA[rp]MA[qp]MA[pp]MA[pq]MA[oq]MA[po]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[rn]MA[rm]MA[qm])))
+(;B[sp];W[sn];B[qn];W[qo]MA[qp]MA[pp]MA[pq]MA[oq]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[rn]MA[rm]MA[qm]C[lack of liberties to connect.])
+(;B[po];W[sn];B[qn];W[rp]MA[oq]MA[pq]MA[qp]MA[pp]MA[po]MA[oo]MA[nn]MA[on]MA[om]MA[pn]MA[qn]MA[rn]MA[rm]MA[qm]C[atari.]))

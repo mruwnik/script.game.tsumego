@@ -1,0 +1,19 @@
+(;SZ[19]AW[ra]AW[rb]AB[qa]AB[qb]AB[qc]AB[pc]AB[ob]AW[nb]AW[nd]AW[od]AW[pd]AW[qd]AW[rd]AW[rc]AB[sd]AB[se]AB[re]AB[qe]AB[pe]AB[oe]AB[me]AB[ne]AB[md]AB[mc]AB[mb]C[white to live]GM[1]FF[4]CA[UTF-8]RU[Japanese]KM[0]TM[1800,0,30,5]PW[]PB[]AE[sb]AE[ma]PL[W]
+(;W[pa];B[oc]
+(;W[nc];B[na];W[oa];B[pb];W[oa]C[RIGHT])
+(;W[oa];B[nc])
+(;W[na];B[nc]))
+(;W[oc];B[pa]
+(;W[na];B[nc];W[oa];B[ma])
+(;W[nc];B[na]))
+(;W[pb];B[pa]
+(;W[oc];B[nc])
+(;W[na];B[nc]))
+(;W[nc];B[na];W[pa];B[oa];W[oc];B[pb])
+(;W[oa];B[nc];W[oc];B[na]
+(;W[pb];B[pa])
+(;W[pa];B[pb]))
+(;W[na];B[nc]
+(;W[oc];B[pa];W[oa];B[ma])
+(;W[oa];B[oc])
+(;W[pb];B[oc])))

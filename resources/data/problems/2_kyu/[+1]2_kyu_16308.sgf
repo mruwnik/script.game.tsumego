@@ -1,0 +1,11 @@
+(;AB[pa]AB[pb]AB[pc]AB[qd]AB[rd]AB[rc]AW[qc]AW[rb]AW[qe]AW[re]AW[rg]AW[od]AW[oc]AW[ob]AW[oa]C[White to kill.]AP[goproblems]
+(;W[pd];B[qb]
+(;W[sb];B[sc];W[ra]C[RIGHT])
+(;W[sd];B[sb];W[ra]C[Gote seki])
+(;W[sc];B[ra])
+(;W[ra];B[sb]
+(;W[sd]C[Gote seki])
+(;W[sc];B[sd]C[Seki])
+(;W[se];B[sc];W[sd]C[Gote seki])))
+(;W[qb];B[pd];W[pe];B[sb])
+(;W[sb];B[pd]))

@@ -1,0 +1,7 @@
+(;AW[dp]AW[do]AB[ep]AB[fp]AB[gp]AB[fo]AB[fn]AW[go]AW[hp]AW[eq]AW[fq]AW[gq]AW[iq]AB[dq]AB[cq]AB[cp]AB[dn]AB[dm]AW[cm]AW[cl]AW[ck]AB[cn]AB[bn]AB[fk]AB[fl]AW[gm]AW[hm]AW[hk]AW[gk]AW[dj]AW[fj]AW[fi]AW[hi]LB[gm:1]C[White played (1) in the endgame.  The next largest move is at (N). Should black defend?  (Y or N)]AB[an]AB[dr]AW[er]LB[fm:Y]AB[bl]AB[bk]LB[bm:N]AW[bj]AW[cj]AW[ak]AW[aj]AP[goproblems]
+(;B[fm]C[];W[as]C[Yes! The marked stones are more valuable.RIGHT]TR[fk]TR[fl])
+(;B[bm];W[fm]C[Defend!]
+(;B[em];W[el];B[dl];W[ek]C[White makes a profit and G6 is sente for white.])
+(;B[en];W[el])
+(;B[el];W[en];B[em];W[gn])
+(;B[dl];W[en];B[em];W[gn])))

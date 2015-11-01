@@ -1,0 +1,31 @@
+(;AB[rl]AB[ql]AB[pj]AB[oi]AB[oh]AB[og]AB[ng]AB[mh]AB[kh]AB[lh]AW[rj]AW[qh]AW[rf]AW[qe]AW[pf]AW[of]AW[nf]AW[mg]AW[lf]AB[nj]AW[nh]AW[ni]AW[mi]AW[mj]AW[nk]AB[mk]AW[rn]AW[pn]AW[oo]AW[nn]AW[mn]AW[lm]AB[qj]AB[pi]TR[mj]TR[mi]TR[ni]TR[nh]C[Capturing the marked stones would make you very strong in the center.]AP[goproblems]
+(;B[lj];W[oj]
+(;B[li]
+(;W[nj];B[nl]C[RIGHT])
+(;W[ok];B[nj]C[RIGHT]))
+(;B[ok];W[nl]
+(;B[nj]C[Just ko])
+(;B[li];W[nj]))
+(;B[nl];W[ml]
+(;B[ok];W[lk])
+(;B[lk];W[ol]
+(;B[li]C[RIGHT])
+(;B[ok];W[pk]
+(;B[li];W[qk]TR[rl]TR[ql]C[No need to lose those stones.])
+(;B[qk];W[nm]))
+(;B[nm]
+(;W[ok])
+(;W[om]
+(;B[li]C[RIGHT])
+(;B[ok];W[pk]
+(;B[qk];W[mm])
+(;B[li];W[qk]TR[ql]TR[rl]C[No need to lose those stones.])))))))
+(;B[li];W[lj])
+(;B[oj];W[lk];B[ml];W[kj]C[White is safe.])
+(;B[ok];W[lk]
+(;B[nl];W[kj]C[White is safe.])
+(;B[ml];W[kj]C[White is safe.]))
+(;B[nl];W[lk]
+(;B[ml];W[kj]C[White is safe.])
+(;B[ok];W[kj]C[White is safe.])
+(;B[lj];W[ml])))

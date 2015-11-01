@@ -1,0 +1,83 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[9]KM[0.00]
+AW[da][fa][db][bc][dc][ec][fc][cd][dd][id][be][ce][ie][df][ef][ff][gf][hf][fg][hg][ig][fh][gh][ei][hi]AB[ga][eb][fb][gb][gc][hc][ic][ed][fd][hd][de][ee][fe][ge][he][bf][cf][cg][dg][bh][dh][eh][di]C[No komi, no prisoners. White to win the game.]
+(;W[fi]
+;B[ae]
+(;W[ad]
+;B[af]
+(;W[ea]
+;B[if]
+;W[ie]C[Correct, white wins by 1 point!
+RIGHT])
+(;W[if]
+;B[ea]C[Jigo.]))
+(;W[ea]
+;B[ad]
+;W[ac]
+;B[if]
+;W[ie]
+;B[af]C[Black wins by 1 point.])
+(;W[if]
+;B[ad]
+;W[ac]
+;B[ea]C[Black wins by 2 points.]))
+(;W[if]
+;B[ae]
+(;W[ad]
+;B[af]
+(;W[ea]
+;B[fi]C[Jigo.])
+(;W[fi]
+;B[ea]C[Jigo.]))
+(;W[fi]
+;B[ad]
+;W[ac]
+;B[ea]C[Black wins by 2 points.]))
+(;W[ea]
+;B[ae]
+(;W[ad]
+;B[af]
+(;W[fi]
+;B[if]
+;W[ie]C[Correct, white wins by 1 point!
+RIGHT])
+(;W[if]
+;B[fi]C[Jigo.]))
+(;W[fi]
+;B[ad]
+;W[ac]
+;B[if]
+;W[ie]
+;B[af]C[Black wins by 1 point.])
+(;W[if]
+;B[ad]
+;W[ac]
+;B[fi]C[Black wins by 2 points.]))
+(;W[af]
+;B[ag]
+;W[ae]
+;B[fi]
+(;W[ea]
+;B[if]
+;W[ie]C[Correct, white wins by 1 point!
+RIGHT])
+(;W[if]
+;B[ea]C[Jigo.]))
+(;W[ae]
+;B[af]
+(;W[if]
+;B[fi]
+;W[ea]C[Correct, white wins by 1 point!
+RIGHT])
+(;W[fi]
+;B[if]
+(;W[ea]
+;B[ie]C[Jigo.])
+(;W[ie]
+;B[ea]C[Jigo.]))
+(;W[ea]
+;B[if]
+(;W[ie]
+;B[fi]C[Jigo.])
+(;W[fi]
+;B[ie]C[Jigo.]))))

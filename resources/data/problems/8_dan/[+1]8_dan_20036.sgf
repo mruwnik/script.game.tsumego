@@ -1,0 +1,35 @@
+(;AB[dd]AB[cc]AW[bd]AW[cf]AW[dg]AW[dh]AW[ci]AW[di]AW[ei]AB[ch]AB[cg]AB[ck]AB[ec]AB[db]AB[ca]AB[bb]AB[ab]AB[aa]AB[ea]AB[fb]AB[fd]AB[gd]AB[hd]AB[id]AB[ic]AB[ib]AB[ia]AB[gc]AB[ga]AB[hb]AB[cl]AB[bl]AB[dl]AB[dm]AB[do]AB[dq]AB[ds]AW[fi]AB[ej]AB[fj]AB[gj]AW[ek]AW[dk]AW[el]AW[em]AW[fm]AW[gm]AW[gk]AW[fk]AW[hk]AW[ik]AW[il]AW[im]AW[hm]AB[bi]AB[hj]AB[ij]AB[ii]AB[ih]AB[hh]AW[gi]AW[gh]AW[gg]AW[gf]AW[ge]AW[he]AW[ie]AW[if]AW[ig]AW[hg]AW[fg]AW[eh]AB[jh]AB[jg]AB[jf]AB[je]AB[jd]AB[jc]AB[jb]AB[ja]AB[ji]AB[jj]AB[jk]AB[jl]AB[jm]AB[jn]AB[jo]AB[jp]AB[jq]AB[jr]AB[js]AB[bm]AB[an]AB[cn]AB[bo]AB[ap]AB[cp]AB[ar]AB[cr]AB[bq]AB[bs]AB[dj]AW[gl]AW[is]AW[ir]AW[gq]AW[fq]AW[fr]AW[es]AW[er]AW[hr]AB[dr]AB[ep]AB[en]AB[fo]AB[fn]AW[gn]AW[go]AB[ho]AB[hn]AB[in]AB[ip]AW[hq]AB[iq]AB[hp]AB[gp]AB[fp]AB[eq]LB[fs:a]LB[gr:b]LB[gs:c]LB[hs:d]C[FORCE]AB[al]AP[goproblems]
+(;B[fs]LB[gs:a]C[FORCE];W[gs])
+(;B[gr]LB[gs:a]C[FORCE];W[gs])
+(;B[gs]LB[bh:a]C[FORCE];W[bh]LB[bg:a]LB[cj:b]C[FORCE]
+(;B[bg]LB[bj:a]C[FORCE];W[bj]LB[bf:a]LB[ah:b]C[FORCE]
+(;B[bf]LB[ce:a]C[FORCE];W[ce]LB[ah:a]C[FORCE];B[ah]LB[cj:a]C[FORCE];W[cj]C[Black can do better.])
+(;B[ah]LB[cj:a]C[FORCE];W[cj]LB[be:a]LB[ce:b]LB[bf:c]LB[df:d]C[FORCE]
+(;B[be]LB[ce:a]C[FORCE];W[ce]LB[cd:a]LB[bf:b]C[FORCE]
+(;B[cd]LB[bf:a]C[FORCE];W[bf])
+(;B[bf]LB[cd:a]C[FORCE];W[cd]C[Black can do better.]))
+(;B[ce]LB[be:a]LB[bf:b]C[FORCE]
+(;W[be]LB[bf:a]LB[df:b]C[FORCE]
+(;B[bf]LB[df:a]C[FORCE];W[df]LB[bc:a]LB[cd:b]LB[de:c]C[FORCE]
+(;B[bc]C[RIGHT])
+(;B[cd]C[RIGHT])
+(;B[de]C[RIGHT]))
+(;B[df]LB[bf:a]C[FORCE];W[bf]LB[bc:a]C[FORCE]LB[aj:b]
+(;B[bc]LB[ef:a]C[FORCE];W[ef]LB[de:a]C[FORCE];B[de]LB[af:a]C[FORCE];W[af]LB[ag:a]C[FORCE];B[ag]LB[aj:a]C[FORCE];W[aj])
+(;B[aj]C[RIGHT])))
+(;W[bf]LB[be:a]LB[df:b]C[FORCE]
+(;B[be]LB[ae:a]LB[af:b]LB[df:c]C[FORCE]
+(;W[ae]LB[df:a]C[FORCE];B[df]LB[af:a]C[FORCE];W[af]LB[bc:a]C[FORCE];B[bc]C[RIGHT])
+(;W[af]LB[df:a]C[FORCE];B[df]LB[ae:a]C[FORCE];W[ae]LB[bc:a]C[FORCE];B[bc]C[RIGHT])
+(;W[df]LB[af:a]C[FORCE];B[af]C[RIGHT]))
+(;B[df]LB[be:a]C[FORCE];W[be]LB[bc:a]LB[af:b]C[FORCE]
+(;B[bc]LB[ef:a]C[FORCE];W[ef]LB[de:a]C[FORCE];B[de]LB[af:a]C[FORCE];W[af]LB[ad:a]LB[ag:b]C[FORCE]
+(;B[ad]LB[ag:b]C[FORCE];W[ag])
+(;B[ag]LB[aj:a]C[FORCE];W[aj]))
+(;B[af]LB[bc:a]C[FORCE];W[bc]))))
+(;B[bf]LB[ce:a]C[FORCE];W[ce]C[Black is alive, but can do better.])
+(;B[df]LB[bf:a]C[FORCE];W[bf]LB[ce:a]C[FORCE];B[ce]LB[be:a]C[FORCE];W[be]LB[bc:a]C[FORCE];B[bc]LB[ef:a]C[FORCE];W[ef]LB[de:a]C[FORCE];B[de]LB[af:a]C[FORCE];W[af]LB[ad:a]LB[ag:b]C[FORCE]
+(;B[ad]LB[ag:a]C[FORCE];W[ag])
+(;B[ag]LB[aj:a]C[FORCE];W[aj]))))
+(;B[cj]LB[bg:a]C[FORCE];W[bg]))
+(;B[hs]LB[gs:a]C[FORCE];W[gs]))

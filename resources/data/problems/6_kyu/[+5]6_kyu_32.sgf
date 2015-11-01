@@ -1,0 +1,48 @@
+(;AW[re]AW[of]AW[pf]AW[qf]AW[rg]AW[qh]AW[qi]AW[oj]AW[pj]AW[nk]AW[ok]AW[pk]AW[pl]AW[ql]AW[qm]AW[qn]AW[oo]AW[po]AW[pp]AW[oq]AW[pq]AB[pd]AB[rd]AB[ne]AB[oe]AB[qe]AB[mf]AB[mg]AB[pg]AB[qg]AB[mh]AB[ph]AB[mi]AB[oi]AB[pi]AB[mj]AB[nj]AB[qj]AB[mk]AB[qk]AB[nl]AB[ol]AB[rl]AB[mm]AB[om]AB[rm]AB[mn]AB[on]AB[mo]AB[no]AB[mp]AB[op]AB[lq]AB[nq]C[black to live on the right side]PL[B]
+(;B[ri];W[rh]
+(;B[rj];W[sk]
+(;B[rn];W[ro])
+(;B[ro];W[rn];B[sn]))
+(;B[rk];W[si]
+(;B[ro];W[rn];B[sj];W[sh])
+(;B[sj];W[sh];B[rn];W[ro];B[sn];W[sl])))
+(;B[rj]C[]
+(;W[ri]
+(;B[sk]C[RIGHT])
+(;B[rn];W[sj])
+(;B[si];W[rh]
+(;B[sk]C[RIGHT])
+(;B[sj];W[sk]C[white wins])
+(;B[rn];W[sk]))
+(;B[sj];W[sk]
+(;B[si];W[rh]C[white wins])
+(;B[rh];W[sh];B[si];W[rk]))
+(;B[rh];W[sh]
+(;B[sj];W[sk];B[si];W[rk])
+(;B[sk];W[sj]C[Only ko.])))
+(;W[sk];B[rh]))
+(;B[rn];W[rj]
+(;B[rk];W[ri];B[rp];W[rq];B[qo];W[qp];B[ro];W[pn]
+(;B[sk];W[sp];B[so];W[sm];B[si]C[white wins])
+(;B[sp];W[sk];B[sl];W[sn]))
+(;B[rp]
+(;W[rk])
+(;W[rq];B[qo];W[qp];B[ro];W[pn];B[rk];W[ri];B[sk];W[sp];B[so];W[sm];B[si]C[white wins]))
+(;B[ro];W[rk]LB[rp:A]C[Even if black lives in the corner, this is much worse than the correct solution. Also, white could have played 'A', and probably wins the semeai.]))
+(;B[ro];W[rn];B[rj];W[rh]
+(;B[sn];W[sk])
+(;B[sk];W[sm]))
+(;B[rh];W[ri];B[rj];W[sh]
+(;B[sk];W[sj]C[White can get a ko. It's a hard ko for white to win, but it's better than nothing.])
+(;B[sj];W[sk]C[White wins.];B[si];W[rk])
+(;B[rn];W[sj]))
+(;B[se];W[rj];B[rk];W[ri]C[Black may get some stones this way, but his own die.])
+(;B[sk];W[rj];B[rk];W[ri]
+(;B[si];W[rh];B[sj];W[rn]C[White easily wins the semai.])
+(;B[rn];W[ro]
+(;B[si];W[rh];B[sj];W[sn]C[White easily wins the semeai.])
+(;B[sn];W[sj]C[White easily wins the semeai])
+(;B[sj];W[si]C[White easily wins the semeai.]))
+(;B[sj];W[si]C[White easily wins the semeai.]))
+(;B[si];W[rj];B[rk];W[ri];B[sj];W[rh];B[rn];W[ro]C[White will win this semeai.])
+(;B[sj];W[rj];B[rk];W[ri];B[si];W[rh];B[rn];W[ro]C[White will win this semeai.]))

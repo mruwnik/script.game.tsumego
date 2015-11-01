@@ -1,0 +1,4 @@
+(;AW[dp]AW[jp]AB[pd]AB[pj]AB[pp]AW[ch]AW[dg]AW[eg]AW[cf]AW[ce]AW[cd]AW[dc]AW[db]AW[eb]AW[fc]AW[gc]AW[gd]AW[fe]AB[cg]AB[bg]AB[bf]AB[bd]AB[bc]AB[cc]AB[df]AB[de]AB[dd]AB[ec]AB[fd]AB[ed]LB[mc:a]LB[cn:b]LB[mq:c]C[FORCE]AP[goproblems]
+(;B[mc]LB[mc:1]LB[dg:X]LB[eg:X]LB[fe:X]LB[fc:X]LB[gc:X]LB[gd:X]C[Indeed, a is the solution. This nullifies the influence of the very thick X stones.RIGHT])
+(;B[cn]LB[cn:1]LB[bj:a]C[This 1 is the wrong direction. There is an open skirt around a, so this move is bad.])
+(;B[mq]LB[mq:1];W[nd]LB[mq:1]LB[nd:2]C[1 here will be met with 2, utilizing the wall to the left. Furthermore, white has a move like a or b to look forward to, or even c.]LB[lo:a]LB[mo:a]LB[kq:b]LB[qp:c]LB[qq:c]))

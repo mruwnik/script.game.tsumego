@@ -1,0 +1,43 @@
+(;SZ[19]AW[pc]AW[qd]AW[rd]AW[sd]AW[pe]AW[qe]AW[pf]AW[pg]AB[pb]AB[qc]AB[rc]AB[re]AB[qf]AB[rf]AB[qh]C[how should white play?]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]PW[White]PB[Black]PL[W]
+(;W[ob];B[oc]
+(;W[nc];B[od]
+(;W[mb];B[pd]
+(;W[ne]C[
+black is enclosed and diesRIGHT])
+(;W[me]C[better to enclose tightly])
+(;W[nf]C[better to enclose tightly])
+(;W[oe];B[nd])
+(;W[nd];B[oe];W[nf]C[better not to make the previous exchange])
+(;W[mf]C[better to enclose tightly]))
+(;W[nb]C[N18 is better: less aji])
+(;W[ne];B[nb])
+(;W[md];B[nb])
+(;W[oe]
+(;B[nb])
+(;B[nd]))
+(;W[nd];B[nb]C[good for black])
+(;W[qb];B[pd]
+(;W[ne];B[nb])
+(;W[pa];B[pc]))
+(;W[pd];B[nb];W[qb];B[oa]C[good for black]))
+(;W[pd];B[nb]
+(;W[qb];B[oa]C[the corner is small: black is good])
+(;W[od];B[nc];W[qb];B[oa]C[corner is small])
+(;W[oa];B[na]C[doesn't help]))
+(;W[od];B[nc]
+(;W[pd];B[nb];W[qb];B[oa]C[corner is small])
+(;W[qb];B[pd]C[ko is heavy for white]))
+(;W[nb];B[pd])
+(;W[qb];B[pd]))
+(;W[oc];B[ob]C[you are too easy on black])
+(;W[pd];B[ob]C[oh, c'mon])
+(;W[qb];B[oc];W[pd];B[nb]C[corner is small])
+(;W[qg];B[rg]C[bad exchange: white gains nothing and loses a ko threat and aji])
+(;W[se];B[oc])
+(;W[rb];B[oc];W[pd];B[qb])
+(;W[sc];B[oc])
+(;W[od];B[ob])
+(;W[nc];B[oc];W[pd];B[nb])
+(;W[nd];B[oc])
+(;W[pa];B[oc])
+(;W[ph];B[qi]C[helps black]))

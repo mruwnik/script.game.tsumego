@@ -1,0 +1,6 @@
+(;SZ[4]AB[aa]AB[ba]AB[ca]AB[da]AB[db]AB[dc]AB[dd]AW[bb]AW[bc]AB[ac]AB[bd]C[(japanese rules)]AP[goproblems]
+(;W[ab];B[cd];W[ad];B[cd]C[White must connect to a ko.];W[ac]C[Well done!RIGHT])
+(;W[cc]
+(;B[ab]C[White dies.])
+(;B[cb]C[White dies.])
+(;B[cd]C[White dies.])))

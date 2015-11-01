@@ -1,0 +1,24 @@
+(;SZ[19]AB[cl]AB[cm]AB[cn]AW[co]AW[bp]AW[dp]AW[dn]AW[dm]AW[dl]AB[dk]AB[ek]AW[ck]AB[ch]TR[ck]C[how should black deal with the marked white stone?]GM[1]FF[4]CA[UTF-8]RU[Japanese]KM[0]TM[1800,0,30,5]PW[]PB[]AE[en]AE[el]AE[em]AE[fk]AE[dj]AE[dh]AE[cj]AE[do]AE[cp]AE[ep]
+(;B[cj];W[bk]
+(;B[bl];W[bj]
+(;B[bi]C[
+white capturedRIGHT])
+(;B[ci];W[bn]))
+(;B[bj];W[bl]
+(;B[bm];W[bn];B[am];W[an])
+(;B[bn];W[bm];B[am];W[bo];B[an];W[ao])))
+(;B[bk];W[cj]
+(;B[bj];W[di]
+(;B[eh]C[
+this works for blackRIGHT])
+(;B[ei];W[dh]C[black split])
+(;B[dh];W[ei]C[black split])
+(;B[ci];W[dj];B[eh];W[ej];B[fj];W[fk];B[el];W[fl];B[em];W[en]C[ladder]))
+(;B[dj];W[bj]
+(;B[bl]C[this leaves problems for black])
+(;B[al];W[bn];B[bm];W[an];B[am];W[aj])))
+(;B[bj];W[bk]
+(;B[bl];W[cj];B[bi];W[al];B[am];W[ak];B[bn];W[ao];B[bo];W[ap];B[dj];W[an])
+(;B[cj];W[bl];B[bm];W[bn];B[am];W[an]))
+(;B[di];W[bk])
+(;B[bn];W[bk]C[trouble for black]))

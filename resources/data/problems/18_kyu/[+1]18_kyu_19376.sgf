@@ -1,0 +1,14 @@
+(;AB[bd]AB[be]AB[ce]AB[cf]AB[bg]AB[ef]AB[fe]AB[ge]AB[gf]AB[gg]AW[de]AW[cd]AW[cc]AW[bc]AW[ec]AW[fc]AW[gc]AW[ff]AW[fg]AW[fh]AW[eh]AW[dh]AW[ch]AW[bh]C[Can Black connect?FORCE]LB[ic:Yes]LB[kc:No]AP[goproblems]
+(;B[kc]C[They can])
+(;B[ic];W[hc]C[Show me]
+(;B[dd]
+(;W[ed]C[CHOICE]
+(;B[ee];W[dc];B[df]C[RIGHT])
+(;B[df];W[ee]))
+(;W[ee]C[CHOICE];B[ed]C[RIGHT]))
+(;B[df];W[ee])
+(;B[ee];W[df]
+(;B[dd];W[dg])
+(;B[dg];W[dd]
+(;B[eg];W[cg])
+(;B[cg];W[eg])))))

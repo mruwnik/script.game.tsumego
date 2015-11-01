@@ -1,0 +1,15 @@
+(;TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[2x3 board.FORCE]AP[goproblems]
+(;B[br]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[bs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE]
+(;B[ar]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[cs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[tie is the best in this case.RIGHT])
+(;B[cr]TR[ds]TR[dr]TR[dq]TR[bq]TR[cq]TR[aq]C[FORCE];W[as]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[tie is the best in this case.RIGHT])
+(;B[cs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]AW[ds]C[FORCE];W[cr]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[white wins by ko.])
+(;B[as]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[ar]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[white wins by ko.]))
+(;B[bs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[br]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE]
+(;B[cs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[ar]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[tie is the best in this case.RIGHT])
+(;B[as]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[cr]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[tie is the best in this case.RIGHT])
+(;B[cr]TR[dr]TR[ds]TR[dq]TR[cq]TR[bq]TR[aq]AW[cq]AW[dr]AB[ds]C[FORCE];W[cs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[white wins by ko.])
+(;B[ar]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]AW[aq]C[FORCE];W[as]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[white wins by ko.]))
+(;B[cr]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[br]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq])
+(;B[cs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[bs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq])
+(;B[as]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[bs]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq])
+(;B[ar]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]C[FORCE];W[br]TR[ds]TR[dr]TR[dq]TR[cq]TR[bq]TR[aq]))

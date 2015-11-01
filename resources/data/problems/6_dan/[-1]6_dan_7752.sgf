@@ -1,0 +1,19 @@
+(;SZ[4]AW[ba]AW[da]AW[bb]AW[dc]AW[dd]AB[aa]AB[ab]AB[cc]AB[ad]AB[cd]C[No komi, no prisoners - Black to play! What's the best he can do?]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]
+(;B[cb];W[bc]
+(;B[bd]
+(;W[ca];B[db];W[ac]
+(;B[ab]C[Black wins :) RIGHT])
+(;B[aa]C[Black wins :) RIGHT]))
+(;W[ac];B[db]C[Black wins :)]))
+(;B[ca];W[ac];B[db];W[bd]C[A jigo is not good enough :(])
+(;B[db];W[bd];B[ca];W[ac]C[A jigo is not good enough :(]))
+(;B[bc];W[cb];B[db];W[ac]
+(;B[dc];W[ab]C[Seki and jigo, Black can do better :(])
+(;B[ab];W[dc]C[Seki and jigo, Black can do better :(])
+(;B[ca];W[dc]
+(;B[ab];W[da]C[Seki and jigo - Black can do better :(])
+(;B[dd];W[bd]C[White wins!! :(])))
+(;B[db];W[bc]
+(;B[cb];W[bd];B[ca]C[Jigo and seki - Black can do better :(];W[ac]C[A jigo is not good enough :(])
+(;B[bd];W[cb]C[White wins!]))
+(;B[ac];W[bc];B[cb];W[ca]C[White wins!]))

@@ -1,0 +1,24 @@
+(;AB[sp]AB[rp]AB[qp]AB[pp]AW[rq]AW[rr]AW[qq]AW[or]AW[nr]AB[nq]AB[oq]AB[mq]AB[lr]C[b to play to make a ko
+]AP[goproblems]
+(;B[pr];W[pq]
+(;B[ps];W[sq];B[rs];W[ss];B[sr]C[:)RIGHT])
+(;B[qs]
+(;W[rs];B[sq];W[os]C[:(])
+(;W[qr];B[rs];W[ps];B[sr];W[ss]C[:(])))
+(;B[sq];W[sr]
+(;B[pr];W[pq];B[qs];W[qr];B[ps];W[os]C[:(])
+(;B[pq];W[pr];B[qs];W[rs]C[:(])
+(;B[rs];W[qs];B[pr];W[pq]C[:(]))
+(;B[pq];W[pr];B[rs];W[sr];B[ps];W[qr];B[qs];W[ns])
+(;B[ns];W[pr]
+(;B[sq];W[sr];B[qs];W[rs]C[:(])
+(;B[qs];W[rs];B[sq];W[sr]C[:(]))
+(;B[ps];W[pr]
+(;B[rs];W[sr];B[qs];W[ns]C[seki])
+(;B[sq];W[qs]C[:(])
+(;B[qs];W[rs]C[:(]))
+(;B[qs];W[rs];B[pr];W[pq];B[sq];W[os];B[sr];W[ps])
+(;B[rs];W[pr]
+(;B[sr];W[sq]C[:(])
+(;B[qs];W[sq];B[ss];W[ns];B[ps];W[qr]C[:(]))
+(;B[sr];W[pr];B[qs];W[sq];B[rs];W[ps]))

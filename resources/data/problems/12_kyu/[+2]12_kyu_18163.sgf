@@ -1,0 +1,58 @@
+(;SZ[13]AB[bb]AB[cb]AB[cc]AB[cd]AB[dd]AB[ed]AB[fd]AB[gd]AB[hd]AB[id]AB[ic]AB[ib]AB[kb]AW[ca]AW[db]AW[dc]AW[ec]AW[fc]AW[gc]AW[hc]AW[hb]AW[ia]AP[goproblems]
+(;B[ha];W[ga]
+(;B[fb]C[RIGHT])
+(;B[da];W[ea];B[fb]C[RIGHT]))
+(;B[da];W[ea]
+(;B[fb]C[RIGHT])
+(;B[ha];W[ga];B[fb]C[RIGHT]))
+(;B[ea];W[da]
+(;B[ga];W[ha]
+(;B[fb]C[RIGHT])
+(;B[fa];W[fb]C[Only seki]))
+(;B[fb]C[RIGHT])
+(;B[fa];W[ha];B[fb]C[RIGHT])
+(;B[eb];W[fb];B[ga];W[ha]C[]))
+(;B[fb]
+(;W[ha]
+(;B[eb];W[fa]
+(;B[gb];W[da]C[Only seki])
+(;B[ea];W[gb];B[ga];W[da]C[]))
+(;B[da];W[ea]C[])
+(;B[fa]C[RIGHT])
+(;B[ea]C[RIGHT])
+(;B[ga]C[RIGHT])
+(;B[gb];W[da]
+(;B[fa]C[RIGHT])
+(;B[eb];W[fa]C[seki only])))
+(;W[fa]
+(;B[ga];W[da];B[ea];W[eb];B[fa]C[RIGHT])
+(;B[ha];W[da];B[eb];W[ga];B[gb];W[ea];B[fb]C[RIGHT])))
+(;B[ga];W[ha]
+(;B[ea];W[da];B[fb]C[RIGHT])
+(;B[fb]C[RIGHT])
+(;B[fa]
+(;W[fb]C[CHOICE];B[ea];W[da]C[Only seki])
+(;W[da]
+(;B[fb]C[RIGHT])
+(;B[ea];W[fb]C[Only seki]))))
+(;B[gb];W[fb]C[])
+(;B[eb];W[fb]C[])
+(;B[ja];W[fb]
+(;B[ha];W[ga]C[])
+(;B[da];W[ea]C[])
+(;B[ga];W[ha]
+(;B[da];W[ea]C[])
+(;B[ea];W[da];B[fa]C[Only seki]))
+(;B[ea];W[da]
+(;B[ha];W[ga]C[])
+(;B[ga];W[ha];B[fa]C[Only seki]))
+(;B[fa];W[ga]C[]))
+(;B[ba];W[fb]
+(;B[da];W[ea]C[])
+(;B[ea];W[da]
+(;B[ha];W[ga]C[])
+(;B[ga];W[ha];B[fa]C[Only seki]))
+(;B[ga];W[ha]
+(;B[da];W[ea]C[])
+(;B[ea];W[da];B[fa]C[Only seki])))
+(;B[fa];W[fb];B[ga];W[ha];B[ea];W[da]C[Only seki]))

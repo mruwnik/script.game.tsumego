@@ -1,0 +1,24 @@
+(;AB[sj]AB[sk]AB[rj]AB[qj]AB[pj]AB[oj]AB[ni]AB[nh]AB[oh]AB[pg]AB[pf]AB[od]AB[oc]AB[ob]AW[pb]AW[pc]AW[rc]AW[rb]AW[oi]AW[pi]AW[ph]AW[qh]AW[nj]AW[nk]AW[ok]AW[pk]AW[qk]AW[rk]AW[rl]AW[sl]C[Hint: Black might not be able to capture White's four wizards; nevertheless, he is able to take advantage!]TR[oi]TR[pi]TR[ph]TR[qh]AP[goproblems]
+(;B[rh];W[qg]
+(;B[rg];W[qf];B[qe];W[rf];B[re];W[sf]C[Now what?]
+(;B[si];W[se];B[sd];W[rd]
+(;B[sg];W[sc];B[qi];W[sd]C[Yes! Black has lived in sente and sent the four White wizards back to their caves.RIGHT])
+(;B[qi];W[sc];B[sg];W[sd]C[Yes! Black has lived in sente and sent the four White wizards back to their caves.RIGHT]))
+(;B[qi];W[si])
+(;B[se];W[ri]
+(;B[si];W[sh]C[Ouch...])
+(;B[sh];W[qi]C[Ouch...])))
+(;B[qf];W[rg];B[rf];W[ri]C[Black is captured.]))
+(;B[sh];W[rg]
+(;B[rh];W[qg]C[It seems that Black cannot contain White!])
+(;B[rf];W[sg];B[rh];W[qg]
+(;B[qf];W[ri]C[Black is one liberty short.])
+(;B[sf]
+(;W[ri]C[CHOICE])
+(;W[qf];B[qe];W[ri]))))
+(;B[rg];W[ri]C[Oops, White has captured Black...])
+(;B[qg];W[rh]
+(;B[rg];W[si])
+(;B[sh]
+(;W[sg];B[ri];W[si])
+(;W[rg];B[rf];W[sg];B[ri];W[si]))))

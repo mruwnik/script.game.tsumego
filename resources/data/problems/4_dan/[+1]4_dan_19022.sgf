@@ -1,0 +1,137 @@
+(;AW[jr]AW[jq]AW[jp]AW[io]AW[in]AW[is]AW[gr]AW[hp]AW[gp]AB[fq]AB[eq]AB[ho]AB[go]AB[fo]AB[eo]AB[js]AB[ks]AB[kr]AB[kq]AB[kp]AB[ko]AB[jo]AW[hn]AW[gn]AW[gm]AW[hl]AW[im]AB[fm]AB[em]AB[fk]AB[gk]AB[hk]AB[ik]AB[jk]AB[jm]AB[km]C[My mighty sword seems ineffective against this giant robot, thought Blackura. If only I could find its weak point...]AP[goproblems]
+(;B[ir]
+(;W[iq]C[CHOICE]
+(;B[hr];W[hq]C[]
+(;B[hs]C[Giant robot destroyed. Mission accomplished !!RIGHT])
+(;B[gl];W[hs]
+(;B[il];W[fr]C[Giant robot is now invincible. ])
+(;B[fr];W[il]C[Giant robot is now invincible. ]))
+(;B[il];W[hs]
+(;B[gl];W[fr]C[Giant robot is now invincible. ])
+(;B[fr];W[gl]C[Giant robot is now invincible. ])))
+(;B[hs];W[hr]
+(;B[gq];W[is]
+(;B[hq];W[gs]C[Giant robot is now invincible. ])
+(;B[gs];W[fs]C[Giant robot is now invincible.])
+(;B[fr];W[gs]C[Giant robot is now invincible.])
+(;B[gl];W[il];B[ir]C[Ko is not enough !
+Blakura, you need to train more.])
+(;B[il];W[gl];B[ir]C[Ko is not enough !
+Blakura, you need to train more.]))
+(;B[is];W[gq]C[Giant robot is now invincible.])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[hq];W[hr];B[gq]C[This last move... Sigh...
+Blakura, you need to train more.])
+(;B[gq];W[hr]C[Giant robot is now invincible.])
+(;B[gl];W[hr]C[Giant robot is now invincible. ])
+(;B[il];W[hr]C[Giant robot is now invincible. ]))
+(;W[hs]C[CHOICE]
+(;B[hq];W[gq]
+(;B[ip]C[Giant robot destroyed. Mission accomplished !!RIGHT])
+(;B[gl];W[hr]
+(;B[il];W[iq]C[Giant robot is now invincible.])
+(;B[iq];W[ip]C[Giant robot is now invincible.])
+(;B[ip];W[iq]C[Giant robot is now invincible.]))
+(;B[il];W[hr]
+(;B[gl];W[iq]C[Giant robot is now invincible.])
+(;B[iq];W[ip]C[Giant robot is now invincible.])
+(;B[ip];W[iq]C[Giant robot is now invincible.])))
+(;B[hr];W[gs]
+(;B[hq];W[gq]C[Giant robot is now invincible.])
+(;B[gq];W[hq]C[Giant robot is now invincible.]))
+(;B[iq];W[ip]C[Giant robot is now invincible.])
+(;B[gq];W[hq]C[Giant robot is now invincible.])
+(;B[gl];W[hr]
+(;B[il];W[fr]C[Giant robot is now invincible.])
+(;B[gq];W[hq]
+(;B[iq];W[ip]
+(;B[il];W[fr]C[Giant robot is now invincible.])
+(;B[fr];W[il]C[Giant robot is now invincible.]))
+(;B[fr];W[il]C[Giant robot is now invincible.])
+(;B[il];W[fr]C[Giant robot is now invincible.]))
+(;B[fr];W[il]C[Giant robot is now invincible.]))
+(;B[il];W[hr]
+(;B[gl];W[fr]C[Giant robot is now invincible.])
+(;B[gq];W[hq]
+(;B[iq];W[ip]
+(;B[gl];W[fr]C[Giant robot is now invincible.])
+(;B[fr];W[gl]C[Giant robot is now invincible.]))
+(;B[fr];W[gl]C[Giant robot is now invincible.])
+(;B[gl];W[fr]C[Giant robot is now invincible.]))
+(;B[fr];W[gl]C[Giant robot is now invincible.])))
+(;W[hr]C[CHOICE]
+(;B[iq];W[ip]
+(;B[hs]C[Giant robot destroyed. Mission accomplished !!RIGHT])
+(;B[il];W[hq]C[Giant robot is now invincible.])
+(;B[gl];W[hq]C[Giant robot is now invincible.]))
+(;B[hs];W[iq]
+(;B[is];W[gq]C[Giant robot is now invincible.])
+(;B[gq];W[is]
+(;B[hq];W[gs]C[Giant robot is now invincible.])
+(;B[gs];W[fs]C[Giant robot is now invincible.])
+(;B[fr];W[gs]C[Giant robot is now invincible.])
+(;B[il];W[gl];B[ir]C[Ko is not enough !
+Blakura, you need to train more.])
+(;B[gl];W[il];B[ir]C[Ko is not enough !
+Blakura, you need to train more.]))
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[gq];W[iq]C[Giant robot is now invincible.])
+(;B[hq];W[iq];B[gq]C[This last move... Sigh...
+Blakura, you need to train more.])
+(;B[il];W[iq]C[Giant robot is now invincible.])
+(;B[gl];W[iq]C[Giant robot is now invincible.])))
+(;B[iq];W[ir]
+(;B[gq];W[hq]C[Giant robot is now invincible.])
+(;B[hq];W[gq]C[Giant robot is now invincible.])
+(;B[hr];W[hq]
+(;B[hs];W[gs]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[ip];W[hq]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[hq];W[iq]
+(;B[hs];W[hr]
+(;B[ir];W[gq]C[Giant robot is now invincible.])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[hr];W[gq]
+(;B[hs];W[gs]
+(;B[ir];W[is]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[gq];W[hr]
+(;B[gs];W[fr]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[gs];W[hr]
+(;B[fr];W[gq]C[Giant robot is now invincible.])
+(;B[gq];W[fr]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[gl];W[hr]C[Giant robot is now invincible.])
+(;B[il];W[hr]C[Giant robot is now invincible.]))
+(;B[gq];W[hq]
+(;B[ir];W[hs]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[hr];W[ir]
+(;B[hq];W[gq]C[Giant robot is now invincible.])
+(;B[hs];W[hq]C[Giant robot is now invincible.])
+(;B[gq];W[hq]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[hs];W[ir]
+(;B[hr];W[hq]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[gs];W[hr]
+(;B[iq];W[ip]C[Giant robot is now invincible.])
+(;B[il];W[gl]C[You wasted a ko threat. Blakura, you need to train more !])
+(;B[gl];W[il]C[You wasted a ko threat. Blakura, you need to train more !]))
+(;B[il]C[NOTTHIS];W[gl])
+(;B[gl]C[NOTTHIS];W[il]))

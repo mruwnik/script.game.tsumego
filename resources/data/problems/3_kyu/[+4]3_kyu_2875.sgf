@@ -1,0 +1,18 @@
+(;SZ[19]AW[eq]AW[fq]AW[ar]AW[cr]AW[dr]AW[bs]AW[fs]AB[ep]AB[fp]AB[gp]AB[aq]AB[cq]AB[dq]AB[gq]AB[er]AB[gr]AB[cs]AB[gs]C[Black to Kill white]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.50]
+(;B[fr];W[bq];B[bp];W[ap]
+(;B[ds];W[es];B[ds];W[cs];B[ao];W[aq];B[bo])
+(;B[es];W[ds];B[ao];W[aq];B[bo]))
+(;B[es];W[ds];B[bq];W[br])
+(;B[ds];W[es]
+(;B[ds];W[bq];B[bp];W[ap]C[Now white will live.]
+(;B[fr];W[cs];B[ao];W[aq];B[bo])
+(;B[bo];W[aq];B[fr];W[cs]C[White lives];B[es])
+(;B[ao];W[aq]
+(;B[fr]
+(;W[cs];B[bo])
+(;W[bo];B[cp];W[an]))
+(;B[bo];W[cs];B[fr];W[ds])))
+(;B[bq];W[fr]
+(;B[br];W[cs];B[as])
+(;B[ds];W[cs];B[br];W[as])))
+(;B[bq];W[br];B[ds];W[es];B[ds]C[Correct. D1 Creates a false eye. And if White responds at F2, a big snapback. RIGHT]))

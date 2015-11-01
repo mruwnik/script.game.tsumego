@@ -1,0 +1,225 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[0.00]
+AW[po][qo][ro][so][pp][qq][pr][qr][qs]AB[rk][ml][pl][ql][sl][lm][nm][om][rm][mn][on][pn][qn][rn][sn][mo][oo][mp][op][mq][oq][pq][kr][mr][or][ms][os][ps]LB[nn:a][no:b][np:c][nq:d][nr:e][ns:f]C[What is the status of the corner? (Make no assumptions about the rest of the board.)
+
+(a) White is dead (tenuki) 
+(b) Black can kill 
+(c) Black can force a ko for life 
+(d) Black can force white to live in seki (avoiding ko fight)
+(e) White is living with two eyes (tenuki) 
+(f) None of the above 
+FORCE]
+(;B[nn])
+(;B[no]
+;W[np]C[Kill the white group!]
+AB[np]
+(;B[rq]
+;W[rp]
+(;B[rr]
+;W[rs]
+(;B[sr]
+;W[sp]C[White lives in seki.])
+(;B[sq]
+;W[ss]C[White lives in seki.]))
+(;B[sq]
+;W[rr]
+;B[sr]
+;W[rs]C[White lives in seki.])
+(;B[sr]
+;W[rr]
+;B[sq]
+;W[rs]C[White lives in seki.]))
+(;B[rp]
+;W[rq]
+(;B[sp]
+;W[qp])
+(;B[sq]
+;W[sr])))
+(;B[np]
+;W[no]C[Start a ko for life!]
+AB[no]
+(;B[rq]
+;W[rp]
+(;B[rr]
+;W[rs]
+(;B[sr]
+;W[sp]C[White lives in seki.])
+(;B[sq]
+;W[ss]C[White lives in seki.]))
+(;B[sq]
+;W[rr]
+;B[sr]
+;W[rs]C[White lives in seki.])
+(;B[sr]
+;W[rr]
+;B[sq]
+;W[rs]C[White lives in seki.]))
+(;B[rp]
+;W[rq]
+(;B[sp]
+;W[qp])
+(;B[sq]
+;W[sr])))
+(;B[nq]
+;W[nr]C[Correct, white can live in seki for sure. But if white has much better ko threats than black, then white can start a ko and get some territory in the corner.
+
+Click 'N' (O4) to switch colors!
+FORCE]
+AB[nr]LB[np:N]
+;B[np]
+AW[rk][ml][pl][ql][sl][lm][nm][om][rm][mn][on][pn][qn][rn][sn][mo][oo][mp][np][op][mq][nq][oq][pq][kr][mr][nr][or][ms][os][ps]AB[po][qo][ro][so][pp][qq][pr][qr][qs]
+;W[rq]C[Now black does not settle with seki but wants the whole corner. 
+
+Find the best ko!]
+(;B[rp]
+;W[rr]
+(;B[rs]
+;W[sr]
+;B[sq]C[RIGHT])
+(;B[sq]
+;W[rs]))
+(;B[rr]
+;W[sp]
+;B[qp]
+;W[sr]
+;B[ss]C[Two stage ko. Black can do better!])
+(;B[sq]
+;W[rr]
+(;B[sr]
+;W[rs])
+(;B[rp]
+;W[rs])
+(;B[sp]
+;W[rs]
+;B[qp]
+;W[rp])
+(;B[rs]
+;W[rp]
+;B[sr]C[Seki.]))
+(;B[sp]
+;W[sq]
+;B[qp]
+;W[rr])
+(;B[qp]
+;W[sp]
+(;B[rr]
+;W[sr]
+;B[ss]C[Two stage ko. Black can do better!])
+(;B[rp]
+;W[rr]
+;B[sq]
+;W[rs])
+(;B[sr]
+;W[rr]
+;B[rs]C[Seki.]))
+(;B[sr]
+;W[rr]
+(;B[rs]
+;W[sp]
+;B[qp]C[Seki.])
+(;B[rp]
+;W[rs])
+(;B[sq]
+;W[rs])))
+(;B[nr]
+;W[nq]C[Click 'N' (O5) to switch colors.
+FORCE]
+AB[nq]LB[no:N]
+;B[no]
+AW[rk][ml][pl][ql][sl][lm][nm][om][rm][mn][on][pn][qn][rn][sn][mo][no][oo][mp][op][mq][nq][oq][pq][kr][mr][nr][or][ms][os][ps]AB[po][qo][ro][so][pp][qq][pr][qr][qs]
+;W[rq]C[Try to live with two eyes!]
+(;B[rp]
+;W[rr]
+(;B[rs]
+;W[sr]
+;B[sp]C[The corner lives in seki.])
+(;B[sq]
+;W[sr]
+;B[rs]
+;W[sp]C[Ko.]))
+(;B[qp]
+;W[rr])
+(;B[rr]
+;W[sp]
+;B[qp]
+;W[sr]
+;B[rs]C[The corner lives in seki.])
+(;B[sq]
+;W[sr]
+(;B[rp]
+;W[sp])
+(;B[rr]
+;W[sp]
+;B[qp]
+;W[rs]C[Ko.])))
+(;B[ns]
+;W[nr]C[Correct! White can live in seki for sure. But if white has good enough ko threats, it can also start a ko and get some territory in the corner.
+
+Click 'N' (O4) to switch colors!
+FORCE]
+AB[nr]LB[np:N]
+;B[np]
+AW[rk][ml][pl][ql][sl][lm][nm][om][rm][mn][on][pn][qn][rn][sn][mo][oo][mp][np][op][mq][oq][pq][kr][mr][nr][or][ms][ns][os][ps]AB[po][qo][ro][so][pp][qq][pr][qr][qs]
+;W[rq]C[Now show how to live in seki!]
+(;B[rp]
+;W[rr]
+(;B[rs]
+;W[sr]
+;B[sp]C[RIGHT])
+(;B[sq]
+;W[sr]
+(;B[rs]
+;W[sp]C[Ko.])
+(;B[ss]
+;W[sp]C[Ko.])
+(;B[qp]
+;W[sp]C[Ko.])))
+(;B[rr]
+;W[sp]
+;B[qp]
+;W[sr]
+;B[rs]C[RIGHT])
+(;B[sq]
+;W[rr]
+(;B[sr]
+;W[rs]
+;B[qp]
+;W[sp])
+(;B[rp]
+;W[sr]
+;B[rs]
+;W[sp]C[Ko.])
+(;B[sp]
+;W[rs]
+;B[qp]
+;W[rp])
+(;B[rs]
+;W[sr]
+;B[rp]
+;W[sp]C[Ko.]))
+(;B[sp]
+;W[sq]
+;B[qp]
+;W[rr])
+(;B[qp]
+;W[sp]
+(;B[rr]
+;W[sr]
+;B[rs]C[RIGHT])
+(;B[rp]
+;W[rr]
+;B[sq]
+;W[rs])
+(;B[sr]
+;W[rr]
+;B[rs]C[RIGHT]))
+(;B[sr]
+;W[rr]
+(;B[rs]
+;W[sq]
+;B[rp]
+;W[ss]C[Ko.])
+(;B[rp]
+;W[rs])
+(;B[sq]
+;W[rs]))))

@@ -1,0 +1,20 @@
+(;AB[es]AB[er]AB[fr]AB[fq]AB[gq]AW[fs]AW[gs]AW[gr]AW[hr]AW[hq]AW[ir]AW[iq]AW[ip]AW[jr]AW[ks]AB[hp]AB[ho]AB[io]AW[jo]AW[jn]AB[jp]AB[jq]AB[kr]AB[lr]AB[lq]AW[lo]AW[gp]AW[fp]AW[gn]AW[fn]AB[ep]AB[eo]AB[do]AB[co]AB[bo]AB[ao]AB[cp]AB[dq]AB[bq]AB[cr]AB[ds]AB[bs]AB[ar]AB[ap]AW[en]AW[dn]AW[cn]AW[bn]AW[an]AW[gm]AW[hm]AW[im]AW[jm]AW[el]AW[dl]AW[cl]AW[bl]AW[al]AW[bm]AW[dm]AW[fm]AW[fl]AW[gl]AW[hl]AW[il]AW[jl]AW[kl]AW[ll]AW[ml]AW[nl]AW[ol]AW[pl]AW[ql]AW[rl]AW[sl]AB[mq]AB[np]AB[mp]AB[op]AB[pp]AB[rp]AB[qp]AB[sp]AB[ms]AB[nr]AB[os]AB[oq]AB[pr]AB[qq]AB[qs]AB[rr]AB[sq]AB[ss]AW[ko]AW[mo]AW[no]AW[oo]AW[po]AW[qo]AW[ro]AW[so]AW[nn]AW[mm]AW[om]AW[pn]AW[qm]AW[rn]AW[sm]AB[ak]AB[bk]AB[ck]AB[dk]AB[ek]AB[fk]AB[gk]AB[hk]AB[ik]AB[jk]AB[kk]AB[lk]AB[mk]AB[nk]AB[ok]AB[pk]AB[qk]AB[rk]AB[sk]AW[ln]AW[km]LB[is:a]LB[js:b]LB[ls:c]C[FORCE]AP[goproblems]
+(;B[is]LB[in:a]C[FORCE];W[in]LB[hs:a]LB[js:b]C[FORCE]
+(;B[hs]LB[js:a]C[FORCE];W[js]LB[fo:a]LB[go:b]C[FORCE]
+(;B[fo]LB[go:a]C[FORCE];W[go]LB[hs:a]LB[is:b]C[FORCE]
+(;B[hs]LB[hn:a]C[FORCE];W[hn])
+(;B[is]LB[hn:a]C[FORCE];W[hn]))
+(;B[go]LB[fo:a]C[FORCE];W[fo]LB[hs:a]LB[is:b]C[FORCE]
+(;B[hs]LB[hn:a]C[FORCE];W[hn])
+(;B[is]LB[hn:a]C[FORCE];W[hn])))
+(;B[js]LB[go:a]LB[hn:b]C[FORCE]
+(;W[go]LB[hs:a]C[FORCE];B[hs]C[RIGHT])
+(;W[hn]LB[hs:a]C[FORCE];B[hs]C[RIGHT])))
+(;B[js]LB[is:a]C[FORCE];W[is]LB[ls:a]C[FORCE];B[ls]LB[go:a]LB[hn:b]LB[in:c]C[FORCE]
+(;W[go]C[It's a ko, black can do better.])
+(;W[hn]C[It's a ko, black can do better.])
+(;W[in]C[It's a ko, black can do better.]))
+(;B[ls]LB[go:a]LB[hn:b]LB[in:c]C[FORCE]
+(;W[go])
+(;W[hn])
+(;W[in])))

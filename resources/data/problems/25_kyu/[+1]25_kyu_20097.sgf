@@ -1,0 +1,34 @@
+(;AB[cr]AB[bq]AB[bp]AB[cp]AB[co]AB[do]AW[bo]AW[bn]AW[cn]AW[dn]AW[en]AW[dq]AW[cq]AW[dr]AW[er]AW[es]AB[cs]AW[eq]AB[eo]AB[dp]AB[ep]AW[fn]AW[fo]AW[fp]AW[fq]LB[ap:a]LB[aq:b]LB[ar:c]LB[br:d]LB[as:e]LB[bs:f]C[FORCE]AP[goproblems]
+(;B[ap]LB[ar:a]C[FORCE];W[ar])
+(;B[aq])
+(;B[ar]LB[ap:a]LB[bs:b]LB[ds:c]C[FORCE]
+(;W[ap]LB[br:a]LB[bs:b]C[FORCE]
+(;B[br])
+(;B[bs]LB[ao:A]C[Even if white plays on A, black can make life.RIGHT]))
+(;W[bs]LB[ao:a]LB[ap:b]LB[aq:c]C[FORCE]
+(;B[ao]LB[ap:a]C[FORCE];W[ap])
+(;B[ap]LB[ds:A]C[Even if white plays on A, black can make life.RIGHT])
+(;B[aq]))
+(;W[ds]C[FORCE]LB[ap:a]LB[aq:b]LB[br:c]LB[as:d]LB[bs:e]
+(;B[ap]LB[bs:A]C[Even if white plays on A, black can make life.RIGHT])
+(;B[aq]LB[bs:a]C[FORCE];W[bs])
+(;B[br]LB[ap:a]C[FORCE];W[ap])
+(;B[as]LB[ap:a]C[FORCE];W[ap])
+(;B[bs]LB[ap:a]C[FORCE];W[ap]LB[ao:A]C[Even if white plays on A, black can make life.RIGHT])))
+(;B[br]C[FORCE]LB[ap:a]LB[as:b]
+(;W[ap]LB[aq:a]LB[as:b]C[FORCE]
+(;B[aq]LB[as:a]C[FORCE];W[as])
+(;B[as]LB[aq:a]C[FORCE];W[aq]))
+(;W[as]LB[ap:a]LB[ar:b]C[FORCE]
+(;B[ap]LB[ar:a]C[FORCE];W[ar])
+(;B[ar]LB[ap:a]C[FORCE];W[ap])))
+(;B[as]LB[ap:a]LB[br:b]C[FORCE]
+(;W[ap])
+(;W[br]LB[ap:a]LB[ar:b]C[FORCE]
+(;B[ap]LB[ar:a]LB[ds:b]C[FORCE]
+(;W[ar])
+(;W[ds]))
+(;B[ar]LB[ds:a]C[FORCE];W[ds]LB[ap:a]LB[bs:b]C[FORCE]
+(;B[ap]LB[bs:a]C[FORCE];W[bs])
+(;B[bs]LB[ap:a]C[FORCE];W[ap]))))
+(;B[bs]LB[ar:a]C[FORCE];W[ar]))

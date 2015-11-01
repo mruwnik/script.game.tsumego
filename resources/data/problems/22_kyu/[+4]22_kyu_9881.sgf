@@ -1,0 +1,27 @@
+(;C[Easy; find the best move for Black.]AB[dq]AW[eq]AB[ep]AW[fq]AB[fp]AW[hq]AB[gp]AW[hp]AB[gq]AW[gr]AB[ho]AW[ip]AB[io]AB[jp]AW[jq]AB[kp]AW[kq]AB[pp]AW[qq]AB[pq]AW[qp]AB[qo]AW[ro]AB[qn]AW[rn]AW[pr]AB[or]AW[qr]AB[oq]AB[qm]AP[goproblems]
+(;B[lq])
+(;B[hr];W[iq]
+(;B[gs];W[ir]
+(;B[hs]C[RIGHT])
+(;B[fr]C[RIGHT]))
+(;B[fr]C[=)RIGHT])
+(;B[ir];W[jr]
+(;B[fr]C[=)RIGHT])
+(;B[gs]C[Works too :)RIGHT]))
+(;B[hs];W[fr]
+(;B[gs];W[dr]
+(;B[fs];W[er])
+(;B[er];W[es];B[fs];W[er];B[cr]C[RIGHT]))
+(;B[er];W[dr])
+(;B[fs];W[dr]
+(;B[er];W[es];B[gs];W[er];B[cr]C[RIGHT])
+(;B[gs];W[er]))
+(;B[dr];W[ir]))
+(;B[er];W[ir]C[White saves G2 and gets an easy life.]))
+(;B[ir])
+(;B[er]
+(;W[hr]C[White saves G2 and gets an easy life.CHOICE])
+(;W[fr]
+(;B[dr];W[ir])
+(;B[hr]C[The original White defense, missing this Black move....RIGHT])))
+(;B[fr];W[hr]C[White saves G2 and gets an easy life.]))

@@ -1,0 +1,195 @@
+(;AW[ja]AW[jb]AW[kc]AW[ic]AW[id]AW[jd]AW[ie]AW[he]AW[jf]AW[jg]AW[jh]AB[ge]AB[hd]AB[hc]AB[ib]AB[ha]AB[gb]AB[hf]AB[if]AB[ig]AB[ih]AB[ji]AB[kh]AB[ki]AB[li]AB[lg]AB[me]AB[ke]AW[md]AW[mc]AW[mb]AB[nd]AB[oc]AB[ob]AB[oa]AB[pb]AB[nf]AB[mf]AB[gd]AB[ii]AB[gf]AB[ne]AB[od]TR[ke]C[Save as much as you can in sente - or save all in gote.]AP[goproblems]
+(;W[kd]C[Black can capture just 3 stones in gote. You can then force Black at M15 to reduce Black's gain.RIGHT]MA[jf]MA[jg]MA[jh])
+(;W[je];B[kd]
+(;W[ld];B[lb]
+(;W[la];B[kb]
+(;W[nb];B[na])
+(;W[na];B[nb]))
+(;W[kb];B[la]))
+(;W[lb];B[ld]
+(;W[ma];B[ka])
+(;W[ka];B[ma])
+(;W[na];B[nb])
+(;W[nb];B[na]))
+(;W[la];B[ld])
+(;W[lc]))
+(;W[lb]C[];B[kd]
+(;W[ld];B[je];W[jc]C[Lost 3 stones in gote.]MA[jf]MA[jg]MA[jh])
+(;W[je];B[ld]
+(;W[ma];B[ka])
+(;W[ka];B[ma])
+(;W[na];B[nb])
+(;W[nb];B[na]))
+(;W[ka];B[ld]
+(;W[lc];B[ma])
+(;W[je];B[ma])
+(;W[nb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[ma];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[na];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[kf];B[ma]))
+(;W[kf];B[ld]C[Dead.])
+(;W[le];B[ld]C[Dead])
+(;W[nb];B[ld]
+(;W[je];B[na])
+(;W[kf];B[na])
+(;W[na];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[ka];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[lc];B[na]))
+(;W[ma];B[ld]
+(;W[ka];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[je];B[ka]))
+(;W[na];B[ld]
+(;W[ka];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[nb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[je];B[nb])))
+(;W[ld]C[];B[kd]
+(;W[je];B[lb]
+(;W[la];B[kb]
+(;W[nb];B[na])
+(;W[na];B[nb]))
+(;W[kb];B[la]))
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.]MA[jf]MA[jg]MA[jh])
+(;W[nb];B[na]
+(;W[ma];B[lb])
+(;W[la];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[kb];B[la]
+(;W[lb];B[ma])
+(;W[ma];B[lb]))
+(;W[je];B[lb])
+(;W[kf];B[le]
+(;W[je];B[lb];W[la];B[kb])
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[le];B[kf]
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[je];B[lb])))
+(;W[ma];B[lb])
+(;W[la];B[lb])
+(;W[kb];B[la]
+(;W[lb];B[ma])
+(;W[ma];B[lb]))
+(;W[kf];B[le]
+(;W[je];B[lb];W[la];B[kb];W[nb];B[na])
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[nb];B[je];W[jc]C[Lost 3 stones in gote.])))
+(;W[nb]C[];B[kd]
+(;W[je];B[ld]
+(;W[la];B[lc];W[lb];B[na])
+(;W[lc];B[la])
+(;W[lb];B[na]))
+(;W[ld];B[na]
+(;W[ma];B[lb])
+(;W[la];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[kb];B[la]
+(;W[lb];B[ma])
+(;W[ma];B[lb]))
+(;W[je];B[lb])
+(;W[kf];B[le]
+(;W[je];B[lb];W[la];B[kb])
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[le];B[kf]
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[je];B[lb])))
+(;W[kf];B[ld]))
+(;W[ma]C[];B[kd]
+(;W[lb];B[ld]
+(;W[ka])
+(;W[je]))
+(;W[ld];B[lb])
+(;W[je];B[lb])
+(;W[kf];B[lb];W[le];B[ld];W[lf];B[kg];W[je];B[jc])
+(;W[le];B[lb];W[kf];B[ld];W[lf];B[kg];W[je];B[jc]))
+(;W[la]C[];B[kd]
+(;W[ld];B[lb])
+(;W[je];B[ld])
+(;W[le];B[lb];W[kf];B[ld];W[lf];B[kg];W[je];B[jc])
+(;W[kf];B[lb];W[le];B[ld];W[lf];B[kg];W[je];B[jc])
+(;W[lc];B[kb])
+(;W[kb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[lb];B[ld])
+(;W[na];B[ld]
+(;W[kf];B[nb];W[lc];B[kb])
+(;W[nb];B[lc];W[lb];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[nb];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[na]C[];B[kd]
+(;W[ld];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[je];B[ld]
+(;W[lc];B[la])
+(;W[la];B[lc])
+(;W[lb];B[nb])
+(;W[nb];B[la]))
+(;W[la];B[ld]
+(;W[kf];B[nb];W[lc];B[kb])
+(;W[nb];B[lc];W[lb];B[je];W[jc]C[Lost 3 stones in gote.])))
+(;W[kb]C[];B[kd]
+(;W[ld];B[la]
+(;W[lb];B[ma])
+(;W[ma];B[lb]))
+(;W[je];B[ld]
+(;W[lc];B[la])
+(;W[la];B[lc]))
+(;W[la];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[ka]C[];B[kd]
+(;W[lb];B[ld]
+(;W[lc];B[ma])
+(;W[je])
+(;W[nb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[ma];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[na];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[kf];B[ma]))
+(;W[ld];B[lb])
+(;W[je];B[lb]))
+(;W[lc];B[kd])
+(;W[nc];B[kd];W[ld];B[lb])
+(;W[kf]C[];B[kd]
+(;W[le];B[ld]
+(;W[lf];B[kg];W[je];B[jc])
+(;W[lc];B[lf];W[je];B[le];W[la];B[kb])
+(;W[lb];B[ma])
+(;W[la];B[kb];W[lc];B[lf])
+(;W[kb];B[la]))
+(;W[ld];B[le]
+(;W[je];B[lb];W[la];B[kb];W[nb];B[na])
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[nb];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[lb];B[ld]C[Dead.])
+(;W[je];B[ld]
+(;W[lc];B[le]
+(;W[la];B[kb]
+(;W[na];B[nb])
+(;W[nb];B[na]))
+(;W[kb];B[la]))
+(;W[lb];B[na])
+(;W[la];B[kb])))
+(;W[le]C[];B[kd]
+(;W[ld];B[kf]
+(;W[lb];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[je];B[lb];W[la];B[kb])
+(;W[la];B[je];W[jc]C[Lost 3 stones in gote.])
+(;W[kb];B[la];W[ma];B[lb]))
+(;W[kf];B[ld]
+(;W[lf];B[kg];W[je];B[jc])
+(;W[lc];B[lf];W[je];B[le];W[la];B[kb])
+(;W[lb];B[ma])
+(;W[la];B[kb];W[lc];B[lf])
+(;W[kb];B[la]))
+(;W[je];B[ld]
+(;W[lc];B[kf];W[la];B[kb])
+(;W[la];B[kb])
+(;W[kf];B[lf];W[lc];B[le];W[la];B[kb])))
+(;W[lf];B[kd]
+(;W[ld];B[lb]
+(;W[le];B[kf]
+(;W[kg];B[je])
+(;W[la];B[kb])
+(;W[kb];B[la]))
+(;W[la];B[kb];W[le];B[kf]))
+(;W[lb];B[ld]
+(;W[je];B[na])
+(;W[ka];B[je];W[jc]C[Lost 3 stones in gote.]))
+(;W[le];B[kf];W[ld];B[lb]
+(;W[kg];B[je])
+(;W[la];B[kb])
+(;W[kb];B[la]))
+(;W[je];B[lb];W[le];B[kf])))

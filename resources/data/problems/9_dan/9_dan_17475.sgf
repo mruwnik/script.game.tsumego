@@ -1,0 +1,32 @@
+(;AB[qq]AB[pq]AB[op]AB[np]AB[mp]AB[no]AB[on]AB[mn]AB[ro]AB[rn]AB[qn]AW[pp]AW[qo]AW[rp]AW[rq]AW[oq]AW[mq]AW[nq]AW[lp]AW[lo]AW[ln]AW[mo]AB[nl]AW[lk]AW[mk]AW[nk]AB[mj]AB[mi]AB[ni]AB[oi]AW[nj]AW[oj]AW[pj]AB[pi]AB[qh]AW[qj]AB[kq]TR[pq]TR[qq]C[Can you do something about the marked stones or should you just connect at A?]LB[lq:A]AW[fq]AB[dp]AB[cn]AP[goproblems]
+(;W[qp];B[rr];W[sr];B[rs];W[pr];B[qr];W[os];B[po];W[qs];B[ps]C[Bad ko - black takes first, you stand to lose a lot, and you don't have internal threats...])
+(;W[pr];B[qr]
+(;W[rr];B[qs]
+(;W[qp];B[or]
+(;W[nr];B[ps]
+(;W[lq];B[rs]
+(;W[ns];B[po];W[os];B[sp]
+(;W[pr]C[Very easy ko for you...RIGHT])
+(;W[sr]C[You were so close, but now you just wasted a ko threat.]))
+(;W[sr];B[sp]C[Wasted an internal threat...]))
+(;W[ns];B[lq]C[Uh oh, you let black make the ko huge for you!]))
+(;W[lq];B[nr]
+(;W[rs];B[ps];W[mr];B[ns])
+(;W[mr];B[ps];W[ns];B[rs]
+(;W[ms];B[po]
+(;W[os];B[sp];W[pr];B[or];W[nr];B[sr])
+(;W[sr];B[sp];W[os];B[so];W[pr];B[or]))
+(;W[sr];B[sp];W[ms];B[po];W[os];B[so]))
+(;W[ps];B[os];W[mr];B[rs])))
+(;W[os];B[qp])
+(;W[rs];B[or];W[nr];B[ps]
+(;W[ns];B[qp])
+(;W[qp];B[lq]
+(;W[ns];B[ms];W[lr];B[kr])
+(;W[ms];B[lr];W[os];B[ns]C[Bad ko])
+(;W[lr];B[ns];W[mr];B[kr]))))
+(;W[or];B[rr];W[lq]C[You just wanted endgame? Black is fully alive.])
+(;W[os];B[rr];W[sr];B[qp]))
+(;W[lq];B[rr]C[Don't be so hasty! You couldn've gotten a very nice ko])
+(;W[rr];B[qp];W[pr];B[po]C[Black fully alive and since you have to connect you didn't accomplish much.])
+(;W[qr];B[pr];W[ps];B[rr];W[rs];B[qs]C[There's a  much better ko!]))

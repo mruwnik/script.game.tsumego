@@ -1,0 +1,9 @@
+(;AB[pr]AB[pq]AB[op]AB[qp]AB[po]AB[pn]AB[qn]AB[rn]AB[so]AB[nr]AW[sr]AW[rs]AW[qr]AW[qq]AW[qo]AW[ro]AW[rp]C[Black to kill!]AP[goproblems]
+(;B[rq];W[pp]C[If you think you need a ko threat to win you can play at O5 (T).]LB[no:T]
+(;B[sp];W[qp];B[sq]C[White dies.CHOICERIGHT])
+(;B[sq];W[rr])
+(;B[no];W[sp]C[White says thank you. You did not need a threat after all.]))
+(;B[sp];W[rq]C[White lives.])
+(;B[ps];W[sp]C[White lives])
+(;B[pp];W[sp]C[White lives])
+(;B[sq];W[rq]C[White lives.]))

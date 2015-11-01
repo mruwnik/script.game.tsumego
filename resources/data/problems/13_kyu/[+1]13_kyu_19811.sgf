@@ -1,0 +1,17 @@
+(;AB[bq]AB[bp]AB[cp]AB[dp]AB[eq]AB[fq]AB[er]AB[gr]AW[fs]AW[hr]AW[gq]AW[gp]AW[fp]AW[ep]AW[dq]AW[cq]TR[cq]TR[dq]C[White to save the marked stones.]AP[goproblems]
+(;W[ds]
+(;B[dr]C[CHOICE];W[cr]
+(;B[br]C[CHOICE];W[cs];B[bs];W[es]C[RIGHT])
+(;B[cs];W[bs];B[br];W[cs];B[as];W[es]))
+(;B[cs];W[cr];B[dr];W[bs];B[br];W[cs];B[as];W[es]))
+(;W[cr]
+(;B[ds]C[CHOICE];W[cs];B[br];W[es];B[bs])
+(;B[br]C[Mistake for Black];W[ds]))
+(;W[cs];B[cr];W[ds];B[es];W[br];B[dr])
+(;W[dr];B[ds]
+(;W[cr]
+(;B[cs];W[br];B[bs];W[ar];B[aq])
+(;B[br];W[cs];B[bs]))
+(;W[fr];B[cr]))
+(;W[br];B[cr])
+(;W[es];B[cr]))

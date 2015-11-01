@@ -1,0 +1,12 @@
+(;AB[qr]AB[qq]AB[pq]AB[pr]AB[rn]AW[or]AW[oq]AW[pp]AW[np]AW[mr]AW[rl]AW[ql]AW[pl]AW[ol]AW[nm]C[White to topple over Black's 5-horse chariot!Hint: White's outside will be strong enough to contain Black, so causing a stir inside should be fine for White.]AP[goproblems];W[rp];B[qp]
+(;W[ro];B[qn]C[Black 4 is the strongest reply. Now what?];W[qo];B[po];W[op];B[on]C[Tesuji needed!];W[rs];B[rr];W[ps]
+(;B[sr]C[One more key move needed to topple the chariot.];W[so]
+(;B[sn]
+(;W[oo]C[CHOICE];B[pn];W[qs]C[Congratulations! Black's horses are now dead.RIGHT])
+(;W[qs];B[sp]
+(;W[sq];B[rq];W[ss]C[RIGHT])
+(;W[oo];B[rq])
+(;W[rq];B[sq])))
+(;B[sp];W[qs];B[rq]C[ko]))
+(;B[qs]C[ko]))
+(;W[qo];B[ro]C[Black lives...]))

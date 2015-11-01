@@ -1,0 +1,20 @@
+(;SZ[19]AW[ca]AW[da]AW[fa]AW[ga]AW[cb]AW[hb]AW[kb]AW[cc]AW[ec]AW[fc]AW[hc]AW[ic]AW[jc]AW[cd]AW[de]AW[he]AW[je]AW[df]AW[hf]AW[cg]AW[eg]AW[fg]AW[gg]AB[ea]AB[ha]AB[ia]AB[db]AB[eb]AB[gb]AB[ib]AB[dc]AB[gc]AB[dd]AB[ed]AB[gd]AB[ee]AB[ge]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]TM[]PW[White]PB[Black]
+(;B[ff];W[fd]
+(;B[fe];W[jb];B[fb]
+(;W[fc];B[ga]C[ CHOICERIGHT])
+(;W[ga];B[fc]C[
+CHOICERIGHT]))
+(;B[fb];W[ga];B[fe];W[fc])
+(;B[ef];W[jb]
+(;B[fe];W[ja];B[fb];W[fc];B[ha];W[ga])
+(;B[fb];W[ga];B[fe];W[fc]))
+(;B[gf];W[jb]
+(;B[fb];W[ga];B[fe];W[fc])
+(;B[fe];W[ja];B[fb];W[fc];B[ha];W[ga])))
+(;B[fe];W[jb];B[fb];W[ga])
+(;B[fd];W[ff])
+(;B[gf];W[ff])
+(;B[ef];W[ff])
+(;B[fb];W[ga]
+(;B[ff];W[fd];B[fe];W[fc])
+(;B[fd];W[ff])))

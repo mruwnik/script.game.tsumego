@@ -1,0 +1,15 @@
+(;SZ[19]AW[ga]AW[ab]AW[gb]AW[bc]AW[gc]AW[ad]AW[cd]AW[fd]AW[gd]AW[ce]AW[de]AW[ee]AB[da]AB[bb]AB[cb]AB[cc]AB[ec]AB[fc]AB[dd]AB[ed]C[Black to live in the best way]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]PW[White]PB[Black]
+(;B[fb];W[fa]
+(;B[ea];W[ba];B[db]C[ Best for bothRIGHT])
+(;B[ba];W[eb]
+(;B[dc];W[ea])
+(;B[ea];W[dc])))
+(;B[ba];W[eb]
+(;B[fb];W[fa]C[Black is dead]
+(;B[dc];W[ea])
+(;B[ea];W[dc]))
+(;B[db];W[fb]C[Black is dead]))
+(;B[fa];W[fb]
+(;B[ba];W[eb]C[Black is dead])
+(;B[eb];W[ba]C[Black is dead]))
+(;B[ea];W[fb]TR[ba]TR[eb]C[Miai to kill. Black is dead]))

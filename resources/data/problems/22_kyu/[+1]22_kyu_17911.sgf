@@ -1,0 +1,16 @@
+(;AB[he]AB[ie]AB[je]AW[ic]AW[jb]AW[kf]AW[jf]AW[hg]AW[fc]AW[ec]AW[dc]AB[dd]AB[ed]AW[cc]AB[cd]AB[ee]AB[df]AB[dg]AW[ef]AW[fe]AW[fd]AB[gc]AB[gd]AB[ge]AW[gb]AW[hc]AW[hd]AW[gf]AW[gg]AB[hf]AW[if]AW[ib]AB[id]AB[jd]AB[jc]AB[kb]AB[le]AB[ld]AB[mc]AW[me]AW[md]AB[nd]AB[ne]AB[oc]AB[ob]AW[pb]AW[pc]AW[qe]AW[mf]AB[pd]AB[pe]AW[qd]AW[pf]AB[nf]AW[lf]AB[ng]C[White just played the marked stone. Black to save his group.]AW[ke]MA[ke]AP[goproblems]
+(;B[kd];W[lc]
+(;B[kc];W[lb]C[Sorry, this is the way Black lost in the actual game.])
+(;B[lb];W[kc]C[You saved one stone, but lost the game.]))
+(;B[lc]
+(;W[kc]C[CHOICE]
+(;B[kd]C[Solved. The bamboo joint is your friend.RIGHT])
+(;B[lb];W[kd]C[The upper stone would still have been safe if you had just connected.])
+(;B[ka];W[kd]C[Ensure your group is safe before expanding your territory.])
+(;B[la];W[kd]C[You don't need eyes. You should have focused on saving your group.])
+(;B[ja];W[kd]C[You can't surround anything if your group is dead.]))
+(;W[kd];B[kc]C[Solved. The bamboo joint is your friend.RIGHT]))
+(;B[kc]C[Solved. Black will live now.RIGHT])
+(;B[lb];W[kc]TR[kd]TR[lc]C[Oops! Can you see what's coming? White has miai points.CHOICE]
+(;B[kd];W[lc]C[Yep, it's all gone!])
+(;B[lc];W[kd]C[Yep, it's all gone!])))

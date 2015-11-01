@@ -1,0 +1,30 @@
+(;AB[cl]AB[bl]AB[al]AB[ck]AB[dk]AB[dj]AB[di]AB[ch]AB[bh]AB[bg]AW[bf]AW[cg]AW[dh]AW[df]AW[eh]AW[ei]AW[ej]AW[ek]AW[el]AW[dl]AW[dm]AW[cm]AW[bm]AW[am]LB[gj:T]C[Is Black safe? If yes, tenuki at 'T'. If no, settle your group.]AP[goproblems];B[gj];W[bj]C[Ok, now defend yourself.]
+(;B[bi];W[ai]
+(;B[ah];W[aj]
+(;B[cj]C[Correct. Black has two eyes. Later, White can descend at A as a ko threat.RIGHT]LB[af:A])
+(;B[ci];W[ak]C[White makes a dead shape. Black cannot get two eyes now.])
+(;B[bk]LB[cj:A]LB[ak:B]C[Correct. Black can now treat A and B as miai for life. Later, White can descend at C as a ko threat. In this variation, a white play at C threatens to kill Black, while playing B9 at A9, white can only make a seki, so this variation is inferior.RIGHT]LB[af:C])
+(;B[ak]LB[cj:A]LB[bk:B]LB[af:C]C[Correct. Black can now treat A and B as miai for life. Later, White can descend at C as a ko threat, threatening to make a seki.RIGHT]))
+(;B[cj];W[ag]C[Black cannot get two eyes now.]))
+(;B[ag];W[bi])
+(;B[ah];W[bi])
+(;B[ai];W[aj]
+(;B[ag];W[bi])
+(;B[bi];W[cj];B[ag];W[ci]C[It is a temporary seki, but White can capture the 6 stones with two more moves, so Black is dead.]))
+(;B[aj];W[ai]
+(;B[ah];W[bi])
+(;B[bi];W[ak];B[cj];W[ag])
+(;B[ak];W[bi])
+(;B[bk];W[bi]TR[aj]C[On the next move, White can capture the marked stone and make a dead shape.])
+(;B[ci];W[bi])
+(;B[cj];W[bi]))
+(;B[ci];W[ai]C[Black cannot prevent White from making a dead shape now.])
+(;B[cj];W[bi]
+(;B[ai];W[aj])
+(;B[aj];W[ai]
+(;B[ak];W[ci])
+(;B[bk];W[ak];B[ci];W[aj])
+(;B[ci];W[ak])
+(;B[ah];W[ak])))
+(;B[bk];W[bi])
+(;B[ak];W[bi]))

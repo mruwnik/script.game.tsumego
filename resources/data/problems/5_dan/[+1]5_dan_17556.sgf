@@ -1,0 +1,48 @@
+(;C[It is the late endgame and white has just taken the ko. The only ko threats are local. The rest of the board has been counted and, as it stands, black is 6 points ahead. Lead black to victory.]AW[nm]AW[om]AW[pm]AW[qm]AW[rm]AW[nn]AW[rn]AW[sn]AW[mo]AW[oo]AW[so]AW[jp]AW[kp]AW[lp]AW[mp]AW[np]AW[pp]AW[rp]AW[jq]AW[ir]AW[kr]AW[mr]AW[or]AW[is]AW[ks]AW[ls]AW[ms]AW[ns]AW[os]AB[on]AB[pn]AB[po]AB[qo]AB[ro]AB[op]AB[sp]AB[kq]AB[lq]AB[mq]AB[nq]AB[oq]AB[sq]AB[lr]AB[nr]AB[pr]AB[qr]AB[ps]AB[rs]MA[oo]LB[no:ko]
+(;B[pq]
+(;W[qp]C[CHOICE]
+(;B[rq];W[qn]C[Jigo.])
+(;B[qq];W[qn];B[rq]C[JIGO.])
+(;B[no];W[rq]
+(;B[jr];W[js]
+(;B[sr];W[oo]C[You have no ko threats left. Your whole group is dead.])
+(;B[rr];W[sr]C[Your whole group is dead.]))
+(;B[sr];W[oo]
+(;B[jr];W[js];B[no]C[Great! White's got no more ko threats.RIGHT])
+(;B[js];W[jr];B[no]C[White has no more ko threats. You win.RIGHT]))
+(;B[rr];W[sr]C[Your whole group is dead.])))
+(;W[rq]C[CHOICE]
+(;B[qp];W[rr]C[Black is dead.])
+(;B[rr];W[sr]
+(;B[qp]
+(;W[qq]C[CHOICE]
+(;B[no]C[Good. White hasn't got any ko threats, so the marked square is an eye.RIGHT]TR[pp])
+(;B[ss];W[qn];B[no]C[Good. White has no more ko threats, so Q4 is an eye.RIGHT]))
+(;W[no]C[CHOICE]
+(;B[sp];W[sq]
+(;B[qq]C[That'll do for the win, but the T4 T3 exchange was not necessary.RIGHT])
+(;B[ss];W[sp];B[qq]C[That's good enough for the win, but all those forcing moves were not necessary.RIGHT]))
+(;B[qq]C[Very good.RIGHT])
+(;B[ss]C[RIGHT]
+(;W[qq]C[CHOICE]
+(;B[sp]C[White is caught in a snapback.RIGHT])
+(;B[sq];W[sp]C[Only one eye.]))
+(;W[sq]C[CHOICE];B[qq];W[sp]C[Good work.RIGHT]))))
+(;B[no];W[sp]C[Black's dead.]))
+(;B[sr];W[rr]
+(;B[qq];W[ss]
+(;B[qp];W[sp]C[You can't make two eyes now.])
+(;B[sr];W[qp]C[Dead.]))
+(;B[qp];W[ss];B[sr];W[sp]C[You can't get two eyes now.])
+(;B[no];W[ss];B[sr];W[sp]C[You can't make two eyes now.]))))
+(;B[qp];W[pq]
+(;B[rq];W[qq]C[You lose by 5.])
+(;B[qq]C[You lose by 3.]))
+(;B[no]C[Illegal ko recapture. White wins by forfeit.NOTTHIS])
+(;B[qq];W[pq]C[Even if you live in the corner, that big capture puts white well ahead.])
+(;B[rq];W[pq]C[Even if you live in the corner, that big capture puts white well ahead.])
+(;B[jr];W[pq]C[Even if you live in the corner, that big capture puts white ahead.])
+(;B[js];W[pq]C[Even if you manage to live in the corner, this capture is enough to win the game for white.])
+(;B[qn];W[pq]C[Worst possible thing you could have done.])
+(;B[rr];W[pq]C[You can live in the corner, but that big capture is enough to win the game for white.])
+(;B[sr];W[pq]C[You can live in the corner, but that big capture is enough to win the game for white.]))

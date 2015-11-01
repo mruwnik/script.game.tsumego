@@ -1,0 +1,33 @@
+(;AB[ds]AB[dr]AB[dq]AB[cq]AB[bp]AB[ap]AW[ao]AW[bo]AW[cn]AW[cp]AW[dp]AW[eq]AW[er]AW[fp]AP[goproblems]
+(;W[bq];B[br];W[ar]C[RIGHT])
+(;W[br];B[bq];W[ar];B[bs]
+(;W[as];B[cr]C[]
+(;W[es];B[aq])
+(;W[cs]C[ko]))
+(;W[cr];B[cs]C[seki])
+(;W[aq]
+(;B[cs]C[Wrong move by black];W[as];B[cr];W[ar]C[RIGHT])
+(;B[cr]C[CHOICE];W[es];B[as]))
+(;W[cs];B[cr]C[];W[es];B[as];W[cs];B[bs]))
+(;W[cr];B[br])
+(;W[cs];B[br])
+(;W[bs];B[br])
+(;W[ar];B[bq]
+(;W[bs];B[br];W[cs];B[aq];W[es];B[as])
+(;W[br];B[bs]
+(;W[as];B[cr]C[]
+(;W[es];B[aq])
+(;W[cs]C[ko]))
+(;W[cr];B[cs]C[seki])
+(;W[aq]
+(;B[cs]C[Wrong move by black];W[as];B[cr];W[ar]C[RIGHT])
+(;B[cr]C[CHOICE];W[es];B[as]))
+(;W[cs];B[cr]C[];W[es];B[as];W[cs];B[bs])))
+(;W[aq];B[bq]
+(;W[br];B[bs]
+(;W[ar];B[cr];W[es];B[as])
+(;W[cr];B[ar])
+(;W[cs];B[cr])
+(;W[as];B[ar]))
+(;W[ar];B[br]))
+(;W[as];B[br]))

@@ -1,0 +1,47 @@
+(;AB[cb]AB[eb]AB[ed]AB[dd]AB[ce]AB[df]AB[cg]AB[eg]AB[fg]AB[gg]AB[gf]AB[hf]AB[ge]AB[gd]AB[gc]AB[hc]AB[hb]AB[ia]AB[jb]AB[kb]AB[jf]AB[kg]AB[kh]AB[me]AW[gb]AW[fb]AW[fc]AW[fd]AW[fe]AW[ee]AW[de]AW[ef]AW[ff]AW[dg]AW[dh]AW[eh]AW[fh]AW[hg]AW[gh]AW[hh]AW[jh]AW[ig]AW[if]AW[ie]AW[hd]AW[ic]AW[ib]AW[jd]AW[lb]AW[mc]TR[ee]TR[fd]TR[ff]TR[fb]C[Please capture the marked stones.]AP[goproblems]
+(;B[cf]
+(;W[ja]C[CHOICE]
+(;B[ka];W[ha];B[ga];W[he];B[ha];W[fa];B[ja];W[la]
+(;B[ea];W[kc];B[ec]C[Well done.RIGHT])
+(;B[ec];W[kc];B[ea]C[Well done.RIGHT])
+(;B[kc];W[kd]
+(;B[ec];W[lc];B[ea]C[Well done.RIGHT])
+(;B[ea];W[lc];B[ec]C[Well done.RIGHT])))
+(;B[ha];W[ga];B[ka];W[he];B[ja];W[la]
+(;B[ec];W[kc];B[fa]C[Well done.RIGHT])
+(;B[fa];W[ea];B[ec];W[kc];B[fa]C[Well done.RIGHT])
+(;B[kc];W[kd]
+(;B[ec];W[lc];B[fa]C[Well done.RIGHT])
+(;B[fa];W[ea];B[ec];W[lc];B[fa]C[Well done.RIGHT])))
+(;B[ga];W[ha]TR[he]C[Black dies, white lives.])
+(;B[fa];W[ha]TR[he]C[Black dies, white lives.])
+(;B[ec];W[ha]TR[he]C[Black dies, white lives.]))
+(;W[ga]C[CHOICE]
+(;B[ha]
+(;W[ja];B[ka];W[he];B[ja];W[la]
+(;B[kc]C[];W[kd]
+(;B[ec];W[lc];B[fa]C[Well done.RIGHT])
+(;B[fa];W[ea];B[ec];W[lc];B[fa]C[Well done.RIGHT]))
+(;B[ec];W[kc];B[fa]C[Well done.RIGHT])
+(;B[fa];W[ea];B[ec];W[kc];B[fa]C[Well done.RIGHT]))
+(;W[he]
+(;B[ja];W[kc]
+(;B[ec];W[jc];B[fa]C[Well done.RIGHT])
+(;B[fa];W[ea];B[ec];W[jc];B[fa]C[Well done.RIGHT]))
+(;B[fa];W[ja])))
+(;B[ec]
+(;W[he]TR[ha]TR[ja]C[Black dies, white lives.])
+(;W[ha]))
+(;B[fa];W[he]
+(;B[ha];W[ja])
+(;B[ec];W[ha])))
+(;W[ha]C[CHOICE]
+(;B[ga];W[fa];B[ha];W[he];B[ja];W[kc]
+(;B[ec];W[jc];B[ea]C[Well done.RIGHT])
+(;B[ea];W[jc];B[ec]C[Well done.RIGHT]))
+(;B[fa];W[he])
+(;B[ec];W[he])))
+(;B[ec];W[cf]TR[df]C[White can live.])
+(;B[fa];W[cf]TR[df]C[White can live.])
+(;B[ga];W[cf]TR[df]C[White can live.])
+(;B[kc];W[cf]TR[df]C[White can live.]))

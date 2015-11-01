@@ -1,0 +1,3 @@
+(;C[White to play and capture the cutting stone.]AB[dp]AB[eq]AB[hq]AB[co]AB[cn]AB[em]AB[el]AB[dk]AW[fm]AW[fn]AW[eo]AW[do]AW[cp]AW[cq]AP[goproblems];W[fq];B[fr];W[er];B[fp];W[ep];B[gq]
+(;W[dr]LB[dq:A]LB[fq:1]LB[fr:2]LB[er:3]LB[fp:4]LB[ep:5]LB[gq:6]LB[dr:7]C[White 1 and 3 are the cross-cut tesuji.  After Black4 to 6, White may prefer to play 7 instead of A for the sake of eye shape  in the corner.RIGHT])
+(;W[dq]C[RIGHT]))

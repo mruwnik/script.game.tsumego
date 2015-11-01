@@ -1,0 +1,5 @@
+(;LB[qc:B]LB[nc:A]LB[qf:C]LB[oe:D]AB[kc]AB[pd]AB[qi]C[Choose the correct invasion.CHOICE]AP[goproblems]
+(;W[nc]C[Sorry, a typical 'knight's move' approach does not work here, as Black already has a 2 space pincer, and making a base will be difficult.])
+(;W[qf]C[Sorry, a typical 'knight's move' approach does not work here, as Black already has a 2 space pincer, and making a base will be difficult.])
+(;W[oe]C[Incorrect. You generally never want to play this move to invade the corner unless as a ladder breaker or Ko threat.])
+(;W[qc]C[Yes, this is the correct invasion. Generally if Black has a 'double-wing' formation as he does at L17 and R11, invading at 3*3 is the best.RIGHT]))

@@ -1,0 +1,12 @@
+(;AB[qp]AB[qo]AB[oo]AB[po]AB[pq]AB[oq]AB[np]AB[mp]AW[qq]AW[rq]AW[rp]AW[ro]AW[qn]AW[pn]AW[on]AW[mn]AW[lo]AW[lp]AW[kq]AW[mq]AW[nq]C[Black has only one eye, so he has to try to make another one on the edge. White is very strong, so he can't expect a perfect eye, but...]AP[goproblems];B[nr]
+(;W[mr]
+(;B[pr];W[ns];B[os];W[ms];B[qr];W[rr];B[qs]C[The only move Black has is the hane at 1. White 2 is forced, so Black can get a ko with 3 and 5. This is the correct answer. Note that White has got time to connect at 'a', as even after Black 'b', White 'c', Black 'd', the position is still a ko. RIGHT]LB[nr:1]LB[mr:2]LB[pr:3]LB[ns:4]LB[ms:a]LB[qr:b]LB[rr:c]LB[qs:d])
+(;B[os];W[pr];B[qr];W[qs]TR[rq]LB[nr:1]LB[mr:2]LB[os:3]LB[pr:4]LB[qr:5]LB[qs:6]C[Black 3 is wrong. Because he has the marked stone in place, White can stop Black from getting an eye. CHOICE])
+(;B[qr]C[CHOICE]
+(;W[or]LB[nr:1]LB[mr:2]LB[qr:3]LB[or:4]LB[rr:a]C[Successive hanes on each side sometimes work but not here. If White 4 at 'a', Black gets an eye with a diagonal connection (from 1 or 3), but all White has to do is to capture at 4. CHOICE])
+(;W[rr]
+(;B[ps]C[];W[or])
+(;B[os]C[];W[pr]C[CHOICE]))))
+(;W[pr];B[or];W[qr]
+(;B[lr]LB[nr:1]LB[pr:2]LB[or:3]LB[qr:4]LB[lr:5]LB[mr:a]C[White 2 is a mistake; the peep at 5 ensures an eye for Black, as he will get four stones in a row on the second line. Note that Black 5 at 'a' would be wrong: White would block at 5, killing Black. RIGHT])
+(;B[mr];W[lr];B[lq];W[mq]C[CHOICE])))

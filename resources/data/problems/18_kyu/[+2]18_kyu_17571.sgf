@@ -1,0 +1,59 @@
+(;AB[bj]AB[ck]AB[cl]AB[ak]AB[al]AB[bm]AB[dl]AB[dj]AB[ek]AB[el]AB[ej]AW[cj]AW[ci]AW[bi]AW[ai]AW[fk]AW[fl]AW[fh]AW[am]AW[an]AW[bo]AW[co]AW[cn]AW[en]AW[fo]AW[eh]AW[cg]AW[gj]AW[gi]C[Black to play and live.]AB[ap]AB[bp]AB[cp]AB[dp]AB[fq]AP[goproblems]
+(;B[bn];W[ao]
+(;B[cm];W[do]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT]))
+(;B[aj];W[bl]
+(;B[bk];W[cm])
+(;B[cm];W[bk]))
+(;B[bk];W[cm])
+(;B[bl];W[aj]))
+(;B[cm]
+(;W[bk]C[And if white resists?]
+(;B[aj];W[bl])
+(;B[bl]
+(;W[aj]
+(;B[bn]
+(;W[ao];B[dn];W[do];B[eo]C[RIGHT])
+(;W[do];B[ao]C[RIGHT]))
+(;B[dn];W[do]
+(;B[bn];W[dm];B[ao]C[RIGHT])
+(;B[dm];W[ao])))
+(;W[dn];B[aj]C[RIGHT]))
+(;B[bn]
+(;W[ao];B[dn];W[do];B[eo]C[RIGHT])
+(;W[do];B[ao]C[RIGHT]))
+(;B[ao]
+(;W[bn];B[dn];W[do];B[eo]C[RIGHT])
+(;W[do];B[bn]C[RIGHT])))
+(;W[do]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT])
+(;B[bn];W[ao]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT]))
+(;B[ao];W[bn]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT]))))
+(;B[dn];W[do]
+(;B[bn];W[ao];B[cm];W[dm]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT]))
+(;B[ao];W[bn];B[cm];W[dm]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT]))
+(;B[cm];W[bk];B[bn];W[dm];B[ao]C[RIGHT]))
+(;B[ao];W[bn]
+(;B[cm];W[do]
+(;B[aj]C[RIGHT])
+(;B[bk]C[Alive, but one point smaller than necessary.RIGHT]))
+(;B[aj];W[bl];B[bk];W[cm])
+(;B[bk];W[cm])
+(;B[bl];W[aj]))
+(;B[bk];W[cm])
+(;B[bl];W[aj];B[bn];W[ao])
+(;B[aj];W[bl]
+(;B[cm];W[bk])
+(;B[bk];W[cm])
+(;B[bn];W[cm])
+(;B[ao];W[bn];B[bk];W[cm])))

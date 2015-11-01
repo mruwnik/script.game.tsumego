@@ -1,0 +1,7 @@
+(;AB[rb]AB[qc]AB[oc]AB[nb]AB[mb]AB[oe]AB[pe]AB[nf]AW[nc]AW[nd]AW[ne]AW[of]AW[pf]AW[qe]AW[rd]AW[rc]AP[goproblems]
+(;W[pc]
+(;B[pb]C[];W[pd]C[White 1 is a surprising tesuji. Black's best response is 2, but White 3 gives atari and if Black connects he will still be in atari.RIGHT]LB[pc:1]LB[pb:2]LB[pd:3])
+(;B[pd];W[pb]LB[ob:A]LB[od:B]LB[qb:C]LB[qd:D]C[Black's play only magnifies his loss. After White 3, a and b are miai on one side and c and d are miai on the other, and the three stones including Black 2 are captured.RIGHT]LB[pc:1]LB[pd:2]LB[pb:3]))
+(;W[pd];B[od]C[CHOICE])
+(;W[od];B[pd];W[pc];B[pb]C[CHOICE])
+(;W[qd];B[pd]C[CHOICE]))

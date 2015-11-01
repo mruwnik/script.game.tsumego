@@ -1,0 +1,172 @@
+(;AB[sr]AB[rr]AB[pr]AB[ps]AW[qr]AW[qs]AW[rs]AW[rq]AW[sp]AW[so]AW[rn]AW[qn]AW[pn]AW[oo]AW[pp]AB[po]AB[op]AB[oq]AB[or]AW[lr]AW[ls]AW[mr]AB[os]AB[ns]AB[nq]AB[mq]AB[lq]AW[no]AB[np]AB[on]AB[om]AB[pm]AB[qm]AB[rm]AB[sm]AW[mp]AW[lp]AW[kp]AW[jq]AW[ip]AW[hq]AW[gr]AW[fq]AB[jr]AB[js]AB[is]AW[lm]C[Do not waste internal ko-treats during the solution; only play on X when you need a suitable ko-threat.]LB[mo:X]AP[goproblems]
+(;B[qq]
+(;W[qp]
+(;B[ss]
+(;W[qs]
+(;B[kq]
+(;W[kr]
+(;B[ir]
+(;W[qr]
+(;B[rs]
+(;W[qr]
+(;B[pq]
+(;W[iq]
+(;B[rp];W[ro]
+(;B[sq]
+(;W[qs];B[rr]
+(;W[rs]
+(;B[ss]
+(;W[sq]C[CHOICE]
+(;B[qs];W[sr]
+(;B[ms];W[rs]C[Please play the natural internal ko-treat on XFORCE]LB[mo:X];B[mo];W[nn];B[ss]C[RIGHT]
+(;W[fm]C[White plays an external ko threat. Ignore it.RIGHT];B[ks]C[RIGHT]
+(;W[gm]C[White cashes in on the koCHOICERIGHT];B[rs]C[RIGHT];W[hm]C[And white takes sente to complete his one-step-ko profit. Black is happy to save over 60 points.RIGHT])
+(;W[rs]C[CHOICERIGHT];B[nr]C[RIGHT];W[lr]C[RIGHT];B[ss]C[RIGHT];W[gm]C[White plays an external ko threat. Ignore it.RIGHT];B[rs]C[And white takes sente to complete his one-step-ko profit. Black is happy to save over 60 points.RIGHT]))
+(;W[hr]C[This path is for information only; the computer will not play itRIGHT];B[nr]C[RIGHT];W[rs]C[RIGHT];B[ks]C[RIGHT];W[lr]C[RIGHT];B[ss]C[This is just a direct ko for White.RIGHT]))
+(;B[nr]C[NOTTHIS])
+(;B[ks];W[hr]))
+(;B[ms];W[qs]
+(;B[ks];W[sr]
+(;B[qr];W[rs];B[ss];W[rs])
+(;B[nr];W[lr];B[qr];W[rs];B[ss];W[rs]))
+(;B[rs];W[sr];B[qr];W[hr])
+(;B[sr];W[hr])
+(;B[qr];W[sr];B[rs];W[hr]))
+(;B[nr]C[NOTTHIS])
+(;B[ks];W[hr]))
+(;W[qs]C[CHOICE]
+(;B[sq];W[sr]C[Please play the natural ko-threat on XFORCE]LB[mo:X];B[mo];W[nn];B[sq]C[RIGHT];W[qo]C[Please capture the koFORCERIGHT];B[rp]C[RIGHT]
+(;W[hr]C[Please connect for 2 eyesCHOICEFORCERIGHT];B[rq]C[RIGHT];W[hs]C[CHOICERIGHT])
+(;W[nm]C[Please connect for 2 eyesCHOICEFORCERIGHT];B[rq]C[RIGHT]))
+(;B[nr]C[NOTTHIS])
+(;B[ms];W[sq]
+(;B[ks];W[sr]
+(;B[qr];W[rs];B[ss];W[rs])
+(;B[nr];W[lr];B[qr];W[rs];B[ss];W[rs]))
+(;B[rs];W[sr];B[qr];W[hr])
+(;B[sr];W[hr])
+(;B[qr];W[sr];B[rs]))
+(;B[rs];W[sq]
+(;B[ms];W[sr];B[qr];W[hr])
+(;B[nr]C[NOTTHIS])
+(;B[qr];W[sr]
+(;B[nr]C[NOTTHIS])
+(;B[ms];W[hr])))))
+(;B[sr];W[hr];B[ss];W[qs]
+(;B[sq];W[hs];B[rp];W[qo]C[Black has no tricks left])
+(;B[qr];W[sq])
+(;B[ms];W[sq])
+(;B[nr]C[NOTTHIS])))
+(;W[hr]C[This path is for information only; the computer will not play it];B[rs]
+(;W[sr];B[ms];W[qr];B[qs];W[hs];B[nr];W[ks];B[jr]C[RIGHT])
+(;W[hs];B[sr]C[RIGHT])))
+(;W[hr]C[This path is for information only; the computer will not play it];B[rp];W[qo];B[nr];W[rq];B[fm]C[Black must play an external ko threat];W[fn];B[rp]
+(;W[hs];B[ms];W[ks];B[jr];W[rq];B[js]C[RIGHT])
+(;W[gn]C[White can also play an external ko-threat];B[ms];W[rq];B[ks];W[qs];B[rr]C[RIGHT]))
+(;W[rp];B[sn];W[qs];B[rr]C[This is not as good for white as the main variation. Compare for yourself.RIGHT]))
+(;B[ms];W[hr];B[sq];W[qs];B[rr];W[nr])
+(;B[nr]C[NOTTHIS])
+(;B[qs];W[sq]
+(;B[ms];W[hr];B[nr];W[qr])
+(;B[nr]C[NOTTHIS])))
+(;B[sq];W[rp]
+(;B[ms];W[hr])
+(;B[nr]C[NOTTHIS])
+(;B[qo]C[NOTTHIS]))
+(;B[ms];W[hr]
+(;B[qs];W[sq])
+(;B[rp];W[ro];B[sq];W[qs];B[rr];W[nr])))
+(;W[sq]C[This path is for information only; the computer will not play it];B[ks]
+(;W[iq];B[ms];W[qs];B[nr]
+(;W[lr];B[rr]C[RIGHT])
+(;W[rr];B[lr]C[Not even a ko for whiteRIGHT]))
+(;W[qs];B[rr]
+(;W[iq];B[rs]
+(;W[sr];B[ms]C[RIGHT])
+(;W[hr];B[sr]C[RIGHT]))
+(;W[rs];B[ss];W[qs];B[rs];W[sr];B[qr];W[iq];B[ms]C[RIGHT]))))
+(;B[qs]
+(;W[sq]
+(;B[pq];W[iq]
+(;B[ms];W[hr])
+(;B[nr]C[NOTTHIS])
+(;B[ks];W[hr]))
+(;B[ms];W[pq])
+(;B[nr]C[NOTTHIS]))
+(;W[pq]C[This is not such a good idea for white];B[rp];W[ro];B[sq]C[This gives Black a fighting chance that he shouldn't have in this line.RIGHT])))
+(;W[pq]C[This path is for information only; the computer will not play it];B[qr];W[iq];B[ms];W[hr];B[nr]C[RIGHT])
+(;W[sq];B[qr]C[];W[iq];B[ms];W[pq];B[ks]C[RIGHT]))
+(;B[pq];W[iq];B[rs];W[hr];B[ms];W[qr]
+(;B[qs];W[sq])
+(;B[rp];W[ro];B[sq];W[qs];B[rr];W[nr])))
+(;W[iq]C[This path is for information only; the computer will not play it]
+(;B[qr];W[hr]
+(;B[ms];W[hs];B[nr];W[ks];B[jr]C[RIGHT])
+(;B[nr]C[Of course, this move also works, but the main line is given as an example since the computer will not play this variation!NOTTHISRIGHT]))
+(;B[ms]C[This is a mistake];W[qr];B[rs];W[qr];B[pq];W[hr]
+(;B[qs];W[sq])
+(;B[rp];W[ro];B[sq];W[qs];B[rr];W[nr]))))
+(;B[hr];W[iq]C[You neither gained a liberty nor a good shape. Compare to the correct solution.])
+(;B[ms];W[qr];B[rs];W[qr];B[pq];W[ir];B[qs];W[sq])
+(;B[nr]C[NOTTHIS])
+(;B[qr]
+(;W[pq];B[nr];W[sq];B[ks])
+(;W[ir];B[ms];W[hs];B[nr];W[ks])))
+(;W[qr]C[This path is for information only; the computer will not play it];B[kr]
+(;W[ms];B[rs]C[Excellent for BlackRIGHT])
+(;W[pq];B[ms]C[SekiRIGHT])))
+(;B[kr];W[kq]
+(;B[qr];W[ir])
+(;B[ir];W[iq]
+(;B[qr];W[hr])
+(;B[ms];W[qr]
+(;B[rs];W[qr]
+(;B[qs];W[sq];B[pq];W[hr])
+(;B[pq];W[hr];B[rp];W[ro];B[sq];W[qs];B[rr];W[nr]))
+(;B[pq];W[hr];B[rs];W[hs]))
+(;B[nr]C[NOTTHIS]))
+(;B[ms];W[qr]
+(;B[rs];W[qr]
+(;B[qs];W[sq];B[pq];W[ir])
+(;B[pq];W[ir];B[rp];W[ro]
+(;B[sq];W[qs];B[rr];W[nr])
+(;B[qs];W[sq];B[nr];W[qr])))
+(;B[pq];W[ir];B[rs];W[hs]))
+(;B[ks];W[ir];B[nr];W[hs]C[This won't help either for Black]))
+(;B[rp];W[kq]C[There is just one eye on the right side and none on the left])
+(;B[qr];W[kq];B[kr];W[ir])
+(;B[pq];W[kq];B[kr];W[ir];B[rp];W[ro];B[sq];W[mn]))
+(;W[pq]C[This path is for information only; the computer will not play it]
+(;B[qs];W[qr]C[];B[mo];W[nn];B[qq]
+(;W[kq];B[rp];W[qr];B[nm];W[mn];B[qq];W[ro];B[sq];W[qr];B[mm];W[ln];B[qq];W[rp];B[sn];W[qr];B[fm];W[fn];B[qq];W[gn];B[qo]C[RIGHT])
+(;W[sq];B[kq]
+(;W[qr];B[kr];W[ms];B[qq]C[Good result for black with several internal ko threats remainingRIGHT])
+(;W[kr];B[ms];W[qr];B[nm];W[mn];B[qq]
+(;W[ir];B[nr];W[qr];B[ks];W[lr];B[qq]C[A direct ko is very good for blackRIGHT])
+(;W[fm]C[White plays an external ko-threat];B[ks];W[gm];B[qr]C[RIGHT];W[hm]C[Blackb saves 60 points in exchange for a one-step-koRIGHT]))))
+(;B[qr];W[kq];B[kr];W[ir])
+(;B[kq];W[qr]C[Black is dead])))
+(;B[pq];W[kq]
+(;B[ss];W[qs]
+(;B[rp];W[ro];B[sq];W[qo])
+(;B[kr];W[ir];B[rp];W[ro];B[sq];W[mn]))
+(;B[kr];W[ir];B[ss];W[qs];B[rp];W[ro];B[sq];W[mn]))
+(;B[rp];W[pq])
+(;B[kr];W[pq]
+(;B[ms];W[kq])
+(;B[kq];W[ms])))
+(;W[kq]C[This path is for information only; the computer will not play it];B[qp];W[qo];B[rp];W[sq];B[sn];W[ss];B[pq];W[po];B[rr];W[ro];B[sr]C[RIGHT]))
+(;B[kq];W[pq]
+(;B[kr];W[ms])
+(;B[ms];W[kr]))
+(;B[qp];W[qq];B[pq];W[kq]C[Now first play at X please]LB[kr:X]
+(;B[kr];W[ir]
+(;B[sn];W[ro];B[rp];W[nr]C[White's eye wins])
+(;B[ro];W[sn];B[rp];W[nr]C[White's eye wins])
+(;B[rp];W[nr]C[White's eye wins]))
+(;B[sn]C[NOTTHIS])
+(;B[rp]C[NOTTHIS])
+(;B[ro]C[NOTTHIS]))
+(;B[kr];W[pq]
+(;B[ms];W[kq])
+(;B[kq];W[ms])))

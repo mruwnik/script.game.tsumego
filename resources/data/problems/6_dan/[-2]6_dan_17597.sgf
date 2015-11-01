@@ -1,0 +1,55 @@
+(;AB[sq]AB[rq]AB[qq]AB[qp]AB[po]AB[pn]AB[pm]AB[ql]AW[qm]AW[qn]AW[qo]AW[ro]AW[rp]AW[rm]AB[rk]AB[qk]AB[pj]AB[pi]AB[ph]AB[pg]AB[qg]AB[pd]AB[qd]AB[rd]AB[nc]AW[qe]AW[re]AW[rg]AW[sh]AW[qh]AW[qi]AW[rj]AW[sn]TR[sn]C[White just played the marked move. Black to do well.]AP[goproblems]
+(;B[sk];W[sp]
+(;B[ri]C[];W[sf]
+(;B[qf]C[RIGHT])
+(;B[sd];W[qf];B[se]C[RIGHT]))
+(;B[sf];W[se]
+(;B[ri]C[RIGHT])
+(;B[qf];W[rf];B[ri]C[RIGHT]))
+(;B[sj];W[si]
+(;B[ri]C[RIGHT])
+(;B[sf];W[se]
+(;B[ri]C[RIGHT])
+(;B[qf];W[rf];B[ri]C[RIGHT]))))
+(;B[sp];W[sl];B[sk];W[rl]
+(;B[ri];W[sf]
+(;B[sd];W[qf];B[se]C[RIGHT])
+(;B[qf]C[RIGHT]))
+(;B[sf];W[se]
+(;B[ri]C[RIGHT])
+(;B[qf];W[rf];B[ri]C[RIGHT])))
+(;B[sl];W[sp]
+(;B[ri];W[si]
+(;B[qj];W[rh]
+(;B[sj];W[sk]C[Only ko.])
+(;B[sf];W[se];B[sj];W[sk]C[Only ko.]))
+(;B[sj];W[sk]C[Only ko.]))
+(;B[sj];W[si];B[ri];W[sk]C[Only ko.])
+(;B[sf];W[se];B[ri];W[si]
+(;B[sj];W[sk]C[Only ko.])
+(;B[qj];W[rh];B[sj];W[sk]C[Only ko.])
+(;B[qf];W[rf]
+(;B[qj];W[rh];B[sj]C[Only ko.])
+(;B[sj];W[sk]C[Only ko.]))))
+(;B[sj];W[si]
+(;B[sp];W[sk];B[sl];W[rl];B[sj]C[Only ko.])
+(;B[sk];W[sp]
+(;B[ri]C[RIGHT])
+(;B[sf];W[se]
+(;B[ri]C[RIGHT])
+(;B[qf];W[rf];B[ri]C[RIGHT])))
+(;B[ri];W[sk]))
+(;B[ri];W[sk]
+(;B[qj];W[si]
+(;B[rh];W[sl]LB[sp:1]LB[rl:2]TR[rj]C[White is alive on the bottom, and black only has a ko to take the stones on top. Black can do better.])
+(;B[sl];W[rh]C[Only ko.]))
+(;B[sj];W[si])
+(;B[sl];W[si]C[Only ko.]))
+(;B[sf];W[sl];B[sk];W[se]
+(;B[qf];W[rf]
+(;B[ri]C[RIGHT])
+(;B[sj];W[si];B[ri]C[RIGHT])
+(;B[rl];W[sp]
+(;B[ri]C[RIGHT])
+(;B[sj];W[si];B[ri]C[RIGHT])))
+(;B[ri]C[RIGHT])))

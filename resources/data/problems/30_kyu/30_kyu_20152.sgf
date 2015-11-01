@@ -1,0 +1,14 @@
+(;SZ[18]AB[ar]AB[br]AB[ap]AB[bp]AB[bo]AB[dp]AB[do]AB[ep]AB[eq]AB[er]AB[dr]AW[fr]AW[fq]AW[fp]AW[fo]AW[eo]AW[en]AW[dn]AW[cn]AW[bn]AW[an]AW[ao]AW[co]AB[ro]AB[rn]AB[qn]AB[pn]AB[po]AB[on]AB[nn]AB[no]AB[mo]AB[mp]AB[mq]AB[mr]AW[gr]AW[hr]AW[ir]AB[lr]AB[kr]AB[jr]AW[iq]AW[ip]AW[io]AW[in]AW[hn]AW[gn]AW[fn]AB[jq]AB[jp]AB[jo]AB[jn]AB[kn]AB[ln]AB[mn]AW[go]AW[hp]AW[gq]AB[lo]AB[kp]AB[lq]AB[im]AB[hm]AB[gm]AB[fm]AB[em]AB[cm]AB[dm]AB[bm]AB[am]AB[al]AB[ak]AB[aj]AB[bj]AB[cj]AB[dj]AB[ej]AB[fj]AB[gj]AB[ij]AB[hj]AB[hk]AB[gk]AB[fk]AB[ek]AB[dk]AB[ck]AB[bk]AB[bl]AB[cl]AB[dl]AB[el]AB[gl]AB[fl]AB[il]AB[hl]AW[jm]AW[jj]AW[jk]AW[kj]AW[lj]AW[mj]AW[nj]AW[pj]AW[oj]AW[qj]AW[rj]AW[rk]AW[rl]AW[rm]AW[qm]AW[om]AW[nm]AW[pm]AW[mm]AW[km]AW[lm]AW[kl]AW[ll]AW[nl]AW[ml]AW[pl]AW[ol]AW[ql]AW[qk]AW[pk]AW[ok]AW[mk]AW[nk]AW[lk]AW[kk]AW[ii]AW[hi]AW[gi]AW[fi]AW[ei]AW[di]AW[ci]AW[bi]AW[ai]AB[ji]AB[ki]AB[li]AB[mi]AB[ni]AB[oi]AB[pi]AB[qi]AB[ri]AW[ih]AW[ig]AW[hg]AW[gg]AW[fg]AW[eg]AW[dg]AW[cg]AW[bg]AW[ag]AB[jh]AB[jg]AB[kg]AB[lg]AB[mg]AB[ng]AB[og]AB[pg]AB[qg]AB[rg]AB[aa]AB[ba]AB[da]AB[ca]AB[ea]AB[fa]AB[ga]AB[ia]AB[ha]AB[ja]AB[ka]AB[la]AB[na]AB[ma]AB[oa]AB[qa]AB[pa]AB[ra]AB[rc]AB[qc]AB[pc]AB[oc]AB[nc]AB[mc]AB[lc]AB[kc]AB[jc]AB[ic]AB[gc]AB[hc]AB[fc]AB[ec]AB[dc]AB[cc]AB[bc]AB[ac]AW[ad]AW[bd]AW[cd]AW[ed]AW[dd]AW[fd]AW[gd]AW[hd]AW[id]AW[jd]AW[kd]AW[ld]AW[md]AW[nd]AW[od]AW[pd]AW[qd]AW[rd]AW[rf]AW[pf]AW[qf]AW[of]AW[nf]AW[mf]AW[lf]AW[kf]AW[if]AW[jf]AW[hf]AW[gf]AW[ff]AW[ef]AW[df]AW[cf]AW[bf]AW[af]LB[cp:a]LB[aq:b]LB[bq:c]LB[cq:d]LB[dq:e]LB[cr:f]AB[op]AB[qp]AW[hh]AW[gh]AB[nq]AB[rq]AW[fh]AW[eh]AB[or]AB[pq]AB[qr]AW[dh]AW[ch]AW[bh]C[FORCE]AP[goproblems]
+(;B[cp]C[RIGHT])
+(;B[aq]LB[cq:a]C[FORCE];W[cq])
+(;B[bq]LB[cp:a]C[FORCE];W[cp]LB[cq:a]LB[dq:b]LB[cr:c]C[FORCE]
+(;B[cq]C[RIGHT])
+(;B[dq]LB[cq:a]C[FORCE];W[cq])
+(;B[cr]LB[cq:a]C[FORCE];W[cq]))
+(;B[cq]LB[cp:a]C[FORCE];W[cp]C[RIGHT])
+(;B[dq]LB[cq:a]C[FORCE];W[cq]LB[bq:a]LB[cp:b]C[FORCE]
+(;B[bq]LB[cp:a]C[FORCE];W[cp])
+(;B[cp]LB[bq:a]C[FORCE];W[bq]))
+(;B[cr]LB[cq:a]C[FORCE];W[cq]LB[bq:a]LB[cp:b]C[FORCE]
+(;B[bq]LB[cp:a]C[FORCE];W[cp])
+(;B[cp]LB[bq:a]C[FORCE];W[bq])))

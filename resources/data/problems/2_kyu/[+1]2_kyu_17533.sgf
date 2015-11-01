@@ -1,0 +1,24 @@
+(;AB[ac]AB[bc]AW[ad]AW[bd]AW[be]AW[cd]TR[cd]AB[bf]AW[af]AW[bg]AW[bh]AW[ah]AW[ci]AW[cj]AB[ch]AB[cf]AB[df]AB[de]AB[cg]AB[dc]AB[ec]AB[fb]AB[gb]AB[gc]AB[gd]AW[fc]AW[fd]AB[ib]AW[hc]AW[hd]AW[he]AW[hf]AW[id]AB[ie]AB[je]AB[kc]AB[lc]AB[ke]AB[if]AB[hg]AB[hh]AB[hi]AW[ff]AW[gg]AW[gh]AW[eg]AB[gi]AW[fi]C[Black to defend against the marked stone.]AW[jd]AB[le]AW[dg]AW[dh]AP[goproblems]
+(;B[cc];W[dd]
+(;B[ge];W[gf]
+(;B[ee];W[bi]C[Great job! RIGHT])
+(;B[fe];W[ee];B[ed];W[ef]TR[de]TR[df]TR[cf]TR[bf]TR[cg]TR[ch]C[Too much was lost.])
+(;B[ed];W[ee];B[fe];W[ef]TR[de]TR[df]TR[cf]TR[bf]TR[cg]TR[ch]C[Too much was lost.]))
+(;B[ed];W[ee];B[fe];W[ef]C[Too much was lost.])
+(;B[fe];W[ee]
+(;B[ed];W[ef]C[Too much was lost.])
+(;B[ge];W[gf];B[ed];W[ef]TR[de]TR[df]TR[cf]TR[bf]TR[cg]TR[ch]C[Too much was lost.]))
+(;B[ee];W[ed]
+(;B[ge];W[fe];B[gf]C[The top white stones are cut, but white gains too much on the left.])
+(;B[fe];W[ge]C[The large group has died.]TR[bf]TR[cf]TR[cg]TR[ch]TR[df]TR[de]TR[ee]TR[fe])))
+(;B[dd];W[cc];B[cb];W[bb]C[The corner is lost.])
+(;B[ee];W[cc];B[cb];W[bb]C[The corner is lost.])
+(;B[fe];W[cc];B[cb];W[bb]C[The corner is lost.])
+(;B[ge];W[gf]
+(;B[cc];W[dd]
+(;B[ee];W[bi]C[Great job! RIGHT])
+(;B[fe];W[ee];B[ed];W[ef]TR[de]TR[df]TR[cf]TR[bf]TR[cg]TR[ch]C[Too much was lost.])
+(;B[ed];W[ee];B[fe]))
+(;B[dd];W[cc];B[cb];W[bb]C[The corner is lost.])
+(;B[ee];W[cc];B[cb];W[bb]C[The corner is lost.])
+(;B[fe];W[cc];B[cb];W[bb]C[The corner is lost.])))

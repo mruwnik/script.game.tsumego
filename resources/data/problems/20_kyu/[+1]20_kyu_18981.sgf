@@ -1,0 +1,13 @@
+(;AW[cb]AW[bb]AW[db]AW[eb]AW[fb]AB[gb]AB[gc]AB[ib]AB[bd]AB[cd]AB[dd]AB[ed]AB[fd]AP[goproblems]
+(;B[ab];W[ac]
+(;B[ba];W[bc];B[fa];W[ca]C[CHOICE])
+(;B[bc];W[aa]
+(;B[fa];W[ea];B[ca]C[RIGHT])
+(;B[ca]C[RIGHT])))
+(;B[ba];W[ca]C[CHOICE])
+(;B[fa];W[ea]
+(;B[ab];W[ac];B[bc];W[aa];B[ca]C[RIGHT])
+(;B[ca]
+(;W[bc];B[ac]C[RIGHT];W[ba];B[ab];W[aa];B[ad]C[RIGHT])
+(;W[ac];B[bc]C[RIGHT];W[ba];B[ab];W[aa];B[ad]C[RIGHT])))
+(;B[ac];W[ab];B[fa];W[ea]C[CHOICE]))

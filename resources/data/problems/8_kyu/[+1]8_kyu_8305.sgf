@@ -1,0 +1,63 @@
+(;AB[js]AB[jr]AB[jq]AB[kq]AB[ls]AB[ms]AB[mr]AB[iq]AW[kr]AW[mq]AW[nr]AW[ns]AW[kp]AW[np]AW[jp]AW[ip]AW[hq]AW[gq]AW[gr]C[There is a big ko somewhere else on the board. How many ko threats does Black have here (play A if Black can just save this group with his next move, eg. not a threat but directly alive)?FORCE]LB[gn:A]LB[hn:0]LB[in:1]LB[jn:2]LB[kn:3]AB[hs]AW[lq]AW[fr]AW[fs]AP[goproblems]
+(;B[gn]C[];W[hn]C[Show me how Black can live, then.]LB[gn:A]
+(;B[hr];W[lr])
+(;B[lr];W[hr]))
+(;B[hn]C[]AB[fs]AB[fr]AB[gr]AB[gq]AB[hq]AB[ip]AB[jp]AB[kp]AB[kr]AB[lq]AB[mq]AB[np]AB[nr]AB[ns]AW[ms]AW[mr]AW[ls]AW[hs]AW[js]AW[jr]AW[jq]AW[iq]AW[kq]AW[hn];W[lr]LB[hn:0]C[You chose 0, there were no threats. If we swap color and White plays at M2, is that a threat of bluff? Play at K6 to win the ko if you think M2 is no valid threat.]LB[jn:KO]
+(;B[jn];W[hr]
+(;B[ks];W[lr]TR[kr]TR[ks]C[White lives, the threat was real.])
+(;B[ir];W[ks])
+(;B[is];W[ks])
+(;B[gs];W[ks]))
+(;B[ks];W[jn]C[White takes back the ko... it was a valid threat.])
+(;B[ir];W[jn]C[White takes back the ko... it was a valid threat.])
+(;B[hr];W[jn]C[White takes back the ko... it was a valid threat.])
+(;B[is];W[jn]C[White takes back the ko... it was a valid threat.])
+(;B[gs];W[jn]C[White takes back the ko... it was a valid threat.]))
+(;B[in];W[io]C[White has taken the ko somewhere else on the board. Please play the Ko threat.]LB[in:1]
+(;B[hr]
+(;W[jo]C[White chooses to win the Ko.CHOICE]
+(;B[ir]C[Come on, this is serious. The lives of 10 stones are at stake!])
+(;B[is]C[Yes, very funny.])
+(;B[ks];W[lr]C[White says: 'Thank you'.])
+(;B[lr];W[ks];B[lr];W[ls];B[ms];W[ls];B[ks]C[];W[mr];B[ls]C[Nice work.RIGHT]))
+(;W[lr]C[Should White want to answer the threat this is how. Black has no further threats.RIGHT]))
+(;B[ir]C[];W[jn]C[White ignores the threat. Now live!]
+(;B[hr];W[lr])
+(;B[lr];W[hr]))
+(;B[is]C[];W[jn]C[White ignores the threat. Now live!]
+(;B[hr];W[lr])
+(;B[lr];W[hr]))
+(;B[ks]C[];W[jn]C[White ignores the threat. Now live!]
+(;B[lr];W[hr])
+(;B[hr];W[lr]))
+(;B[lr]
+(;W[jo]C[White chooses to win the Ko.CHOICE]
+(;B[hr];W[ks];B[lr];W[ls];B[ms];W[ls];B[ks]C[];W[mr];B[ls]C[Nice work.RIGHT])
+(;B[ir];W[hr]C[...and black group gets squashed.])
+(;B[is];W[hr]C[Please tell me this was a missclick.])
+(;B[ks];W[hr]C[White both won the Ko and kept the black group dead.]))
+(;W[hr]C[If White decides to respond to M2 he should play here. It kills the black group and leaves no more ko threats.RIGHT]))
+(;B[oq];W[jn]C[White ignores the threat. Now live!]
+(;B[nq];W[lr]
+(;B[or];W[ks])
+(;B[os];W[ks])
+(;B[ks];W[is]
+(;B[ir];W[hr])
+(;B[or];W[ir])
+(;B[os];W[ir])
+(;B[hr];W[ir])
+(;B[mp];W[ir])
+(;B[lp];W[ir]))
+(;B[lp];W[ks])
+(;B[mp];W[ks]))
+(;B[lr];W[ks]
+(;B[lr];W[hr])
+(;B[hr];W[lr]))
+(;B[hr];W[lr])))
+(;B[jn]C[];W[jo]C[White takes the ko. Play the first of your threats.]LB[jn:2]
+(;B[oq];W[kn]C[White ignores your threat... now what?]
+(;B[lr];W[ks];B[lr];W[hr])
+(;B[hr];W[lr]))
+(;B[lr];W[hr]C[White answers. You don't have a second threat, Black is dead.])
+(;B[hr];W[lr]C[White answers the first threat. You doin't have a second threat, Black is dead.]))
+(;B[kn]C[Not that many, sorry. Try again.]))

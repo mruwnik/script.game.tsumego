@@ -1,0 +1,16 @@
+(;AW[qr]AW[qq]AW[qp]AW[qo]AW[po]AW[oo]AW[no]AB[pr]AB[pq]AB[pp]AB[op]AB[np]AB[mp]AB[mr]AB[mq]AB[ls]AW[lr]AW[lq]AW[lp]AW[lo]AW[mo]AW[jr]C[Black to play and live]AP[goproblems]
+(;B[nr]
+(;W[ms];B[oq];W[os];B[ps]LB[nr:1]LB[ms:2]LB[oq:3]LB[os:4]LB[ps:5]C[Black 1, turning inward on the side with the hane, is a good move.  When White tries to steal his eye shape with 2, Black calmly secures one eye with 3. If 4, Black blocks at 5, and White can't connect at 'a'. The hane works very effectively. RIGHT]LB[ns:a])
+(;W[oq];B[ms];W[os];B[ps]LB[or:a]LB[nr:1]LB[oq:2]LB[ms:3]LB[os:4]LB[ps:5]C[It White tries to reduce Black to one large eye with the nakade move of 2, Black expands his eye space by connecting at 3. If White 4, Black intercepts with 5 and lives: White 'a' does not create a nakade. RIGHT]))
+(;B[or];W[ps]LB[or:1]LB[ps:2]LB[nq:a]LB[ns:b]LB[os:c]LB[ms:d]C[IBlack 1 is on the wrong side: it doesn't make use of his own hane. White now kills Black with the hane of 2. Next, if Black 'a', White 'b'; if instead Black 'c', White 'd'. There's not enough room to live.]
+(;B[nq];W[ns]C[CHOICE])
+(;B[os];W[ms]C[CHOICE]))
+(;B[ps];W[ms]LB[ps:1]LB[ms:2]LB[ns:a]LB[or:b]LB[nr:c]LB[oq:d]C[If Black 1, White throws in at 2 and can now create a gomoku-nakade shape. Next, if Black 'a', White 'b'; if instead Black 'c', White 'd' makes a sanmoku-nakade (three- point single eye)]
+(;B[ns];W[or]
+(;B[os];W[ks]C[CHOICE])
+(;B[nr];W[oq]C[CHOICE])
+(;B[oq];W[nr]C[CHOICE]))
+(;B[nr];W[oq]
+(;B[or];W[ns];B[os];W[ms]C[CHOICE])
+(;B[ns];W[or]C[CHOICE])
+(;B[os];W[ks]C[CHOICE]))))

@@ -1,0 +1,11 @@
+(;AB[pb]AB[pc]AB[oc]AW[nc]AW[mc]AW[lc]AW[lb]AB[nb]AW[mb]AW[ob]AB[kb]AB[kc]AB[ld]AB[md]AW[pd]AW[qd]AB[nd]AW[od]AW[qc]AW[qb]AB[rb]AB[rc]AB[rd]AB[qe]AB[rf]AB[nf]AW[qa]AB[pf]AB[kd]AB[ka]C[More or less taken from 'Graded Go Problems for Beginners, Vol. 3'Thought this was a pretty tough one to get labeled '20-15 kyu'.]AP[goproblems]
+(;B[oa];W[pa];B[ob];W[na]
+(;B[ob];W[oc]LB[la:A]LB[pb:B]C[If black plays A, white plays B and vice versa. White is alive.])
+(;B[la];W[ob]C[White is alive.]))
+(;B[la];W[na]C[];B[ma];W[pa]C[White lives.])
+(;B[ma];W[na]C[White is alive.];B[la];W[pa])
+(;B[na];W[pa]
+(;B[ma];W[oc];B[la]C[You killed white. Nice! : )RIGHT])
+(;B[oc]C[Too fancy. (Thanks kaf!)];W[oa]C[White lives.
+(Thanks kaf for fixing this up! ^_^)])
+(;B[la];W[oc];B[ma]C[White dies. Nice!RIGHT])))

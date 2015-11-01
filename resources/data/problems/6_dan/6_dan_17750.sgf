@@ -1,0 +1,26 @@
+(;AB[gj]AB[fi]AB[gk]AB[ij]AB[ik]AB[il]AB[im]AB[jm]AB[jl]AB[jk]AB[kl]AB[lk]AB[ll]AB[lm]AB[ln]AB[mm]AB[nm]AB[nn]AB[oo]AB[po]AB[qp]AB[qq]AB[pq]AB[qn]AB[rn]AB[rm]AB[sm]AB[sj]AB[rj]AB[qj]AB[qk]AB[pj]AB[pk]AB[ok]AB[oj]AB[ol]AB[oi]AB[ni]AB[mi]AB[nh]AB[lh]AB[lg]AB[lf]AB[ih]AB[lr]AB[kq]AB[jq]AB[iq]AB[jr]AB[jp]AB[hr]AB[gq]AB[gp]AB[fo]AB[ep]AB[dp]AB[cq]AB[cr]AB[fn]AB[fl]AB[el]AB[dk]AW[dj]AW[ej]AW[ek]AW[fk]AW[gl]AW[gm]AW[gn]AW[go]AW[hp]AW[hq]AW[ip]AW[in]AW[jo]AW[ko]AW[kn]AW[km]AW[kp]AW[no]AW[mp]AW[lq]AW[mq]AW[nq]AW[np]AW[op]AW[pp]AW[oq]AW[on]AW[om]AW[pm]AW[pl]AW[ql]AW[rl]AW[rk]AW[ri]AW[qi]AW[pi]AW[qh]AW[pg]AW[oh]AW[ng]AW[mg]AW[mh]AW[kh]AW[jh]AW[kg]AW[ii]AW[hi]AW[jj]AW[kj]AW[kk]AW[lj]AW[li]AW[mj]AW[mk]AW[ml]AW[nl]AW[bq]AW[br]AW[cp]AW[co]AW[lo]AB[mn]C[Black to kill the bottom white group @ L5]AB[qo]AW[qr]AW[rq]AW[sr]AW[rs]AW[rp]AB[mr]AW[ro]AW[so]AW[sn]AB[ei]AB[fg]AW[ir]AP[goproblems]
+(;B[pr];W[mo]
+(;B[io];W[ho]
+(;B[hm];W[jn];B[hn]C[Land slide!RIGHT])
+(;B[jn];W[hm]C[So close, but not quite right]))
+(;B[jn];W[hm]C[White lives!])
+(;B[hm]C[];W[hn];B[io];W[ho];B[jn]C[Land slide!RIGHT]))
+(;B[or];W[pr]
+(;B[nr];W[mo]
+(;B[io];W[ho]
+(;B[hm];W[sk]TR[mi]TR[ni]TR[oi]TR[oj]TR[nh]TR[pj]TR[ok]TR[ol]TR[pk]TR[qk]TR[qj]TR[rj]TR[sj]C[The black group only has 3 liberties i.e. black is done for!])
+(;B[jn];W[hm]C[White lives!]))
+(;B[jn];W[hm]C[White lives!])
+(;B[hm];W[sk]TR[ol]TR[ok]TR[oj]TR[oi]TR[ni]TR[mi]TR[nh]TR[pj]TR[pk]TR[qj]TR[rj]TR[qk]TR[sj]C[Marked stones have only 3 liberties i.e. black is toast]))
+(;B[os];W[nr];B[ns];W[ms];B[ls];W[ps];B[ms];W[ks]C[Oops!])
+(;B[ns];W[nr]
+(;B[os];W[ms];B[ls];W[ps];B[ms];W[ks]C[Oops!])
+(;B[ps];W[qs]C[Not there])))
+(;B[mo];W[pr]C[White connects!])
+(;B[nr];W[or];B[pr];W[ps]C[White connects!])
+(;B[ps];W[pr];B[or];W[nr];B[ns];W[qs]C[White connects!])
+(;B[os];W[pr];B[or];W[nr];B[ns];W[ms];B[ls];W[ps];B[ms];W[ks]C[Oops!])
+(;B[ns];W[pr];B[or];W[nr];B[os];W[ms];B[ls];W[ps];B[ms];W[ks]C[Oops!])
+(;B[io];W[ho]
+(;B[hm];W[pr]C[White connects!])
+(;B[pr];W[hm]LB[jn:A]LB[mo:B]C[A and B are miai])))

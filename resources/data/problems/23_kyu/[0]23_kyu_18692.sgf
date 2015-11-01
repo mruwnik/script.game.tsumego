@@ -1,0 +1,8 @@
+(;AW[bb]AW[ab]AW[cc]AW[dc]AW[ec]AW[eb]AW[ea]AB[da]AB[fb]AB[fc]AB[fd]AB[ed]AB[dd]AB[cd]AB[bd]AB[bc]AP[goproblems]
+(;B[cb];W[ba]
+(;B[fa]C[RIGHT])
+(;B[ac]C[RIGHT]))
+(;B[ba];W[cb];B[ca]C[CHOICE])
+(;B[ca];W[ba]C[CHOICE])
+(;B[fa];W[ca]C[CHOICE])
+(;B[ac];W[ca]))

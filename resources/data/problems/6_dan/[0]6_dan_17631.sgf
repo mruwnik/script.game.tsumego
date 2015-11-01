@@ -1,0 +1,111 @@
+(;AB[pd]AB[qd]AB[rd]AB[sd]AB[nb]AB[nc]AB[na]AB[od]AW[ob]AW[oa]AW[pc]AW[qc]AW[rc]AW[sc]AP[goproblems]
+(;B[oc]
+(;W[qa]
+(;B[pb];W[pa]
+(;B[ra];W[qb]
+(;B[sb]C[White is 1 point.CHOICERIGHT])
+(;B[sa]C[White tenuki, 8 points.])
+(;B[rb]C[White tenuki, 8 points.]))
+(;B[sa]C[White tenuki, 8 points.])
+(;B[qb];W[rb]C[White is 7 points.])
+(;B[rb];W[qb]C[White is 7 points.])
+(;B[sb];W[ra]C[White is 7 points.]))
+(;B[pa];W[pb]C[White is 7 points.])
+(;B[ra];W[pb]C[White is 7 points.])
+(;B[sa]C[White tenuki, 8 points.])
+(;B[qb];W[rb]C[White is 7 points.])
+(;B[rb];W[qb]C[White is 7 points.])
+(;B[sb];W[rb]C[White is 7 points.]))
+(;W[qb];B[ra];W[qa];B[sb]C[White is 0 point.RIGHT])
+(;W[pb];B[qa]
+(;W[ra];B[rb];W[sb];B[sa]C[Ko.RIGHT])
+(;W[rb];B[ra]C[RIGHT])))
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[qa];W[ra]
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[sa];W[rb]
+(;B[pa];W[oc]C[White is 9 points.])
+(;B[oc];W[pb]C[White is 7 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[qb];W[oc]C[White is 9 points.]))
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[qb];W[rb]
+(;B[pa];W[oc]C[White is 9 points.])
+(;B[sa];W[oc]C[White is 9 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[oc]C[White is 9 points.])
+(;B[oc];W[pb]C[White is 7 points.]))
+(;B[rb];W[qb]
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[sa];W[sb]
+(;B[pa];W[ra];B[oc];W[pb]C[White is 7 points.])
+(;B[ra];W[oc]C[White is 9 points.])
+(;B[pb];W[ra];B[oc];W[pa]C[White is 7 points.])
+(;B[oc];W[ra]C[White is 7 points.]))
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[oc]C[White is 9 points.])
+(;B[oc];W[pa]C[White is 7 points.]))
+(;B[sb];W[qb]C[White is 8 points.])
+(;B[oc];W[qb]C[White is 7 points.]))
+(;B[ra];W[qa]
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[sa];W[qb]C[White is 8 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[qb];W[rb]
+(;B[pa];W[pb]C[White is 7 points.])
+(;B[sa];W[pb]C[White is 8 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[pb]C[White is 8 points.])
+(;B[oc];W[pb]C[White is 7 points.]))
+(;B[rb];W[qb]C[White is 8 points.])
+(;B[sb];W[pb]C[White is 7 points.])
+(;B[oc];W[pb]C[White is 7 points.]))
+(;B[sa];W[qa]C[White is 8 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[qb];W[rb]
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[qa];W[ra]
+(;B[pa];W[oc]C[White is 9 points.])
+(;B[sa];W[oc]C[White is 9 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[oc]C[White is 9 points.])
+(;B[oc];W[pb]C[White is 7 points.]))
+(;B[ra];W[qa]
+(;B[pa];W[pb]C[White is 7 points.])
+(;B[sa];W[pb]C[White is 8 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[pb]C[White is 8 points.])
+(;B[oc];W[pb]C[White is 7 points.]))
+(;B[sa];W[qa]C[White is 8 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[qa]C[White is 8 points.])
+(;B[oc];W[qa]C[White is 7 points.]))
+(;B[rb];W[qb]
+(;B[pa];W[qa]
+(;B[ra];W[oc]C[White is 9 points.])
+(;B[sa];W[oc]C[White is 9 points.])
+(;B[sb];W[oc]C[White is 9 points.])
+(;B[oc];W[pb]C[White is 7 points.]))
+(;B[qa];W[ra]
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[sa];W[sb]
+(;B[pa];W[ra];B[oc];W[pb]C[White is 7 points.])
+(;B[ra];W[oc]C[White is 9 points.])
+(;B[pb];W[ra];B[oc];W[pa]C[White is 7 points.])
+(;B[oc];W[ra]C[White is 7 points.]))
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[oc]C[White is 9 points.])
+(;B[oc];W[pa]C[White is 7 points.]))
+(;B[ra];W[oc]C[White is 9 points.])
+(;B[sa];W[oc]C[White is 9 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[sb];W[qa]C[White is 8 points.])
+(;B[oc];W[qa]C[White is 7 points.]))
+(;B[sb];W[qa]
+(;B[pa];W[pb]C[White is 8 points.])
+(;B[ra];W[pb]C[White is 7 points.])
+(;B[sa];W[oc]C[White is 9 points.])
+(;B[pb];W[oc]C[White is 9 points.])
+(;B[qb];W[rb]C[White is 8 points.])
+(;B[rb];W[qb]C[White is 8 points.])
+(;B[oc];W[rb]C[White is 7 points.])))

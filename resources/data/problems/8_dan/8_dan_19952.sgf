@@ -1,0 +1,22 @@
+(;AB[cr]AB[cq]AB[er]AB[fr]AB[fq]AB[gp]AB[ho]AB[hq]AB[hn]AB[hm]AB[co]AB[cn]AB[bo]AB[dm]AB[el]AB[fl]AB[cl]AW[dr]AW[eq]AW[ep]AW[fp]AW[dp]AW[cp]AW[bp]AW[dn]AW[en]AW[em]AW[gn]AW[go]AP[goproblems]
+(;W[ds]
+(;B[dq];W[br];B[es]
+(;W[bq];B[cs];W[bs]C[RIGHT])
+(;W[bs]
+(;B[bq];W[aq];B[cs];W[ar]C[RIGHT])
+(;B[ap];W[bq];B[cs];W[aq]C[RIGHT])
+(;B[cs];W[bq]C[RIGHT])))
+(;B[bq]
+(;W[aq];B[dq]
+(;W[ar];B[es]
+(;W[bs];B[cs];W[br]C[RIGHT])
+(;W[br];B[cs];W[bs]C[RIGHT]))
+(;W[cs]C[RIGHT])
+(;W[br]C[RIGHT])
+(;W[bs]C[RIGHT]))
+(;W[ar]
+(;B[ap]C[CHOICE])
+(;B[dq];W[aq];B[es]
+(;W[br];B[bs];W[cs])
+(;W[bs];B[cs];W[br]C[This is the solution provided in the book, as blyx pointed out move 3 and 5 are in the wrong order]LB[ds:1]LB[bq:2]LB[ar:3]LB[dq:4]LB[aq:5]LB[es:6]LB[bs:7]LB[cs:8]LB[br:9])))))
+(;W[br];B[bq];W[cs];B[ar];W[bs];B[ap]))

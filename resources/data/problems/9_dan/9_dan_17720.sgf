@@ -1,0 +1,102 @@
+(;AB[bo]AB[bn]AW[bl]AW[bk]AB[cm]AB[cl]AB[ck]AW[bp]AW[co]AW[dp]AW[eq]AB[dn]AB[eo]AB[cj]AB[bi]AB[dh]AB[ei]AB[dj]AB[ek]AW[dk]AW[dl]AW[em]AW[en]AW[fl]AW[fo]AW[fj]AW[fi]AW[gg]AW[eg]AW[dg]AW[cg]AW[ch]AW[bg]AW[ag]AW[ig]AW[jg]AW[kg]AB[kh]AB[jh]AW[lh]AW[ki]AW[mi]AW[lj]AW[mk]AW[ml]AW[lo]AW[ko]AW[jo]AW[jp]AW[lp]AW[mq]AW[nq]AB[lq]AB[kp]AB[kq]AB[jq]AB[ip]AB[iq]AB[io]AB[in]AB[jn]AB[hn]AW[im]AW[ik]AB[jl]AB[jk]AB[ij]AB[gq]AB[hr]AW[ir]AW[jr]TR[bo]TR[bn]TR[cm]TR[cl]TR[ck]TR[cj]TR[dj]TR[bi]C[Black to live! No Ko, no Seki!]AP[goproblems]
+(;B[fp]
+(;W[ep]
+(;B[do];W[fn]
+(;B[fk];W[gk]
+(;B[ej];W[hk]
+(;B[gl];W[hm]
+(;B[el];W[dm];B[cn];W[gm]
+(;B[cp];W[cq]
+(;B[ao];W[am];B[bq];W[co];B[ap];W[cp];B[br]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;B[bq];W[ap]
+(;B[ao]C[Alright! Miai for Life! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT]LB[co:A]LB[am:B])
+(;B[aq];W[co];B[ao]C[Alright! Miai for Life! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT]LB[cp:A]LB[am:B])
+(;B[co];W[br];B[ao]LB[aq:A]LB[am:B]C[Nice! A and B are Miai for life!RIGHT])))
+(;B[fm];W[gn];B[cp];W[cq];B[ao];W[am];B[bq];W[co];B[ap];W[cp];B[br]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT]))
+(;B[gm];W[gn];B[el];W[dm];B[cn];W[hl];B[cp];W[cq];B[bq];W[ap]
+(;B[ao]LB[co:A]LB[am:B]C[A and B Miai for Life! Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;B[aq]C[NOTTHIS])))
+(;B[cn]
+(;W[hm];B[cp];W[cq];B[bq];W[ap];B[ao]LB[co:A]LB[am:B]C[A and B Miai for life! Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;W[cp];B[gl];W[hm]
+(;B[el];W[dm];B[gm]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;B[gm];W[gn];B[el]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])))
+(;B[el];W[dm];B[cn];W[cp]
+(;B[gm]C[RIGHT])
+(;B[gl];W[gm]
+(;B[hl]C[RIGHT])
+(;B[fm]C[KoCHOICE]))))
+(;B[dm]C[CHOICE])
+(;B[cn];W[cp];B[ej];W[hk];B[gl];W[hm]
+(;B[el];W[dm];B[gm]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;B[gm];W[gn];B[el]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])))
+(;B[el]C[CHOICE])
+(;B[dm]C[CHOICE])
+(;B[ej];W[fk]C[CHOICE])
+(;B[cn]
+(;W[cp];B[fk];W[gk];B[ej];W[hk];B[gl];W[hm]
+(;B[el];W[dm];B[gm]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;B[gm];W[gn];B[el]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT]))
+(;W[fk];B[cp];W[cq];B[ao];W[am];B[bq];W[co];B[ap];W[cp];B[br]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])))
+(;B[go]C[CHOICE])
+(;B[fk]C[CHOICE]))
+(;W[fn];B[ep];W[do]
+(;B[fk];W[gk];B[ej];W[hk]LB[gl:A]C[Play at A!]
+(;B[gl];W[hm]C[]
+(;B[el]
+(;W[dm];B[cn];W[gm];B[dq];W[cp];B[cq]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT])
+(;W[cn];B[dm];W[bm]
+(;B[fm]C[];W[gm]
+(;B[fl];W[gn];B[gj];W[hj];B[gi];W[fh];B[hi];W[ii]C[CHOICE];B[hl];W[il])
+(;B[gn];W[fl]C[KoCHOICE]))
+(;B[gm]C[RIGHT])))
+(;B[gm];W[gn];B[el];W[dm]
+(;B[fm];W[cn];B[go];W[dn];B[dq];W[cp];B[cq];W[bq];B[br];W[cr];B[dr];W[ar]
+(;B[cs];W[bs]C[KoCHOICE])
+(;B[bs];W[bm];B[ap];W[an];B[aq]C[RIGHT]))
+(;B[cn]C[RIGHT])))
+(;B[cq]C[NOTTHIS]))
+(;B[cq];W[cp];B[dq];W[bq];B[br];W[cn]
+(;B[aq];W[dm];B[ap];W[dn];B[er];W[ao];B[ar];W[bm];B[an];W[am];B[ao];W[cr];B[dr];W[cs];B[ds];W[bj];B[aj];W[ai];B[ah];W[ci];B[ak])
+(;B[dm];W[bm]
+(;B[aq]C[RIGHT])
+(;B[ap]C[RIGHT])
+(;B[el];W[ao];B[aq];W[an];B[fk];W[gk]
+(;B[gl];W[gm];B[hl]C[RIGHT])
+(;B[gj];W[hj];B[gi];W[hi];B[gh];W[fh]
+(;B[gl]C[RIGHT])
+(;B[hh];W[ih];B[gl]C[RIGHT])))))))
+(;B[fk];W[gk];B[fp];W[fn];B[ep];W[do];B[ej];W[hk]LB[gl:A]C[Play at A!]
+(;B[gl];W[hm]
+(;B[el];W[dm];B[cn];W[gm];B[dq];W[cp];B[cq]C[Right! There are some other ways! Please tell me if I'm wrong with white's moves! This is a real complex problem. There are many different ways!RIGHT]TR[fo]TR[fn]TR[en]TR[em]TR[dm]TR[dl]TR[dk]TR[fl])
+(;B[gm];W[gn];B[el];W[dm]
+(;B[cn]C[RIGHT])
+(;B[fm];W[cn];B[go];W[dn];B[dq];W[cp];B[cq];W[bq];B[br];W[cr];B[dr];W[ar]
+(;B[cs];W[bs]C[KoCHOICE])
+(;B[bs];W[bm];B[ap];W[an];B[aq]C[RIGHT]))))
+(;B[cq]C[NOTTHIS]))
+(;B[ej]C[CHOICE])
+(;B[dm]C[CHOICE])
+(;B[el];W[dm]
+(;B[fn];W[fm]
+(;B[gn];W[fk]
+(;B[do];W[fp];B[cn];W[cp];B[ep];W[fq]C[CHOICE])
+(;B[fp];W[cn]C[CHOICE])
+(;B[cn];W[do]C[CHOICE]))
+(;B[fk];W[gk];B[ej];W[gn]C[CHOICE])
+(;B[fp];W[gn];B[ep];W[do];B[cn];W[cq]LB[fk:A]C[Playing A won't help anymore (try if you want)!CHOICE];B[fk];W[gk];B[ej];W[hk]
+(;B[gj];W[hj];B[gi];W[fh];B[hi];W[ii]
+(;B[gl];W[hm]C[CHOICE])
+(;B[jj];W[hm]C[CHOICE]))
+(;B[gl];W[hm]C[CHOICE])))
+(;B[fm];W[fn];B[fk];W[gm]
+(;B[gk];W[ej]C[CHOICE])
+(;B[ej];W[gk]C[CHOICE])))
+(;B[ep];W[fp];B[do];W[cq]
+(;B[fk];W[gk];B[ej];W[gl];B[gj];W[gi]
+(;B[fq];W[hj];B[er];W[dr]C[KoCHOICE])
+(;B[hj];W[fq]
+(;B[el];W[dm];B[cn];W[gn];B[cp]C[KoCHOICE])
+(;B[cn];W[fn];B[cp]C[KoCHOICE])))
+(;B[fq];W[fk];B[er];W[dr]C[KoCHOICE]))
+(;B[ai];W[ci];B[bj];W[ak]C[Leads to seki, as kevinwm friendly told me :)CHOICE]))

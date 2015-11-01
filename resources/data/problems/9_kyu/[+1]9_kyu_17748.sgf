@@ -1,0 +1,8 @@
+(;AB[be]AB[bf]AB[dd]AB[cd]AB[de]AB[dc]AB[ec]AB[eb]AB[fa]AB[gb]AB[gc]AB[fd]AB[fe]AB[ib]AB[jd]AB[ie]AB[he]AB[hf]AB[if]AB[hg]AB[gg]AB[fg]AB[eg]AB[dh]AB[eh]AB[ck]AB[cl]AB[dl]AB[dm]AB[dn]AB[en]AB[eo]AB[cn]AB[bm]AB[an]AB[dp]AB[dq]AB[cq]AB[cr]AB[br]AB[ar]AB[hi]AB[hj]AB[jl]AB[in]AB[io]AW[ac]AW[bd]AW[cc]AW[cb]AW[db]AW[bb]AW[ga]AW[hb]AW[hc]AW[hd]AW[ge]AB[gd]AW[gf]AW[ff]AW[ef]AW[ee]AW[ed]AW[df]AW[cf]AW[ce]AW[bg]AW[cg]AW[ch]AW[dg]AW[bk]AW[bl]AW[cj]AW[ek]AW[fm]AW[fn]AW[fo]AW[ep]AW[fq]AW[er]AW[dr]AW[bq]AW[cp]AW[co]AW[do]AW[bo]AW[ao]AW[ap]AW[gp]AW[hp]AW[ip]AW[jo]AW[ko]AW[km]AW[lo]AW[hl]AW[ik]AW[ji]AW[jh]AW[ig]AW[jf]AW[kg]AW[ke]AB[lc]AB[iq]AB[hq]AB[jp]AB[kp]AB[lp]AB[kq]AB[kr]AB[lr]AW[mq]AW[mp]AW[mr]AW[mn]AB[hr]AB[jr]AW[il]AW[jk]AW[kl]AW[gl]AB[hk]AB[fj]C[Capture some stones on the left]AP[goproblems]
+(;B[bi]
+(;W[bj]C[CHOICE];B[ci]
+(;W[af]C[CHOICE];B[dj]C[SweetRIGHT])
+(;W[dj]C[CHOICE];B[ag]C[SweetRIGHT]))
+(;W[ci]C[CHOICE];B[bj]C[Sweet!RIGHT]))
+(;B[ci];W[bi];B[di])
+(;B[ag];W[ci]))

@@ -1,0 +1,6 @@
+(;AB[bb]AB[ba]AB[bd]AB[cc]AB[cd]AB[be]AW[ca]AW[cb]AW[bc]AW[dc]AW[dd]AW[ce]AW[ee]AW[cf]AW[bf]AW[bh]AW[db]C[White to kill]
+(;W[ae];B[ac]C[Black has 2 eyes])
+(;W[ab];B[ac];W[ae];B[aa]LB[ad:a]C[]
+(;W[af];B[ad]C[Black has 2 eyes])
+(;W[ad];B[af]))
+(;W[ac]LB[ab:a]LB[ad:b]C[Black cannot approach on either a' or 'b', since he would put himself in atari.RIGHT]))

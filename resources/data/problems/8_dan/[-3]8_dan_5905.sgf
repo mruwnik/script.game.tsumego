@@ -1,0 +1,97 @@
+(;SZ[19]AW[fa]AW[ia]AW[ra]AW[fb]AW[ib]AW[jb]AW[qb]AW[sb]AW[ec]AW[fc]AW[ic]AW[nc]AW[qc]AW[dd]AW[hd]AW[id]AW[jd]AW[md]AW[qd]AW[de]AW[ee]AW[fe]AW[ge]AW[je]AW[ke]AW[le]AW[qe]AW[df]AW[ff]AW[lf]AW[nf]AW[qf]AW[eg]AW[fg]AW[lg]AW[mg]AW[qg]AW[bh]AW[dh]AW[ih]AW[jh]AW[mh]AW[nh]AW[ph]AW[ai]AW[bi]AW[ci]AW[di]AW[ei]AW[fi]AW[ii]AW[pi]AW[cj]AW[hj]AW[ij]AW[nj]AW[pj]AW[ck]AW[ek]AW[hk]AW[jk]AW[ok]AW[cl]AW[dl]AW[el]AW[gl]AW[hl]AW[il]AW[jl]AW[nl]AW[ql]AW[sl]AW[fm]AW[gm]AW[lm]AW[mm]AW[om]AW[pm]AW[rm]AW[an]AW[bn]AW[cn]AW[fn]AW[kn]AW[on]AW[pn]AW[qn]AW[co]AW[fo]AW[jo]AW[no]AW[po]AW[dp]AW[ep]AW[fp]AW[hp]AW[ip]AW[jp]AW[lp]AW[mp]AW[eq]AW[gq]AW[hq]AW[kq]AW[gr]AW[jr]AW[fs]AW[gs]AW[hs]AW[is]AB[da]AB[ea]AB[ja]AB[ka]AB[pa]AB[qa]AB[cb]AB[eb]AB[kb]AB[nb]AB[pb]AB[cc]AB[dc]AB[gc]AB[jc]AB[kc]AB[oc]AB[cd]AB[ed]AB[kd]AB[ld]AB[nd]AB[pd]AB[ce]AB[he]AB[me]AB[ne]AB[pe]AB[af]AB[cf]AB[hf]AB[jf]AB[kf]AB[of]AB[pf]AB[ag]AB[bg]AB[cg]AB[dg]AB[gg]AB[kg]AB[og]AB[pg]AB[ah]AB[ch]AB[eh]AB[fh]AB[gh]AB[kh]AB[lh]AB[oh]AB[gi]AB[ji]AB[ki]AB[mi]AB[ni]AB[oi]AB[dj]AB[ej]AB[fj]AB[gj]AB[jj]AB[oj]AB[dk]AB[fk]AB[gk]AB[kk]AB[mk]AB[nk]AB[fl]AB[kl]AB[ll]AB[ml]AB[hm]AB[im]AB[jm]AB[km]AB[sm]AB[gn]AB[jn]AB[rn]AB[sn]AB[ao]AB[bo]AB[go]AB[ho]AB[io]AB[oo]AB[qo]AB[ro]AB[ap]AB[cp]AB[gp]AB[np]AB[op]AB[pp]AB[rp]AB[bq]AB[cq]AB[dq]AB[fq]AB[lq]AB[mq]AB[nq]AB[dr]AB[er]AB[fr]AB[kr]AB[lr]AB[es]AB[js]AB[ks]C[Black to play and win.]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[6.50]
+(;B[ig]C[Nothing here])
+(;B[if]C[Nothing here])
+(;B[ln];W[ko]
+(;B[mn];W[nm];B[pk];W[ol];B[rk];W[rl]
+(;B[qk]
+(;W[pl]C[CHOICE]
+(;B[sk];W[nn];B[qh];W[qi];B[rh];W[ri];B[si]C[RIGHT])
+(;B[qh]C[NOTTHIS]))
+(;W[rj];B[pl];W[qj];B[nn];W[sk];B[mo]C[RIGHT]))
+(;B[qh];W[qk];B[qj];W[pl];B[qi];W[pk];B[nn];W[lo];B[sk];W[mo])
+(;B[qm];W[pl];B[nn];W[mo];B[qk];W[ri];B[sk];W[lo]))
+(;B[nn];W[mo];B[mn];W[nm];B[pk];W[ol];B[rk];W[rl];B[qk];W[pl];B[qh];W[qi];B[rh];W[ri];B[si];W[rg])
+(;B[mo];W[nn])
+(;B[pk];W[ol];B[rk];W[rl];B[mn];W[nm];B[qk]
+(;W[mo]C[CHOICE];B[sk];W[nn]
+(;B[qh];W[qi];B[rh];W[ri];B[si]C[
+
+B+6.5RIGHT])
+(;B[pl];W[qm];B[qh];W[qi];B[rh];W[ri];B[si]C[
+
+B+6.5RIGHT]))
+(;W[pl];B[sk];W[nn];B[qh];W[qi];B[rh];W[ri];B[si]C[RIGHT])
+(;W[rj]
+(;B[nn];W[mo]
+(;B[sk];W[lo];B[qh];W[rh])
+(;B[pl];W[lo];B[sk];W[qm];B[qh];W[rh]))
+(;B[sk];W[qj]
+(;B[pl];W[sj])
+(;B[nn];W[mo]))
+(;B[qj];W[ri])
+(;B[pl]
+(;W[qj]C[CHOICE];B[nn];W[sk];B[mo]C[
+
+B+3.5RIGHT])
+(;W[nn];B[sk]C[RIGHT])))))
+(;B[mo];W[nn]
+(;B[lo];W[kp])
+(;B[ln];W[ko])
+(;B[rk];W[rl];B[pk];W[ol];B[ln];W[ko];B[qk];W[rj]
+(;B[qj];W[ri])
+(;B[sk];W[qj]))
+(;B[qm];W[pm];B[rk];W[rl];B[pk];W[ol];B[ln];W[ko];B[qk];W[rj]
+(;B[qj];W[ri])
+(;B[sk];W[qj]))
+(;B[ko];W[ln];B[lo];W[kp]))
+(;B[rk];W[rl]
+(;B[mo];W[nn];B[ln];W[ko];B[pk];W[qk])
+(;B[nn];W[mo];B[ln];W[ko];B[mn];W[nm];B[pk];W[qk])
+(;B[ln];W[ko];B[mn];W[nm];B[pk];W[qk]))
+(;B[nn];W[mo];B[ln];W[ko];B[mn];W[nm];B[rk];W[rl];B[pk];W[ol]
+(;B[qk];W[ri])
+(;B[qh];W[qi];B[rh];W[ri];B[qk];W[rg]))
+(;B[pk];W[ol]
+(;B[ln];W[ko];B[mn];W[nm];B[rk];W[rl];B[qk]
+(;W[mo]C[CHOICE];B[sk];W[nn]
+(;B[qh];W[qi];B[rh];W[ri];B[si]C[
+
+B+6.5RIGHT])
+(;B[pl];W[qm];B[qh];W[qi];B[rh];W[ri];B[si]C[
+
+B+6.5RIGHT]))
+(;W[pl];B[sk]
+(;W[rj];B[nn])
+(;W[nn];B[qh];W[qi];B[rh];W[ri];B[si]C[RIGHT]))
+(;W[rj]
+(;B[nn]
+(;W[lo];B[sk];W[qj])
+(;W[mo]
+(;B[sk];W[lo];B[qh];W[rh])
+(;B[pl];W[lo];B[sk];W[qm];B[qh];W[rh])))
+(;B[sk];W[qj];B[nn];W[mo])
+(;B[qj];W[ri])
+(;B[pl]
+(;W[qj]C[CHOICE];B[nn];W[sk];B[mo]C[
+
+B+3.5RIGHT])
+(;W[nn];B[sk]C[RIGHT]))))
+(;B[rk];W[rl]
+(;B[ln];W[ko];B[mn];W[nm];B[qk];W[pl];B[sk]
+(;W[rj];B[nn])
+(;W[nn];B[qh];W[qi];B[rh];W[ri];B[si]C[RIGHT]))
+(;B[qh];W[qk])))
+(;B[pc]C[Nothing here])
+(;B[gd];W[gb]C[White will eventually have to capture F16, but it isn't enough to win])
+(;B[rl])
+(;B[ko];W[ln];B[pk];W[ol];B[rk];W[rl];B[nn];W[mo];B[qk];W[pl])
+(;B[mf];W[ng]C[There are no points here])
+(;B[ng]
+(;W[mf]C[There are no points here])
+(;W[mc]))
+(;B[mc]C[Now black loses by more])
+(;B[ir];W[jq]
+(;B[ln];W[ko];B[mo];W[nn])
+(;B[ko];W[ln];B[mo];W[nn];B[lo];W[kp]
+(;B[hr];W[mn])
+(;B[iq];W[mn]))))

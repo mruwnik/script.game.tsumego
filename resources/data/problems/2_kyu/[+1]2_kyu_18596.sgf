@@ -1,0 +1,67 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[0.00]
+PW[White]PB[Black]AW[ea][eb][ec][dd][be][ce][de][fe][bf]AB[da][cb][db][bc][bd][cd]C[Two empty triangles!? White to cause trouble.]
+PL[W]
+(;W[ba]
+(;B[ab]
+(;W[bb]
+;B[ad]LB[dc:A]C[Black should really have played at A (d17). Can you see how to take advantage?]
+(;W[cc]
+;B[dc]C[Seki and White keeps sente. Nice. RIGHT])
+(;W[ae]
+;B[ca]C[So close..])
+(;W[dc]
+;B[cc]
+;W[ae]C[Well done, seki. Now go back and do that in sente. RIGHT]))
+(;W[ad]
+;B[dc]
+;W[bb]C[Seki RIGHT])
+(;W[dc]
+;B[ad]
+;W[bb]
+;B[cc]
+;W[ae]C[Seki RIGHT]))
+(;B[dc]
+;W[bb]
+;B[ab]
+;W[ad]C[Seki RIGHT])
+(;B[ca]C[Mistake by black.]
+(;W[dc]
+;B[bb]
+;W[ad]
+;B[ac]
+;W[aa]C[Dead RIGHT])
+(;W[bb]
+;B[ab]
+(;W[dc]C[Dead RIGHT])
+(;W[cc]
+;B[aa]C[Black lives.])
+(;W[ad]C[Dead RIGHT]))
+(;W[cc]
+;B[bb]C[Black lives.])
+(;W[ab]
+;B[bb]
+(;W[dc]
+;B[ac]C[Black lives])
+(;W[ad]
+;B[ac]C[Black lives.])
+(;W[aa]
+;B[dc]C[Black lives]))
+(;W[ad]
+;B[bb]
+;W[dc]C[Dead. RIGHT])))
+(;W[ab]
+;B[ba]
+(;W[ad]
+;B[ac]C[Black lives.])
+(;W[cc]
+(;B[bb]C[Black lives.])
+(;B[dc]
+;W[bb]
+;B[ac]C[Black lives.])))
+(;W[ad]
+;B[ba]C[Black lives])
+(;W[dc]
+;B[ba]C[Black likes this.])
+(;W[ac]
+;B[ad]C[Black thanks you for this.]))

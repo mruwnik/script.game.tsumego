@@ -1,0 +1,71 @@
+(;AW[ij]AW[jj]AW[kj]AW[hk]AW[gk]AW[gl]AW[gm]AW[gn]AW[fn]AW[ho]AW[ip]AW[jp]AW[ko]AW[lo]AW[lk]AW[mk]AB[ki]AB[ji]AB[ii]AB[hj]AB[gj]AB[fk]AB[fl]AB[fm]AB[en]AB[fo]AB[go]AB[hp]AB[iq]AB[jq]AB[eo]AB[em]AB[fj]AB[hi]AB[lj]AB[mj]AB[li]AB[gp]AB[hq]AW[nl]AW[nk]AW[nm]AW[nn]AW[no]AW[mo]AW[kq]AW[kp]AB[ik]MA[ho]MA[gn]MA[fn]MA[gm]MA[gl]MA[gk]MA[hk]MA[ij]MA[jj]MA[kj]LB[ik:1]C[Black just played 1, save as much as you can.]AP[goproblems]
+(;W[in];B[kk]TR[ij]TR[jj]TR[kj]C[K10 group is dead, this is a big loss.])
+(;W[hn];B[kk]C[K10 group is dead, this is a big loss.]TR[ij]TR[jj]TR[kj])
+(;W[io];B[kk]C[K10 group is dead, this is a big loss.]TR[ij]TR[jj]TR[kj])
+(;W[il];B[hn]
+(;W[io];B[jk]
+(;W[kk];B[jl]
+(;W[jm]C[Nice, you saved everything !RIGHT]TR[ik]TR[jk]TR[jl])
+(;W[im];B[hm]
+(;W[hl]C[Nice, but you can improve it a bit by attacking the other group.RIGHT])
+(;W[in];B[hl])
+(;W[jm];B[hl])
+(;W[kl];B[hl]))
+(;W[hm];B[im]
+(;W[in];B[hl]
+(;W[hn]C[It works but there are more efficient solutions.RIGHT])
+(;W[jm];B[hn])
+(;W[kl];B[hn]))
+(;W[jm];B[hl])
+(;W[kl];B[hl]))
+(;W[kl];B[jm]
+(;W[hm]
+(;B[in];W[jn]C[Oh man, you are complicated, but ok, it works thanks to miai points.RIGHT]MA[km]MA[im]TR[hn]TR[in]TR[jm]TR[jl]TR[jk]TR[ik])
+(;B[im]
+(;W[in];B[hl]
+(;W[km];B[hn])
+(;W[hn]C[It works but there are more efficient solutions.RIGHT])
+(;W[jn];B[hn]))
+(;W[km];B[hl])
+(;W[jn];B[hl])))
+(;W[im];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]MA[hl]MA[in]C[White cannot connect because of lack of liberties.])
+(;W[in];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]MA[hl]MA[im]C[White cannot connect because of lack of liberties.]))
+(;W[in];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]MA[hl]MA[im]C[White cannot connect because of lack of liberties.]))
+(;W[jl];B[kk]C[Oops, you can do better.]))
+(;W[hm];B[io]C[In fact you can save this H5 stone too.])
+(;W[jk];B[io])
+(;W[in];B[io])
+(;W[kk];B[io]))
+(;W[kk];B[hn]
+(;W[io];B[hl]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]C[This is a very big loss !])
+(;W[hm];B[io]C[Actually you can save H5 stone too.])
+(;W[in];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]C[This is a very big loss !])
+(;W[il];B[io]C[Actually you can save H5 stone too.])
+(;W[hl];B[il]TR[fn]TR[gn]TR[gm]TR[gl]TR[hl]TR[hk]TR[gk]C[Oh dear ! So many dead stones...])
+(;W[im];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]C[This is a very big loss !]))
+(;W[jk];B[hn]
+(;W[hm];B[io]C[Actually you can save H5 stone too.])
+(;W[io];B[il]
+(;W[in];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]C[That's a bunch of dead stones !])
+(;W[hm];B[in]
+(;W[jn];B[im]TR[fn]TR[gn]TR[gm]TR[hm]TR[gl]TR[gk]TR[hk]C[Oh dear ! So many dead stones...])
+(;W[im];B[jl]
+(;W[kk];B[jn]TR[hk]TR[gk]TR[gl]TR[im]TR[hm]TR[gm]TR[gn]TR[fn]C[A complete disaster, you may agree.])
+(;W[jn];B[kk]C[A big loss on the top !])
+(;W[kl];B[kk]C[A big loss on the top !])
+(;W[jm];B[kk]C[A big loss on the top !]))
+(;W[jl];B[im]TR[fn]TR[gn]TR[gm]TR[hm]TR[gl]TR[gk]TR[hk]C[Oh dear ! So many dead stones...]))
+(;W[im];B[hm]TR[fn]TR[gn]TR[gm]TR[gl]TR[gk]TR[hk]C[Well, it doesn't work...])
+(;W[jl];B[hm]C[Well, it doesn't work....]))
+(;W[in];B[hm]
+(;W[il];B[io]C[Actually you can save H5 stone.])
+(;W[io];B[hl]C[Suicide ?])
+(;W[im];B[hl]C[Suicide ?])
+(;W[hl];B[il]C[Suicide ?]))
+(;W[hl];B[il]TR[fn]TR[gn]TR[gm]TR[hl]TR[hk]TR[gk]TR[gl]C[Suicide ?])
+(;W[il];B[io]C[Actually you can save H5 stone.])
+(;W[im];B[io]C[Actually you can save H5 stone.]))
+(;W[jl]C[NOTTHIS])
+(;W[hl]C[NOTTHIS])
+(;W[hm]C[NOTTHIS])
+(;W[im]C[NOTTHIS]))

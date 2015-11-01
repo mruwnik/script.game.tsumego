@@ -1,0 +1,32 @@
+(;SZ[9]AW[ab]AW[bb]AW[cb]AW[db]AW[eb]AW[fb]AW[ec]AW[fc]AW[ed]AW[gd]AW[ee]AW[fe]AW[ge]AW[gf]AW[hf]AW[gg]AW[dh]AW[eh]AW[fh]AW[gh]AW[hh]AW[gi]AB[aa]AB[fa]AB[ga]AB[ha]AB[gb]AB[ib]AB[ac]AB[bc]AB[cc]AB[gc]AB[hc]AB[ic]AB[cd]AB[dd]AB[hd]AB[de]AB[he]AB[bf]AB[cf]AB[df]AB[ef]AB[bg]AB[ah]AB[bh]AB[ci]C[White to play and win. No komi, no prisoners.]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]PW[White]PB[Black]PL[W]
+(;W[di];B[ch]
+(;W[ie];B[ea];W[da];B[dg]C[Jigo])
+(;W[dg];B[if];W[ig];B[ie];W[ea]C[Jigo])
+(;W[ea];B[if];W[ig];B[ie];W[dg]C[Jigo]))
+(;W[ch];B[ea]
+(;W[da];B[if];W[ig];B[ie];W[di];B[bi]C[Jigo])
+(;W[di];B[da]
+(;W[ca];B[bi];W[ie]C[ White wins by one point.RIGHT])
+(;W[ie];B[ca]
+(;W[ba];B[bi]C[Jigo])
+(;W[bi];B[ba]C[Jigo]))
+(;W[bi];B[ca]
+(;W[ie];B[ba]C[Jigo])
+(;W[ba];B[if];W[ig];B[ie]C[Jigo]))))
+(;W[ie];B[ea]
+(;W[di];B[da]
+(;W[ch];B[ca]
+(;W[bi];B[ba]C[Jigo])
+(;W[ba];B[bi]C[Jigo]))
+(;W[ca];B[ch]C[Jigo]))
+(;W[da];B[di]
+(;W[ei];B[ch]C[Jigo])
+(;W[ch];B[ei]C[Jigo]))
+(;W[ch];B[da]
+(;W[di];B[ca]
+(;W[bi];B[ba]C[Jigo])
+(;W[ba];B[bi]C[Jigo]))
+(;W[ca];B[di];W[ei];B[bi]C[Jigo])))
+(;W[ea];B[if];W[ig];B[ie]
+(;W[di];B[ch]C[Jigo];W[dg]C[Jigo])
+(;W[ch];B[di];W[ei];B[bi]C[Jigo])))
