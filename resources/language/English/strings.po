@@ -21,7 +21,7 @@ msgid "Restart"
 msgstr ""
 
 msgctxt "#32001"
-msgid "Exit"
+msgid "Next"
 msgstr ""
 
 msgctxt "#32002"
@@ -63,3 +63,8 @@ msgstr ""
 msgctxt "#32012"
 msgid "Are you sure that you want to exit?"
 msgstr ""
+
+msgctxt "#32013"
+msgid "Current rank: %d %s"
+msgstr ""
+

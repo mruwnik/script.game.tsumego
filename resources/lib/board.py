@@ -11,12 +11,18 @@ class Goban(object):
 
     def __init__(self, *args, **kwargs):
         """Initialise the goban from the given SGF string."""
-        self.load(kwargs.pop('sgf_string'))
-        super(Goban, self).__init__(*args, **kwargs)
+        self.sgf = None
+        self.game = None
+        self.board = None
+        self.node = None
+        self.load(kwargs.pop('sgf_string', ''))
+        #super(Goban, self).__init__(*args, **kwargs)
 
     def load(self, sgf_string):
         """load the given SGF string."""
-        self.sgf = sgf_string or ''
+        if not sgf_string:
+            return
+        self.sgf = sgf_string
         self.game = sgf.Sgf_game.from_string(sgf_string)
         self.board, _ = sgf_moves.get_setup_and_moves(self.game)
         self.node = self.root
@@ -104,7 +110,9 @@ class Goban(object):
         not known, but the next step is known, return that step's player.
         Otherwise just assume that it's a new game and return black.
         """
-        if self.current_player:
+        if not self.board:
+            return None
+        elif self.current_player:
             return 'b' if self.current_player == 'w' else 'w'
         elif len(self.node) > 0:
             return self.node[0].get_move()[0]
@@ -117,6 +125,8 @@ class Goban(object):
 
     @property
     def current_comment(self):
+        if self.node is None:
+            return ''
         try:
             return self.node.get('C')
         except KeyError:
@@ -145,36 +155,4 @@ class Goban(object):
     def labels(self):
         """Get all labels on the board."""
         return self.root.get('LB') if self.root.has_property('LB') else []
-
-
-bla = """(;AB[sc]AB[sb]AB[rb]AB[qc]AB[pc]AB[oc]AB[ob]AB[oa]AW[na]AW[nb]AW[nc]AW[od]AW[nd]AW[pd]AW[qd]AW[rd]AW[rc]AW[sd]AB[qb]AW[pb]AW[qa]AW[ra]C[How many ko threats can White make?FORCE]LB[lb:1]LB[la:0]LB[lc:2]LB[ld:3]AP[goproblems]
-(;W[la]C[Nope, there's at least one.])
-(;W[lb];B[ld]C[Show me]
-(;W[sa];B[pa]C[You could've had more...])
-(;W[pa];B[sa]C[You've got another ko threat...]))
-(;W[lc];B[lb]C[Show me]
-(;W[pa];B[sa]
-(;W[qa];B[pa]C[Right on!RIGHT])
-(;W[pa];B[qa]C[Right on!RIGHT]))
-(;W[sa];B[pa]C[You indeed had 2 ko threats, but you played the wrong move.]))
-(;W[ld]C[Not quite that many...]))"""
-ble = """(;AB[ab]AB[bb]AB[cc]AB[dc]AB[eb]AW[ba]AW[bc]AW[bd]AW[cd]AW[dd]AW[ed]AW[fc]AW[gc]AW[hb]AW[ic]AP[goproblems]
-(;B[da];W[ca]
-(;B[cb]C[RIGHT];W[ec]
-(;B[aa]C[RIGHT])
-(;B[fb];W[fa]
-(;B[ga];W[gb];B[ea]C[RIGHT])
-(;B[aa]C[RIGHT])))
-(;B[fb];W[cb];B[db];W[fa]C[]))
-(;B[fb];W[cb];B[db];W[ca];B[da];W[fa]C[])
-(;B[cb];W[da]
-(;B[ea];W[ca];B[ec]C[RIGHT])
-(;B[ca];W[ea];B[fb];W[fa];B[ga];W[gb];B[db]C[RIGHT]))
-(;B[ca];W[da]
-(;B[aa];W[ea]
-(;B[fa];W[fb];B[db]C[RIGHT])
-(;B[fb];W[fa];B[ga]C[RIGHT]))
-(;B[cb];W[ea]
-(;B[fb];W[fa];B[ga];W[gb];B[db]C[RIGHT])
-(;B[fa];W[fb];B[db];W[ea]C[]))))"""
 

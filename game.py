@@ -28,8 +28,6 @@ import xbmc
 import xbmcaddon
 import xbmcgui
 
-from board import Goban, ble, bla
-
 from xbmc import LOGDEBUG, LOGNOTICE, LOGERROR, LOGSEVERE, LOGFATAL
 from xbmcgui import (
     ACTION_MOVE_DOWN, ACTION_MOVE_LEFT, ACTION_MOVE_RIGHT, ACTION_MOVE_UP,
@@ -37,6 +35,9 @@ from xbmcgui import (
     ACTION_PREVIOUS_MENU, ACTION_NAV_BACK,
     ACTION_SHOW_INFO,
 )
+
+from resources.lib.board import Goban
+from resources.lib.problems import Problems, MockProblems
 
 DIRECTIONS = [ACTION_MOVE_DOWN, ACTION_MOVE_LEFT, ACTION_MOVE_RIGHT, ACTION_MOVE_UP]
 SELECT = [
@@ -57,6 +58,8 @@ MEDIA_PATH = os.path.join(
     'default',
     'media'
 )
+DATA_PATH = os.path.join(
+    xbmc.translatePath(ADDON_PATH), "resources", "data", "problems")
 
 STRINGS = {
     'show_solution': 32002,
@@ -64,7 +67,8 @@ STRINGS = {
     'off_path': 32015,
     'solved': 32016,
     'exit_head': 32009,
-    'exit_text': 32012
+    'exit_text': 32012,
+    'current_rank': 32013,
 }
 
 
@@ -73,13 +77,14 @@ ROWS = 19
 
 class ControlIds(object):
     GRID = 3001
-    RESTART = 3002
-    SOLUTION = 3003
-    EXIT = 3004
+    NEXT = 3002
+    RESTART = 3003
+    SOLUTION = 3004
 
     ERROR = 3015
     SUCCESS = 3016
     COMMENTS = 3017
+    rank = 3018
 
 
 def get_image(filename):
@@ -160,6 +165,7 @@ class Grid(object):
         self.grid = []
         self.current = None
         self.right = None
+        self.window = None
         self.add_controls()
         super(Grid, self).__init__(*args, **kwargs)
 
@@ -179,11 +185,8 @@ class Grid(object):
             filename=get_image('selected.png'),
         )
 
-    def setup_labels(self, window):
-        """Set up all labels.
-
-        :param xbmcgui.Window window: the window in which the controls are
-        """
+    def setup_labels(self):
+        """Set up all labels."""
         pass
 
     @property
@@ -216,9 +219,6 @@ class Grid(object):
         :param xbmcgui.Window: the window that the controls should be attached to
         :param xbmcgui.Control: the control that is to the right of the grid
         """
-        # add any labels
-        self.label_controls = [self.add_label(x, y, label) for (x, y), label in self.labels]
-
         self.grid = [
             [self.new_tile(x, y) for y in xrange(self.columns)]
             for x in xrange(self.rows)
@@ -235,13 +235,27 @@ class Grid(object):
         tile_controls = [c for row in self.grid for tile in row for c in tile.controls]
         controls = [self.position_marker, self.control]
 
-        window.addControls(tile_controls + controls + self.label_controls)
+        window.addControls(tile_controls + controls)
 
         # connect the control to the right with this grid
         right_control.controlLeft(self.control)
         self.right = right_control
 
-        self.setup_labels(window)
+        self.window = window
+        self.setup_labels()
+        self.update_labels()
+
+    def update_labels(self):
+        """Add any labels, removing the old ones if found."""
+        try:
+            old_labels = self.label_controls
+        except AttributeError:
+            pass
+        else:
+            self.window.removeControls(old_labels)
+
+        self.label_controls = [self.add_label(x, y, label) for (x, y), label in self.labels]
+        self.window.addControls(self.label_controls)
 
     def remove_tiles(self, window):
         """Remove all tiles from this grid.
@@ -334,14 +348,14 @@ class GobanGrid(Grid, Goban):
     def __init__(self, *args, **kwargs):
         self.comments_box = None
         self.hints = False
+        self.problems = None
+        self.problems_thread = thread.start_new_thread(self._get_problems, ())
         super(GobanGrid, self).__init__(*args, **kwargs)
-        self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
 
-    def setup_labels(self, window):
-        """Set up all status messages and the comments box.
-
-        :param xbmcgui.Window window: the window in which the controls are
-        """
+    def setup_labels(self):
+        """Set up all status messages and the comments box."""
+        window = self.window
+        self.current_rank = window.getControl(ControlIds.rank)
         self.comments_box = window.getControl(ControlIds.COMMENTS)
         self.error_control = window.getControl(ControlIds.ERROR)
         self.success_control = window.getControl(ControlIds.SUCCESS)
@@ -358,7 +372,8 @@ class GobanGrid(Grid, Goban):
         :param int y: the row that the stone is in
         """
         stone = Stone(x, y, self, self.tile_width, self.tile_height)
-        stone.place_stone(self.board.board[x][y])
+        if self.board:
+            stone.place_stone(self.board.board[x][y])
         return stone
 
     def refresh_board(self, previous_state=None):
@@ -385,8 +400,32 @@ class GobanGrid(Grid, Goban):
 
         :param (str or None) sgf: the SGF to be loaded
         """
-        super(Grid, self).load(sgf if sgf is not None else self.sgf)
+        log(str(sgf))
+        super(Grid, self).load(sgf)
         self.refresh_board()
+
+    def _get_problems(self):
+        """Get all problems.
+
+        This is called by a seperate thread, because it's very slow.
+        """
+        self.problems = MockProblems() #Problems(DATA_PATH)
+        self.next()
+
+    def next(self):
+        """Load the next problem."""
+        # loop over problems until a good one is found
+        for problem in self.problems:
+            self.problem = problem
+            try:
+                self.load(self.problem['sgf'])
+            except ValueError:
+                continue
+            else:
+                self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
+                self.update_messages()
+                self.update_labels()
+                return
 
     def toggle_hints(self, state=None):
         """Toggle the display of hints on the board.
@@ -394,6 +433,9 @@ class GobanGrid(Grid, Goban):
         :param boolean state: this can be used to force the state
         :returns: whether or not hints are shown
         """
+        if 'solved' not in self.problem:
+            self.problems.failure(self.problem['rank'], 0.4)
+            self.problem['solved'] = False
         self.hints = state if state is not None else not self.hints
         self.mark_hints()
         return self.hints
@@ -413,11 +455,13 @@ class GobanGrid(Grid, Goban):
         if comment is None:
             comment = self.current_comment.replace('FORCE', '').replace('RIGHT', '')
         self.comments_box.setText(comment)
+        if self.problems:
+            self.current_rank.setText(_('current_rank') % self.problems.rank)
 
     def update_messages(self):
         """Update the status messages' visibility."""
-        self.error_control.setVisible(not self.on_path)
-        self.success_control.setVisible(self.correct)
+        self.error_control.setVisible(bool(self.board and not self.on_path))
+        self.success_control.setVisible(bool(self.board and self.correct))
 
     def mark_hints(self):
         """Mark all hints on the board."""
@@ -446,13 +490,22 @@ class GobanGrid(Grid, Goban):
         :param int key: the key code
         :returns: whether the action was handled
         """
+        if not self.board:
+            return
         prev_state = self.board.copy().board
         if key in SELECT:
             self.move(*self.current.pos)
             self.random_move()
             self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
             self.update_messages()
+            self.update_labels()
+            if 'solved' not in self.problem and self.correct:
+                self.problems.success(self.problem['rank'])
+                self.problem['solved'] = True
         elif key in BACK:
+            if 'solved' not in self.problem:
+                self.problems.failure(self.problem['rank'])
+                self.problem['solved'] = False
             self.back()
             self.back()
             self.update_messages()
@@ -467,14 +520,11 @@ class Game(xbmcgui.WindowXML):
         log('initialising')
         # get controls
         self.grid_control = self.getControl(ControlIds.GRID)
-        self.reset_control = self.getControl(ControlIds.RESTART)
+        self.next_control = self.getControl(ControlIds.NEXT)
         self.solution_control = self.getControl(ControlIds.SOLUTION)
 
         # init the grid
         self.grid = self.get_grid()
-        # start the timer thread
-        #thread.start_new_thread(self.timer_thread, ())
-        # start the game
 
     def onAction(self, action):
         """Handle the given action.
@@ -503,10 +553,10 @@ class Game(xbmcgui.WindowXML):
             self.solution_control.setLabel(
                 _('hide_solution' if self.grid.toggle_hints() else 'show_solution')
             )
-        elif control_id == ControlIds.EXIT:
-            self.exit()
+        elif control_id == ControlIds.NEXT:
+            self.grid.next()
 
-    def get_grid(self):
+    def get_grid(self, sgf=None):
         try:
             grid = self.grid
         except AttributeError:
@@ -519,15 +569,15 @@ class Game(xbmcgui.WindowXML):
                 ROWS, COLUMNS, x=x, y=y,
                 width=self.grid_control.getWidth(),
                 height=self.grid_control.getHeight(),
-                sgf_string=bla
             )
         else:
             grid.remove_tiles(self)
-        grid.setup_tiles(self, self.reset_control)
+
+        grid.setup_tiles(self, self.next_control)
         return grid
 
     def restart_game(self):
-        self.grid.load()
+        self.grid.load(self.grid.sgf)
         self.grid.update_messages()
 
     def game_over(self):

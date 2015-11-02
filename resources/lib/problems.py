@@ -37,7 +37,7 @@ class Problems(object):
         results = result.groupdict()
         return {
             'rating': int(results['rating']) if results['rating'] else 0,
-            'level': (int(results['level']), results['type']),
+            'rank': (int(results['level']), results['type']),
             'id': int(results['id']),
             'problem_file': problem_file,
         }
@@ -74,12 +74,18 @@ class Problems(object):
         """
         if not level:
             level = self.get_rank(round(self.level + self.offset))
+        if level[0] > 30:
+           level = (30, level[1])
         problems = self.problems[level]
         return choice(problems)
 
     def get_rank(self, level):
         """Get the rank for the given level."""
         return (int(math.ceil(abs(level))), 'kyu' if level > 0 else 'dan')
+
+    def get_level(self, rank):
+        """Get the level for the given rank."""
+        return rank[0] if rank[1] == 'kyu' else -rank[0]
 
     @property
     def rank(self):
@@ -95,14 +101,16 @@ class Problems(object):
             self.offset = 0
         return (self.level, self.offset)
 
-    def failure(self, level, scale=0.1):
+    def failure(self, rank, scale=0.1):
         """Notify that the player failed a problem."""
+        level = self.get_level(rank)
         magnitude = (level - self.level + self.level_span + 1) * scale
         self.offset += magnitude
         self.update_rank()
 
-    def success(self, level, scale=0.1):
+    def success(self, rank, scale=0.1):
         """Notify that the player solved a problem."""
+        level = self.get_level(rank)
         magnitude = (level - self.level - self.level_span - 1) * scale
         self.offset += magnitude
         self.update_rank()
@@ -118,5 +126,41 @@ class Problems(object):
 
         with open(problem['problem_file']) as f:
             problem['sgf'] = f.read()
+        return problem
+
+
+class MockProblems(Problems):
+    """A mock problem getter to bypass the long loading times of the original."""
+    sgf = """(;AB[sc]AB[sb]AB[rb]AB[qc]AB[pc]AB[oc]AB[ob]AB[oa]AW[na]AW[nb]AW[nc]AW[od]AW[nd]AW[pd]AW[qd]AW[rd]AW[rc]AW[sd]AB[qb]AW[pb]AW[qa]AW[ra]C[How many ko threats can White make?FORCE]LB[lb:1]LB[la:0]LB[lc:2]LB[ld:3]AP[goproblems]
+(;W[la]C[Nope, there's at least one.])
+(;W[lb];B[ld]C[Show me]
+(;W[sa];B[pa]C[You could've had more...])
+(;W[pa];B[sa]C[You've got another ko threat...]))
+(;W[lc];B[lb]C[Show me]
+(;W[pa];B[sa]
+(;W[qa];B[pa]C[Right on!RIGHT])
+(;W[pa];B[qa]C[Right on!RIGHT]))
+(;W[sa];B[pa]C[You indeed had 2 ko threats, but you played the wrong move.]))
+(;W[ld]C[Not quite that many...]))"""
+
+
+    def __init__(self, problems_dir='./', level=30):
+        self.level = level
+        self.offset = 0
+        self.problems = {
+            self.get_rank(i): [
+                self._parse_problem(
+                    '%d_%s_%d.sgf' % tuple(list(self.get_rank(i)) + [id_])
+                ) for id_ in xrange(i * 10, i * 10 + 10)
+            ] for i in xrange(-5, 31)
+        }
+
+    def next(self):
+        """Get the next problem."""
+        problem = self.random_problem()
+        if not problem:
+            raise StopIteration
+
+        problem['sgf'] = self.sgf
         return problem
 

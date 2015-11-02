@@ -61,7 +61,7 @@
             <label></label>
         </control>
         <control type="button" id="3002">
-            <description>Reset</description>
+            <description>Next</description>
             <posx>820</posx>
             <posy>40</posy>
             <width>130</width>
@@ -75,13 +75,13 @@
             <onright>3003</onright>
             <focusedcolor>white</focusedcolor>
             <textcolor>grey</textcolor>
-            <label>$ADDON[script.game.tsumego 32000]</label>
+            <label>$ADDON[script.game.tsumego 32001]</label>
         </control>
         <control type="button" id="3003">
-            <description>Show solution</description>
-            <posx>950</posx>
+            <description>Reset</description>
+            <posx>970</posx>
             <posy>40</posy>
-            <width>150</width>
+            <width>130</width>
             <height>70</height>
             <texturefocus>button_active.png</texturefocus>
             <texturenofocus>button.png</texturenofocus>
@@ -92,13 +92,13 @@
             <onright>3004</onright>
             <focusedcolor>white</focusedcolor>
             <textcolor>grey</textcolor>
-            <label>$ADDON[script.game.tsumego 32002]</label>
+            <label>$ADDON[script.game.tsumego 32000]</label>
         </control>
         <control type="button" id="3004">
-            <description>Exit</description>
+            <description>Show solution</description>
             <posx>1120</posx>
             <posy>40</posy>
-            <width>130</width>
+            <width>150</width>
             <height>70</height>
             <texturefocus>button_active.png</texturefocus>
             <texturenofocus>button.png</texturenofocus>
@@ -106,11 +106,12 @@
             <aligny>center</aligny>
             <font>font12</font>
             <onleft>3003</onleft>
+            <onright>3004</onright>
             <focusedcolor>white</focusedcolor>
             <textcolor>grey</textcolor>
-            <label>$ADDON[script.game.tsumego 32001]</label>
+            <label>$ADDON[script.game.tsumego 32002]</label>
         </control>
-        <control type="label" id="3015">
+       <control type="label" id="3015">
             <description>Error messages</description>
             <posx>800</posx>
             <posy>150</posy>
@@ -130,6 +131,16 @@
             <font>font30</font>
             <textcolor>green</textcolor>
             <!-- the label is set in the code, because it can't be set invisible here and then set visible in the code (it is always invisible) -->
+            <label></label>
+        </control>
+        <control type="textbox" id="3018">
+            <description>Current rank</description>
+            <posx>800</posx>
+            <posy>100</posy>
+            <width>180</width>
+            <height>36</height>
+            <font>font30_title</font>
+            <textcolor>black</textcolor>
             <label></label>
         </control>
     </controls>
