@@ -65,6 +65,6 @@ msgid "Current rank: %d %s"
 msgstr ""
 
 msgctxt "#32014"
-msgid "Problem rating: %d"
+msgid "Problem rating: [%d] %d %s"
 msgstr ""
 

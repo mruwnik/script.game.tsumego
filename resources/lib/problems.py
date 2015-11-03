@@ -18,15 +18,33 @@ class Problems(object):
         id=id_regex,
     ))
 
-    def __init__(self, problems_dir='./', level=30):
+    def __init__(self, problems_dir='./', level=None):
         self.problems_dir = path(problems_dir)
-        self.level = level
+        self.data_dir = path('/tmp/tsumego')
         self.offset = 0
         self.problems_thread = thread.start_new_thread(
             self._find_problems, (problems_dir,))
         self.problems = None
+        self._load_level(level)
+
+    def _load_level(self, level):
+        """Read the users level from the tmp file."""
+        if not self.data_dir.exists():
+            self.data_dir.makedirs()
+        if level is not None:
+            self.level = level
+            with open(self.data_dir / 'level', 'w') as f:
+                f.write(str(level))
+        else:
+            try:
+                with open(self.data_dir / 'level') as f:
+                    self.level = int(f.read())
+            except (IOError,  TypeError, ValueError):
+                self.level = 30
+
 
     def _find_problems(self, problems_dir):
+        """Find all problems in the problems directory."""
         self.problems = {
             self._parse_level(d.basename()): self._get_problems(d)
             for d in self.problems_dir.listdir()
@@ -111,16 +129,21 @@ class Problems(object):
             sign = self.offset / abs_offset
             self.level += int(sign * (math.ceil(abs_offset - self.level_span)))
             self.offset = 0
+            try:
+                with open(self.data_dir / 'level', 'w') as f:
+                    f.write(str(self.level))
+            except Exception as e:
+                print e
         return (self.level, self.offset)
 
-    def failure(self, rank, scale=0.1):
+    def failure(self, rank, scale=0.25):
         """Notify that the player failed a problem."""
         level = self.get_level(rank)
         magnitude = (level - self.level + self.level_span + 1) * scale
         self.offset += magnitude
         self.update_rank()
 
-    def success(self, rank, scale=0.1):
+    def success(self, rank, scale=0.25):
         """Notify that the player solved a problem."""
         level = self.get_level(rank)
         magnitude = (level - self.level - self.level_span - 1) * scale

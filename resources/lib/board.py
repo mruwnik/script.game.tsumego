@@ -96,7 +96,7 @@ class Goban(object):
 
     @property
     def root(self):
-        return self.game.get_root()
+        return self.game.get_root() if self.game else None
 
     @property
     def current_player(self):
@@ -154,5 +154,8 @@ class Goban(object):
     @property
     def labels(self):
         """Get all labels on the board."""
-        return self.root.get('LB') if self.root.has_property('LB') else []
+        if self.node is not None and self.node.has_property('LB'):
+            return self.node.get('LB')
+        else:
+            return []
 

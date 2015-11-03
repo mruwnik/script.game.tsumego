@@ -382,6 +382,11 @@ class GobanGrid(Grid, Goban):
         self.update_comment()
         self.update_messages()
 
+    @property
+    def labels(self):
+        """Get the labels of the current node from the board."""
+        return Goban.labels.fget(self)
+
     def new_tile(self, x, y):
         """Add a new stone.
 
@@ -438,7 +443,8 @@ class GobanGrid(Grid, Goban):
                 self.update_messages()
                 self.update_labels()
                 self.current_rank.setText(_('current_rank') % self.problems.rank)
-                self.rating_box.setText(_('rating') % self.problem['rating'])
+                self.rating_box.setText(
+                    _('rating') % tuple([self.problem['rating']] + list(self.problems.rank)))
                 return
 
     def toggle_hints(self, state=None):
