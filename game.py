@@ -69,6 +69,7 @@ STRINGS = {
     'exit_head': 32009,
     'exit_text': 32012,
     'current_rank': 32013,
+    'rating': 32014,
 }
 
 
@@ -85,6 +86,22 @@ class ControlIds(object):
     SUCCESS = 3016
     COMMENTS = 3017
     rank = 3018
+    rating = 3019
+
+
+class KeyCodes(object):
+    a = 61505
+    d = 61508
+    g = 61511
+    l = 61516
+    n = 61518
+    o = 61519
+    t = 61524
+    u = 61515
+    v = 61526
+    w = 61527
+    y = 61529
+    z = 61530
 
 
 def get_image(filename):
@@ -348,14 +365,14 @@ class GobanGrid(Grid, Goban):
     def __init__(self, *args, **kwargs):
         self.comments_box = None
         self.hints = False
-        self.problems = None
-        self.problems_thread = thread.start_new_thread(self._get_problems, ())
+        self.problems = Problems(DATA_PATH)
         super(GobanGrid, self).__init__(*args, **kwargs)
 
     def setup_labels(self):
         """Set up all status messages and the comments box."""
         window = self.window
         self.current_rank = window.getControl(ControlIds.rank)
+        self.rating_box = window.getControl(ControlIds.rating)
         self.comments_box = window.getControl(ControlIds.COMMENTS)
         self.error_control = window.getControl(ControlIds.ERROR)
         self.success_control = window.getControl(ControlIds.SUCCESS)
@@ -404,14 +421,6 @@ class GobanGrid(Grid, Goban):
         super(Grid, self).load(sgf)
         self.refresh_board()
 
-    def _get_problems(self):
-        """Get all problems.
-
-        This is called by a seperate thread, because it's very slow.
-        """
-        self.problems = MockProblems() #Problems(DATA_PATH)
-        self.next()
-
     def next(self):
         """Load the next problem."""
         # loop over problems until a good one is found
@@ -422,9 +431,14 @@ class GobanGrid(Grid, Goban):
             except ValueError:
                 continue
             else:
+                if self.game.get_size() != 19:
+                    continue
+                self.hints = False
                 self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
                 self.update_messages()
                 self.update_labels()
+                self.current_rank.setText(_('current_rank') % self.problems.rank)
+                self.rating_box.setText(_('rating') % self.problem['rating'])
                 return
 
     def toggle_hints(self, state=None):
@@ -455,8 +469,6 @@ class GobanGrid(Grid, Goban):
         if comment is None:
             comment = self.current_comment.replace('FORCE', '').replace('RIGHT', '')
         self.comments_box.setText(comment)
-        if self.problems:
-            self.current_rank.setText(_('current_rank') % self.problems.rank)
 
     def update_messages(self):
         """Update the status messages' visibility."""
@@ -525,6 +537,7 @@ class Game(xbmcgui.WindowXML):
 
         # init the grid
         self.grid = self.get_grid()
+        self.grid.next()
 
     def onAction(self, action):
         """Handle the given action.
@@ -539,6 +552,8 @@ class Game(xbmcgui.WindowXML):
                 return
             elif action_id in INFO:
                 pass
+            elif action.getButtonCode() == KeyCodes.n:
+                self.grid.next()
         except Exception as e:
             log(str(e))
         super(Game, self).onAction(action)

@@ -1,7 +1,9 @@
 import re
 import math
-from path import path
+import thread
 from random import choice
+
+from path import path
 
 
 class Problems(object):
@@ -20,6 +22,11 @@ class Problems(object):
         self.problems_dir = path(problems_dir)
         self.level = level
         self.offset = 0
+        self.problems_thread = thread.start_new_thread(
+            self._find_problems, (problems_dir,))
+        self.problems = None
+
+    def _find_problems(self, problems_dir):
         self.problems = {
             self._parse_level(d.basename()): self._get_problems(d)
             for d in self.problems_dir.listdir()
@@ -76,8 +83,13 @@ class Problems(object):
             level = self.get_rank(round(self.level + self.offset))
         if level[0] > 30:
            level = (30, level[1])
-        problems = self.problems[level]
-        return choice(problems)
+        if self.problems:
+            problems = self.problems[level]
+            return choice(problems)
+        else:
+            problems_dir = path(self.problems_dir) / ('%d_%s' % level)
+            problem = choice(problems_dir.listdir())
+            return self._parse_problem(problem)
 
     def get_rank(self, level):
         """Get the rank for the given level."""
@@ -143,6 +155,34 @@ class MockProblems(Problems):
 (;W[sa];B[pa]C[You indeed had 2 ko threats, but you played the wrong move.]))
 (;W[ld]C[Not quite that many...]))"""
 
+    sgf1 = """(;AW[br]AW[bq]AW[cq]AW[dq]AW[er]AW[fr]AW[ds]AB[ap]AB[bp]AB[cp]AB[dp]AB[ep]AB[eq]AB[fq]AB[gq]AB[gr]AB[gs]AB[fs]AB[es]AB[aq]AW[ar]LB[as:a]LB[bs:b]LB[cr:c]LB[dr:d]LB[cs:e]C[FORCE]AP[goproblems]
+(;B[as]LB[dr:a]C[FORCE];W[dr]LB[bs:a]LB[cs:b]C[FORCE]
+(;B[bs]LB[cs:a]C[FORCE];W[cs])
+(;B[cs]LB[bs:a]C[FORCE];W[bs]))
+(;B[bs]LB[cs:a]LB[dr:b]C[FORCE]
+(;W[cs]LB[cr:a]LB[dr:b]C[FORCE]
+(;B[cr]LB[dr:a]C[FORCE];W[dr])
+(;B[dr]C[RIGHT]))
+(;W[dr]LB[as:a]LB[cr:b]LB[cs:c]C[FORCE]
+(;B[as]LB[cs:a]C[FORCE];W[cs])
+(;B[cr]LB[cs:a]C[FORCE];W[cs])
+(;B[cs]C[RIGHT])))
+(;B[cr]LB[dr:a]C[FORCE];W[dr]LB[bs:a]LB[cs:b]C[FORCE]
+(;B[bs]LB[cs:a]C[FORCE];W[cs])
+(;B[cs]LB[bs:a]C[FORCE];W[bs]))
+(;B[dr]C[RIGHT])
+(;B[cs]LB[bs:a]LB[cr:b]LB[dr:c]C[FORCE]
+(;W[bs]LB[cr:a]LB[dr:b]C[FORCE]
+(;B[cr]LB[dr:a]C[FORCE];W[dr])
+(;B[dr]C[RIGHT]))
+(;W[cr]LB[as:a]LB[bs:b]LB[dr:c]C[FORCE]
+(;B[as]LB[bs:a]C[FORCE];W[bs]LB[dr:a]C[FORCE];B[dr]LB[er:a]C[FORCE];W[er]LB[fr:a]C[FORCE];B[fr]LB[dr:a]C[FORCE];W[dr])
+(;B[bs]C[RIGHT])
+(;B[dr]C[RIGHT]))
+(;W[dr]LB[as:a]LB[bs:b]LB[cr:c]C[FORCE]
+(;B[as]LB[bs:a]C[FORCE];W[bs])
+(;B[bs]C[RIGHT])
+(;B[cr]LB[bs:a]C[FORCE];W[bs]))))"""
 
     def __init__(self, problems_dir='./', level=30):
         self.level = level
@@ -161,6 +201,7 @@ class MockProblems(Problems):
         if not problem:
             raise StopIteration
 
-        problem['sgf'] = self.sgf
+        problem['sgf'] = self.sgf1
         return problem
+
 

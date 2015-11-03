@@ -53,11 +53,7 @@ msgid "Exit?"
 msgstr ""
 
 msgctxt "#32010"
-msgid "[B]Controls[/B][CR]- Focus tile: MOUSE-HOVER, UP, RIGHT, LEFT, DOWN[CR]- Turn focused tile clockwise: RIGHTCLICK, ESC, BACK[CR]- Turn focused tile counter-clockwise: LEFTCLICK, ENTER[CR]- Lock focused tile: MIDDLECLICK, INFO, SPACE[CR]- Exit Game: STOP, EXIT-BUTTON[CR]"
-msgstr ""
-
-msgctxt "#32011"
-msgid "[B]Goal[/B][CR]Your goal is to connect all terminals to the server by rotating the tiles[CR]Note, there is only ONE solution possible for each game!"
+msgid "[B]Controls[/B][CR]- Place stone: Enter, left click[CR]- Back one move: Backspace[CR]- Next problem: n[CR]- Exit: Esc, q"
 msgstr ""
 
 msgctxt "#32012"
@@ -66,5 +62,9 @@ msgstr ""
 
 msgctxt "#32013"
 msgid "Current rank: %d %s"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Problem rating: %d"
 msgstr ""
 

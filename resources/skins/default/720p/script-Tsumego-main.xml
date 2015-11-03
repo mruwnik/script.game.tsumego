@@ -30,25 +30,14 @@
         </control>
         <control type="textbox">
             <description>Game Controls Help</description>
-            <posx>780</posx>
-            <posy>320</posy>
+            <posx>800</posx>
+            <posy>600</posy>
             <width>480</width>
             <height>150</height>
             <visible>true</visible>
             <font>font30_title</font>
             <textcolor>FF222222</textcolor>
             <label>$ADDON[script.game.tsumego 32010]</label>
-        </control>
-        <control type="textbox">
-            <description>Game Goal Help</description>
-            <posx>780</posx>
-            <posy>470</posy>
-            <width>480</width>
-            <height>150</height>
-            <visible>true</visible>
-            <font>font12</font>
-            <textcolor>FF222222</textcolor>
-            <label>$ADDON[script.game.tsumego 32011]</label>
         </control>
         <control type="label" id="3001">
             <description>The Grid placeholder. This label should not be shown but its space will be filled with the tiles.</description>
@@ -136,12 +125,23 @@
         <control type="textbox" id="3018">
             <description>Current rank</description>
             <posx>800</posx>
-            <posy>100</posy>
+            <posy>10</posy>
             <width>180</width>
             <height>36</height>
             <font>font30_title</font>
             <textcolor>black</textcolor>
             <label></label>
         </control>
+        <control type="textbox" id="3019">
+            <description>Rating</description>
+            <posx>1000</posx>
+            <posy>10</posy>
+            <width>180</width>
+            <height>36</height>
+            <font>font30_title</font>
+            <textcolor>black</textcolor>
+            <label></label>
+        </control>
+
     </controls>
 </window>
