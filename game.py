@@ -24,6 +24,8 @@ import thread
 import string
 import sys
 
+import traceback
+
 import xbmc
 import xbmcaddon
 import xbmcgui
@@ -34,6 +36,8 @@ from xbmcgui import (
     ACTION_PAUSE, ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK,
     ACTION_PREVIOUS_MENU, ACTION_NAV_BACK,
     ACTION_SHOW_INFO,
+    REMOTE_1, REMOTE_2, REMOTE_3, REMOTE_4,
+    REMOTE_5, REMOTE_6, REMOTE_7, REMOTE_8, REMOTE_9,
 )
 
 from resources.lib.board import Goban
@@ -45,7 +49,11 @@ SELECT = [
 ]
 BACK = [ACTION_NAV_BACK]
 INFO = [ACTION_SHOW_INFO]
-ACTIONS = DIRECTIONS + SELECT + BACK
+HOSHI_POINTS = [
+    REMOTE_1, REMOTE_2, REMOTE_3, REMOTE_4,
+    REMOTE_5, REMOTE_6, REMOTE_7, REMOTE_8, REMOTE_9,
+]
+ACTIONS = DIRECTIONS + SELECT + BACK + HOSHI_POINTS
 
 addon = xbmcaddon.Addon()
 
@@ -329,6 +337,12 @@ class Grid(object):
 
 class Stone(Tile):
 
+    def __init__(self, *args, **kwargs):
+        super(Stone, self).__init__(*args, **kwargs)
+        self._mark = ''
+        self.player = None
+        self.stone = None
+
     def add_controls(self):
         self.image = xbmcgui.ControlImage(
             x=self.x_position,
@@ -342,6 +356,10 @@ class Stone(Tile):
     def controls(self):
         return [self.image]
 
+    def mark(self, mark_type=''):
+        """Mark this stone with the given marker."""
+        self._mark = mark_type
+
     def place_stone(self, player):
         """Place a stone for the given player on this spot.
 
@@ -350,17 +368,38 @@ class Stone(Tile):
         :param str or None player: the code of the player to be placed
         """
         if player == 'w':
-            stone = 'white.png'
+            self.player = 'white'
         elif player == 'b':
-            stone = 'black.png'
-        elif player == 'good' or player == 'bad':
-            stone = '%s_spot.png' % player
+            self.player = 'black'
         else:
+            self.player = None
+
+        if player == 'good' or player == 'bad':
+            stone = '%s_spot.png' % player
+        elif not self.player:
             stone = 'empty.png'
-        self.image.setImage(get_image(stone))
+        elif self._mark:
+            stone = '%s_%s.png' % (self.player, self._mark)
+        else:
+            stone = '%s.png' % self.player
+
+        if stone != self.stone:
+            self.stone = stone
+            self.image.setImage(get_image(stone))
 
 
 class GobanGrid(Grid, Goban):
+    hoshi = {
+        REMOTE_1: (3, 3),
+        REMOTE_2: (3, 9),
+        REMOTE_3: (3, 15),
+        REMOTE_4: (9, 3),
+        REMOTE_5: (9, 9),
+        REMOTE_6: (9, 15),
+        REMOTE_7: (15, 3),
+        REMOTE_8: (15, 9),
+        REMOTE_9: (15, 15),
+    }
 
     def __init__(self, *args, **kwargs):
         self.comments_box = None
@@ -398,23 +437,41 @@ class GobanGrid(Grid, Goban):
             stone.place_stone(self.board.board[x][y])
         return stone
 
-    def refresh_board(self, previous_state=None):
-        """Refresh the contents of the grid.
-
-        If the previous state is provided, only the places that changed
-        will be refreshed, otherwise the whole grid will be redrawn.
-
-        :param list previous_state: a list of lists with the previous state
-        """
+    def refresh_board(self):
+        """Refresh the contents of the grid."""
         if not self.grid:
             log('No grid found during board refresh', LOGDEBUG)
             return
 
         self.update_comment()
+
+        # make sure all marks are set
+        for x, y in self.marks:
+            self.grid[x][y].mark('mark')
+        for x, y in self.triangles:
+            self.grid[x][y].mark('triangle')
+        for x, y in self.marks:
+            self.grid[x][y].mark()
+        for x, y in self.marks:
+            self.grid[x][y].mark()
+
+        # refresh all points
         for x in xrange(self.columns):
             for y in xrange(self.rows):
-                if not previous_state or self.board.board[x][y] != previous_state[x][y]:
-                    self.grid[x][y].place_stone(self.board.board[x][y])
+                pos = (x, y)
+                if pos in self.marks:
+                    self.grid[x][y].mark('mark')
+                elif pos in self.triangles:
+                    self.grid[x][y].mark('triangle')
+                elif pos in self.squares:
+                    self.grid[x][y].mark('square')
+                elif pos in self.circles:
+                    self.grid[x][y].mark('circle')
+                elif pos in self.marks:
+                    self.grid[x][y].mark('mark')
+                else:
+                    self.grid[x][y].mark()
+                self.grid[x][y].place_stone(self.board.board[x][y])
         self.mark_hints()
 
     def load(self, sgf=None):
@@ -435,16 +492,17 @@ class GobanGrid(Grid, Goban):
                 self.load(self.problem['sgf'])
             except ValueError:
                 continue
+            except IndexError:
+                log('board was too small')
+                traceback.print_exc()
             else:
-                if self.game.get_size() != 19:
-                    continue
                 self.hints = False
                 self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
                 self.update_messages()
                 self.update_labels()
                 self.current_rank.setText(_('current_rank') % self.problems.rank)
                 self.rating_box.setText(
-                    _('rating') % tuple([self.problem['rating']] + list(self.problems.rank)))
+                    _('rating') % tuple([self.problem['rating']] + list(self.problem['rank'])))
                 return
 
     def toggle_hints(self, state=None):
@@ -510,7 +568,6 @@ class GobanGrid(Grid, Goban):
         """
         if not self.board:
             return
-        prev_state = self.board.copy().board
         if key in SELECT:
             self.move(*self.current.pos)
             self.random_move()
@@ -527,9 +584,14 @@ class GobanGrid(Grid, Goban):
             self.back()
             self.back()
             self.update_messages()
+            self.update_labels()
+        elif key in HOSHI_POINTS:
+            x, y = self.hoshi[key]
+            self.current = self.grid[x][y]
+            self.position_marker.setPosition(*self.current.display_pos)
         else:
             return False
-        self.refresh_board(prev_state)
+        self.refresh_board()
         return True
 
 
@@ -543,7 +605,6 @@ class Game(xbmcgui.WindowXML):
 
         # init the grid
         self.grid = self.get_grid()
-        self.grid.next()
 
     def onAction(self, action):
         """Handle the given action.
@@ -552,6 +613,7 @@ class Game(xbmcgui.WindowXML):
         """
         try:
             action_id = action.getId()
+            log(str(action_id))
             if action_id == xbmcgui.ACTION_QUEUE_ITEM:
                 return self.exit()
             elif self.grid.handle(action, self.getFocusId()):
@@ -561,7 +623,7 @@ class Game(xbmcgui.WindowXML):
             elif action.getButtonCode() == KeyCodes.n:
                 self.grid.next()
         except Exception as e:
-            log(str(e))
+            traceback.print_exc()
         super(Game, self).onAction(action)
 
     def onFocus(self, control_id):
@@ -591,10 +653,12 @@ class Game(xbmcgui.WindowXML):
                 width=self.grid_control.getWidth(),
                 height=self.grid_control.getHeight(),
             )
+            grid.setup_tiles(self, self.next_control)
+            grid.next()
         else:
             grid.remove_tiles(self)
+            grid.setup_tiles(self, self.next_control)
 
-        grid.setup_tiles(self, self.next_control)
         return grid
 
     def restart_game(self):

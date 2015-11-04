@@ -207,6 +207,11 @@ class MockProblems(Problems):
 (;B[bs]C[RIGHT])
 (;B[cr]LB[bs:a]C[FORCE];W[bs]))))"""
 
+    sgf2 = """(;AB[cr]AB[dq]AB[eq]AB[er]AB[fr]AW[cq]AW[dp]AW[ep]AW[fp]AW[fq]AW[gr]AW[hq]AW[jq]AB[cn]AB[ck]C[tesuji to connect without ko]AP[goproblems]
+(;B[do];W[dn];B[eo];W[en];B[fo];W[fn];B[go];W[gn];B[ho];W[hn];B[io];W[in];B[jo]TR[cn]TR[ck]MA[dn]MA[en]MA[fn]MA[gn]MA[hn]MA[in]MA[fq]MA[hq]MA[jq]TR[go]TR[ho]TR[io]TR[fo]C[rectangulars are strong, triangulars are weak])
+(;B[bq];W[bp];B[cp];W[co];B[bo];W[cq]C[instruction : tesuji to connect without ko];B[ap];W[cp];B[bn];W[br];B[aq];W[cs];B[dr];W[fs]C[B is dead. B3 atari underneath is lead to ko.]))
+"""
+
     def __init__(self, problems_dir='./', level=30):
         self.level = level
         self.offset = 0
@@ -224,7 +229,8 @@ class MockProblems(Problems):
         if not problem:
             raise StopIteration
 
-        problem['sgf'] = self.sgf1
+        problem['sgf'] = self.sgf2
         return problem
+
 
 

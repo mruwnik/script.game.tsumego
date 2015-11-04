@@ -151,11 +151,38 @@ class Goban(object):
         """Whether the current node is a correct end one."""
         return 'RIGHT' in self.current_comment
 
-    @property
-    def labels(self):
-        """Get all labels on the board."""
-        if self.node is not None and self.node.has_property('LB'):
-            return self.node.get('LB')
+    def _get_property(self, prop):
+        """Get the given property from the current node
+
+        :param str prop: the SGF property code
+        :returns: a list of points for the given property
+        """
+        if self.node is not None and self.node.has_property(prop):
+            return self.node.get(prop)
         else:
             return []
 
+    @property
+    def labels(self):
+        """Get all labels on the board."""
+        return self._get_property('LB')
+
+    @property
+    def marks(self):
+        """Get all marked stones on the board."""
+        return self._get_property('MA')
+
+    @property
+    def triangles(self):
+        """Get all stones with triangles on the board."""
+        return self._get_property('TR')
+
+    @property
+    def squares(self):
+        """Get all stones with squares on the board."""
+        return self._get_property('SQ')
+
+    @property
+    def circles(self):
+        """Get all stones with circles on the board."""
+        return self._get_property('CR')

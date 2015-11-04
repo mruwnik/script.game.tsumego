@@ -22,7 +22,7 @@
             <description>SGF comments</description>
             <posx>800</posx>
             <posy>180</posy>
-            <width>480</width>
+            <width>430</width>
             <height>150</height>
             <visible>true</visible>
             <font>font30_title</font>
@@ -136,7 +136,7 @@
             <description>Rating</description>
             <posx>1000</posx>
             <posy>10</posy>
-            <width>180</width>
+            <width>250</width>
             <height>36</height>
             <font>font30_title</font>
             <textcolor>black</textcolor>
