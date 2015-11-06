@@ -10,6 +10,3 @@ This is a Kodi addon that allows one to solve tsumego
 
 * scale the board when the tsumego is small
 
-* add letters around the board's edge
-* add some grey to the position markers
-* game logo

@@ -12,10 +12,10 @@
         </control>
         <control type="image" id="4001">
             <description>Background</description>
-            <posx>40</posx>
-            <posy>20</posy>
-            <width>680</width>
-            <height>680</height>
+            <posx>7</posx>
+            <posy>-5</posy>
+            <width>740</width>
+            <height>744</height>
             <texture>goban.png</texture>
         </control>
         <control type="textbox" id="3017">
