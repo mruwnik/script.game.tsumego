@@ -18,9 +18,9 @@ class Problems(object):
         id=id_regex,
     ))
 
-    def __init__(self, problems_dir='./', level=None):
+    def __init__(self, problems_dir='./', level=None, data_dir='/tmp/tsumego'):
         self.problems_dir = path(problems_dir)
-        self.data_dir = path('/tmp/tsumego')
+        self.data_dir = path(data_dir)
         self.offset = 0
         self.problems_thread = thread.start_new_thread(
             self._find_problems, (problems_dir,))
@@ -211,8 +211,11 @@ class MockProblems(Problems):
 (;B[do];W[dn];B[eo];W[en];B[fo];W[fn];B[go];W[gn];B[ho];W[hn];B[io];W[in];B[jo]TR[cn]TR[ck]MA[dn]MA[en]MA[fn]MA[gn]MA[hn]MA[in]MA[fq]MA[hq]MA[jq]TR[go]TR[ho]TR[io]TR[fo]C[rectangulars are strong, triangulars are weak])
 (;B[bq];W[bp];B[cp];W[co];B[bo];W[cq]C[instruction : tesuji to connect without ko];B[ap];W[cp];B[bn];W[br];B[aq];W[cs];B[dr];W[fs]C[B is dead. B3 atari underneath is lead to ko.]))
 """
+    sgf3 = """(;SZ[11]AB[ce]AB[be]AB[ad]AB[bc]AW[cd]AW[cc]AW[bb]AW[ab]AW[cb]AW[de]AB[bf]AB[bg]AW[df]AB[af]C[W to kill]AP[goproblems]
+                                                (;W[bd]C[YES B IS DEAD :)RIGHT])
+                                                (;W[ac];B[bd]C[B is alive :(]))"""
 
-    def __init__(self, problems_dir='./', level=30):
+    def __init__(self, problems_dir='./', level=30, **kwargs):
         self.level = level
         self.offset = 0
         self.problems = {
@@ -229,7 +232,7 @@ class MockProblems(Problems):
         if not problem:
             raise StopIteration
 
-        problem['sgf'] = self.sgf2
+        problem['sgf'] = self.sgf3
         return problem
 
 

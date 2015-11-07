@@ -11,12 +11,12 @@
             <texture>background.png</texture>
         </control>
         <control type="image" id="4001">
-            <description>Background</description>
-            <posx>7</posx>
+            <description>Goban backdrop</description>
+            <posx>-5</posx>
             <posy>-5</posy>
-            <width>740</width>
+            <width>745</width>
             <height>744</height>
-            <texture>goban.png</texture>
+            <texture>goban19.png</texture>
         </control>
         <control type="textbox" id="3017">
             <description>SGF comments</description>
@@ -41,10 +41,10 @@
         </control>
         <control type="label" id="3001">
             <description>The Grid placeholder. This label should not be shown but its space will be filled with the tiles.</description>
-            <posx>-9</posx>
-            <posy>45</posy>
-            <width>683</width>
-            <height>675</height>
+            <posx>30</posx>
+            <posy>30</posy>
+            <width>665</width>
+            <height>665</height>
             <font>font12</font>
             <visible>false</visible>
             <label></label>

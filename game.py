@@ -68,6 +68,7 @@ MEDIA_PATH = os.path.join(
 )
 DATA_PATH = os.path.join(
     xbmc.translatePath(ADDON_PATH), "resources", "data", "problems")
+TMP_PATH = os.path.join(xbmc.translatePath('special://temp'), 'tsumego')
 
 STRINGS = {
     'show_solution': 32002,
@@ -85,14 +86,16 @@ COLUMNS = 19
 ROWS = 19
 
 class ControlIds(object):
-    GRID = 3001
-    NEXT = 3002
-    RESTART = 3003
-    SOLUTION = 3004
+    goban = 4001
 
-    ERROR = 3015
-    SUCCESS = 3016
-    COMMENTS = 3017
+    grid = 3001
+    next_problem = 3002
+    restart = 3003
+    solution = 3004
+
+    error = 3015
+    success = 3016
+    comments = 3017
     rank = 3018
     rating = 3019
 
@@ -130,14 +133,21 @@ def log(msg, level=LOGNOTICE):
 class Tile(object):
 
     def __init__(self, x, y, grid, width, height):
+        self.grid = grid
+        self.set_position(x, y, width, height)
+        self.add_controls()
+
+    def set_position(self, x, y, width, height):
         self.x = x
         self.y = y
-        self.grid = grid
-        self.y_position = self.grid.x + width * (grid.rows - x)
         self.x_position = self.grid.y + height * y
+        self.y_position = self.grid.x + width * (self.grid.rows - 1 - x)
         self.width = width
         self.height = height
-        self.add_controls()
+
+    def hide(self):
+        """Hide all controls in this tile."""
+        pass
 
     def add_controls(self):
         pass
@@ -161,6 +171,14 @@ class Tile(object):
             return self.grid.at(self.x, self.y + 1)
         elif direction == ACTION_MOVE_UP:
             return self.grid.at(self.x + 1, self.y)
+
+    def reposition(self, x, y, width, height):
+        self.set_position(x, y, width, height)
+        for control in self.controls:
+            control.setHeight(self.height)
+            control.setWidth(self.width)
+            control.setPosition(self.x_position, self.y_position)
+            control.setVisible(True)
 
     @property
     def pos(self):
@@ -296,8 +314,55 @@ class Grid(object):
     def size(self):
         return self.rows, self.columns
 
+    def set_size(self, rows, columns=None):
+        """Set the grid's size.
+
+        :param int rows: the new amount of rows
+        :param int columns: the new amount of columns. If not provided, 'rows' is used
+        """
+        if not columns:
+            columns = rows
+        if rows == self.rows and columns == self.columns:
+            return
+
+        self.rows = rows
+        self.columns = columns
+
+        # start off by hiding all tiles. This gets rid of any artifacts on the
+        # screen
+        for row in self.grid:
+            for tile in row:
+                tile.hide()
+
+        # reposition/resize all tile still in the new boundaries
+        self.tile_width = self.width / rows
+        self.tile_height = self.height / columns
+        for x in xrange(rows):
+            for y in xrange(columns):
+                self.grid[x][y].reposition(x, y, self.tile_width, self.tile_height)
+
+        # if the previous selection was out of bounds, select the closest
+        # tile that is still visible
+        current_x = self.current.x if self.current.x < rows else rows - 1
+        current_y = self.current.y if self.current.y < columns else columns - 1
+        self.select(self.grid[current_x][current_y])
+
+        for control in self.control, self.position_marker:
+            control.setWidth(self.tile_width)
+            control.setHeight(self.tile_height)
+
     def at(self, row, column):
         return self.grid[row % self.rows][column % self.columns]
+
+    def select(self, tile):
+        """Select the given tile as the current one.
+
+        :param Tile tile: the current tile.
+        """
+        self.current = tile
+        self.position_marker.setPosition(*self.current.display_pos)
+        if self.current.y == self.size[1] - 1:
+              self.control.controlRight(self.right)
 
     def handle(self, action, focused):
         """Handle the given action.
@@ -317,10 +382,7 @@ class Grid(object):
         try:
             action_id = action.getId()
             if action_id in DIRECTIONS:
-                self.current = self.current.next(action_id)
-                self.position_marker.setPosition(*self.current.display_pos)
-                if self.current.y == self.size[1] - 1:
-                    self.control.controlRight(self.right)
+                self.select(self.current.next(action_id))
                 return True
             else:
                 return self.handle_key(action_id)
@@ -356,12 +418,17 @@ class Stone(Tile):
     def controls(self):
         return [self.image]
 
+    def hide(self):
+        """Hide all controls in this tile."""
+        self.image.setVisible(False)
+        self.set_marker(None)
+
     def mark(self, mark_type=''):
         """Mark this stone with the given marker."""
         self._mark = mark_type
 
-    def place_stone(self, player):
-        """Place a stone for the given player on this spot.
+    def set_marker(self, player):
+        """Set the appropriate marker on this spot.
 
         To remove a stone, pass None
 
@@ -371,17 +438,20 @@ class Stone(Tile):
             self.player = 'white'
         elif player == 'b':
             self.player = 'black'
-        else:
+        elif not player:
             self.player = None
 
         if player == 'good' or player == 'bad':
             stone = '%s_spot.png' % player
-        elif not self.player:
+        elif not player:
             stone = 'empty.png'
-        elif self._mark:
-            stone = '%s_%s.png' % (self.player, self._mark)
+        elif player in ['w', 'b']:
+            if self._mark:
+                stone = '%s_%s.png' % (self.player, self._mark)
+            else:
+                stone = '%s.png' % self.player
         else:
-            stone = '%s.png' % self.player
+            stone = '%s.png' % player
 
         if stone != self.stone:
             self.stone = stone
@@ -404,7 +474,7 @@ class GobanGrid(Grid, Goban):
     def __init__(self, *args, **kwargs):
         self.comments_box = None
         self.hints = False
-        self.problems = Problems(DATA_PATH)
+        self.problems = Problems(DATA_PATH, data_dir=TMP_PATH)
         super(GobanGrid, self).__init__(*args, **kwargs)
 
     def setup_labels(self):
@@ -412,9 +482,9 @@ class GobanGrid(Grid, Goban):
         window = self.window
         self.current_rank = window.getControl(ControlIds.rank)
         self.rating_box = window.getControl(ControlIds.rating)
-        self.comments_box = window.getControl(ControlIds.COMMENTS)
-        self.error_control = window.getControl(ControlIds.ERROR)
-        self.success_control = window.getControl(ControlIds.SUCCESS)
+        self.comments_box = window.getControl(ControlIds.comments)
+        self.error_control = window.getControl(ControlIds.error)
+        self.success_control = window.getControl(ControlIds.success)
         self.success_control.setLabel(_('solved'))
         self.error_control.setLabel(_('off_path'))
 
@@ -434,7 +504,7 @@ class GobanGrid(Grid, Goban):
         """
         stone = Stone(x, y, self, self.tile_width, self.tile_height)
         if self.board:
-            stone.place_stone(self.board.board[x][y])
+            stone.set_marker(self.board.board[x][y])
         return stone
 
     def refresh_board(self):
@@ -456,8 +526,8 @@ class GobanGrid(Grid, Goban):
             self.grid[x][y].mark()
 
         # refresh all points
-        for x in xrange(self.columns):
-            for y in xrange(self.rows):
+        for x in xrange(self.game.get_size()):
+            for y in xrange(self.game.get_size()):
                 pos = (x, y)
                 if pos in self.marks:
                     self.grid[x][y].mark('mark')
@@ -471,8 +541,39 @@ class GobanGrid(Grid, Goban):
                     self.grid[x][y].mark('mark')
                 else:
                     self.grid[x][y].mark()
-                self.grid[x][y].place_stone(self.board.board[x][y])
+                self.grid[x][y].set_marker(self.board.board[x][y])
         self.mark_hints()
+
+    def set_size(self, size):
+        """Set the board size and refresh what is displayed."""
+        if size <= 9:
+            actual_size = 9
+            if self.rows > 9:
+                self.window.getControl(ControlIds.goban).setImage('goban9.png')
+        elif 9 < size <= 13:
+            actual_size = 13
+            if 9 <= self.rows or self.rows > 13:
+                self.window.getControl(ControlIds.goban).setImage('goban13.png')
+        elif size > 13:
+            actual_size = 19
+            if 13 <= self.rows:
+                self.window.getControl(ControlIds.goban).setImage('goban19.png')
+
+        super(GobanGrid, self).set_size(actual_size)
+        # if the board is irregular (i.e. not 9x9, 13x13 or 19x19), make sure
+        # that the pointer is correctly set, and that any tiles outside the
+        # boundaries are correctly hidden
+        if size < actual_size:
+            self.rows = size
+            self.columns = size
+            current_x = self.current.x if self.current.x < size else size - 1
+            current_y = self.current.y if self.current.y < size else size - 1
+            self.select(self.grid[current_x][current_y])
+            # hide all tiles that shouldn't be shown
+            for p1 in xrange(0, actual_size):
+                for p2 in xrange(size, actual_size):
+                    self.grid[p1][p2].set_marker('wall')
+                    self.grid[p2][p1].set_marker('wall')
 
     def load(self, sgf=None):
         """Load the given SGF, or reload the current one if none provided.
@@ -481,7 +582,9 @@ class GobanGrid(Grid, Goban):
         """
         log(str(sgf))
         super(Grid, self).load(sgf)
-        self.refresh_board()
+        if self.game:
+            self.set_size(self.game.get_size())
+            self.refresh_board()
 
     def next(self):
         """Load the next problem."""
@@ -496,6 +599,7 @@ class GobanGrid(Grid, Goban):
                 log('board was too small')
                 traceback.print_exc()
             else:
+                log('board size: %d' % self.game.get_size())
                 self.hints = False
                 self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
                 self.update_messages()
@@ -550,7 +654,7 @@ class GobanGrid(Grid, Goban):
             :param str mark: what the marker should be
             """
             _, (x, y) = node.get_move()
-            self.grid[x][y].place_stone(mark)
+            self.grid[x][y].set_marker(mark)
 
         # get rid of any previous markers - the grandparent must be used,
         # because the parent is automatically placed and has no hints
@@ -599,9 +703,9 @@ class Game(xbmcgui.WindowXML):
     def onInit(self):
         log('initialising')
         # get controls
-        self.grid_control = self.getControl(ControlIds.GRID)
-        self.next_control = self.getControl(ControlIds.NEXT)
-        self.solution_control = self.getControl(ControlIds.SOLUTION)
+        self.grid_control = self.getControl(ControlIds.grid)
+        self.next_control = self.getControl(ControlIds.next_problem)
+        self.solution_control = self.getControl(ControlIds.solution)
 
         # init the grid
         self.grid = self.get_grid()
@@ -630,13 +734,13 @@ class Game(xbmcgui.WindowXML):
         pass
 
     def onClick(self, control_id):
-        if control_id == ControlIds.RESTART:
+        if control_id == ControlIds.restart:
             self.restart_game()
-        elif control_id == ControlIds.SOLUTION:
+        elif control_id == ControlIds.solution:
             self.solution_control.setLabel(
                 _('hide_solution' if self.grid.toggle_hints() else 'show_solution')
             )
-        elif control_id == ControlIds.NEXT:
+        elif control_id == ControlIds.next_problem:
             self.grid.next()
 
     def get_grid(self, sgf=None):
