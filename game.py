@@ -617,8 +617,12 @@ class GobanGrid(Grid, Goban):
                 self.update_messages()
                 self.update_labels()
                 self.current_rank.setText(_('current_rank') % self.problems.rank)
-                self.rating_box.setText(
-                    _('rating') % tuple([self.problem['rating']] + list(self.problem['rank'])))
+                if self.problem.get('rank'):
+                    rating = self.problem.get('rating') or 0
+                    rank_value, rank = self.problem.get('rank')
+                    self.rating_box.setText(_('rating') % (rating, rank_value, rank))
+                else:
+                    self.rating_box.setText('')
                 return
         else:
             level = self.problems.level

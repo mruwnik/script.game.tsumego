@@ -3,7 +3,7 @@ from tempfile import mkdtemp
 import pytest
 from path import path
 
-from problems import Problems
+from resources.lib.problems import Problems
 
 
 @pytest.yield_fixture
@@ -21,18 +21,19 @@ def problem_files(problems_dir):
         (problems_dir / ('%d_kyu_%d.sgf' % (i, i))).touch()
         (problems_dir / ('[%d]%d_kyu_%d.sgf' % (i - 10, i, i + 20))).touch()
         (problems_dir / ('%d.txt' % i)).touch()
+        (problems_dir / ('%d.sgf' % i)).touch()
     return problems_dir
 
 
 @pytest.mark.parametrize('filename, result', (
-    ('1_kyu_123.sgf', {'rating': 0, 'level': (1, 'kyu'), 'id': 123}),
-    ('1_kyu123.sgf', {'rating': 0, 'level': (1, 'kyu'), 'id': 123}),
-    ('1kyu_123.sgf', {'rating': 0, 'level': (1, 'kyu'), 'id': 123}),
-    ('13_kyu_123.sgf', {'rating': 0, 'level': (13, 'kyu'), 'id': 123}),
-    ('1_dan_123.sgf', {'rating': 0, 'level': (1, 'dan'), 'id': 123}),
-    ('[+12]1_kyu_123.sgf', {'rating': 12, 'level': (1, 'kyu'), 'id': 123}),
-    ('[12]1_kyu_123.sgf', {'rating': 12, 'level': (1, 'kyu'), 'id': 123}),
-    ('[-1]1_kyu_123.sgf', {'rating': -1, 'level': (1, 'kyu'), 'id': 123}),
+    ('1_kyu_123.sgf', {'rating': 0, 'rank': (1, 'kyu'), 'id': 123}),
+    ('1_kyu123.sgf', {'rating': 0, 'rank': (1, 'kyu'), 'id': 123}),
+    ('1kyu_123.sgf', {'rating': 0, 'rank': (1, 'kyu'), 'id': 123}),
+    ('13_kyu_123.sgf', {'rating': 0, 'rank': (13, 'kyu'), 'id': 123}),
+    ('1_dan_123.sgf', {'rating': 0, 'rank': (1, 'dan'), 'id': 123}),
+    ('[+12]1_kyu_123.sgf', {'rating': 12, 'rank': (1, 'kyu'), 'id': 123}),
+    ('[12]1_kyu_123.sgf', {'rating': 12, 'rank': (1, 'kyu'), 'id': 123}),
+    ('[-1]1_kyu_123.sgf', {'rating': -1, 'rank': (1, 'kyu'), 'id': 123}),
 ))
 def test_parse_problem(filename, result, problems_dir):
     """Test whether filenames get parsed correctly."""
@@ -42,7 +43,16 @@ def test_parse_problem(filename, result, problems_dir):
 
 
 @pytest.mark.parametrize('filename',
-    ('', 'daads', '12_ky_123.sgf', 'kyu_123.sgf', '1_kyu_12.txt', '1_kyu_12')
+    ('12_ky_123.sgf', 'kyu_123.sgf', 'asdasd.sgf')
+)
+def test_unparsable_parse_problem(filename, problems_dir):
+    """Check whether names that cannot be parsed only return the filename."""
+    p = Problems(problems_dir)
+    assert p._parse_problem(filename) == {'problem_file': filename}
+
+
+@pytest.mark.parametrize('filename',
+    (None, '', 'daads', '1_kyu_12.txt', '1_kyu_12')
 )
 def test_invalid_parse_problem(filename, problems_dir):
     """Check whether invalid names return None."""
@@ -50,17 +60,17 @@ def test_invalid_parse_problem(filename, problems_dir):
     assert p._parse_problem(filename) is None
 
 
-@pytest.mark.parametrize('level_str, level', (
+@pytest.mark.parametrize('rank_str, rank', (
     ('12_kyu', (12, 'kyu')),
-    ('-12_kyu', (-12, 'kyu')),
+    ('-12_kyu', (12, 'kyu')),
     ('1_dan', (1, 'dan')),
     ('asd', None),
     ('', None),
 ))
-def test_parse_level(level_str, level, problems_dir):
-    """Test whether level strings are correctly parsed."""
+def test_parse_rank(rank_str, rank, problems_dir):
+    """Test whether rank strings are correctly parsed."""
     p = Problems(problems_dir)
-    assert p._parse_level(level_str) == level
+    assert p._parse_level(rank_str) == rank
 
 
 def test_get_problems(problem_files, problems_dir):
@@ -75,6 +85,11 @@ def test_get_problems(problem_files, problems_dir):
             problems_dir / ('[%d]%d_kyu_%d.sgf' % (i - 10, i, i + 20))
         ) for i in xrange(20)
     ]
+    for i in xrange(20):
+        problem = {'rank': None}
+        problem.update(p._parse_problem(problems_dir / ('%d.sgf' % i)))
+        problems.append(problem)
+
     assert sorted(p._get_problems(problem_files)) == sorted(problems)
 
 
@@ -92,6 +107,7 @@ def test_rank(level, rank, problems_dir):
     p = Problems(problems_dir)
     p.level = level
     assert p.rank == rank == p.get_rank(level)
+    assert p.pretty_rank == '%d %s' % rank
 
 
 @pytest.mark.parametrize('level, offset, expected', (

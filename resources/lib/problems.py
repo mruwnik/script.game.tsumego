@@ -30,20 +30,28 @@ class Problems(object):
 
     def _find_problems(self, problems_dir):
         """Find all problems in the problems directory."""
-        self.problems = {
-            self._parse_level(d.basename()): self._get_problems(d)
-            for d in self.problems_dir.listdir()
-        }
+        self.problems = {}
+        for d in self.problems_dir.listdir():
+            try:
+                level = self._parse_level(d.basename())
+                self.problems[level] = self._get_problems(d)
+            except OSError:
+                continue
 
     def _parse_problem(self, problem_file):
         """Parse the given problem file name.
 
+        If the name cannot be parsed, only the file bit is returned.
+
         :param str problem_file: the filename to be parsed
-        :returns: the parts that make up the name
+        :returns: the parts that make up the name + the file
         """
+        if not (problem_file and problem_file.endswith('.sgf')):
+            return
+
         result = self.name_parser.search(problem_file)
         if not result:
-            return
+            return {'problem_file': problem_file}
         results = result.groupdict()
         return {
             'rating': int(results['rating']) if results['rating'] else 0,
@@ -71,12 +79,17 @@ class Problems(object):
 
         :param path.path problem_dir: a directory with problems
         """
+        rank = self._parse_level(problem_dir.basename())
         problems = []
         for problem in problem_dir.listdir():
             try:
-                problems.append(self._parse_problem(problem))
-            except OSError:
+                problem_dict = self._parse_problem(problem)
+                if 'rank' not in problem_dict:
+                    problem_dict['rank'] = rank
+            except (OSError, TypeError):
                 logging.info('Could not get any problems from %s', problem)
+            else:
+                problems.append(problem_dict)
         return problems
 
     def random_problem(self, level=None):
@@ -87,7 +100,7 @@ class Problems(object):
         if not level:
             level = self.get_rank(round(self.level + self.offset))
         if level[0] > 30:
-           level = (30, level[1])
+            level = (30, level[1])
         try:
             if self.problems:
                 problem = choice(self.problems[level])
@@ -106,7 +119,8 @@ class Problems(object):
 
     def get_rank(self, level):
         """Get the rank for the given level."""
-        return (min(30, int(math.ceil(abs(level)))), 'kyu' if level > 0 else 'dan')
+        rank_value = min(30, int(math.ceil(abs(level))))
+        return (rank_value, 'kyu' if level > 0 else 'dan')
 
     def get_level(self, rank):
         """Get the level for the given rank."""
@@ -154,8 +168,12 @@ class Problems(object):
         If no probelems are available for the current level, it will try 3
         ahead and 3 behind for something.
         """
-        for level in range(self.level, self.level + 3) + range(self.level, self.level - 3, -1):
-            problem = self.random_problem(self.get_rank(round(level + self.offset)))
+        levels = range(self.level, self.level + 3)
+        levels += range(self.level, self.level - 3, -1)
+        for level in levels:
+            problem = self.random_problem(
+                self.get_rank(round(level + self.offset))
+            )
             if problem:
                 break
         if not problem:
@@ -234,6 +252,4 @@ class MockProblems(Problems):
 
         problem['sgf'] = self.sgf1
         return problem
-
-
 
