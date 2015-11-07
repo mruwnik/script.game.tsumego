@@ -66,9 +66,6 @@ MEDIA_PATH = os.path.join(
     'default',
     'media'
 )
-DATA_PATH = os.path.join(
-    xbmc.translatePath(ADDON_PATH), "resources", "data", "problems")
-TMP_PATH = os.path.join(xbmc.translatePath('special://temp'), 'tsumego')
 
 STRINGS = {
     'show_solution': 32002,
@@ -79,6 +76,8 @@ STRINGS = {
     'exit_text': 32012,
     'current_rank': 32013,
     'rating': 32014,
+    'no_problems_found': 32020,
+    'get_problems_dir': 32021,
 }
 
 
@@ -247,7 +246,7 @@ class Grid(object):
     def add_label(self, x, y, label):
         return xbmcgui.ControlLabel(
             x=self.y + self.tile_height * y,
-            y=self.x + self.tile_width * (self.rows - x),
+            y=self.x + self.tile_width * (self.rows - 1 - x),
             width=self.tile_width,
             height=self.tile_height,
             label='[B]%s[/B]' % label,
@@ -474,8 +473,21 @@ class GobanGrid(Grid, Goban):
     def __init__(self, *args, **kwargs):
         self.comments_box = None
         self.hints = False
-        self.problems = Problems(DATA_PATH, data_dir=TMP_PATH)
+        self.load_problems(
+            problems_dir=kwargs.pop('problems_dir', addon.getSetting('problems_dir')),
+            rank=kwargs.pop('rank', addon.getSetting('rank')),
+        )
         super(GobanGrid, self).__init__(*args, **kwargs)
+
+    def load_problems(self, problems_dir, rank=None):
+        """Load all problems found in the given directory.
+
+        :param str problems_dir: where to look for tsumego
+        :param str rank: the current rank of the user.
+        """
+        if not rank and self.problems:
+            rank = self.problems.pretty_rank
+        self.problems = Problems(problems_dir, rank)
 
     def setup_labels(self):
         """Set up all status messages and the comments box."""
@@ -587,16 +599,16 @@ class GobanGrid(Grid, Goban):
             self.refresh_board()
 
     def next(self):
-        """Load the next problem."""
+        """Load the next problem.
+
+        If no problem can be loaded, an error message is displayed.
+        """
         # loop over problems until a good one is found
         for problem in self.problems:
             self.problem = problem
             try:
                 self.load(self.problem['sgf'])
-            except ValueError:
-                continue
-            except IndexError:
-                log('board was too small')
+            except (ValueError, IndexError):
                 traceback.print_exc()
             else:
                 log('board size: %d' % self.game.get_size())
@@ -608,6 +620,29 @@ class GobanGrid(Grid, Goban):
                 self.rating_box.setText(
                     _('rating') % tuple([self.problem['rating']] + list(self.problem['rank'])))
                 return
+        else:
+            level = self.problems.level
+            ranks = map(
+                lambda rank: '%d %s' % rank,
+                map(self.problems.get_rank, [level + 3, level - 3])
+            )
+            self.comments_box.setText(_('no_problems_found') % tuple(ranks))
+
+    def problem_solved(self, solved, weight=0.25):
+        """Mark whether this problem was solved or not.
+
+        :param boolean solved: whether the problem was solved
+        :param float weight: the wieght of the solution.
+        """
+        if 'solved' in self.problem:
+            return
+
+        if solved:
+            self.problems.success(self.problem['rank'], weight)
+        else:
+            self.problems.failure(self.problem['rank'], weight)
+        self.problem['solved'] = solved
+        addon.setSetting('level', self.problems.pretty_rank)
 
     def toggle_hints(self, state=None):
         """Toggle the display of hints on the board.
@@ -615,9 +650,7 @@ class GobanGrid(Grid, Goban):
         :param boolean state: this can be used to force the state
         :returns: whether or not hints are shown
         """
-        if 'solved' not in self.problem:
-            self.problems.failure(self.problem['rank'], 0.4)
-            self.problem['solved'] = False
+        self.problem_solved(False, 0.4)
         self.hints = state if state is not None else not self.hints
         self.mark_hints()
         return self.hints
@@ -678,13 +711,10 @@ class GobanGrid(Grid, Goban):
             self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
             self.update_messages()
             self.update_labels()
-            if 'solved' not in self.problem and self.correct:
-                self.problems.success(self.problem['rank'])
-                self.problem['solved'] = True
+            if self.correct:
+                self.problem_solved(True)
         elif key in BACK:
-            if 'solved' not in self.problem:
-                self.problems.failure(self.problem['rank'])
-                self.problem['solved'] = False
+            self.problem_solved(False)
             self.back()
             self.back()
             self.update_messages()
@@ -723,7 +753,7 @@ class Game(xbmcgui.WindowXML):
             elif self.grid.handle(action, self.getFocusId()):
                 return
             elif action_id in INFO:
-                pass
+                self.settings()
             elif action.getButtonCode() == KeyCodes.n:
                 self.grid.next()
         except Exception as e:
@@ -769,9 +799,15 @@ class Game(xbmcgui.WindowXML):
         self.grid.load(self.grid.sgf)
         self.grid.update_messages()
 
-    def game_over(self):
+    def settings(self):
         dialog = xbmcgui.Dialog()
-        dialog.ok(_('you_won_head'), _('you_won_text'))
+        problems_dir = dialog.browse(
+            0, _('get_problems_dir'), 'files', '', False, False, None
+        )
+        if problems_dir:
+            addon.setSetting('problems_dir', problems_dir)
+            self.grid.load_problems(problems_dir)
+            self.grid.next()
 
     def exit(self):
         dialog = xbmcgui.Dialog()

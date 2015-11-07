@@ -1,6 +1,7 @@
 import re
 import math
 import thread
+import logging
 from random import choice
 
 from path import path
@@ -10,38 +11,22 @@ class Problems(object):
     """A class to handle a load of problems."""
     level_span = 3
     id_regex = '(?P<id>\d+)'
-    level_regex = '(?P<level>\d+)_?(?P<type>kyu|dan)'
+    level_regex = '(?P<level>\d+)[_ ]*?(?P<type>kyu|dan)'
     rating_regex = '(?:\[(?P<rating>[+-]?\d+)\])'
     name_parser = re.compile('{rating}?{level}_?{id}.sgf'.format(
         rating=rating_regex,
         level=level_regex,
         id=id_regex,
     ))
+    level_parser = re.compile(level_regex)
 
-    def __init__(self, problems_dir='./', level=None, data_dir='/tmp/tsumego'):
+    def __init__(self, problems_dir='./', level='30 kyu'):
         self.problems_dir = path(problems_dir)
-        self.data_dir = path(data_dir)
         self.offset = 0
         self.problems_thread = thread.start_new_thread(
             self._find_problems, (problems_dir,))
         self.problems = None
-        self._load_level(level)
-
-    def _load_level(self, level):
-        """Read the users level from the tmp file."""
-        if not self.data_dir.exists():
-            self.data_dir.makedirs()
-        if level is not None:
-            self.level = level
-            with open(self.data_dir / 'level', 'w') as f:
-                f.write(str(level))
-        else:
-            try:
-                with open(self.data_dir / 'level') as f:
-                    self.level = int(f.read())
-            except (IOError,  TypeError, ValueError):
-                self.level = 30
-
+        self.level = self.get_level(self._parse_level(level))
 
     def _find_problems(self, problems_dir):
         """Find all problems in the problems directory."""
@@ -75,9 +60,10 @@ class Problems(object):
             type is either 'kyu' or 'dan'
         """
         try:
-            value, level_type = level_str.strip().split('_')
-            return (int(value), level_type)
-        except ValueError:
+            results = self.level_parser.search(level_str).groupdict()
+            return (int(results['level']), results['type'])
+        except (ValueError, KeyError, AttributeError):
+            logging.warning('Could not parse %s: bad level format', level_str)
             return None
 
     def _get_problems(self, problem_dir):
@@ -85,12 +71,13 @@ class Problems(object):
 
         :param path.path problem_dir: a directory with problems
         """
-        try:
-            return filter(
-                None, map(self._parse_problem, problem_dir.listdir())
-            )
-        except OSError:
-            return None
+        problems = []
+        for problem in problem_dir.listdir():
+            try:
+                problems.append(self._parse_problem(problem))
+            except OSError:
+                logging.info('Could not get any problems from %s', problem)
+        return problems
 
     def random_problem(self, level=None):
         """Get a random problem for the given level.
@@ -101,17 +88,25 @@ class Problems(object):
             level = self.get_rank(round(self.level + self.offset))
         if level[0] > 30:
            level = (30, level[1])
-        if self.problems:
-            problems = self.problems[level]
-            return choice(problems)
-        else:
-            problems_dir = path(self.problems_dir) / ('%d_%s' % level)
-            problem = choice(problems_dir.listdir())
-            return self._parse_problem(problem)
+        try:
+            if self.problems:
+                problem = choice(self.problems[level])
+            else:
+                problems_dir = path(self.problems_dir) / ('%d_%s' % level)
+                problem = self._parse_problem(choice(problems_dir.listdir()))
+        except (OSError, IOError, KeyError):
+            return None
+
+        try:
+            with open(problem['problem_file']) as f:
+                problem['sgf'] = f.read()
+        except IOError:
+            return None
+        return problem
 
     def get_rank(self, level):
         """Get the rank for the given level."""
-        return (int(math.ceil(abs(level))), 'kyu' if level > 0 else 'dan')
+        return (min(30, int(math.ceil(abs(level)))), 'kyu' if level > 0 else 'dan')
 
     def get_level(self, rank):
         """Get the level for the given rank."""
@@ -122,6 +117,11 @@ class Problems(object):
         """Get the current rank."""
         return self.get_rank(self.level)
 
+    @property
+    def pretty_rank(self):
+        """Get the current rank in a pretty format."""
+        return '%d %s' % self.rank
+
     def update_rank(self):
         """Update the rank based on how well the player is doing."""
         abs_offset = abs(self.offset)
@@ -129,11 +129,6 @@ class Problems(object):
             sign = self.offset / abs_offset
             self.level += int(sign * (math.ceil(abs_offset - self.level_span)))
             self.offset = 0
-            try:
-                with open(self.data_dir / 'level', 'w') as f:
-                    f.write(str(self.level))
-            except Exception as e:
-                print e
         return (self.level, self.offset)
 
     def failure(self, rank, scale=0.25):
@@ -154,13 +149,18 @@ class Problems(object):
         return self
 
     def next(self):
-        """Get the next problem."""
-        problem = self.random_problem()
+        """Get the next problem.
+
+        If no probelems are available for the current level, it will try 3
+        ahead and 3 behind for something.
+        """
+        for level in range(self.level, self.level + 3) + range(self.level, self.level - 3, -1):
+            problem = self.random_problem(self.get_rank(round(level + self.offset)))
+            if problem:
+                break
         if not problem:
             raise StopIteration
 
-        with open(problem['problem_file']) as f:
-            problem['sgf'] = f.read()
         return problem
 
 
@@ -232,7 +232,7 @@ class MockProblems(Problems):
         if not problem:
             raise StopIteration
 
-        problem['sgf'] = self.sgf3
+        problem['sgf'] = self.sgf1
         return problem
 
 

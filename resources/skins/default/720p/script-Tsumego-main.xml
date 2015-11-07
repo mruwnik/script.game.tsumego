@@ -23,7 +23,7 @@
             <posx>800</posx>
             <posy>180</posy>
             <width>430</width>
-            <height>150</height>
+            <height>350</height>
             <visible>true</visible>
             <font>font30_title</font>
             <textcolor>FF222222</textcolor>

@@ -53,7 +53,7 @@ msgid "Exit?"
 msgstr ""
 
 msgctxt "#32010"
-msgid "[B]Controls[/B][CR]- Place stone: Enter, left click[CR]- Back one move: Backspace[CR]- Next problem: n[CR]- Exit: Esc, q"
+msgid "[B]Controls[/B][CR]- Place stone: Enter, left click[CR]- Back one move: Backspace[CR]- Next problem: n[CR]- Exit: Esc, q[CR]- Select folder with tsumego problems: i"
 msgstr ""
 
 msgctxt "#32012"
@@ -66,5 +66,21 @@ msgstr ""
 
 msgctxt "#32014"
 msgid "Problem rating: [%d] %d %s"
+msgstr ""
+
+msgctxt "#32018"
+msgid "General"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Current level"
+msgstr ""
+
+msgctxt "#32020"
+msgid "[COLOR red][B]No tsumegos found for the ranks between %s and %s![/B][/COLOR][B][CR]Please select a folder containing tsumego problems saved in the SGF format.[/B][CR][CR]To select a folder, press 'i'. This program expects the problems folder to contain a separate subfolder for each rank, e.g.:[CR][CR]./problems ->[CR]     ./problems/30_kyu ->[CR]          ./problems/30_kyu/123123.sgf[CR]          ./problems/30_kyu/32123.sgf[CR]          ./problems/30_kyu/6323.sgf[CR]          (...)[CR]     ./problems/29_kyu ->[CR]          ./problems/29_kyu/29_kyu_123.sgf[CR]          ./problems/29_kyu/653.sgf[CR]          ./problems/29_kyu/29kyu333.sgf[CR]          (...)[CR]      (...)"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Where to look for tsumego problems:"
 msgstr ""
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32018">
+        <setting label="32019" type="text" id="rank" default="30 kyu"/>
+        <setting label="32021" type="folder" id="problems_dir" default="~/"/>
+    </category>
+</settings>
