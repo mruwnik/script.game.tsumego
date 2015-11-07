@@ -64,6 +64,7 @@ def test_invalid_parse_problem(filename, problems_dir):
     ('12_kyu', (12, 'kyu')),
     ('-12_kyu', (12, 'kyu')),
     ('1_dan', (1, 'dan')),
+    ('0_dan', (0, 'dan')),
     ('asd', None),
     ('', None),
 ))

@@ -142,6 +142,15 @@
             <textcolor>black</textcolor>
             <label></label>
         </control>
-
+        <control type="textbox" id="3020">
+            <description>Clock</description>
+            <posx>1210</posx>
+            <posy>10</posy>
+            <width>250</width>
+            <height>36</height>
+            <font>font30_title</font>
+            <textcolor>black</textcolor>
+            <label></label>
+        </control>
     </controls>
 </window>
