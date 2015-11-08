@@ -1,6 +1,9 @@
 # Tsumego
   This is a [Kodi](http://kodi.tv/) addon that allows one to solve [tsumego](https://en.wikipedia.org/wiki/Tsumego), which are problems from the boardgame [Go](https://en.wikipedia.org/wiki/Go_%28game%29). The idea for this addon stems from the fact that I couldn't get a brower to work in Kodi and couldn't be bothered to find out more. The inspiration for this comes from [goproblems](http://www.goproblems.com). The implementation is very loosely based on the [Netwalk](http://kodi.wiki/view/Add-on:Netwalk_Game) game.
 
+# Deployment
+  Execute the `deploy.py` script to generate a `script.game.tsumego.zip` package, which can then be imported into Kodi as a program addon.
+
 # Game play
   The goal of each problem is to end up with the best possible situation for whichever player you are controlling. Sometimes this mean killing of your enemy, sometimes just minimising your loses. When a problem loads, the cursor on the board should change colour to show whose move it is. Each problem has a predefined set of possible plays, and at least one of them should be correct. If you play all the way through a correct sequence, a green 'Solved' will be displayed on the right. If you stray of the predefined path, a red 'Off path' will be displayed. This usually means that you are wrong, as all the valid paths should have been forseen in the problem.
   

@@ -1,3 +1,4 @@
+"""A goban control and a stone control, which represents a spot on the board."""
 # -*- coding: utf-8 -*-
 
 import traceback
@@ -6,8 +7,8 @@ import xbmcaddon
 import xbmcgui
 
 from xbmcgui import (
-    ACTION_PAUSE, ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK,
-    ACTION_PREVIOUS_MENU, ACTION_NAV_BACK,
+    ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK,
+    ACTION_PREVIOUS_MENU, ACTION_NAV_BACK, ACTION_PAUSE,
     REMOTE_1, REMOTE_2, REMOTE_3, REMOTE_4,
     REMOTE_5, REMOTE_6, REMOTE_7, REMOTE_8, REMOTE_9,
 )
@@ -15,12 +16,12 @@ from xbmcgui import (
 from resources.lib.log_utils import log, _
 from resources.lib.grid import Grid, Tile, get_image
 from resources.lib.board import Goban
-from resources.lib.problems import Problems, MockProblems
+from resources.lib.problems import Problems
 
 SELECT = [
     ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK, ACTION_PAUSE
 ]
-BACK = [ACTION_NAV_BACK]
+BACK = [ACTION_PREVIOUS_MENU, ACTION_NAV_BACK]
 
 hoshi = {
     REMOTE_1: (3, 3),
@@ -38,6 +39,8 @@ addon = xbmcaddon.Addon()
 
 
 class ControlIds(object):
+    """The ids of the controls defined in the xml file."""
+
     goban = 4001
     error = 3015
     success = 3016
@@ -48,13 +51,17 @@ class ControlIds(object):
 
 class Stone(Tile):
 
+    """A single spot on the goban."""
+
     def __init__(self, *args, **kwargs):
+        """Iinitialise the stone."""
         super(Stone, self).__init__(*args, **kwargs)
         self._mark = ''
         self.player = None
         self.stone = None
 
     def add_controls(self):
+        """Add all needed controls to this stone."""
         self.image = xbmcgui.ControlImage(
             x=self.x_position,
             y=self.y_position,
@@ -65,6 +72,7 @@ class Stone(Tile):
 
     @property
     def controls(self):
+        """Get this stone's controls."""
         return [self.image]
 
     def hide(self):
@@ -109,12 +117,15 @@ class Stone(Tile):
 
 class GobanGrid(Grid, Goban):
 
+    """A grid that handles a goban."""
 
     def __init__(self, *args, **kwargs):
+        """init this grid."""
         self.comments_box = None
         self.hints = False
         self.load_problems(
-            problems_dir=kwargs.pop('problems_dir', addon.getSetting('problems_dir')),
+            problems_dir=kwargs.pop(
+                'problems_dir', addon.getSetting('problems_dir')),
             rank=kwargs.pop('rank', addon.getSetting('rank')),
         )
         super(GobanGrid, self).__init__(*args, **kwargs)
@@ -162,7 +173,7 @@ class GobanGrid(Grid, Goban):
     def refresh_board(self):
         """Refresh the contents of the grid."""
         if not self.grid:
-            log('No grid found during board refresh', LOGDEBUG)
+            log('No grid found during board refresh', log.LOGDEBUG)
             return
 
         self.update_comment()
@@ -253,14 +264,17 @@ class GobanGrid(Grid, Goban):
             else:
                 log('board size: %d' % self.game.get_size())
                 self.hints = False
-                self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
+                self.position_marker.setImage(
+                    get_image("shadow_%s.png" % self.next_player_name))
                 self.update_messages()
                 self.update_labels()
-                self.current_rank.setText(_('current_rank') % self.problems.rank)
+                self.current_rank.setText(
+                    _('current_rank') % self.problems.rank)
                 if self.problem.get('rank'):
                     rating = self.problem.get('rating') or 0
                     rank_value, rank = self.problem.get('rank')
-                    self.rating_box.setText(_('rating') % (rating, rank_value, rank))
+                    self.rating_box.setText(
+                        _('rating') % (rating, rank_value, rank))
                 else:
                     self.rating_box.setText('')
                 return
@@ -308,11 +322,11 @@ class GobanGrid(Grid, Goban):
         :param str or None comment: the comment to be displayed
         """
         if not self.comments_box:
-            log('No comments box found during comment refresh', LOGDEBUG)
+            log('No comments box found during comment refresh', log.LOGDEBUG)
             return
 
         if comment is None:
-            comment = self.current_comment.replace('FORCE', '').replace('RIGHT', '')
+            comment = self.current_comment.replace('FORCE', '').replace('RIGHT', '')  # noqa
         self.comments_box.setText(comment)
 
     def update_messages(self):
@@ -336,7 +350,8 @@ class GobanGrid(Grid, Goban):
         # get rid of any previous markers - the grandparent must be used,
         # because the parent is automatically placed and has no hints
         if self.node.parent and self.node.parent.parent:
-            map(mark_node, filter(lambda v: v != self.node, self.node.parent.parent))
+            map(mark_node,
+                filter(lambda v: v != self.node, self.node.parent.parent))
 
         for child in self.node:
             mark_node(child, 'good' if self.correct_path(child) else 'bad')
@@ -352,7 +367,8 @@ class GobanGrid(Grid, Goban):
         if key in SELECT:
             self.move(*self.current.pos)
             self.random_move()
-            self.position_marker.setImage(get_image("shadow_%s.png" % self.next_player_name))
+            self.position_marker.setImage(
+                get_image("shadow_%s.png" % self.next_player_name))
             self.update_messages()
             self.update_labels()
             if self.correct:

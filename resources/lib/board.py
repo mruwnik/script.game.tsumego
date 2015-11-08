@@ -1,4 +1,4 @@
-#!/usr/bin/python
+"""A representation of a goban, with various helper methods."""
 # -*- coding: utf-8 -*-
 
 from random import choice
@@ -7,6 +7,7 @@ from gomill import sgf, sgf_moves
 
 
 class Goban(object):
+
     """A representation of a goban."""
 
     def __init__(self, *args, **kwargs):
@@ -16,7 +17,6 @@ class Goban(object):
         self.board = None
         self.node = None
         self.load(kwargs.pop('sgf_string', ''))
-        #super(Goban, self).__init__(*args, **kwargs)
 
     def load(self, sgf_string):
         """load the given SGF string."""
@@ -77,7 +77,9 @@ class Goban(object):
     def move(self, x, y):
         """Place the next player's stone on the given spot.
 
-        The position is counted from the bottom left corner (a cartesian coordinate)."""
+        The position is counted from the bottom left corner (as a cartesian
+        coordinate).
+        """
         self.node = self._move(self.node, self.next_player, (x, y))
 
     def back(self):
@@ -88,18 +90,25 @@ class Goban(object):
             self.node = self.node.parent
 
     def random_move(self):
+        """Chose a random move from the current node, and play it."""
         if self.on_path and len(self.node) > 0:
             self.move(*choice(self.node).get_move()[1])
 
     def __str__(self):
-        return '\n'.join("|".join(i if i else ' ' for i in x) for x in reversed(self.board.board))
+        """Return this board's current layout as a string."""
+        return '\n'.join(
+            "|".join(i if i else ' ' for i in x)
+            for x in reversed(self.board.board)
+        )
 
     @property
     def root(self):
+        """Get the game's root node."""
         return self.game.get_root() if self.game else None
 
     @property
     def current_player(self):
+        """Return the current player as 'w', 'b' or None."""
         return self.node.get_move()[0]
 
     @property
@@ -121,10 +130,12 @@ class Goban(object):
 
     @property
     def next_player_name(self):
+        """Return the pretty name of the next player."""
         return 'white' if self.next_player == 'w' else 'black'
 
     @property
     def current_comment(self):
+        """Return the comments of the current node."""
         if self.node is None:
             return ''
         try:
@@ -152,7 +163,7 @@ class Goban(object):
         return 'RIGHT' in self.current_comment
 
     def _get_property(self, prop):
-        """Get the given property from the current node
+        """Get the given property from the current node.
 
         :param str prop: the SGF property code
         :returns: a list of points for the given property
