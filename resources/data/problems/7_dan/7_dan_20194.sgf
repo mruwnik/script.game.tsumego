@@ -1,6 +1,0 @@
-(;AB[bn]AB[cn]AB[cm]AB[dn]AB[en]AB[eo]AB[fo]AB[go]AB[hn]AB[in]AB[dl]AB[dk]AB[cj]AB[jj]AB[jp]AW[co]AW[do]AW[bp]AW[ep]AW[fp]AW[gp]AW[hp]AW[ho]AW[kl]AW[gm]AW[gn]AW[fn]AW[em]AW[dm]AW[cl]AW[bl]C[Hint: The first move seems dumb, but super effective!]AP[goproblems]
-(;B[hm];W[gl]C[What's Black's next move?];B[gk];W[hl];B[il];W[hk]C[How to take advantage of White's shortage of liberties?];B[hj];W[gj];B[fk];W[ij];B[fm]LB[fl:a]LB[el:b]C[There we go! If White captures at A, Black will follow at B.RIGHT])
-(;B[gl];W[hm];B[fl];W[fm];B[im];W[hl];B[hk];W[il]C[White escapes...])
-(;B[fl];W[fm];B[hm];W[gl];B[gk];W[hl]C[Now what?];B[il];W[hk];B[hj];W[ik];B[jk];W[jl];B[im];W[gj]
-(;B[ij];W[fk];B[el];W[gk];B[gi];W[fi]C[White spills into the middle.])
-(;B[fk];W[ij];B[ii];W[hi];B[el];W[hj]C[Failure for Black...])))

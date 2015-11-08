@@ -1,9 +1,0 @@
-(;SZ[19]AW[cq]AW[dq]AW[eq]AW[cr]AW[fr]AW[gr]AB[fq]AB[gq]AB[hq]AB[dr]AB[er]AB[hr]C[Black to play the correct move! (the one which is slightly better than the rest)]GM[1]FF[4]CA[UTF-8]AP[CGoban:2]ST[2]RU[Japanese]KM[0.00]PW[White]PB[Black]
-(;B[gs]LB[ds:A]LB[fs:B]C[Correct!!! By playing there you have made a possible White ko threat at A smaller than it would have been if you had played at B.
-Minimizing possible loss is an important principle.RIGHT])
-(;B[fs]C[Though equal in points to the solution, this move is less good as a possible White ko threat at A is now bigger than if you had played at B.]LB[ds:A]LB[gs:B])
-(;B[es];W[cs]
-(;B[gs]C[This gives White a bigger ko threat (at A) than White would have had if you had played at G1 immediately.]LB[ds:A])
-(;B[fs]C[This gives White a bigger ko threat (at A) than White would have had if you had started at B (G1).]LB[ds:A]LB[gs:B])
-(;B[hs];W[ds];B[fs];W[gs];B[er]C[Impressive, but bad.]))
-(;B[ds];W[cs]))

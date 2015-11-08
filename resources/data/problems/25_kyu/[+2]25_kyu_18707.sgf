@@ -1,9 +1,0 @@
-(;AB[ba]AB[bb]AB[cc]AB[dc]AB[eb]AB[fb]AW[ab]AW[bc]AW[bd]AW[cd]AW[cf]AW[ec]AW[ed]AW[ge]AW[gc]AW[gb]AP[goproblems]
-(;B[db];W[fa]
-(;B[ea];W[ca]C[CHOICE])
-(;B[ca];W[ea]C[CHOICE]))
-(;B[da];W[fa];B[cb]C[RIGHT])
-(;B[fa];W[da]
-(;B[db];W[ca]C[CHOICE])
-(;B[ca];W[db]C[CHOICE]))
-(;B[cb];W[da]C[CHOICE]))

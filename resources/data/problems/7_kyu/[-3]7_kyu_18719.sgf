@@ -1,5 +1,0 @@
-(;AB[ab]AB[bc]AB[cc]AB[cb]AB[dc]AB[eb]AB[fa]AW[ba]AW[da]AW[fb]AW[fc]AW[ec]AW[hb]AW[ac]AW[bd]AW[ce]AW[dd]AW[ed]AW[bf]C[This problem is flawed, see variations.]AP[goproblems]
-(;B[ea]
-(;W[ga]C[The original problem solution suggests that White plays G19 (A) here. If White does play C19 (B) instead though, Black is dead.-> A would be a big mistake by White.CHOICE]LB[ga:A]LB[ca:B];B[db];W[ca];B[ad];W[ae];B[ac]C[In this variation, Black has formed a Seki and neither side can capture the other.RIGHT])
-(;W[ca]C[The marked points are miai. Black is dead.]TR[db]TR[ad];B[db];W[ad]C[The only hope for Black to form a Seki now, is to capture at A16. It is White's turn though, and he can connect. White this looks like a Seki, Black is dead. If White plays G19 and C16 later, Black's stones are in Atari at B18.]TR[ga]TR[cd]MA[bb]))
-(;B[ca];W[ea]C[];B[db];W[ea]))

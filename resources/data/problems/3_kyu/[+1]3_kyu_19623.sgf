@@ -1,9 +1,0 @@
-(;TR[es]TR[er]TR[cq]TR[cp]TR[bp]TR[bo]TR[ao]AB[bq]AB[ar]AW[cr]AW[bs]AB[aq]TR[dr]TR[dq]C[japanese rules.FORCE]AP[goproblems]
-(;B[ap]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]LB[as:a]LB[br:b]LB[cs:c]C[FORCE]
-(;W[as]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es])
-(;W[br]TR[bo]TR[ao]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es])
-(;W[cs]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]))
-(;B[as]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]C[FORCE]LB[cs:a];W[cs]TR[ao]TR[bp]TR[bo]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]C[tie is not the best.])
-(;B[br]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]LB[cs:a]C[FORCE];W[cs]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]C[tie is not the best.])
-(;B[cs]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]C[yes. black starts ko.RIGHT])
-(;B[ds]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]AW[dr]AW[er]AW[es]LB[cs:a]C[FORCE];W[cs]TR[ao]TR[bo]TR[bp]TR[cp]TR[cq]TR[dq]TR[dr]TR[er]TR[es]C[white wins by a point.]))

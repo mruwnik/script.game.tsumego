@@ -1,7 +1,0 @@
-(;AW[aa]AW[bb]AW[ac]AW[db]AW[da]AW[bd]AW[ce]AW[ee]AW[ed]AW[fc]AW[gc]AW[hb]AW[ic]AB[eb]AB[fb]AB[gb]AB[cb]AB[cc]AB[bc]AB[dc]AB[ec]AP[goproblems]
-(;B[ca];W[ad];B[ga];W[ea]C[CHOICE])
-(;B[ba];W[ca]
-(;B[ea];W[ga];B[ba];W[ca]C[CHOICE])
-(;B[ga];W[ea];B[fa];W[ad];B[ba];W[ca];B[da]C[RIGHT]))
-(;B[ga];W[ea];B[ba];W[ca];B[fa];W[ad];B[ba];W[ca];B[da]C[RIGHT])
-(;B[ea];W[ga];B[ba];W[ca];B[ba];W[ca];B[da];W[ad]C[CHOICE]))

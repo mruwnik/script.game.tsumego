@@ -1,9 +1,0 @@
-(;AB[rq]AB[qp]AB[pp]AB[nr]AB[kq]AB[kp]AB[kn]AB[ln]AB[mm]AB[ml]AB[mk]AB[mj]AB[nj]AB[nk]AB[ok]AB[om]AB[ql]AB[qk]AB[qj]AB[qi]AB[pj]AB[rm]AW[pk]AW[pl]AW[ol]AB[pm]AW[qm]AW[qn]AW[qo]AW[rn]AW[qq]AW[oq]AW[km]AW[lm]AW[ll]AW[lk]AW[lj]AW[li]AW[mi]AW[ni]AW[oi]AW[pi]AW[oj]AW[im]AW[hn]AB[qh]C[Find the best sequence for white in the corner.  No unnecessary moves.]AP[goproblems]
-(;W[rp];B[sp]
-(;W[ro];B[pq];W[qr];B[rr];W[pr];B[or]
-(;W[op];B[po];W[pn];B[oo];W[on];B[no];W[nm];B[nn];W[rl]C[RIGHT])
-(;W[rl];B[oo];W[sm]C[White can live bigger.]))
-(;W[so];B[ro]C[White can live without ko.]))
-(;W[rl];B[ro]
-(;W[sm];B[rk]C[White is dead.])
-(;W[rk];B[sm]C[White is dead.])))

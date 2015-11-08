@@ -1,6 +1,0 @@
-(;SZ[3]AB[ab]AB[cb]C[White to play and live.]AP[goproblems]
-(;W[bb]
-(;B[ba];W[bc]C[Neither side can play A1 or C1. All stones are alive in seki. Both sides pass now.RIGHT]MA[ac]MA[cc])
-(;B[bc];W[ba]C[Neither side can play A3 or C3. All stones are alive in seki. Both sides pass now.RIGHT]MA[aa]MA[ca]))
-(;W[ba];B[bb])
-(;W[bc];B[bb]))

@@ -1,5 +1,0 @@
-(;C[Can Black kill White? YES or NO]LB[jl:NO]LB[gl:YES]AW[qa]AW[pa]AW[oa]AW[rb]AB[qb]AW[pb]AW[ob]AB[nb]AW[rc]AB[qc]AB[pc]AB[oc]AB[nc]AB[lc]AB[ic]AW[qd]AW[od]AW[se]AW[re]AW[qe]AW[oe]AB[me]AB[rf]AW[qf]AB[pf]AW[of]AB[nf]AB[rg]AB[qg]AB[og]AB[ng]AP[goproblems]
-(;B[gl]C[Don't even try it])
-(;B[jl];W[kl]C[Play the best local move (Don't play unnecessary moves)]
-(;B[ra];W[sa]LB[sc:A]LB[sd:B]C[Later White will have to add a move at A or B, or die.RIGHT])
-(;B[na];W[ra]C[Nope])))

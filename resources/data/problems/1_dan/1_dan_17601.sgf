@@ -1,9 +1,0 @@
-(;AW[rb]AW[rc]AW[qc]AW[rd]AB[qb]AB[pb]AB[ob]AW[pc]AW[oc]AW[nb]AW[mb]AW[lb]AB[nc]AB[pd]AB[qd]AB[od]AB[nd]AB[qe]AB[re]AB[rg]AW[ld]AB[ra]AB[rf]C[White to play in a common game. Do not try to win all the unwinnable kos.]AP[goproblems]
-(;W[sb];B[sd]
-(;W[oa]C[Yes, white saves most territory possible.RIGHT])
-(;W[qa]C[Not so good as black has bigger threats now... but okay :-)RIGHT])
-(;W[pa];B[oa]))
-(;W[oa];B[sb]C[NOTE: black could play T16 instead of this move and the result would be the same as in the solution. But white gave black this option which means P19 was slightly bad.];W[qa];B[sd];W[sa];B[og]LB[ng:A]C[Answer at A to blacks little threat!];W[ng];B[ra]C[The ko is too big for white and too small for black. White cannot fight it.];W[pa];B[sc]C[White could save more.])
-(;W[qa];B[sb];W[sa];B[og]LB[ng:A]C[Answer at A!];W[ng];B[ra];W[oa];B[sd];W[sa];B[oh]LB[nh:A]C[A again!];W[nh];B[ra];W[pa];B[sc]C[White could save more.])
-(;W[sd];B[sb];W[oa];B[se])
-(;W[sc];B[se];W[qa];B[pa];W[sa];B[sb]))
