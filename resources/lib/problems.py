@@ -30,13 +30,14 @@ class Problems(object):
 
     def _find_problems(self, problems_dir):
         """Find all problems in the problems directory."""
-        self.problems = {}
+        problems = {}
         for d in self.problems_dir.listdir():
             try:
                 level = self._parse_level(d.basename())
                 self.problems[level] = self._get_problems(d)
             except OSError:
                 continue
+        self.problems = problems
 
     def _parse_problem(self, problem_file):
         """Parse the given problem file name.

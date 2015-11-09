@@ -8,7 +8,7 @@ import xbmcgui
 
 from xbmcgui import (
     ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK,
-    ACTION_PREVIOUS_MENU, ACTION_NAV_BACK, ACTION_PAUSE,
+    ACTION_NAV_BACK, ACTION_PAUSE,
     REMOTE_1, REMOTE_2, REMOTE_3, REMOTE_4,
     REMOTE_5, REMOTE_6, REMOTE_7, REMOTE_8, REMOTE_9,
 )
@@ -21,7 +21,7 @@ from resources.lib.problems import Problems
 SELECT = [
     ACTION_SELECT_ITEM, ACTION_PARENT_DIR, ACTION_MOUSE_LEFT_CLICK, ACTION_PAUSE
 ]
-BACK = [ACTION_PREVIOUS_MENU, ACTION_NAV_BACK]
+BACK = [ACTION_NAV_BACK]
 
 hoshi = {
     REMOTE_1: (3, 3),
@@ -176,17 +176,11 @@ class GobanGrid(Grid, Goban):
             log('No grid found during board refresh', log.LOGDEBUG)
             return
 
+        self.position_marker.setImage(
+            get_image("shadow_%s.png" % self.next_player_name))
+        self.update_messages()
+        self.update_labels()
         self.update_comment()
-
-        # make sure all marks are set
-        for x, y in self.marks:
-            self.grid[x][y].mark('mark')
-        for x, y in self.triangles:
-            self.grid[x][y].mark('triangle')
-        for x, y in self.marks:
-            self.grid[x][y].mark()
-        for x, y in self.marks:
-            self.grid[x][y].mark()
 
         # refresh all points
         for x in xrange(self.game.get_size()):
@@ -367,18 +361,13 @@ class GobanGrid(Grid, Goban):
         if key in SELECT:
             self.move(*self.current.pos)
             self.random_move()
-            self.position_marker.setImage(
-                get_image("shadow_%s.png" % self.next_player_name))
-            self.update_messages()
-            self.update_labels()
             if self.correct:
                 self.problem_solved(True)
         elif key in BACK:
             self.problem_solved(False)
+            if not self.correct and self.on_path:
+                self.back()
             self.back()
-            self.back()
-            self.update_messages()
-            self.update_labels()
         elif key in hoshi:
             x, y = hoshi[key]
             self.current = self.grid[x][y]
