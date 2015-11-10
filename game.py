@@ -19,7 +19,9 @@ from resources.lib.goban import GobanGrid
 from resources.lib.log_utils import log, _
 
 
-DIRECTIONS = [ACTION_MOVE_DOWN, ACTION_MOVE_LEFT, ACTION_MOVE_RIGHT, ACTION_MOVE_UP]
+DIRECTIONS = [
+    ACTION_MOVE_DOWN, ACTION_MOVE_LEFT, ACTION_MOVE_RIGHT, ACTION_MOVE_UP
+]
 INFO = [ACTION_SHOW_INFO]
 
 addon = xbmcaddon.Addon()
@@ -80,8 +82,9 @@ class Game(xbmcgui.WindowXML):
             elif action_id in INFO:
                 self.settings()
             elif action.getButtonCode() == KeyCodes.n:
+                self.solution_control.setLabel(_('show_solution'))
                 self.grid.next()
-        except Exception as e:
+        except Exception:
             traceback.print_exc()
         super(Game, self).onAction(action)
 
@@ -93,9 +96,10 @@ class Game(xbmcgui.WindowXML):
             self.restart_game()
         elif control_id == ControlIds.solution:
             self.solution_control.setLabel(
-                _('hide_solution' if self.grid.toggle_hints() else 'show_solution')
+                _('hide_solution' if self.grid.toggle_hints() else 'show_solution')  # noqa
             )
         elif control_id == ControlIds.next_problem:
+            self.solution_control.setLabel(_('show_solution'))
             self.grid.next()
 
     def get_grid(self):
@@ -122,8 +126,9 @@ class Game(xbmcgui.WindowXML):
         return grid
 
     def restart_game(self):
+        self.solution_control.setLabel(_('show_solution'))
         self.grid.load(self.grid.sgf)
-        self.problem_solved(False)
+        self.grid.problem_solved(False)
         self.grid.update_messages()
 
     def settings(self):
@@ -141,7 +146,7 @@ class Game(xbmcgui.WindowXML):
         dialog = xbmcgui.Dialog()
         confirmed = dialog.yesno(_('exit_head'), _('exit_text'))
         if confirmed:
-            self.grid.remove_controls(window)
+            self.grid.remove_controls(self)
             self.close()
 
     def clock_ticker(self):

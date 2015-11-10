@@ -122,7 +122,6 @@ class GobanGrid(Grid, Goban):
     def __init__(self, *args, **kwargs):
         """init this grid."""
         self.comments_box = None
-        self.hints = False
         self.load_problems(
             problems_dir=kwargs.pop(
                 'problems_dir', addon.getSetting('problems_dir')),
@@ -237,7 +236,7 @@ class GobanGrid(Grid, Goban):
 
         :param (str or None) sgf: the SGF to be loaded
         """
-        log(str(sgf))
+        self.hints = False
         super(Grid, self).load(sgf)
         if self.game:
             self.set_size(self.game.get_size())
@@ -304,7 +303,7 @@ class GobanGrid(Grid, Goban):
         """
         self.problem_solved(False, 0.4)
         self.hints = state if state is not None else not self.hints
-        self.mark_hints()
+        self.refresh_board()
         return self.hints
 
     def update_comment(self, comment=None):
