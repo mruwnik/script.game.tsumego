@@ -84,13 +84,10 @@ class Stone(Tile):
         """Mark this stone with the given marker."""
         self._mark = mark_type
 
-    def set_marker(self, player):
-        """Set the appropriate marker on this spot.
+    def set_player(self, player):
+        """Place the given player's stone
 
-        To remove a stone, pass None
-
-        :param str or None player: the code of the player to be placed
-        """
+        :param (str or None) player: the player who moved, or None to clear"""
         if player == 'w':
             self.player = 'white'
         elif player == 'b':
@@ -98,21 +95,38 @@ class Stone(Tile):
         elif not player:
             self.player = None
 
-        if player == 'good' or player == 'bad':
-            stone = '%s_spot.png' % player
-        elif not player:
-            stone = 'empty.png'
-        elif player in ['w', 'b']:
+        if self.player:
             if self._mark:
                 stone = '%s_%s.png' % (self.player, self._mark)
             else:
                 stone = '%s.png' % self.player
         else:
-            stone = '%s.png' % player
+            stone = 'empty.png'
 
-        if stone != self.stone:
+        self.set_image(stone)
+
+    def set_marker(self, marker):
+        """Set the appropriate marker on this spot.
+
+        :param str or None marker: the code of the marker to be placed
+        """
+        if not marker:
+            stone = 'empty.png'
+        elif marker in ['good', 'bad']:
+            stone = '%s_spot.png' % marker if not self.player else self.stone
+        else:
+            stone = '%s.png' % marker
+
+        self.set_image(stone)
+
+    def set_image(self, stone=None):
+        if stone == self.stone:
+            return
+        elif stone is None:
+            stone = self.stone
+        else:
             self.stone = stone
-            self.image.setImage(get_image(stone))
+        self.image.setImage(get_image(stone))
 
 
 class GobanGrid(Grid, Goban):
@@ -155,8 +169,15 @@ class GobanGrid(Grid, Goban):
 
     @property
     def labels(self):
-        """Get the labels of the current node from the board."""
-        return Goban.labels.fget(self)
+        """Get the labels of the current node from the board.
+
+        The labels are white by default, so change the colour of any text to
+        black if it was to be displayed on a white stone.
+        """
+        for (x, y), label in Goban.labels.fget(self):
+            if self.board.board[x][y] == 'w':
+                label = '[COLOR black]%s[/COLOR]' % label
+            yield ((x, y), label)
 
     def new_tile(self, x, y):
         """Add a new stone.
@@ -197,7 +218,7 @@ class GobanGrid(Grid, Goban):
                     self.grid[x][y].mark('mark')
                 else:
                     self.grid[x][y].mark()
-                self.grid[x][y].set_marker(self.board.board[x][y])
+                self.grid[x][y].set_player(self.board.board[x][y])
         self.mark_hints()
 
     def set_size(self, size):
@@ -236,9 +257,9 @@ class GobanGrid(Grid, Goban):
 
         :param (str or None) sgf: the SGF to be loaded
         """
-        self.hints = False
         super(Grid, self).load(sgf)
         if self.game:
+            self.reset()
             self.set_size(self.game.get_size())
             self.refresh_board()
 
@@ -255,12 +276,6 @@ class GobanGrid(Grid, Goban):
             except (ValueError, IndexError):
                 traceback.print_exc()
             else:
-                log('board size: %d' % self.game.get_size())
-                self.hints = False
-                self.position_marker.setImage(
-                    get_image("shadow_%s.png" % self.next_player_name))
-                self.update_messages()
-                self.update_labels()
                 self.current_rank.setText(
                     _('current_rank') % self.problems.rank)
                 if self.problem.get('rank'):
@@ -278,6 +293,14 @@ class GobanGrid(Grid, Goban):
                 map(self.problems.get_rank, [level + 3, level - 3])
             )
             self.comments_box.setText(_('no_problems_found') % tuple(ranks))
+
+    def reset(self):
+        """Reset the board."""
+        self.hints = False
+        self.position_marker.setImage(
+        get_image("shadow_%s.png" % self.next_player_name))
+        self.update_messages()
+        self.update_labels()
 
     def problem_solved(self, solved, weight=0.25):
         """Mark whether this problem was solved or not.
@@ -343,8 +366,9 @@ class GobanGrid(Grid, Goban):
         # get rid of any previous markers - the grandparent must be used,
         # because the parent is automatically placed and has no hints
         if self.node.parent and self.node.parent.parent:
-            map(mark_node,
-                filter(lambda v: v != self.node, self.node.parent.parent))
+            for node in filter(lambda v: v != self.node, self.node.parent.parent):
+                _, (x, y) = node.get_move()
+                self.grid[x][y].set_image()
 
         for child in self.node:
             mark_node(child, 'good' if self.correct_path(child) else 'bad')

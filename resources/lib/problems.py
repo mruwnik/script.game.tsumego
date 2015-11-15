@@ -116,6 +116,11 @@ class Problems(object):
                 problem['sgf'] = f.read()
         except IOError:
             return None
+
+        # make sure that the SGF can be solved
+        if 'RIGHT' not in problem['sgf']:
+            return None
+
         return problem
 
     def get_rank(self, level):
@@ -197,7 +202,7 @@ class MockProblems(Problems):
 (;W[sa];B[pa]C[You indeed had 2 ko threats, but you played the wrong move.]))
 (;W[ld]C[Not quite that many...]))"""
 
-    sgf1 = """(;AW[br]AW[bq]AW[cq]AW[dq]AW[er]AW[fr]AW[ds]AB[ap]AB[bp]AB[cp]AB[dp]AB[ep]AB[eq]AB[fq]AB[gq]AB[gr]AB[gs]AB[fs]AB[es]AB[aq]AW[ar]LB[as:a]LB[bs:b]LB[cr:c]LB[dr:d]LB[cs:e]C[FORCE]AP[goproblems]
+    sgf1 = """(;AW[br]AW[bq]AW[cq]AW[dq]AW[er]AW[fr]AW[ds]AB[ap]AB[bp]AB[cp]AB[dp]AB[ep]AB[eq]AB[fq]AB[gq]AB[gr]AB[gs]AB[fs]AB[es]AB[aq]AW[ar]LB[aq:b]LB[ar:w]LB[as:a]LB[bs:b]LB[cr:c]LB[dr:d]LB[cs:e]C[FORCE]AP[goproblems]
 (;B[as]LB[dr:a]C[FORCE];W[dr]LB[bs:a]LB[cs:b]C[FORCE]
 (;B[bs]LB[cs:a]C[FORCE];W[cs])
 (;B[cs]LB[bs:a]C[FORCE];W[bs]))
@@ -234,8 +239,8 @@ class MockProblems(Problems):
                                                 (;W[bd]C[YES B IS DEAD :)RIGHT])
                                                 (;W[ac];B[bd]C[B is alive :(]))"""
 
-    def __init__(self, problems_dir='./', level=30, **kwargs):
-        self.level = level
+    def __init__(self, problems_dir='./', level='30 kyu', **kwargs):
+        self.level = self.get_level(self._parse_level(level))
         self.offset = 0
         self.problems = {
             self.get_rank(i): [
@@ -247,10 +252,13 @@ class MockProblems(Problems):
 
     def next(self):
         """Get the next problem."""
-        problem = self.random_problem()
+        problem = self._parse_problem('[3]_12_kyu_123124.sgf')
         if not problem:
             raise StopIteration
 
         problem['sgf'] = self.sgf1
+
+        if 'RIGHT' not in problem['sgf']:
+            raise StopIteration
         return problem
 

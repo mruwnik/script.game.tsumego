@@ -11,8 +11,8 @@
         <source>https://github.com/mruwnik/script.game.tsumego</source>
         <email>tojad99@gmail.com</email>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <summary lang="en">A collection of tsumego</summary>
-        <description lang="en">Tsumego are Go (the boardgame) problems. This is a collection of them based on what can be found at http://www.goproblems.com</description>
+        <summary lang="en">Solve tsumego</summary>
+        <description lang="en">Solve tsumego (the boardgame Go problems)</description>
     </extension>
 </addon>
 
